@@ -13,6 +13,19 @@ MonoBehaviour:
   m_Name: Bob
   m_EditorClassIdentifier: 
   passages:
-  - text: 
+  - text: Hello!
+    nextPassageIndex: 3
+    responses:
+    - text: What's your name?
+      nextPassageIndex: 1
+    - text: Where are you from?
+      nextPassageIndex: 2
+  - text: My name is Bob!
+    nextPassageIndex: 0
+    responses: []
+  - text: I'm from america!
+    nextPassageIndex: 3
+    responses: []
+  - text: Bye!
     nextPassageIndex: 0
     responses: []
