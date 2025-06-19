@@ -19,26 +19,33 @@ public class CharacterDialogueHandler : MonoBehaviour
 
     void Start()
     {
-       
+
         currentPassageIndex = 0;
+        loadText();
     }
+    
 
-
+    private void OnEnable()
+    {
+        progress.action.started += ProgressNoResponse;
+    }
+    private void OnDisable()
+    {
+        progress.action.started -= ProgressNoResponse; 
+    }
     void Update()
     {
-        getResponseNumber();
-        // Handle w/response progress
-        /*
-        for (int responseIndex = 0; responseIndex < responseButtons.Length; responseIndex++)
+        // Handle Responses
+        int responseNumber = getResponseNumber();
+        if (responseNumber >= 0 && responseNumber <= currentDialogue.GetResponseCount(currentPassageIndex))
         {
-            if (Input.GetKeyDown(responseButtons[responseIndex]))
-            {
-                currentPassageIndex = currentDialogue.getResponseNextPassage(currentPassageIndex, responseIndex);
-                loadText();
-                break;
-            }
+            currentPassageIndex = currentDialogue.GetNextPassageIndex(currentPassageIndex, responseNumber - 1);
+            loadText();
         }
-        */
+        else if (responseNumber >= 0)
+        {
+            Debug.LogWarning("Response failed");
+        }
     }
 
     public int getResponseNumber()
@@ -48,33 +55,25 @@ public class CharacterDialogueHandler : MonoBehaviour
             int responseNum = (int)Mathf.Round(Response.action.ReadValue<float>());
             if (responseNum != 0)
             {
-                Debug.Log("A: " + responseNum);
+                Debug.Log("Response Number: " + responseNum);
             }
 
             return responseNum;
 
         }
 
-        return -1;
+        return -1;  
     }
-    private void OnEnable()
-    {
-        progress.action.started += progressNoResponse;
-    }
-    private void OnDisable()
-    {
-        progress.action.started -= progressNoResponse; 
-    }
-    private void progressNoResponse(InputAction.CallbackContext context)
+    private void ProgressNoResponse(InputAction.CallbackContext context)
     {
         Debug.Log("Progress!");
-        if (currentDialogue.getCurrentResponses(currentPassageIndex) > 0)
+        if (currentDialogue.GetResponseCount(currentPassageIndex) > 0)
         {
             Debug.LogWarning("Will only progress via dialouge button if no responses available");
         }
         else
         {
-            currentPassageIndex = currentDialogue.getNoResponseNextPassage(currentPassageIndex);
+            currentPassageIndex = currentDialogue.GetNextPassageIndex(currentPassageIndex);
             loadText();
         }
     }
@@ -82,5 +81,13 @@ public class CharacterDialogueHandler : MonoBehaviour
     {
         currentText = currentDialogue.getCurrentText(currentPassageIndex);
 
+        // add responses to text;
+        int responseCount = currentDialogue.GetResponseCount(currentPassageIndex);
+        for (int responseIndex = 0; responseIndex < responseCount; responseIndex++)
+        {
+            currentText += "\n" + (responseIndex + 1) + ". " + currentDialogue.GetResponseText( currentPassageIndex, responseIndex);
+        }
+
+        textBox.text = currentText;
     }
 }

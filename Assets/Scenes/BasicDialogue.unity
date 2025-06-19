@@ -241,7 +241,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -264.67172, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -621,8 +621,9 @@ MonoBehaviour:
   currentDialogue: {fileID: 11400000, guid: 654bb5065dcd91b4dba7b544756396e8, type: 2}
   currentPassageIndex: 0
   textBox: {fileID: 178276952}
+  inputNum: 0
   progress: {fileID: -8463138833102596509, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
-  respond: {fileID: 0}
+  Response: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
 --- !u!114 &1663170963
 MonoBehaviour:
   m_ObjectHideFlags: 0
