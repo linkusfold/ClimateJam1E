@@ -108,8 +108,9 @@ public class CharacterDialogueHandler : MonoBehaviour
         Debug.Log("prev x: " + debugPos);
         buttonOBJ = Instantiate(responseButtonPrefab, canvas.transform);
         Vector2 placePos = debugPos;
-        placePos.x += (buttonOBJ.GetComponent<RectTransform>().rect.width - previousRectTransform.rect.width)/2;
-        placePos.y -= (buttonOBJ.GetComponent<RectTransform>().rect.height + previousRectTransform.rect.height)/2;
+        placePos.x += (buttonOBJ.GetComponent<RectTransform>().rect.width - previousRectTransform.rect.width) / 2;
+        placePos.y -= (buttonOBJ.GetComponent<RectTransform>().rect.height + previousRectTransform.rect.height) / 2;
         buttonOBJ.GetComponent<RectTransform>().anchoredPosition = placePos;
+        /zzz// left here
     }
 }
