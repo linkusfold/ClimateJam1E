@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -16,14 +17,18 @@ public class CharacterDialogueHandler : MonoBehaviour
     public int inputNum = 0;
     public InputActionReference progress;
     public InputActionReference Response;
-
+    public GameObject responseButtonPrefab;
+    [SerializeField]
+    Canvas canvas;
+    GameObject buttonOBJ;
     void Start()
     {
 
         currentPassageIndex = 0;
         loadText();
+        CreateResponseButtons();
     }
-    
+
 
     private void OnEnable()
     {
@@ -31,10 +36,12 @@ public class CharacterDialogueHandler : MonoBehaviour
     }
     private void OnDisable()
     {
-        progress.action.started -= ProgressNoResponse; 
+        progress.action.started -= ProgressNoResponse;
     }
     void Update()
     {
+
+
         // Handle Responses
         int responseNumber = getResponseNumber();
         if (responseNumber >= 0 && responseNumber <= currentDialogue.GetResponseCount(currentPassageIndex))
@@ -46,6 +53,10 @@ public class CharacterDialogueHandler : MonoBehaviour
         {
             Debug.LogWarning("Response failed");
         }
+
+        Debug.Log("Button pos: " + buttonOBJ.GetComponent<RectTransform>().position);
+        Debug.Log("Button anchor pos: " + buttonOBJ.GetComponent<RectTransform>().anchoredPosition);
+
     }
 
     public int getResponseNumber()
@@ -62,7 +73,7 @@ public class CharacterDialogueHandler : MonoBehaviour
 
         }
 
-        return -1;  
+        return -1;
     }
     private void ProgressNoResponse(InputAction.CallbackContext context)
     {
@@ -80,14 +91,25 @@ public class CharacterDialogueHandler : MonoBehaviour
     private void loadText()
     {
         currentText = currentDialogue.getCurrentText(currentPassageIndex);
-
-        // add responses to text;
-        int responseCount = currentDialogue.GetResponseCount(currentPassageIndex);
-        for (int responseIndex = 0; responseIndex < responseCount; responseIndex++)
+        if (currentDialogue.GetResponseCount(currentPassageIndex) > 0)
         {
-            currentText += "\n" + (responseIndex + 1) + ". " + currentDialogue.GetResponseText( currentPassageIndex, responseIndex);
         }
+        
 
         textBox.text = currentText;
+    }
+
+    void CreateResponseButtons()
+    {
+        // add responses to text;
+        int responseCount = currentDialogue.GetResponseCount(currentPassageIndex);
+        RectTransform previousRectTransform = textBox.rectTransform;
+        Vector2 debugPos = previousRectTransform.anchoredPosition;
+        Debug.Log("prev x: " + debugPos);
+        buttonOBJ = Instantiate(responseButtonPrefab, canvas.transform);
+        Vector2 placePos = debugPos;
+        placePos.x += (buttonOBJ.GetComponent<RectTransform>().rect.width - previousRectTransform.rect.width)/2;
+        placePos.y -= (buttonOBJ.GetComponent<RectTransform>().rect.height + previousRectTransform.rect.height)/2;
+        buttonOBJ.GetComponent<RectTransform>().anchoredPosition = placePos;
     }
 }
