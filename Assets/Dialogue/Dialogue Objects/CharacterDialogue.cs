@@ -6,6 +6,9 @@ public class CharacterDialogue : ScriptableObject
 {
     [SerializeField]
     Passage[] passages;
+
+
+
     public String getCurrentText(int passageIndex)
     {
         return passages[passageIndex].text;
@@ -32,6 +35,12 @@ public class CharacterDialogue : ScriptableObject
     {
         return passages[passageIndex].responses[responseIndex].text;
     }
+
+    public int GetResponseTarget(int passageIndex, int responseIndex)
+    {
+        return passages[passageIndex].responses[responseIndex].nextPassageIndex;
+    }
+
 }
 [Serializable]
 
