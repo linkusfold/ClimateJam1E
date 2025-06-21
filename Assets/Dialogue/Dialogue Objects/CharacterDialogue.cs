@@ -41,6 +41,11 @@ public class CharacterDialogue : ScriptableObject
         return passages[passageIndex].responses[responseIndex].nextPassageIndex;
     }
 
+    public Sprite getPassageArt(int passageIndex)
+    {
+        return passages[passageIndex].sprite;
+    }
+
 }
 [Serializable]
 
@@ -54,7 +59,8 @@ public class Passage
     public int nextPassageIndex;
     [SerializeField]
     public Response[] responses;
-    
+    [SerializeField]
+    public Sprite sprite;
 }
 
 [Serializable]
