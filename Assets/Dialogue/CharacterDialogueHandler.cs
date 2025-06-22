@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Linq;
 using System.Security.Cryptography;
 using TMPro;
@@ -10,17 +11,29 @@ using UnityEngine.UI;
 public class CharacterDialogueHandler : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
+    // Dialogue Obj, indexes, and textbox
     [SerializeField]
     CharacterDialogue currentDialogue;
-    public int currentPassageIndex;
-    String currentText;
+    int currentPassageIndex;
+    [Header("Text Settings")]
+    [SerializeField]
+    float textSpeed = 0.1f;
     public TMP_Text textBox;
-    public int inputNum = 0;
+    [Header("Sound Settings")]
+    [SerializeField]
+    float ptichVariation;
+    [SerializeField]
+    AudioClip textSound;
+    [SerializeField]
+    AudioSource textAudioSource;
+    [Header("Input Settings")]
     public InputActionReference progress;
     public InputActionReference Response;
-    public GameObject responseButtonPrefab;
-    public GameObject characterArtPrefab;
+    [Header("Prefabs")]
+    [SerializeField]
+    GameObject responseButtonPrefab;
+    [SerializeField]
+    GameObject characterArtPrefab;
     private GameObject[] responseButtonInstances;
     private Image characterArtHolder;
     int maxResponseCount = 5;
@@ -30,7 +43,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     void Start()
     {
         CreateArtPrefab();
-
+        //textSpeed = textSound.length;
+        textAudioSource.clip = textSound;
         responseButtonInstances = new GameObject[maxResponseCount];
         LoadPassage(0);
     }
@@ -38,13 +52,30 @@ public class CharacterDialogueHandler : MonoBehaviour
     public void LoadPassage(int targetPassageIndex)
     {
         currentPassageIndex = targetPassageIndex;
-        currentText = currentDialogue.getCurrentText(currentPassageIndex);
-        textBox.text = currentText;
-
-        LoadArt();
         
 
+        LoadArt();
+        DestroyResponses();
+        CreateResponses();
 
+        StartCoroutine(LoadText());
+    }
+    IEnumerator LoadText()
+    {
+        String currentText = currentDialogue.getCurrentText(currentPassageIndex);
+        textBox.text = "";
+        foreach (char c in currentText.ToCharArray())
+        {
+            textBox.text += c;
+            textAudioSource.pitch = UnityEngine.Random.Range(1 - ptichVariation, 1 + ptichVariation);
+            textAudioSource.Play();
+            yield return new WaitForSeconds(textSpeed);
+
+        }
+        yield break;
+    }
+    private void DestroyResponses()
+    {
         for (int childIndex = 0; childIndex < textBox.transform.childCount; childIndex++)
         {
             // Debug.Log("Checking children: " + textBox.transform.childCount);
@@ -58,8 +89,6 @@ public class CharacterDialogueHandler : MonoBehaviour
                 }
             }
         }
-
-        CreateResponses();
     }
     private void CreateArtPrefab()
     {
@@ -139,7 +168,7 @@ public class CharacterDialogueHandler : MonoBehaviour
 
         for (int responseIndex = 0; responseIndex < responseCount; responseIndex++)
         {
-            Debug.Log("Run : " + responseIndex);
+            
             parentRect = CreateResponse(parentRect, responseIndex).GetComponent<RectTransform>();
 
         }

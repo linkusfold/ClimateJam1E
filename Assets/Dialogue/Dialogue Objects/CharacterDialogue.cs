@@ -6,7 +6,7 @@ public class CharacterDialogue : ScriptableObject
 {
     [SerializeField]
     Passage[] passages;
-
+    
 
 
     public String getCurrentText(int passageIndex)
