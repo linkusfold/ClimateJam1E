@@ -1,12 +1,13 @@
 using System;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 [CreateAssetMenu(fileName = "CharacterDialogue", menuName = "Scriptable Objects/CharacterDialogue")]
 public class CharacterDialogue : ScriptableObject
 {
     [SerializeField]
     Passage[] passages;
-    
+
 
 
     public String getCurrentText(int passageIndex)
@@ -25,6 +26,10 @@ public class CharacterDialogue : ScriptableObject
         return passages[passageIndex].nextPassageIndex;
     }
 
+    public Passage GetPassage(int passageIndex)
+    {
+        return passages[passageIndex];
+    }
     public int GetNextPassageIndex(int passageIndex, int responseIndex)
     {
         // Get next passage from response target
@@ -46,6 +51,11 @@ public class CharacterDialogue : ScriptableObject
         return passages[passageIndex].sprite;
     }
 
+    public Response GetResponse(int passageIndex, int responseIndex)
+    {
+        return passages[passageIndex].responses[responseIndex];
+    }
+
 }
 [Serializable]
 
@@ -61,6 +71,7 @@ public class Passage
     public Response[] responses;
     [SerializeField]
     public Sprite sprite;
+    public CharacterDialogue nextConversation;
 }
 
 [Serializable]
@@ -68,4 +79,5 @@ public class Response
 {
     public String text;
     public int nextPassageIndex;
+    public CharacterDialogue nextConversation;
 }
