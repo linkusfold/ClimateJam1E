@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f31d2c98491493681ce1e7e5af618d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: {fileID: 0}
-  speed: 1
+  path: {fileID: 7960849999485376242, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
+  speed: 4
   currentNodeId: 1
   pathing: 1

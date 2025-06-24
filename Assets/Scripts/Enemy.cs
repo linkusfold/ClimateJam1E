@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -8,9 +9,12 @@ namespace DefaultNamespace
         public float speed = 1;
         public int currentNodeId = 1;
         public bool pathing = true;
+        public int EnemiesSafe = 0;
+
 
         private void Start()
         {
+
             if (path == null)
             {
                 Debug.LogError("Enemy " + gameObject.name + " has no path!");
@@ -22,13 +26,27 @@ namespace DefaultNamespace
 
         private void FixedUpdate()
         {
-            if(!pathing) return;
+
+
+            if (!pathing)
+            {
+                Destroy(gameObject);
+                EnemiesSafe++;
+            }
+
+            if (EnemiesSafe == 4)
+            {
+                EditorApplication.isPlaying = false; // Delete when finished
+                Application.Quit();
+            }
+
             if (transform.position == path.pathNodes[currentNodeId])
             {
                 ReachedNode();
                 return;
             }
             transform.position = Vector3.MoveTowards(transform.position, path.pathNodes[currentNodeId], speed*Time.deltaTime);
+
         }
         
         public void GoToPathNode(int nodeId)
