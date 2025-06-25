@@ -104,4 +104,3 @@ MonoBehaviour:
   speed: 4
   currentNodeId: 1
   pathing: 1
-  EnemiesSafe: 0
