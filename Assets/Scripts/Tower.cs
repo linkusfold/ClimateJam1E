@@ -30,6 +30,5 @@ public class Tower : MonoBehaviour
         level++;
         isUnlocked = true;
         Debug.Log($"Tower upgraded to level {level}");
-        // Optional: Add stat changes or visual effects here
     }
 }
