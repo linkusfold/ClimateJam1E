@@ -40,7 +40,6 @@ public class RadialMenu : MonoBehaviour
             }
         }
 
-        // Add listeners for other buttons (e.g., SellButton) here
     }
 
     // Links the radial menu to a specific tower
