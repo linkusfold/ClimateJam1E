@@ -68,6 +68,7 @@ public class WaveSpawner : MonoBehaviour
         {
             for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
             {
+                waves[currentWaveIndex].enemies[i].path = waves[currentWaveIndex].path;
                 Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
                 enemy.currentNodeId = 1;
                 enemy.transform.SetParent(spawnPoint.transform);
@@ -82,6 +83,7 @@ public class WaveSpawner : MonoBehaviour
 public class Wave
 {
     public Enemy[] enemies;
+    public Path path;
     public float timeToNextEnemy;
     public float timeToNextWave;
 
