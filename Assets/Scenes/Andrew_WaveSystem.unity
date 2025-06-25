@@ -500,15 +500,15 @@ MonoBehaviour:
   - enemies:
     - {fileID: 295953638}
     - {fileID: 295953638}
-    timeToNextEnemy: 5
-    timeToNextWave: 1
+    timeToNextEnemy: 1
+    timeToNextWave: 5
     enemiesLeft: 0
   - enemies:
     - {fileID: 295953638}
     - {fileID: 295953638}
     - {fileID: 295953638}
-    timeToNextEnemy: 5
-    timeToNextWave: 1
+    timeToNextEnemy: 1
+    timeToNextWave: 5
     enemiesLeft: 0
   currentWaveIndex: 0
   EnemiesSafe: 0
@@ -728,6 +728,14 @@ PrefabInstance:
     - target: {fileID: 558991972089853662, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
       propertyPath: m_Name
       value: PathManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 558991972089853662, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7960849999485376242, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
+      propertyPath: pathNodes.Array.size
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8020992997706613263, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
       propertyPath: m_LocalPosition.x
