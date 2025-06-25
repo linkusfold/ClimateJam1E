@@ -511,6 +511,7 @@ MonoBehaviour:
     timeToNextWave: 1
     enemiesLeft: 0
   currentWaveIndex: 0
+  EnemiesSafe: 0
 --- !u!1 &914320871
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,14 +855,6 @@ PrefabInstance:
     - target: {fileID: 8020992997706613263, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8034857805681608964, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -7.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 8034857805681608964, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.07
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
