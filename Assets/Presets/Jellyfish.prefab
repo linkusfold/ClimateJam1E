@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6112041925237027288}
   - component: {fileID: 8191992322902281275}
-  - component: {fileID: 2263222652887229895}
+  - component: {fileID: -3832305157232369721}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Jellyfish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.6226415, g: 0.22614807, b: 0.22614807, a: 1}
+  m_Color: {r: 0.24664646, g: 0.15519556, b: 0.836478, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2263222652887229895
+--- !u!114 &-3832305157232369721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,10 +97,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4545828962518702426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f31d2c98491493681ce1e7e5af618d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2fbe07c1515790f4498184d426f30866, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0.8
+  health: 100
+  defense: 10
+  damage: 10
   path: {fileID: 0}
-  speed: 1
   currentNodeId: 1
   pathing: 1

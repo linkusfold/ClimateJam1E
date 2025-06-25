@@ -2,18 +2,21 @@
 
 namespace DefaultNamespace
 {
-    public class Enemy : MonoBehaviour
+    public abstract class Enemy : MonoBehaviour
+    // This class is for the minions disasters can spawn. 
+    // They follow a path and deal damage if they get to the end.
+    // They also each have a unique attack.
     {
-        public float speed = 1;
-        public float health = 100;
-        public float defense = 10;
-        public float damage = 10; //How much damage they’ll do if they reach the end
+        protected float speed = 1;
+        protected float health = 100;
+        protected float defense = 10;
+        protected float damage = 10; //How much damage they’ll do if they reach the end
 
         public Path path;
         public int currentNodeId = 1;
         public bool pathing = true;
 
-        protected void Start()
+        protected virtual void Start()
         {
             if (path == null)
             {
@@ -78,6 +81,9 @@ namespace DefaultNamespace
                 Die();
             }
         }
+
+        protected abstract void Attack(); //attack method to be overriden by subclasses
+        // we add specific attack behavior in the subclasses
 
         protected void Die()
         {
