@@ -31,7 +31,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (EnemiesSafe >= 2)
+        if (EnemiesSafe >= 4)
         {
             EditorApplication.isPlaying = false; // Delete when finished
             Application.Quit();
