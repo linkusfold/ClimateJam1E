@@ -27,15 +27,7 @@ namespace DefaultNamespace
 
         private void FixedUpdate()
         {
-
-
-            if (!pathing)
-            {
-                Destroy(gameObject);
-                waveSpawner.EnemiesSafe++;
-                waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
-            }
-
+            if (!pathing) return;
 
             if (transform.position == path.pathNodes[currentNodeId])
             {
@@ -57,7 +49,13 @@ namespace DefaultNamespace
             pathing = false;
             Debug.Log("Enemy " +gameObject.name + " reached Node " + currentNodeId + "!");
             
-            if (path.pathNodes.Count <= currentNodeId+1) return;
+            if (path.pathNodes.Count <= currentNodeId+1) 
+            {
+                waveSpawner.EnemiesSafe++;
+                waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
+                Destroy(gameObject);
+                return;
+            }
             
             currentNodeId++;
             GoToPathNode(currentNodeId);
