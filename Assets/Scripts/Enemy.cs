@@ -9,11 +9,12 @@ namespace DefaultNamespace
         public float speed = 1;
         public int currentNodeId = 1;
         public bool pathing = true;
-        public int EnemiesSafe = 0;
+        private WaveSpawner waveSpawner;
 
 
         private void Start()
         {
+            waveSpawner = GetComponentInParent<WaveSpawner>();
 
             if (path == null)
             {
@@ -31,14 +32,10 @@ namespace DefaultNamespace
             if (!pathing)
             {
                 Destroy(gameObject);
-                EnemiesSafe++;
+                waveSpawner.EnemiesSafe++;
+                waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
             }
 
-            if (EnemiesSafe == 4)
-            {
-                EditorApplication.isPlaying = false; // Delete when finished
-                Application.Quit();
-            }
 
             if (transform.position == path.pathNodes[currentNodeId])
             {
