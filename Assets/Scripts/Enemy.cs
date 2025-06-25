@@ -3,7 +3,7 @@
 namespace DefaultNamespace
 {
     public abstract class Enemy : MonoBehaviour
-    // This class is for the minions disasters can spawn. 
+    // This is an abstract base-class for the minions disasters can spawn. 
     // They follow a path and deal damage if they get to the end.
     // They also each have a unique attack.
     {
@@ -75,6 +75,8 @@ namespace DefaultNamespace
             //First reduce incoming damage by the defense amount
             float effectiveDamage = Mathf.Max(amount - defense, 0);
             health -= effectiveDamage;
+
+            Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
 
             if (health <= 0)
             {
