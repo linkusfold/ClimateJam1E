@@ -46,7 +46,6 @@ public class WaveSpawner : MonoBehaviour
         if (readyToCountDown == true)
         {
             countdown -= Time.deltaTime;
-            Debug.Log(countdown);
         }
 
         if (countdown <= 0)
