@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -15,9 +16,13 @@ namespace DefaultNamespace
         public Path path;
         public int currentNodeId = 1;
         public bool pathing = true;
+        private WaveSpawner waveSpawner;
+
 
         protected virtual void Start()
         {
+            waveSpawner = GetComponentInParent<WaveSpawner>();
+
             if (path == null)
             {
                 Debug.LogError("Enemy " + gameObject.name + " has no path!");
@@ -54,11 +59,21 @@ namespace DefaultNamespace
                 OnReachedEnd();
                 return;
             }
+            Debug.Log("Enemy " +gameObject.name + " reached Node " + currentNodeId + "!");
+            
+            if (path.pathNodes.Count <= currentNodeId+1) 
+            {
+                OnReachedEnd();
+                return;
+            }
+            
             currentNodeId++;
             GoToPathNode(currentNodeId);
         }
         protected void OnReachedEnd()
         {
+            waveSpawner.EnemiesSafe++;
+            waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
             //Once we reach the end of the path we deal damage to the town/house
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
             Destroy(gameObject); // Remove the enemy
