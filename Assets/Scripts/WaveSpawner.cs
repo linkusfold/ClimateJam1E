@@ -1,8 +1,8 @@
 using DefaultNamespace;
-using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 
 public class WaveSpawner : MonoBehaviour
@@ -18,10 +18,21 @@ public class WaveSpawner : MonoBehaviour
     private bool readyToCountDown;
 
     public int EnemiesSafe = 0;
+    public List<Enemy> enemies;
 
-    private void Start()
+    public void StartWaveSpawning()
     {
         readyToCountDown = true;
+
+    }
+
+    public List<Enemy> GetEnemies()
+    {
+        return enemies;
+    }
+    private void Start()
+    {
+        enemies = new List<Enemy>();
 
         for (int i = 0; i < waves.Length; i++)
         {
@@ -69,7 +80,9 @@ public class WaveSpawner : MonoBehaviour
             {
                 waves[currentWaveIndex].enemies[i].path = waves[currentWaveIndex].path;
                 Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+                enemies.Add(enemy);
                 enemy.currentNodeId = 1;
+                // Isn't this redundant because of the instantiate?
                 enemy.transform.SetParent(spawnPoint.transform);
 
                 yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
