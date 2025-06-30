@@ -8,24 +8,20 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [SerializeField]
-    int health = 100;
-    [SerializeField]
-    WaveSpawner waveSpawner;
-
+    public int playerHealth;
+    public WaveSpawner waveSpawner;
+    
 
     public LevelData levelData;
     void Awake()
     {
-        Debug.Log("Awaken!");
+        
         if (instance == null)
         {
-            Debug.Log("Null");
             instance = this;
         }
         else if (instance != this)
         {
-            Debug.Log("not this");
             Destroy(this);
         }
 
@@ -41,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     public void doThing()
     {
-        Debug.Log("I'm doing it!");
+        Debug.Log("Doing something!");
     }
 
     public void DestroyAllEnemies()
