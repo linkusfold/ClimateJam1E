@@ -4,14 +4,16 @@ using DefaultNamespace;
 
 public class WaveSpawner : MonoBehaviour
 {
-    [SerializeField] private float countdown;
     [SerializeField] private LevelData levelData;
     private WaveData[] waveDatas;
+
     [SerializeField] private Transform spawnPoint;
 
+    private float countdown;
     public int currentWaveIndex = 0;
-    private bool readyToCountDown = true;
     public int EnemiesSafe = 0;
+
+    private bool readyToCountDown = true;
 
     private void Start()
     {
