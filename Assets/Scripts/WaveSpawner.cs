@@ -15,6 +15,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
+        countdown = levelData.countdown;
         waveDatas = levelData.waves;
 
         foreach (var wave in waveDatas)
@@ -25,7 +26,7 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (EnemiesSafe >= 4)
+        if (EnemiesSafe >= levelData.maxEnemiesSafe)
         {
             Application.Quit();
         }
