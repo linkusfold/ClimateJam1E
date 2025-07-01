@@ -16,7 +16,7 @@ namespace DefaultNamespace
         public Path path;
         public int currentNodeId = 1;
         public bool pathing = true;
-        private WaveSpawner waveSpawner;
+        protected WaveSpawner waveSpawner;
 
 
         protected virtual void Start()
@@ -32,7 +32,7 @@ namespace DefaultNamespace
             GoToPathNode(currentNodeId + 1);
         }
 
-        protected void FixedUpdate()
+        protected virtual void FixedUpdate()
         {
             if (!pathing) return;
             if (transform.position == path.pathNodes[currentNodeId])
