@@ -4,7 +4,6 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections;
 
-
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
@@ -31,10 +30,10 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (EnemiesSafe >= 4)
-        {
-            Application.Quit();
-        }
+        //if (EnemiesSafe >= 4)
+        //{
+        //    Application.Quit();
+        //}
 
         if (currentWaveIndex >= waves.Length)
         {

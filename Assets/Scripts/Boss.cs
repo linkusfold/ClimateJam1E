@@ -8,22 +8,16 @@ namespace DefaultNamespace
     // They will probably have a set of attacks they can do
     // They will probably have a large health bar and custom gimmicks
     {
-        protected float health = 500;
-        protected float defense = 10; //amount oncoming damage is reduced
+        [SerializeField] private WaveSpawner waveSpawner;
 
-        protected void Start() { }
-
-        protected void Update() { }
-
-        public void TakeDamage(float amount)
+        protected void Start()
         {
-            //First reduce incoming damage by the defense amount
-            float effectiveDamage = Mathf.Max(amount - defense, 0);
-            health -= effectiveDamage;
+            
+        }
 
-            Debug.Log("Disaster " + gameObject.name + " health reduced to " + health + "!");
-
-            if (health <= 0)
+        protected virtual void Update()
+        {
+            if (waveSpawner.currentWaveIndex >= waveSpawner.waves.Length)
             {
                 Die();
             }
@@ -33,6 +27,7 @@ namespace DefaultNamespace
         {
             Debug.Log($"The Disaster {gameObject.name} was defeated.");
             Destroy(gameObject); //remove the boss
+            Destroy(waveSpawner);
         }
     }
 }
