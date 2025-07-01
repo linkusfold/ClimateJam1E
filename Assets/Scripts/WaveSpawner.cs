@@ -5,8 +5,9 @@ using DefaultNamespace;
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
-    [SerializeField] private GameObject spawnPoint;
-    [SerializeField] private WaveData[] waveDatas;
+    [SerializeField] private LevelData levelData;
+    private WaveData[] waveDatas;
+    [SerializeField] private Transform spawnPoint;
 
     public int currentWaveIndex = 0;
     private bool readyToCountDown = true;
@@ -14,6 +15,8 @@ public class WaveSpawner : MonoBehaviour
 
     private void Start()
     {
+        waveDatas = levelData.waves;
+
         foreach (var wave in waveDatas)
         {
             wave.ResetEnemiesLeft();

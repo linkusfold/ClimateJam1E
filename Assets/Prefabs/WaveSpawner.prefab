@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8219863995320176077}
-  - component: {fileID: 4157877649045174905}
+  - component: {fileID: 5359676285737187804}
   m_Layer: 0
   m_Name: WaveSpawner
   m_TagString: Untagged
@@ -33,7 +33,7 @@ Transform:
   - {fileID: 7872730840142380383}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4157877649045174905
+--- !u!114 &5359676285737187804
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -46,23 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countdown: 5
-  spawnPoint: {fileID: 2792201192186048079}
-  waves:
-  - enemies:
-    - {fileID: 2263222652887229895, guid: a98d69aca36e35d42b732719929c1012, type: 3}
-    - {fileID: 2263222652887229895, guid: a98d69aca36e35d42b732719929c1012, type: 3}
-    path: {fileID: 0}
-    timeToNextEnemy: 1
-    timeToNextWave: 5
-    enemiesLeft: 0
-  - enemies:
-    - {fileID: 2263222652887229895, guid: a98d69aca36e35d42b732719929c1012, type: 3}
-    - {fileID: 2263222652887229895, guid: a98d69aca36e35d42b732719929c1012, type: 3}
-    - {fileID: 2263222652887229895, guid: a98d69aca36e35d42b732719929c1012, type: 3}
-    path: {fileID: 0}
-    timeToNextEnemy: 1
-    timeToNextWave: 5
-    enemiesLeft: 0
+  levelData: {fileID: 0}
+  spawnPoint: {fileID: 7872730840142380383}
   currentWaveIndex: 0
   EnemiesSafe: 0
 --- !u!1 &2792201192186048079
