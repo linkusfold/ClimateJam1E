@@ -77,7 +77,6 @@ public class WaveSpawner : MonoBehaviour
         }
     }
 
-    // Call this from Enemy when it's destroyed or completes its path
     public void OnEnemyRemoved()
     {
         if (currentWaveIndex < waveDatas.Length)
