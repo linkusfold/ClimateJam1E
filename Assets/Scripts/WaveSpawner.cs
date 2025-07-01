@@ -1,31 +1,22 @@
-using DefaultNamespace;
-using NUnit.Framework;
-using UnityEditor;
 using UnityEngine;
 using System.Collections;
-
+using DefaultNamespace;
 
 public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private float countdown;
-
     [SerializeField] private GameObject spawnPoint;
-
-    public Wave[] waves;
+    [SerializeField] private WaveData[] waveDatas;
 
     public int currentWaveIndex = 0;
-
-    private bool readyToCountDown;
-
+    private bool readyToCountDown = true;
     public int EnemiesSafe = 0;
 
     private void Start()
     {
-        readyToCountDown = true;
-
-        for (int i = 0; i < waves.Length; i++)
+        foreach (var wave in waveDatas)
         {
-            waves[i].enemiesLeft = waves[i].enemies.Length;
+            wave.ResetEnemiesLeft();
         }
     }
 
@@ -36,13 +27,13 @@ public class WaveSpawner : MonoBehaviour
             Application.Quit();
         }
 
-        if (currentWaveIndex >= waves.Length)
+        if (currentWaveIndex >= waveDatas.Length)
         {
             Debug.Log("You survived every wave!");
             return;
         }
 
-        if (readyToCountDown == true)
+        if (readyToCountDown)
         {
             countdown -= Time.deltaTime;
         }
@@ -50,11 +41,11 @@ public class WaveSpawner : MonoBehaviour
         if (countdown <= 0)
         {
             readyToCountDown = false;
-            countdown = waves[currentWaveIndex].timeToNextWave;
+            countdown = waveDatas[currentWaveIndex].timeToNextWave;
             StartCoroutine(SpawnWave());
         }
 
-        if (waves[currentWaveIndex].enemiesLeft == 0)
+        if (waveDatas[currentWaveIndex].enemiesLeft == 0)
         {
             readyToCountDown = true;
             currentWaveIndex++;
@@ -63,28 +54,29 @@ public class WaveSpawner : MonoBehaviour
 
     private IEnumerator SpawnWave()
     {
-        if (currentWaveIndex < waves.Length)
+        if (currentWaveIndex < waveDatas.Length)
         {
-            for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
+            var wave = waveDatas[currentWaveIndex];
+
+            for (int i = 0; i < wave.enemies.Length; i++)
             {
-                waves[currentWaveIndex].enemies[i].path = waves[currentWaveIndex].path;
-                Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
+                wave.enemies[i].path = Path.instance;
+
+                Enemy enemy = Instantiate(wave.enemies[i], spawnPoint.transform);
                 enemy.currentNodeId = 1;
                 enemy.transform.SetParent(spawnPoint.transform);
 
-                yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
+                yield return new WaitForSeconds(wave.timeToNextEnemy);
             }
         }
     }
-}
 
-[System.Serializable]
-public class Wave
-{
-    public Enemy[] enemies;
-    public Path path;
-    public float timeToNextEnemy;
-    public float timeToNextWave;
-
-    [HideInInspector] public int enemiesLeft;
+    // Call this from Enemy when it's destroyed or completes its path
+    public void OnEnemyRemoved()
+    {
+        if (currentWaveIndex < waveDatas.Length)
+        {
+            waveDatas[currentWaveIndex].enemiesLeft--;
+        }
+    }
 }
