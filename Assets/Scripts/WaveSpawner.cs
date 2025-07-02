@@ -6,18 +6,10 @@ public class WaveSpawner : MonoBehaviour
 {
     [SerializeField] private LevelData levelData;
     private WaveData[] waveDatas;
-
-    [SerializeField] private Transform spawnPoint;
-
-    private float countdown;
-    public int currentWaveIndex = 0;
-    public int EnemiesSafe = 0;
-
-    private bool readyToCountDown = true;
+    [SerializeField] public Transform spawnPoint;
 
     private void Start()
     {
-        countdown = levelData.countdown;
         waveDatas = levelData.waves;
 
         foreach (var wave in waveDatas)
@@ -28,41 +20,20 @@ public class WaveSpawner : MonoBehaviour
 
     private void Update()
     {
-        if (EnemiesSafe >= levelData.maxEnemiesSafe)
+        levelData.updateLevel();
+        if (levelData.spawnNextWave)
         {
-            Application.Quit();
-        }
-
-        if (currentWaveIndex >= waveDatas.Length)
-        {
-            Debug.Log("You survived every wave!");
-            return;
-        }
-
-        if (readyToCountDown)
-        {
-            countdown -= Time.deltaTime;
-        }
-
-        if (countdown <= 0)
-        {
-            readyToCountDown = false;
-            countdown = waveDatas[currentWaveIndex].timeToNextWave;
             StartCoroutine(SpawnWave());
-        }
-
-        if (waveDatas[currentWaveIndex].enemiesLeft == 0)
-        {
-            readyToCountDown = true;
-            currentWaveIndex++;
+            Debug.Log("Wave Spawned");
         }
     }
 
     private IEnumerator SpawnWave()
     {
-        if (currentWaveIndex < waveDatas.Length)
+        levelData.spawnNextWave = false;
+        if (levelData.currentWaveIndex < levelData.waves.Length)
         {
-            var wave = waveDatas[currentWaveIndex];
+            var wave = levelData.waves[levelData.currentWaveIndex];
 
             for (int i = 0; i < wave.enemies.Length; i++)
             {
@@ -74,14 +45,6 @@ public class WaveSpawner : MonoBehaviour
 
                 yield return new WaitForSeconds(wave.timeToNextEnemy);
             }
-        }
-    }
-
-    public void OnEnemyRemoved()
-    {
-        if (currentWaveIndex < waveDatas.Length)
-        {
-            waveDatas[currentWaveIndex].enemiesLeft--;
         }
     }
 }

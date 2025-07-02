@@ -12,6 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20248da444c778f4bb7cc7cf3ee8fbf0, type: 3}
   m_Name: LevelData
   m_EditorClassIdentifier: 
+  countdown: 5
+  maxEnemiesSafe: 4
   waves:
   - {fileID: 11400000, guid: f19286da4fd7e8b49a97d23b86bd1970, type: 2}
   - {fileID: 11400000, guid: f19286da4fd7e8b49a97d23b86bd1970, type: 2}
+  currentWaveIndex: 0
+  EnemiesSafe: 0
+  spawnNextWave: 0

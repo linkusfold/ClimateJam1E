@@ -14,6 +14,7 @@ namespace DefaultNamespace
         public bool pathing = true;
 
         private WaveSpawner waveSpawner;
+        [SerializeField] private LevelData levelData;
 
         protected virtual void Start()
         {
@@ -70,8 +71,8 @@ namespace DefaultNamespace
         protected void OnReachedEnd()
         {
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
-            waveSpawner.EnemiesSafe++;
-            waveSpawner.OnEnemyRemoved();
+            levelData.EnemiesSafe++;
+            levelData.OnEnemyRemoved();
             Destroy(gameObject);
         }
 
@@ -96,7 +97,7 @@ namespace DefaultNamespace
         protected void Die()
         {
             Debug.Log($"{gameObject.name} died.");
-            waveSpawner.OnEnemyRemoved(); 
+            levelData.OnEnemyRemoved(); 
             Destroy(gameObject);
         }
 
