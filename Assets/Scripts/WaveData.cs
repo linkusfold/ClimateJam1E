@@ -1,3 +1,4 @@
+using System;
 using DefaultNamespace;
 using UnityEngine;
 
@@ -5,7 +6,7 @@ using UnityEngine;
 public class WaveData : ScriptableObject
 {
     public Enemy[] enemies;
-    public Path path;
+    [NonSerialized] public Path path;
     public float timeToNextEnemy;
     public float timeToNextWave;
 

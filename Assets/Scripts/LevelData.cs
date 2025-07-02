@@ -1,3 +1,4 @@
+using System;
 using DefaultNamespace;
 using UnityEditor.Overlays;
 using UnityEngine;
@@ -6,19 +7,18 @@ using System.Collections;
 [CreateAssetMenu(fileName = "NewLevelData", menuName = "ScriptableObjects/LevelData", order = 2)]
 public class LevelData : ScriptableObject
 {
-    [SerializeField] private float countdown = 5f;
+    public float countdown = 5f;
     public int maxEnemiesSafe = 4;
     public WaveData[] waves;
 
     public int currentWaveIndex = 0;
-    public int EnemiesSafe = 0;
 
-    private bool readyToCountDown = true;
+    [NonSerialized] public bool readyToCountDown = true;
     public bool spawnNextWave = false;
-
-    public void updateLevel()
+    
+    public void UpdateLevel()
     {
-        if (EnemiesSafe >= maxEnemiesSafe)
+        if (WaveSpawner.instance.EnemiesSafe >= maxEnemiesSafe)
         {
             Application.Quit();
         }
@@ -28,17 +28,17 @@ public class LevelData : ScriptableObject
             Debug.Log("You survived every wave!");
             return;
         }
-
+        
         if (readyToCountDown)
         {
-            countdown -= Time.deltaTime;
+            WaveSpawner.instance.levelCountdown -= Time.deltaTime;
             Debug.Log("Counting Down!");
         }
 
-        if (countdown <= 0)
+        if (WaveSpawner.instance.levelCountdown <= 0)
         {
             readyToCountDown = false;
-            countdown = waves[currentWaveIndex].timeToNextWave;
+            WaveSpawner.instance.levelCountdown = waves[currentWaveIndex].timeToNextWave;
             spawnNextWave = true;
             Debug.Log("Spawning next wave");
         }

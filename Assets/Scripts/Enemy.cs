@@ -13,13 +13,10 @@ namespace DefaultNamespace
         public int currentNodeId = 1;
         public bool pathing = true;
 
-        private WaveSpawner waveSpawner;
-        [SerializeField] private LevelData levelData;
+        public LevelData levelData;
 
         protected virtual void Start()
         {
-            waveSpawner = GetComponentInParent<WaveSpawner>();
-
             if (path == null)
             {
                 Debug.LogError("Enemy " + gameObject.name + " has no path!");
@@ -71,7 +68,7 @@ namespace DefaultNamespace
         protected void OnReachedEnd()
         {
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
-            levelData.EnemiesSafe++;
+            WaveSpawner.instance.EnemiesSafe++;
             levelData.OnEnemyRemoved();
             Destroy(gameObject);
         }
