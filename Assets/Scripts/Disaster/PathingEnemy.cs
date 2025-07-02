@@ -3,10 +3,10 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public abstract class PathingEnemy : Enemy
-    // This is an abstract base-class for the minions disasters can spawn. 
+    // This is an abstract class for the minions that disasters can spawn. 
     // They follow a path and deal damage if they get to the end.
     // They also each have a unique attack.
+    public abstract class PathingEnemy : Enemy
     {
         public Path path;
         public int currentNodeId = 1;

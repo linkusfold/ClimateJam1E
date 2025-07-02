@@ -17,6 +17,7 @@ namespace DefaultNamespace
 
         protected virtual void Update()
         {
+            // When the boss runs out of attack waves it dies
             if (waveSpawner.currentWaveIndex >= waveSpawner.waves.Length)
             {
                 Die();

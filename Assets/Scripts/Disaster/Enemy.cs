@@ -3,9 +3,9 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public abstract class Enemy : MonoBehaviour
     // This is an abstract base-class for all disaster attacks.
-    // Attacks are vary general, all they have is a speed and a unique attack.
+    // Attacks are very general, all they have is a speed and a unique attack.
+    public abstract class Enemy : MonoBehaviour
     {
         protected float speed = 1;
         [SerializeField] private HealthBar healthBarPrefab;
@@ -34,7 +34,7 @@ namespace DefaultNamespace
         {
             health -= amount;
             if (healthBar != null) //display health only if there is a healtbar
-                    healthBar.Health = health;
+                healthBar.Health = health;
 
             Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
 

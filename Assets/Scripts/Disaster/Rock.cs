@@ -16,9 +16,9 @@ namespace DefaultNamespace
             waveSpawner = GetComponentInParent<WaveSpawner>();
         }
 
-        protected override void FixedUpdate()
         // We override the update logic of enemy because these will not follow a path
         //This may be temporarily, later we may make them a custom path
+        protected override void FixedUpdate()
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
 
