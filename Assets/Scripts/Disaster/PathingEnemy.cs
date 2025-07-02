@@ -45,7 +45,6 @@ namespace DefaultNamespace
 
         protected void ReachedNode()
         {
-            TakeDamage(50f); //Debug testing
             pathing = false;
             Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
 
@@ -54,15 +53,10 @@ namespace DefaultNamespace
                 OnReachedEnd();
                 return;
             }
-            
-            if (path.pathNodes.Count <= currentNodeId+1) 
-            {
-                OnReachedEnd();
-                return;
-            }
-            
+
             currentNodeId++;
             GoToPathNode(currentNodeId);
+            TakeDamage(50f); //Debug testing
         }
         protected void OnReachedEnd()
         {

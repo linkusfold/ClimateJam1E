@@ -59,6 +59,8 @@ public class WaveSpawner : MonoBehaviour
             readyToCountDown = false;
             countdown = waves[currentWaveIndex].timeToNextWave;
             StartCoroutine(SpawnWave());
+
+            Debug.Log("Starting wave " + currentWaveIndex);
         }
         if (waves[currentWaveIndex].enemiesLeft == 0)
         {

@@ -4,8 +4,8 @@ using UnityEngine;
 namespace DefaultNamespace
 {
     // This is an abstract base-class for the big disaster bosses
-    // They will probably have a set of attacks they can do
-    // They will probably have a large health bar and custom gimmicks
+    // Their attacks are mainly handled by the wave spawner
+    // This class is for any special attacks/behavior that happen outside of the wave system
     public abstract class Boss : MonoBehaviour
     {
         [SerializeField] protected WaveSpawner waveSpawner;
