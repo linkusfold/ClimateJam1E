@@ -15,7 +15,7 @@ namespace DefaultNamespace
 
         protected override void Start()
         {
-            waveSpawner = GetComponentInParent<WaveSpawner>();
+            base.Start();
 
             if (path == null)
             {
@@ -45,6 +45,7 @@ namespace DefaultNamespace
 
         protected void ReachedNode()
         {
+            TakeDamage(50f); //Debug testing
             pathing = false;
             Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
 

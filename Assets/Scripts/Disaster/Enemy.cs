@@ -8,7 +8,9 @@ namespace DefaultNamespace
     // Attacks are vary general, all they have is a speed and a unique attack.
     {
         protected float speed = 1;
-        protected float health = 100;
+        [SerializeField] private HealthBar healthBarPrefab;
+        private HealthBar healthBar;
+        protected float health = 100f;
         protected float damage = 10; //The amount of damage it's attack does
         protected WaveSpawner waveSpawner;
 
@@ -16,6 +18,14 @@ namespace DefaultNamespace
         protected virtual void Start()
         {
             waveSpawner = GetComponentInParent<WaveSpawner>();
+
+            // Instantiate health bar slightly above the enemy
+            if (healthBarPrefab != null) //the enemy may not display it's health
+            {
+                Vector3 offset = new Vector3(0, 0.7f, 0);
+                healthBar = Instantiate(healthBarPrefab, transform.position + offset, Quaternion.identity, transform);
+                healthBar.MaxHealth = health;
+            }
         }
 
         protected abstract void FixedUpdate();
@@ -23,6 +33,8 @@ namespace DefaultNamespace
         public void TakeDamage(float amount)
         {
             health -= amount;
+            if (healthBar != null) //display health only if there is a healtbar
+                    healthBar.Health = health;
 
             Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
 

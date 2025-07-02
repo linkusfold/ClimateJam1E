@@ -5,7 +5,21 @@ namespace DefaultNamespace
 {
     public class Hurricane : Boss
     {
-        protected float health = 500;
+        [SerializeField] private HealthBar healthBar;
+
+        [SerializeField] private float _health = 500f;
+
+        public float Health
+        {
+            get => _health;
+            //when you set the health, this automatically updates the health in HealthBar
+            set
+            {
+                _health = value;
+                healthBar.Health = value;
+            }
+        }
+        
         [SerializeField] private float leftX = -7f;   // World X pos for left side
         [SerializeField] private float rightX = 7f;   // World X pos for right side
         [SerializeField] private float switchDuration = 2f;
@@ -18,6 +32,9 @@ namespace DefaultNamespace
         {
             // Hurricane spawns at the left side
             transform.position = new Vector3(leftX, transform.position.y, transform.position.z);
+
+            healthBar.MaxHealth = Health;
+
             base.Start();
             SwitchSides();
         }
@@ -34,6 +51,7 @@ namespace DefaultNamespace
                 waveSpawner.Restart();
 
                 TakeDamage(250); //This is just for debugging it won't actually take damage here
+                SwitchSides();
             }
         }
 
@@ -85,11 +103,11 @@ namespace DefaultNamespace
 
         public void TakeDamage(float amount)
         {
-            health -= amount;
+            Health -= amount;
 
-            Debug.Log("Disaster " + gameObject.name + " health reduced to " + health + "!");
+            Debug.Log("Disaster " + gameObject.name + " health reduced to " + Health + "!");
 
-            if (health <= 0)
+            if (Health <= 0)
             {
                 Die();
             }

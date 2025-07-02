@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcf316ea9dbbac4db7fb417f879b4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthBarPrefab: {fileID: 7571901631226707175, guid: ab7e612ac3ff41141972c0e8a1356607, type: 3}
   path: {fileID: 0}
   currentNodeId: 1
   pathing: 1
