@@ -23,6 +23,7 @@ public class WaveSpawner : MonoBehaviour
     private void Start()
     {
         levelCountdown = levelData.countdown;
+        levelData.currentWaveIndex = 0;
         levelData.readyToCountDown = true;
         levelData.spawnNextWave = false;
         waveDatas = levelData.waves;
