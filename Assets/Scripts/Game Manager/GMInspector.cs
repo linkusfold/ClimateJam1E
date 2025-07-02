@@ -14,5 +14,15 @@ public class GMInspector : Editor
         {
             gameManager.DestroyAllEnemies();
         }
+
+        if (GUILayout.Button("Stop all enemies"))
+        {
+            gameManager.PauseAllEnemies();
+        }
+
+        if (GUILayout.Button("Start all enemies"))
+        {
+            gameManager.ResumeAllEnemies();
+        }
     }
 }

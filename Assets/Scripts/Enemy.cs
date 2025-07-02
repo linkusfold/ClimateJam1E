@@ -59,14 +59,14 @@ namespace DefaultNamespace
                 OnReachedEnd();
                 return;
             }
-            Debug.Log("Enemy " +gameObject.name + " reached Node " + currentNodeId + "!");
-            
-            if (path.pathNodes.Count <= currentNodeId+1) 
+            Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
+
+            if (path.pathNodes.Count <= currentNodeId + 1)
             {
                 OnReachedEnd();
                 return;
             }
-            
+
             currentNodeId++;
             GoToPathNode(currentNodeId);
         }
@@ -106,6 +106,16 @@ namespace DefaultNamespace
         {
             Debug.Log($"{gameObject.name} died.");
             Destroy(gameObject); //remove the enemy
+        }
+
+        public void StopPathing()
+        {
+            pathing = false;
+        }
+
+        public void StartPathing()
+        {
+            pathing = true;
         }
     }
 }
