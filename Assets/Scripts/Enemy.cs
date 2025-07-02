@@ -2,56 +2,102 @@
 
 namespace DefaultNamespace
 {
-    public class Enemy : MonoBehaviour
+    public abstract class Enemy : MonoBehaviour
     {
+        protected float speed = 1;
+        protected float health = 100;
+        protected float defense = 10;
+        protected float damage = 10;
+
         public Path path;
-        public float speed = 1;
         public int currentNodeId = 1;
         public bool pathing = true;
 
-        private void Start()
+        public LevelData levelData;
+
+        protected virtual void Start()
         {
             if (path == null)
             {
                 Debug.LogError("Enemy " + gameObject.name + " has no path!");
                 return;
             }
+
             TeleportToPathNode(currentNodeId);
-            GoToPathNode(currentNodeId+1);
+            GoToPathNode(currentNodeId + 1);
         }
 
-        private void FixedUpdate()
+        protected void FixedUpdate()
         {
-            if(!pathing) return;
+            if (!pathing) return;
+
             if (transform.position == path.pathNodes[currentNodeId])
             {
                 ReachedNode();
                 return;
             }
-            transform.position = Vector3.MoveTowards(transform.position, path.pathNodes[currentNodeId], speed*Time.deltaTime);
+
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                path.pathNodes[currentNodeId],
+                speed * Time.deltaTime
+            );
         }
-        
-        public void GoToPathNode(int nodeId)
+
+        protected void GoToPathNode(int nodeId)
         {
             currentNodeId = nodeId;
             pathing = true;
         }
 
-        private void ReachedNode()
+        protected void ReachedNode()
         {
             pathing = false;
-            Debug.Log("Enemy " +gameObject.name + " reached Node " + currentNodeId + "!");
-            
-            if (path.pathNodes.Count <= currentNodeId+1) return;
-            
+            Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
+
+            if (path.pathNodes.Count <= currentNodeId + 1)
+            {
+                OnReachedEnd();
+                return;
+            }
+
             currentNodeId++;
             GoToPathNode(currentNodeId);
         }
 
+        protected void OnReachedEnd()
+        {
+            Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
+            WaveSpawner.instance.EnemiesSafe++;
+            levelData.OnEnemyRemoved();
+            Destroy(gameObject);
+        }
+
         public void TeleportToPathNode(int nodeId)
         {
-            Vector3 nodePos = path.pathNodes[nodeId];
-            transform.position = nodePos;
+            transform.position = path.pathNodes[nodeId];
         }
+
+        public void TakeDamage(float amount)
+        {
+            float effectiveDamage = Mathf.Max(amount - defense, 0);
+            health -= effectiveDamage;
+
+            Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
+
+            if (health <= 0)
+            {
+                Die();
+            }
+        }
+
+        protected void Die()
+        {
+            Debug.Log($"{gameObject.name} died.");
+            levelData.OnEnemyRemoved(); 
+            Destroy(gameObject);
+        }
+
+        protected abstract void Attack();
     }
 }
