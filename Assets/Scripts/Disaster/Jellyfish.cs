@@ -2,14 +2,13 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class Jellyfish : Enemy
+    public class Jellyfish : PathingEnemy
     // Jellyfish minion; has ranged tentacle attack
     {
         protected override void Start()
         {
             speed = 0.8f;
             health = 80;
-            defense = 10;
             damage = 10;
             base.Start();
         }

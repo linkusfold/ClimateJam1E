@@ -66,10 +66,21 @@ public class WaveSpawner : MonoBehaviour
         {
             for (int i = 0; i < waves[currentWaveIndex].enemies.Length; i++)
             {
-                waves[currentWaveIndex].enemies[i].path = waves[currentWaveIndex].path;
-                Enemy enemy = Instantiate(waves[currentWaveIndex].enemies[i], spawnPoint.transform);
-                enemy.currentNodeId = 1;
-                enemy.transform.SetParent(spawnPoint.transform);
+                Enemy enemyPrefab = waves[currentWaveIndex].enemies[i];
+
+                if (enemyPrefab is PathingEnemy pathingEnemyPrefab)
+                {
+                    pathingEnemyPrefab.path = waves[currentWaveIndex].path;
+
+                    PathingEnemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.transform);
+                    pathingEnemy.currentNodeId = 1;
+                    pathingEnemy.transform.SetParent(spawnPoint.transform);
+                }
+                else
+                {
+                    Enemy enemy = Instantiate(enemyPrefab, spawnPoint.transform);
+                    enemy.transform.SetParent(spawnPoint.transform);
+                }
 
                 yield return new WaitForSeconds(waves[currentWaveIndex].timeToNextEnemy);
             }

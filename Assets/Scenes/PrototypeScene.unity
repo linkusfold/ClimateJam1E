@@ -464,6 +464,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: countdown
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: spawnPoint
+      value: 
+      objectReference: {fileID: 2123100852}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: waves.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: waves.Array.data[0].path
+      value: 
+      objectReference: {fileID: 1132940497956550202}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: waves.Array.data[0].timeToNextWave
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: waves.Array.data[0].timeToNextEnemy
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: waves.Array.data[0].enemies.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: 'waves.Array.data[0].enemies.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3221856143918135539, guid: a8cc96687146390498142a7da6094112, type: 3}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: 'waves.Array.data[0].enemies.Array.data[1]'
+      value: 
+      objectReference: {fileID: -3832305157232369721, guid: 7154887ac2aa83a4c9b1f1030e2117b8, type: 3}
+    - target: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+      propertyPath: 'waves.Array.data[0].enemies.Array.data[2]'
+      value: 
+      objectReference: {fileID: 866597777027876461, guid: fac826dc8f3d7b144bd31ab2e38b2705, type: 3}
     - target: {fileID: 2507258613227605483, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
       propertyPath: m_Name
       value: WaveSpawner
@@ -651,7 +691,7 @@ PrefabInstance:
     - target: {fileID: 4015681639353167374, guid: 48cfeae2823767146bb47cea01a54baf, type: 3}
       propertyPath: waveSpawner
       value: 
-      objectReference: {fileID: 1048803500}
+      objectReference: {fileID: 1721195197}
     - target: {fileID: 4545828962518702426, guid: 48cfeae2823767146bb47cea01a54baf, type: 3}
       propertyPath: m_Name
       value: Oilgae
@@ -788,17 +828,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1048803500 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4157877649045174905, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
-  m_PrefabInstance: {fileID: 634179118}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12b169784d7ba754681fa429e3bace96, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1178578942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -856,6 +885,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a8f59791c4f569948a6d90b6c4ea541e, type: 3}
+--- !u!114 &1721195197 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -504347031675059139, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+  m_PrefabInstance: {fileID: 634179118}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12b169784d7ba754681fa429e3bace96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1770299823
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1231,6 +1271,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2123100852 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2792201192186048079, guid: b771eb124f30a0f44a36df1920ac8aa4, type: 3}
+  m_PrefabInstance: {fileID: 634179118}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1132940497956550201
 PrefabInstance:
   m_ObjectHideFlags: 0

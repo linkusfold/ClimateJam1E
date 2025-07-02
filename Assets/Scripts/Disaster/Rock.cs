@@ -9,7 +9,6 @@ namespace DefaultNamespace
         {
             speed = 2;
             health = 150;
-            defense = 20;
             damage = 50;
             
             waveSpawner = GetComponentInParent<WaveSpawner>();
