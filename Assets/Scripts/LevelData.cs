@@ -13,51 +13,60 @@ public class LevelData : ScriptableObject
 
     public int currentWaveIndex = 0;
 
-    [NonSerialized] public bool readyToCountDown = true;
-    public bool spawnNextWave = false;
-    
+    [NonSerialized] public bool readyToCountDown = false;
+    [NonSerialized] public bool spawnNextWave = false;
+    [NonSerialized] public bool waveSpawned = false;
+
     public void UpdateLevel()
     {
         if (WaveSpawner.instance.EnemiesSafe >= maxEnemiesSafe)
         {
+
+            UnityEditor.EditorApplication.isPlaying = false;
+
             Application.Quit();
+            return;
         }
 
         if (currentWaveIndex >= waves.Length)
         {
-            Debug.Log("You survived every wave!");
+            Debug.Log("All waves completed.");
             return;
         }
-        
+
+        // Start countdown to next wave
         if (readyToCountDown)
         {
             WaveSpawner.instance.levelCountdown -= Time.deltaTime;
-            Debug.Log("Counting Down!");
+            if (WaveSpawner.instance.levelCountdown <= 0f)
+            {
+                readyToCountDown = false;
+                spawnNextWave = true;
+                Debug.Log("Countdown finished, spawning next wave.");
+            }
         }
 
-        if (WaveSpawner.instance.levelCountdown <= 0)
+        // If wave is spawned and all enemies are dead, advance to next wave index
+        if (waveSpawned && waves[currentWaveIndex].enemiesLeft <= 0)
         {
-            readyToCountDown = false;
-            WaveSpawner.instance.levelCountdown = waves[currentWaveIndex].timeToNextWave;
-            spawnNextWave = true;
-            Debug.Log("Spawning next wave");
-        }
-
-        if (waves[currentWaveIndex].enemiesLeft == 0)
-        {
-            readyToCountDown = true;
+            Debug.Log("Wave completed, advancing index.");
             currentWaveIndex++;
-            Debug.Log("Next Wave");
+            waveSpawned = false;
+
+            if (currentWaveIndex < waves.Length)
+            {
+                readyToCountDown = true;
+                WaveSpawner.instance.levelCountdown = waves[currentWaveIndex].timeToNextWave;
+            }
         }
     }
-
 
     public void OnEnemyRemoved()
     {
         if (currentWaveIndex < waves.Length)
         {
             waves[currentWaveIndex].enemiesLeft--;
-            Debug.Log("Losing enemies");
+            Debug.Log("Enemy removed. Remaining: " + waves[currentWaveIndex].enemiesLeft);
         }
     }
 }
