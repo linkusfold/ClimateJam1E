@@ -24,6 +24,7 @@ public class WaveSpawner : MonoBehaviour
     {
         levelCountdown = levelData.countdown;
         levelData.readyToCountDown = true;
+        levelData.spawnNextWave = false;
         waveDatas = levelData.waves;
 
         foreach (var wave in waveDatas)
