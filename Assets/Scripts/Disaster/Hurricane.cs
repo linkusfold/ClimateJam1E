@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 namespace DefaultNamespace
 {
@@ -7,7 +8,9 @@ namespace DefaultNamespace
         protected float health = 500;
         [SerializeField] private float leftX = -7f;   // World X pos for left side
         [SerializeField] private float rightX = 7f;   // World X pos for right side
-        [SerializeField] private float switchSpeed = 5f; // Speed for smooth switching
+        [SerializeField] private float switchDuration = 2f;
+        [SerializeField] private float waveHeight = 2f; //movement wave height for switching sides
+        [SerializeField] private int waveFrequency = 2; //movement wave frequency for switching sides
         private bool isOnLeftSide = true;
         private bool isSwitchingSides = false;
 
@@ -32,28 +35,52 @@ namespace DefaultNamespace
 
                 TakeDamage(250); //This is just for debugging it won't actually take damage here
             }
+        }
 
-            // Movement for switching to the other side
-            if (isSwitchingSides)
+        private IEnumerator SwitchSidesRoutine()
+        {
+            //Co-routine for the Hurriacne to switch sides in a wave pattern
+            isSwitchingSides = true;
+
+            float startX = isOnLeftSide ? leftX : rightX;
+            float endX = isOnLeftSide ? rightX : leftX;
+            Vector3 startPos = new Vector3(startX, transform.position.y, transform.position.z);
+            Vector3 endPos = new Vector3(endX, transform.position.y, transform.position.z);
+
+            float timeElapsed = 0f;
+
+            // Flip the sprite
+            Vector3 localScale = transform.localScale;
+            localScale.x = -localScale.x; // Flip X scale
+            transform.localScale = localScale;
+
+            while (timeElapsed < switchDuration)
             {
-                float targetX = isOnLeftSide ? rightX : leftX;
-                Vector3 targetPos = new Vector3(targetX, transform.position.y, transform.position.z);
-                transform.position = Vector3.MoveTowards(transform.position, targetPos, switchSpeed * Time.deltaTime);
+                float t = timeElapsed / switchDuration;
+                float sineOffset = Mathf.Sin(t * Mathf.PI * waveFrequency) * waveHeight;
 
-                //Reached the other side
-                if (Vector3.Distance(transform.position, targetPos) < 0.01f)
-                {
-                    transform.position = targetPos;
-                    isOnLeftSide = !isOnLeftSide;
-                    isSwitchingSides = false;
-                }
+                float x = Mathf.Lerp(startX, endX, t);
+                float y = Mathf.Lerp(startPos.y, endPos.y, t) + sineOffset;
+
+                transform.position = new Vector3(x, y, transform.position.z);
+
+                timeElapsed += Time.deltaTime;
+                yield return null;
             }
+
+            // Snap to final position
+            transform.position = endPos;
+
+            isOnLeftSide = !isOnLeftSide;
+            isSwitchingSides = false;
         }
 
         protected void SwitchSides()
         {
-            if (isSwitchingSides) return; // Prevent spamming switch
-            isSwitchingSides = true;
+            if (!isSwitchingSides)
+            {
+                StartCoroutine(SwitchSidesRoutine());    
+            }
         }
 
         public void TakeDamage(float amount)
