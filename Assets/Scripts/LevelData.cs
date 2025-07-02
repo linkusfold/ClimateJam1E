@@ -47,7 +47,7 @@ public class LevelData : ScriptableObject
         }
 
         // If wave is spawned and all enemies are dead, advance to next wave index
-        if (waveSpawned && waves[currentWaveIndex].enemiesLeft <= 0)
+        if (waveSpawned)
         {
             Debug.Log("Wave completed, advancing index.");
             currentWaveIndex++;
