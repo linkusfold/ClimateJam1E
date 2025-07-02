@@ -8,9 +8,9 @@ namespace DefaultNamespace
     // They will probably have a set of attacks they can do
     // They will probably have a large health bar and custom gimmicks
     {
-        [SerializeField] private WaveSpawner waveSpawner;
+        [SerializeField] protected WaveSpawner waveSpawner;
 
-        protected void Start()
+        protected virtual void Start()
         {
             
         }

@@ -37,6 +37,7 @@ namespace DefaultNamespace
 
         protected void Die()
         {
+            waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
             Debug.Log($"{gameObject.name} died.");
             Destroy(gameObject); //remove the attack-object
         }

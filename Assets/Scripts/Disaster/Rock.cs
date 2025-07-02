@@ -5,12 +5,14 @@ namespace DefaultNamespace
     public class Rock : Enemy
     // Volcano attack; falls down and does big damage
     {
+        public float despawnY = -10f; // The Y at which point the attack will
+        
         protected override void Start()
         {
             speed = 2;
             health = 150;
             damage = 50;
-            
+
             waveSpawner = GetComponentInParent<WaveSpawner>();
         }
 
@@ -19,6 +21,12 @@ namespace DefaultNamespace
         //This may be temporarily, later we may make them a custom path
         {
             transform.Translate(Vector3.down * speed * Time.deltaTime);
+
+            // If below the world-space threshold, die
+            if (transform.position.y < despawnY)
+            {
+                Die();
+            }
         }
 
         protected override void Attack()
