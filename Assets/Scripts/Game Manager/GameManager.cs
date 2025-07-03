@@ -33,7 +33,9 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        /*
         waveSpawner.StartWaveSpawning();
+        */
     }
 
     // Testing function
@@ -47,25 +49,31 @@ public class GameManager : MonoBehaviour
     // Game Loop Control
     public void PauseAllEnemies()
     {
+        /*
         foreach (Enemy enemy in waveSpawner.enemies)
         {
             enemy.StopPathing();
         }
+        */
 
     }
     public void ResumeAllEnemies()
     {
+        /*
         foreach (Enemy enemy in waveSpawner.enemies)
         {
             enemy.StartPathing();
         }
+        */
     }
     public void DestroyAllEnemies()
     {
+        /*
         foreach (Enemy enemy in waveSpawner.enemies)
         {
             Destroy(enemy.gameObject);
         }
+        */
     }
 
 }
