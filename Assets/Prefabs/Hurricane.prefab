@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6112041925237027288}
   - component: {fileID: 8191992322902281275}
-  - component: {fileID: 2263222652887229895}
+  - component: {fileID: 1191293015885063853}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Hurricane
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.01, y: -3.94, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.6226415, g: 0.22614807, b: 0.22614807, a: 1}
+  m_Color: {r: 0.37905928, g: 0.45515472, b: 0.46540874, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2263222652887229895
+--- !u!114 &1191293015885063853
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,10 +97,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4545828962518702426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f31d2c98491493681ce1e7e5af618d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5830a13b316f7f04b972470f7786a9be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  path: {fileID: 7960849999485376242, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
-  speed: 4
-  currentNodeId: 1
-  pathing: 1
+  waveSpawner: {fileID: 0}
+  leftX: -7
+  rightX: 7
+  switchSpeed: 5

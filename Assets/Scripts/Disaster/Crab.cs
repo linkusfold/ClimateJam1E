@@ -2,14 +2,13 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class Crab : Enemy
+    public class Crab : PathingEnemy
     // Oilgae minion; has melee claw attack
     {
         protected override void Start()
         {
             speed = 1.5f;
             health = 110;
-            defense = 10;
             damage = 10;
             base.Start();
         }
