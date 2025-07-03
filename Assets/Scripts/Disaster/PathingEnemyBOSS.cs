@@ -6,7 +6,7 @@ namespace DefaultNamespace
     // This is an abstract class for the minions that disasters can spawn. 
     // They follow a path and deal damage if they get to the end.
     // They also each have a unique attack.
-    public abstract class PathingEnemyBOSS : Enemy
+    public abstract class PathingEnemyBOSS : DisasterEnemy
     {
         public Path path;
         public int currentNodeId = 1;
@@ -61,7 +61,7 @@ namespace DefaultNamespace
         protected void OnReachedEnd()
         {
             waveSpawner.EnemiesSafe++;
-            waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
+            waveSpawner.levelData.waves[waveSpawner.levelData.currentWaveIndex].enemiesLeft--;
             //Once we reach the end of the path we deal damage to the town/house
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
             Destroy(gameObject); // Remove the enemy

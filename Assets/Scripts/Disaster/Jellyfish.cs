@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class Jellyfish : PathingEnemy
+    public class Jellyfish : Enemy
     // Jellyfish minion; has ranged tentacle attack
     {
         protected override void Start()

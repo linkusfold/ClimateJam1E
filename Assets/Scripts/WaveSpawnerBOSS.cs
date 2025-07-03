@@ -4,13 +4,16 @@ using UnityEditor;
 using UnityEngine;
 using System.Collections;
 
+/// <summary>
+/// Deprecated
+/// </summary>
 public class WaveSpawnerBOSS : MonoBehaviour
 {
     [SerializeField] private float countdown;
 
     [SerializeField] private GameObject spawnPoint;
 
-    public Wave[] waves;
+    public WaveData[] waves;
 
     public int currentWaveIndex = 0;
 
@@ -77,11 +80,11 @@ public class WaveSpawnerBOSS : MonoBehaviour
             {
                 Enemy enemyPrefab = waves[currentWaveIndex].enemies[i];
 
-                if (enemyPrefab is PathingEnemy pathingEnemyPrefab)
+                if (enemyPrefab is Enemy pathingEnemyPrefab)
                 {
                     pathingEnemyPrefab.path = waves[currentWaveIndex].path;
 
-                    PathingEnemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.transform);
+                    Enemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.transform);
                     pathingEnemy.currentNodeId = 1;
                     pathingEnemy.transform.SetParent(spawnPoint.transform);
                 }
@@ -95,15 +98,4 @@ public class WaveSpawnerBOSS : MonoBehaviour
             }
         }
     }
-}
-
-[System.Serializable]
-public class WaveBOSS
-{
-    public Enemy[] enemies;
-    public Path path;
-    public float timeToNextEnemy;
-    public float timeToNextWave;
-
-    [HideInInspector] public int enemiesLeft;
 }

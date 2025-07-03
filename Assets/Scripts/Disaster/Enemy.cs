@@ -1,40 +1,87 @@
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace DefaultNamespace
 {
-    // This is an abstract base-class for all disaster attacks.
-    // Attacks are very general, all they have is a speed and a unique attack.
     public abstract class Enemy : MonoBehaviour
     {
         protected float speed = 1;
-        [SerializeField] private HealthBar healthBarPrefab;
-        private HealthBar healthBar;
-        protected float health = 100f;
-        protected float damage = 10; //The amount of damage it's attack does
-        protected WaveSpawner waveSpawner;
+        protected float health = 100;
+        protected float defense = 10;
+        protected float damage = 10;
 
+        public Path path;
+        public int currentNodeId = 1;
+        public bool pathing = true;
+
+        public LevelData levelData;
 
         protected virtual void Start()
         {
-            waveSpawner = GetComponentInParent<WaveSpawner>();
-
-            // Instantiate health bar slightly above the enemy
-            if (healthBarPrefab != null) //the enemy may not display it's health
+            if (path == null)
             {
-                Vector3 offset = new Vector3(0, 0.7f, 0);
-                healthBar = Instantiate(healthBarPrefab, transform.position + offset, Quaternion.identity, transform);
-                healthBar.MaxHealth = health;
+                Debug.LogError("Enemy " + gameObject.name + " has no path!");
+                return;
             }
+
+            TeleportToPathNode(currentNodeId);
+            GoToPathNode(currentNodeId + 1);
         }
 
-        protected abstract void FixedUpdate();
+        protected void FixedUpdate()
+        {
+            if (!pathing) return;
+
+            if (transform.position == path.pathNodes[currentNodeId])
+            {
+                ReachedNode();
+                return;
+            }
+
+            transform.position = Vector3.MoveTowards(
+                transform.position,
+                path.pathNodes[currentNodeId],
+                speed * Time.deltaTime
+            );
+        }
+
+        protected void GoToPathNode(int nodeId)
+        {
+            currentNodeId = nodeId;
+            pathing = true;
+        }
+
+        protected void ReachedNode()
+        {
+            pathing = false;
+            Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
+
+            if (path.pathNodes.Count <= currentNodeId + 1)
+            {
+                OnReachedEnd();
+                return;
+            }
+
+            currentNodeId++;
+            GoToPathNode(currentNodeId);
+        }
+
+        protected void OnReachedEnd()
+        {
+            Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
+            WaveSpawner.instance.EnemiesSafe++;
+            levelData.OnEnemyRemoved();
+            Destroy(gameObject);
+        }
+
+        public void TeleportToPathNode(int nodeId)
+        {
+            transform.position = path.pathNodes[nodeId];
+        }
 
         public void TakeDamage(float amount)
         {
-            health -= amount;
-            if (healthBar != null) //display health only if there is a healtbar
-                healthBar.Health = health;
+            float effectiveDamage = Mathf.Max(amount - defense, 0);
+            health -= effectiveDamage;
 
             Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
 
@@ -43,15 +90,18 @@ namespace DefaultNamespace
                 Die();
             }
         }
-
-        protected abstract void Attack(); //attack method to be overriden by subclasses
-        // we add specific attack behavior in the subclasses
+        
+        public void Immobilize(float duration) {}
+        
+        public void ExtinguishFire() {}
 
         protected void Die()
         {
-            waveSpawner.waves[waveSpawner.currentWaveIndex].enemiesLeft--;
             Debug.Log($"{gameObject.name} died.");
-            Destroy(gameObject); //remove the attack-object
+            levelData.OnEnemyRemoved(); 
+            Destroy(gameObject);
         }
+
+        protected abstract void Attack();
     }
 }

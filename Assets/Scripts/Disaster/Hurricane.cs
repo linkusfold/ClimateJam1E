@@ -44,7 +44,7 @@ namespace DefaultNamespace
             // The Hurricane isn't defeated when it runs out of attacks
             // Instead it is defeated when it runs out of health
             // Therefore it should loop attacks:
-            if (waveSpawner.currentWaveIndex >= waveSpawner.waves.Length)
+            if (waveSpawner.levelData.currentWaveIndex >= waveSpawner.levelData.waves.Length)
             {
                 Debug.Log("Disaster " + gameObject.name + " has looped its wave attacks!");
 

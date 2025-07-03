@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class Rock : Enemy
+    public class Rock : DisasterEnemy
     // Volcano attack; falls down and does big damage
     {
         public float despawnY = -10f; // The Y at which point the attack will

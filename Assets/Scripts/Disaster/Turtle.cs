@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public class Turtle : PathingEnemy
+    public class Turtle : Enemy
     // Turtle minion; has ranged tentacle attack
     {
         protected override void Start()

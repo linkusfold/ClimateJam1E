@@ -7,7 +7,7 @@ public class WaveSpawner : MonoBehaviour
 {
     public static WaveSpawner instance;
 
-    [SerializeField] private LevelData levelData;
+    public LevelData levelData;
     [NonSerialized] public float levelCountdown;
     private WaveData[] waveDatas;
 
@@ -52,6 +52,19 @@ public class WaveSpawner : MonoBehaviour
             waveSpawning = false;
         }
     }
+    
+    public void Restart()
+    {
+        levelData.currentWaveIndex = 0;
+        EnemiesSafe = 0;
+
+        levelCountdown = levelData.countdown;
+
+        for (int i = 0; i < levelData.waves.Length; i++)
+        {
+            levelData.waves[i].enemiesLeft = levelData.waves[i].enemies.Length;
+        }
+    }
 
     private IEnumerator SpawnWave()
     {
@@ -65,11 +78,20 @@ public class WaveSpawner : MonoBehaviour
 
         for (int i = 0; i < wave.enemies.Length; i++)
         {
-            Enemy enemy = Instantiate(wave.enemies[i], spawnPoint.position, Quaternion.identity, spawnPoint);
-            enemy.path = Path.instance;
-            enemy.levelData = levelData;
-            enemy.currentNodeId = 1;
+            Enemy enemyPrefab = wave.enemies[i];
 
+            if (enemyPrefab is Enemy pathingEnemyPrefab)
+            {
+                Enemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
+                pathingEnemy.path = Path.instance;
+                pathingEnemy.levelData = levelData;
+                pathingEnemy.currentNodeId = 1;
+            }
+            else
+            {
+                Enemy enemy = Instantiate(enemyPrefab, spawnPoint.transform);
+                enemy.transform.SetParent(spawnPoint.transform);
+            }
             yield return new WaitForSeconds(wave.timeToNextEnemy);
         }
 
