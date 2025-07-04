@@ -14,22 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   passages:
   - text: Hello!
-    nextPassageIndex: 3
     responses:
     - text: What's your name?
       nextPassageIndex: 1
+      nextConversation: {fileID: 0}
     - text: Where are you from?
       nextPassageIndex: 2
+      nextConversation: {fileID: 0}
     sprite: {fileID: 7482667652216324306, guid: a1b946d4375d3294a8a1081fc7efb8b7, type: 3}
   - text: My name is Bob!
-    nextPassageIndex: 0
-    responses: []
+    responses:
+    - text: Ok!
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
     sprite: {fileID: -2413806693520163455, guid: 393bd1aabcd34a848a4ab1066d60b812, type: 3}
   - text: I'm from america!
-    nextPassageIndex: 3
-    responses: []
+    responses:
+    - text: Ok.
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
     sprite: {fileID: 7482667652216324306, guid: 169386b5d99f64749989e589b4f07469, type: 3}
   - text: Bye!
-    nextPassageIndex: 0
-    responses: []
+    responses:
+    - text: Bye
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
     sprite: {fileID: 7482667652216324306, guid: 169386b5d99f64749989e589b4f07469, type: 3}

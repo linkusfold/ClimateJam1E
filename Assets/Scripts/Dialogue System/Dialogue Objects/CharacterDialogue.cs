@@ -20,12 +20,6 @@ public class CharacterDialogue : ScriptableObject
         return passages[passageIndex].responses.Length;
     }
 
-    public int GetNextPassageIndex(int passageIndex)
-    {
-        // get next passage from default passage
-        return passages[passageIndex].nextPassageIndex;
-    }
-
     public Passage GetPassage(int passageIndex)
     {
         return passages[passageIndex];
@@ -63,15 +57,10 @@ public class Passage
 {
     [SerializeField]
     public String text;
-
-    [Tooltip("Only used if no responses are set.")]
-    [SerializeField]
-    public int nextPassageIndex;
     [SerializeField]
     public Response[] responses;
     [SerializeField]
     public Sprite sprite;
-    public CharacterDialogue nextConversation;
 }
 
 [Serializable]

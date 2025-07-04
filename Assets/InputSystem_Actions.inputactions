@@ -996,15 +996,6 @@
             "id": "670c1a5e-f5dd-4428-9573-76eb3a86c0a0",
             "actions": [
                 {
-                    "name": "Progress Dialogue",
-                    "type": "Button",
-                    "id": "88ad0c54-f778-4028-8419-3eaa884c68a0",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
                     "name": "Response Selection",
                     "type": "Value",
                     "id": "0c6e3757-ff9a-4378-bd61-971c368cb818",
@@ -1015,17 +1006,6 @@
                 }
             ],
             "bindings": [
-                {
-                    "name": "",
-                    "id": "282753fb-495a-4850-96f5-99c8361f8231",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Progress Dialogue",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
                 {
                     "name": "",
                     "id": "3b82626c-d1e0-42e5-a61d-e4b4e756b54b",
