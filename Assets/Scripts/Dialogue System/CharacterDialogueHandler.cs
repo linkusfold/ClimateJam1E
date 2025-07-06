@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
@@ -39,13 +40,13 @@ public class CharacterDialogueHandler : MonoBehaviour
         textAudioSource = GetComponent<AudioSource>();
         responseInput = responseActionReference;
         textAudioSource.clip = textSound;
+        responseButtonInstances = new GameObject[maxResponseCount];
+        SetupArtHolder();
 
     }
     void Start()
     {   
-        SetupArtHolder();
-        Debug.Log("Made it!");
-        responseButtonInstances = new GameObject[maxResponseCount];
+        //Debug.Log("Made it!");
     }
 
     public void StartDialogue()
@@ -182,7 +183,7 @@ public class CharacterDialogueHandler : MonoBehaviour
         LoadPassage(0);
     }
 
-        public void LoadPassage(int targetPassageIndex)
+    public void LoadPassage(int targetPassageIndex)
     {
         currentPassageIndex = targetPassageIndex;
 
@@ -233,6 +234,7 @@ public class CharacterDialogueHandler : MonoBehaviour
     GameObject CreateResponse(RectTransform previousRectTransform, int responseIndex)
     {
         GameObject response = Instantiate(responseButtonPrefab, previousRectTransform.transform);
+        //Debug.Log(response.GetComponentInChildren<TMP_Text>().text + "response stuffs");
         RectTransform responseRect = response.GetComponent<RectTransform>();
 
         Vector2 placePos = Vector2.zero;
@@ -243,7 +245,11 @@ public class CharacterDialogueHandler : MonoBehaviour
         response.GetComponentInChildren<TMP_Text>().text = (responseIndex + 1) + ". " + currentDialogue.GetResponseText(currentPassageIndex, responseIndex);
 
         response.GetComponent<Button>().onClick.AddListener(() => HandleResponse(currentPassageIndex, responseIndex));
-
+        Debug.Log("r text " + response.GetComponentInChildren<TMP_Text>().text);
+        if (responseButtonInstances == null)
+        {
+            Debug.LogError("Response array is null!");
+        }
         responseButtonInstances[responseIndex] = response;
         return response;
     }
@@ -263,6 +269,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     
     private void LoadArt()
     {
+        currentDialogue.getPassageArt(currentPassageIndex);
+        Debug.Log(characterArtHolder.name);
         characterArtHolder.sprite = currentDialogue.getPassageArt(currentPassageIndex);
     }
 
