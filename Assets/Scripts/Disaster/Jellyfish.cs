@@ -1,23 +1,20 @@
 using UnityEngine;
 
-namespace DefaultNamespace
+public class Jellyfish : Enemy
+// Jellyfish minion; has ranged tentacle attack
 {
-    public class Jellyfish : Enemy
-    // Jellyfish minion; has ranged tentacle attack
+    protected override void Start()
     {
-        protected override void Start()
-        {
-            speed = 1.2f;
-            health = 80;
-            damage = 10;
-            base.Start();
-        }
-
-        protected override void Attack()
-        {
-            Debug.Log("Jellyfish attacks with tentacle!");
-            // Custom logic here for the jellyfish ranged attack
-        }
-
+        speed = 1.2f;
+        health = 80;
+        damage = 10;
+        base.Start();
     }
+
+    protected override void Attack()
+    {
+        Debug.Log("Jellyfish attacks with tentacle!");
+        // Custom logic here for the jellyfish ranged attack
+    }
+
 }

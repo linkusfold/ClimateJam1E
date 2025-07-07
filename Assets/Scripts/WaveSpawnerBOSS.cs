@@ -1,4 +1,3 @@
-using DefaultNamespace;
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
