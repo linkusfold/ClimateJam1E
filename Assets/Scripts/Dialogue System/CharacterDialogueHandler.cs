@@ -44,10 +44,22 @@ public class CharacterDialogueHandler : MonoBehaviour
         SetupArtHolder();
 
     }
-    void Start()
-    {   
-        //Debug.Log("Made it!");
+    void Update()
+    {
+
+        // Handle Responses
+        int responseIndex = getResponseNumberIndex();
+
+        if (responseIndex >= 0)
+        {
+            Debug.Log("Loading!");
+            HandleResponse(currentPassageIndex, responseIndex);
+        }      
+
     }
+
+
+    #region Enable/Disable
 
     public void StartDialogue()
     {
@@ -62,42 +74,9 @@ public class CharacterDialogueHandler : MonoBehaviour
         textBox.gameObject.SetActive(false);
 
     }
-
-    private void InstaniateAudioSource()
-    {
-        textAudioSource = new AudioSource();
-    }
-
-    IEnumerator LoadText()
-    {
-        String currentText = currentDialogue.getCurrentText(currentPassageIndex);
-        textBox.text = "";
-        foreach (char c in currentText.ToCharArray())
-        {
-            textBox.text += c;
-            textAudioSource.pitch = UnityEngine.Random.Range(1 - ptichVariation, 1 + ptichVariation);
-            textAudioSource.Play();
-            yield return new WaitForSeconds(textSpeed);
-
-        }
-        yield break;
-    }
     
-    void Update()
-    {
+    #endregion
 
-        // Handle Responses
-        int responseIndex = getResponseNumberIndex();
-
-        if (responseIndex >= 0)
-        {
-            Debug.Log("Loading!");
-            HandleResponse(currentPassageIndex, responseIndex);
-        }
-
-        
-
-    }
 
     public int getResponseNumberIndex()
     {
@@ -115,14 +94,6 @@ public class CharacterDialogueHandler : MonoBehaviour
         }
 
         return -1;
-    }
-
-    private void SkipTextLoading()
-    {
-        Debug.Log("Skipping text loading!");
-        StopCoroutine(loopRoot);
-        textBox.text = currentDialogue.getCurrentText(currentPassageIndex);
-        return;
     }
     
     #region Response Handling
@@ -172,7 +143,7 @@ public class CharacterDialogueHandler : MonoBehaviour
     #endregion
 
 
-    #region ScriptableObject Handling
+    #region Dialogue Loading
 
     private void LoadNewConversation(CharacterDialogue conversation)
     {
@@ -196,10 +167,50 @@ public class CharacterDialogueHandler : MonoBehaviour
         loopRoot = StartCoroutine(LoadText());
     }
 
+    IEnumerator LoadText()
+    {
+        String currentText = currentDialogue.getCurrentText(currentPassageIndex);
+        textBox.text = "";
+        foreach (char c in currentText.ToCharArray())
+        {
+            textBox.text += c;
+            textAudioSource.pitch = UnityEngine.Random.Range(1 - ptichVariation, 1 + ptichVariation);
+            textAudioSource.Play();
+            yield return new WaitForSeconds(textSpeed);
+
+        }
+        yield break;
+    }
+    
+    private void SkipTextLoading()
+    {
+        Debug.Log("Skipping text loading!");
+        StopCoroutine(loopRoot);
+        textBox.text = currentDialogue.getCurrentText(currentPassageIndex);
+        return;
+    }
+
+    private void LoadArt()
+    {
+        Sprite characterSprite = currentDialogue.getPassageArt(currentPassageIndex);
+        characterArtHolder.sprite = characterSprite;
+        RectTransform imageRectTransform = characterArtHolder.rectTransform;
+        characterArtHolder.rectTransform.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height);
+        AnchorTopLeft(textBox.rectTransform, characterArtHolder.rectTransform);
+    }
+
+    private void AnchorTopLeft(RectTransform parentRect, RectTransform childRect)
+    {
+        Vector2 placePos = Vector2.zero;
+        placePos.x -= (childRect.rect.width - parentRect.rect.width) / 2;
+        placePos.y += (childRect.rect.height + parentRect.rect.height) / 2;
+        childRect.anchoredPosition = placePos;
+    }
+
     #endregion
 
 
-    #region UI Elmements
+    #region UI Instaniation/Destruction
 
     void CreateResponses()
     {
@@ -260,18 +271,10 @@ public class CharacterDialogueHandler : MonoBehaviour
 
         GameObject art = characterArtHolder.gameObject;
         RectTransform artRect = art.GetComponent<RectTransform>();
-        Vector2 placePos = Vector2.zero;
-        placePos.x -= (artRect.rect.width - textBox.rectTransform.rect.width) / 2;
-        placePos.y += (artRect.rect.height + textBox.rectTransform.rect.height) / 2;
-        artRect.anchoredPosition = placePos;
+
+
+        AnchorTopLeft(textBox.rectTransform, artRect);
         characterArtHolder = art.GetComponent<Image>();
-    }
-    
-    private void LoadArt()
-    {
-        currentDialogue.getPassageArt(currentPassageIndex);
-        Debug.Log(characterArtHolder.name);
-        characterArtHolder.sprite = currentDialogue.getPassageArt(currentPassageIndex);
     }
 
     #endregion

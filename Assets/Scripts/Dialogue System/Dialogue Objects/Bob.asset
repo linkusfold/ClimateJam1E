@@ -21,7 +21,7 @@ MonoBehaviour:
     - text: Where are you from?
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
-    sprite: {fileID: 7482667652216324306, guid: a1b946d4375d3294a8a1081fc7efb8b7, type: 3}
+    sprite: {fileID: -1467474820645495550, guid: 0e352754a6ab84b44b8c8619f6ea1f5a, type: 3}
   - text: My name is Bob!
     responses:
     - text: Ok!
