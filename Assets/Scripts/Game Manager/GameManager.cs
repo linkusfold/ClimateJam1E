@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 
     public int playerHealth;
     [Header("Script References")]
+    public CharacterHouse currentDialogue;
     public WaveSpawner waveSpawner;
     public PauseMenu pauseMenu;
 

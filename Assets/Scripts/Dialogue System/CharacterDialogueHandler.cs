@@ -64,13 +64,14 @@ public class CharacterDialogueHandler : MonoBehaviour
     public void StartDialogue()
     {
         textBox.gameObject.SetActive(true);
-        Debug.Log("Starting Dialogue!");
+        Debug.Log("Starting Dialogue! " + gameObject.name);
         LoadPassage(0);
 
     }
 
     public void StopDialogue()
     {
+        Debug.Log("Stopping Dialogue! " + gameObject.name);
         textBox.gameObject.SetActive(false);
 
     }
@@ -100,11 +101,11 @@ public class CharacterDialogueHandler : MonoBehaviour
     
     private void HandleResponse(int passageIndex, int responseIndex)
     {
-        Debug.Log("Handling response!");
+        // Debug.Log("Handling response!");
 
         if (!textBox.text.Equals(currentDialogue.getCurrentText(currentPassageIndex)))
         {
-            Debug.Log("Skipping text load!");
+            // Debug.Log("Skipping text load!");
             SkipTextLoading();
             return;
         }
@@ -124,14 +125,14 @@ public class CharacterDialogueHandler : MonoBehaviour
         }
         
         
-        Debug.Log("Response not null!");
+        // Debug.Log("Response not null!");
         if (response.nextConversation != null)
         {
             Debug.Log("Loading new convo!");
             LoadNewConversation(response.nextConversation);
             return;
         }
-        Debug.Log("Not loading new convo!");
+        // Debug.Log("Not loading new convo!");
 
         LoadPassage(response.nextPassageIndex);
 
@@ -147,8 +148,11 @@ public class CharacterDialogueHandler : MonoBehaviour
 
     private void LoadNewConversation(CharacterDialogue conversation)
     {
-        Debug.Log("Loading passage!");
-        Debug.Log("first new passage: " + conversation.GetPassage(0).text);
+        //Debug.Log("Loading passage!");
+        //Debug.Log("first new passage: " + conversation.GetPassage(0).text);
+
+        SkipTextLoading();
+
         currentDialogue = conversation;
 
         LoadPassage(0);
@@ -182,9 +186,9 @@ public class CharacterDialogueHandler : MonoBehaviour
         yield break;
     }
     
-    private void SkipTextLoading()
+    public void SkipTextLoading()
     {
-        Debug.Log("Skipping text loading!");
+        // Debug.Log("Skipping text loading!");
         StopCoroutine(loopRoot);
         textBox.text = currentDialogue.getCurrentText(currentPassageIndex);
         return;
@@ -256,7 +260,7 @@ public class CharacterDialogueHandler : MonoBehaviour
         response.GetComponentInChildren<TMP_Text>().text = (responseIndex + 1) + ". " + currentDialogue.GetResponseText(currentPassageIndex, responseIndex);
 
         response.GetComponent<Button>().onClick.AddListener(() => HandleResponse(currentPassageIndex, responseIndex));
-        Debug.Log("r text " + response.GetComponentInChildren<TMP_Text>().text);
+        // Debug.Log("r text " + response.GetComponentInChildren<TMP_Text>().text);
         if (responseButtonInstances == null)
         {
             Debug.LogError("Response array is null!");
