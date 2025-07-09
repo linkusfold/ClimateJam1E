@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 /*
  * -----------------------------------------------
@@ -12,7 +14,7 @@ using UnityEngine;
  * -----------------------------------------------
  */
 
-public class Tower : MonoBehaviour
+public class Tower : MonoBehaviour, IPointerClickHandler
 {
     public int level = 1;                         // Current level of the tower
     public bool isUnlocked = false;              // Indicates if the tower is active and allowed to shoot
@@ -75,5 +77,11 @@ public class Tower : MonoBehaviour
         level++;                // Increase tower level
         isUnlocked = true;      // Ensure the tower is now active
         Debug.Log($"Tower upgraded to level {level}");
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        Debug.Log($"Tower upgraded to level {level}");
+        RadialMenuManager.Instance.ShowMenu(this);
     }
 }
