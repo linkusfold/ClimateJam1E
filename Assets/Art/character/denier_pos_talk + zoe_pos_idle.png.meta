@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d4624b0010fede14b906ca075013c81a
+guid: de62f9e905b8c804ca30373ada8d41f8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6603256469396073296
-    second: denier_pos_talk_0
+      213: -1725813036489986134
+    second: denier_pos_talk + zoe_pos_idle_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: denier_pos_talk_0
+      name: denier_pos_talk + zoe_pos_idle_0
       rect:
         serializedVersion: 2
         x: 74
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 05b272bf5ca73ab50800000000000000
-      internalID: 6603256469396073296
+      spriteID: aafa643ef2eac08e0800000000000000
+      internalID: -1725813036489986134
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      denier_pos_talk_0: 6603256469396073296
+      denier_pos_talk + zoe_pos_idle_0: -1725813036489986134
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
