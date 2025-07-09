@@ -8,80 +8,91 @@ using UnityEngine.EventSystems;
  * -----------------------------------------------
  * InventoryUIController.cs
  * Author: Lauren Thoman
- * Date: June 29, 2025 (Updated July 2, 2025)
+ * Date: June 29, 2025 (Updated July 8, 2025)
  *
  * Manages the inventory UI panel behavior, including
- * toggling via keyboard ('B') or UI button, pausing the game,
+ * showing/hiding via dedicated open and close buttons,
  * displaying items in a grid, and showing hover tooltips.
- * Ready for NPC-driven item additions.
+ * Ready for NPC-driven item additions. Max 8 items allowed.
  * -----------------------------------------------
  */
 public class InventoryUIController : MonoBehaviour
 {
     [Header("UI References")]
-    public GameObject inventoryPanel;      // The panel to show/hide
-    public Button inventoryButton;         // Always-visible toggle button
-    public Transform itemGrid;             // Grid container (with GridLayoutGroup)
-    public GameObject slotPrefab;          // Prefab for each item slot
+    public GameObject inventoryPanel;        // The panel to show/hide
+    public Button openInventoryButton;       // Button that opens the inventory
+    public Button closeInventoryButton;      // Button that closes the inventory
+    public Transform itemGrid;               // Grid container (with GridLayoutGroup)
+    public GameObject slotPrefab;            // Prefab for each item slot
 
     [Header("Tooltip")]
-    public GameObject tooltipPanel;        // Tooltip background panel
-    public TextMeshProUGUI tooltipText;    // Tooltip text field
+    public GameObject tooltipPanel;          // Tooltip background panel
+    public TextMeshProUGUI tooltipText;      // Tooltip text field
 
     [Header("Tooltip Offset")]
     public Vector3 tooltipOffset = new Vector3(10f, -10f, 0f); // Customizable in Inspector
 
     // In-memory list of items (title + description)
     private List<InventoryItem> items = new List<InventoryItem>();
+    private const int maxItems = 8;
 
     void Start()
     {
         if (inventoryPanel != null)
             inventoryPanel.SetActive(false);
 
-        if (inventoryButton != null)
+        if (openInventoryButton != null)
         {
-            inventoryButton.onClick.RemoveAllListeners();
-            inventoryButton.onClick.AddListener(ToggleInventory);
+            openInventoryButton.onClick.RemoveAllListeners();
+            openInventoryButton.onClick.AddListener(OpenInventory);
+        }
+
+        if (closeInventoryButton != null)
+        {
+            closeInventoryButton.onClick.RemoveAllListeners();
+            closeInventoryButton.onClick.AddListener(CloseInventory);
         }
 
         items.Add(new InventoryItem("Gift from Mom", "A thoughtful gift from your mom."));
         RefreshUI();
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.B))
-            ToggleInventory();
-
-        // TEMP: Press T to add test item
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            AddItem("Shiny Shell", "A smooth, glimmering shell found near the tide pool.");
-        }
-    }
-
-    public void ToggleInventory()
+    // Opens inventory panel and pauses game
+    public void OpenInventory()
     {
         if (inventoryPanel == null) return;
 
-        bool open = !inventoryPanel.activeSelf;
-        inventoryPanel.SetActive(open);
-        Time.timeScale = open ? 0f : 1f;
-
-        if (open)
-            RefreshUI();
-        else
-            HideTooltip();
+        inventoryPanel.SetActive(true);
+        Time.timeScale = 0f;
+        RefreshUI();
     }
 
+    // Closes inventory panel and resumes game
+    public void CloseInventory()
+    {
+        if (inventoryPanel == null) return;
+
+        inventoryPanel.SetActive(false);
+        Time.timeScale = 1f;
+        HideTooltip();
+    }
+
+    // Adds new item to inventory, up to 8 max
     public void AddItem(string title, string description)
     {
+        if (items.Count >= maxItems)
+        {
+            Debug.LogWarning("Inventory is full. Maximum of 8 items allowed.");
+            return;
+        }
+
         items.Add(new InventoryItem(title, description));
+
         if (inventoryPanel.activeSelf)
             RefreshUI();
     }
 
+    // Updates the visible slots in the inventory UI
     private void RefreshUI()
     {
         foreach (Transform child in itemGrid)
@@ -121,13 +132,12 @@ public class InventoryUIController : MonoBehaviour
         tooltipPanel.SetActive(true);
         tooltipText.text = item.description;
 
-        // Wait one frame before positioning so we don’t flicker
         StartCoroutine(DelayedTooltipPosition());
     }
 
     private System.Collections.IEnumerator DelayedTooltipPosition()
     {
-        yield return null; // Wait 1 frame
+        yield return null;
         tooltipPanel.transform.position = Input.mousePosition + tooltipOffset;
     }
 
