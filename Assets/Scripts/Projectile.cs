@@ -45,6 +45,7 @@ public class Projectile : MonoBehaviour
     // Triggered when the projectile hits something with a collider
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("OnTriggerEnter2D");
         // Only react if the object hit is tagged "Enemy"
         if (other.CompareTag("Enemy"))
         {

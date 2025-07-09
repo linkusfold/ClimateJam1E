@@ -30,7 +30,7 @@ namespace DefaultNamespace
 
         protected override void Start()
         {
-            // Hurricane spawns at the left side
+            // Hurricane spawns at the left side.
             transform.position = new Vector3(leftX, transform.position.y, transform.position.z);
 
             healthBar.MaxHealth = Health;
