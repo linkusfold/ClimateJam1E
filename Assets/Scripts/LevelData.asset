@@ -18,4 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f19286da4fd7e8b49a97d23b86bd1970, type: 2}
   - {fileID: 11400000, guid: 084a9769074b32d499c82454db5af736, type: 2}
   - {fileID: 11400000, guid: ddacac5755f013144b5d9b32837f7a9e, type: 2}
-  currentWaveIndex: 1
+  boss: {fileID: 1191293015885063853, guid: cc6bf41098782a649ad09c4dfef91825, type: 3}
+  currentWaveIndex: 3

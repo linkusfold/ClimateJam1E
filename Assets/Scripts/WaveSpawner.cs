@@ -13,6 +13,8 @@ public class WaveSpawner : MonoBehaviour
 
     [SerializeField] public Transform spawnPoint;
 
+    public GameObject winScreen;
+
     public int EnemiesSafe = 0;
 
     private void Awake()

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6112041925237027288}
   - component: {fileID: 8191992322902281275}
   - component: {fileID: 3221856143918135539}
+  - component: {fileID: -4201799793484767526}
   m_Layer: 0
   m_Name: Crab
   m_TagString: Enemy
@@ -100,7 +101,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dcf316ea9dbbac4db7fb417f879b4ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBarPrefab: {fileID: 7571901631226707175, guid: ab7e612ac3ff41141972c0e8a1356607, type: 3}
   path: {fileID: 0}
   currentNodeId: 1
   pathing: 1
+  levelData: {fileID: 0}
+--- !u!58 &-4201799793484767526
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4545828962518702426}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_Radius: 0.5

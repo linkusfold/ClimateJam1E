@@ -1,6 +1,5 @@
 using System;
 using DefaultNamespace;
-using UnityEditor.Overlays;
 using UnityEngine;
 using System.Collections;
 
@@ -10,6 +9,7 @@ public class LevelData : ScriptableObject
     public float countdown = 5f;
     public int maxEnemiesSafe = 4;
     public WaveData[] waves;
+    public Boss boss;
 
     public int currentWaveIndex = 0;
 
@@ -30,6 +30,7 @@ public class LevelData : ScriptableObject
 
         if (currentWaveIndex >= waves.Length)
         {
+            WaveSpawner.instance.winScreen.SetActive(true);
             Debug.Log("All waves completed.");
             return;
         }
