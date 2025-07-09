@@ -27,11 +27,11 @@ public class LevelData : ScriptableObject
             Application.Quit();
             return;
         }
-
+        
         if (currentWaveIndex >= waves.Length)
         {
-            WaveSpawner.instance.winScreen.SetActive(true);
             Debug.Log("All waves completed.");
+            WaveSpawner.instance.winScreen.SetActive(true);
             return;
         }
 
@@ -59,6 +59,7 @@ public class LevelData : ScriptableObject
                 readyToCountDown = true;
                 WaveSpawner.instance.levelCountdown = waves[currentWaveIndex].timeToNextWave;
             }
+            
         }
     }
 
