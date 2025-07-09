@@ -1,3 +1,5 @@
+using System;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -22,6 +24,13 @@ public class Tower : MonoBehaviour, IPointerClickHandler
     public float attackRange = 5f;               // Maximum range within which enemies can be targeted
     public float fireCooldown = 1.5f;            // Time delay (in seconds) between consecutive shots
     private float cooldownTimer = 0f;            // Tracks cooldown progress internally
+    private TMP_Text levelText;
+
+    private void Awake()
+    {
+        levelText = transform.GetComponentInChildren<TMP_Text>();
+        levelText.text = level.ToString();
+    }
 
     void Update()
     {
@@ -76,6 +85,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler
     {
         level++;                // Increase tower level
         isUnlocked = true;      // Ensure the tower is now active
+        levelText.text = level.ToString();
         Debug.Log($"Tower upgraded to level {level}");
     }
 
