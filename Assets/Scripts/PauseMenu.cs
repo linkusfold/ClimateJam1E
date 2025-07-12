@@ -1,20 +1,21 @@
-using UnityEngine;
-using UnityEngine.UI;
-
 /*
  * PauseMenu.cs
  * Author: Lauren Thoman
- * Date: June 22, 2025 (Updated July 8, 2025)
+ * Date: June 22, 2025 (Updated July 11, 2025)
  *
  * Handles pausing and resuming the game using the Escape key and Resume button.
- * Also provides access to Settings and Quit from the pause menu.
+ * Also provides access to Settings, Info, and Quit from the pause menu.
  */
+
+using UnityEngine;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
     [Header("Panels")]
     public GameObject pausePanel;
     public GameObject settingsPanel;
+    public GameObject infoPanel;    // <-- New Info panel reference
 
     private bool isPaused = false;
 
@@ -39,7 +40,8 @@ public class PauseMenu : MonoBehaviour
     public void ResumeGame()
     {
         pausePanel.SetActive(false);
-        settingsPanel.SetActive(false); // Make sure settings closes too
+        settingsPanel.SetActive(false);
+        infoPanel.SetActive(false);  // <-- Make sure Info closes too
         Time.timeScale = 1f;
         isPaused = false;
     }
@@ -55,6 +57,20 @@ public class PauseMenu : MonoBehaviour
     public void CloseSettings()
     {
         settingsPanel.SetActive(false);
+        pausePanel.SetActive(true);
+    }
+
+    // Called by Pause Menu Info button
+    public void OpenInfo()
+    {
+        infoPanel.SetActive(true);
+        pausePanel.SetActive(false);
+    }
+
+    // Called by Info panel Close button
+    public void CloseInfo()
+    {
+        infoPanel.SetActive(false);
         pausePanel.SetActive(true);
     }
 
