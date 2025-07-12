@@ -28,7 +28,7 @@ public class LevelData : ScriptableObject
             return;
         }
         
-        if (currentWaveIndex >= waves.Length)
+        if (currentWaveIndex >= waves.Length && WaveSpawner.instance.EnemiesAlive == 0)
         {
             Debug.Log("All waves completed.");
             WaveSpawner.instance.winScreen.SetActive(true);

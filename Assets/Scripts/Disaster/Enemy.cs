@@ -69,6 +69,7 @@ namespace DefaultNamespace
         {
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
             WaveSpawner.instance.EnemiesSafe++;
+            WaveSpawner.instance.EnemiesAlive--;
             levelData.OnEnemyRemoved();
             Destroy(gameObject);
         }
@@ -90,14 +91,21 @@ namespace DefaultNamespace
                 Die();
             }
         }
-        
-        public void Immobilize(float duration) {}
-        
-        public void ExtinguishFire() {}
+
+        public void Immobilize(float duration)
+        {
+            
+        }
+
+        public void ExtinguishFire()
+        {
+            
+        }
 
         protected void Die()
         {
             Debug.Log($"{gameObject.name} died.");
+            WaveSpawner.instance.EnemiesAlive--;
             levelData.OnEnemyRemoved(); 
             Destroy(gameObject);
         }

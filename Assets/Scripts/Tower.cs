@@ -3,6 +3,7 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 /*
  * -----------------------------------------------
@@ -24,6 +25,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler
     public float attackRange = 5f;               // Maximum range within which enemies can be targeted
     public float fireCooldown = 1.5f;            // Time delay (in seconds) between consecutive shots
     private float cooldownTimer = 0f;            // Tracks cooldown progress internally
+    private Button btn;
     private TMP_Text levelText;
 
     private void Awake()
@@ -39,6 +41,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler
 
         // Decrease the cooldown timer over time
         cooldownTimer -= Time.deltaTime;
+        if(btn) btn.image.fillAmount = (fireCooldown-cooldownTimer) / fireCooldown;
 
         // If ready to fire again
         if (cooldownTimer <= 0f)
@@ -78,6 +81,12 @@ public class Tower : MonoBehaviour, IPointerClickHandler
     {
         GameObject proj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         proj.GetComponent<Projectile>().SetTarget(enemy);  // Assign the enemy as the projectile’s target
+    }
+
+    public virtual void OnClick(Button btn)
+    {
+        this.btn = btn;
+        Debug.Log("Tower button clicked");
     }
 
     

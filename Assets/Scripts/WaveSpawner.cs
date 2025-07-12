@@ -7,7 +7,8 @@ public class WaveSpawner : MonoBehaviour
 {
     public static WaveSpawner instance;
 
-    public LevelData levelData;
+    public bool initialized = false;
+    [NonSerialized] public LevelData levelData;
     [NonSerialized] public float levelCountdown;
     private WaveData[] waveDatas;
 
@@ -16,14 +17,16 @@ public class WaveSpawner : MonoBehaviour
     public GameObject winScreen;
 
     public int EnemiesSafe = 0;
+    public int EnemiesAlive = 0;
 
     private void Awake()
     {
         instance = this;
     }
 
-    private void Start()
+    public void Initialize(LevelData levelData)
     {
+        this.levelData = levelData;
         levelCountdown = levelData.countdown;
         levelData.currentWaveIndex = 0;
         levelData.readyToCountDown = true;
@@ -34,12 +37,15 @@ public class WaveSpawner : MonoBehaviour
         {
             wave.ResetEnemiesLeft();
         }
+        initialized = true;
     }
 
     private bool waveSpawning = false;
 
     private void Update()
     {
+        if (!initialized) return;
+        
         levelData.UpdateLevel();
 
         if (levelData.spawnNextWave && !waveSpawning)
@@ -94,6 +100,8 @@ public class WaveSpawner : MonoBehaviour
                 Enemy enemy = Instantiate(enemyPrefab, spawnPoint.transform);
                 enemy.transform.SetParent(spawnPoint.transform);
             }
+
+            EnemiesAlive++;
             yield return new WaitForSeconds(wave.timeToNextEnemy);
         }
 
