@@ -29,7 +29,7 @@ public class Projectile : MonoBehaviour
     void Update()
     {
         // If the target no longer exists, destroy the projectile
-        if (target is null || !target.transform)
+        if (!target || !target.transform)
         {
             Destroy(gameObject);
             return;

@@ -1,6 +1,6 @@
 using UnityEditor;
 using UnityEngine;
-
+/*
 [CustomEditor(typeof(GameManager))]
 public class GMInspector : Editor
 {
@@ -26,3 +26,4 @@ public class GMInspector : Editor
         }
     }
 }
+*/
