@@ -4,7 +4,7 @@ namespace DefaultNamespace
 {
     public class Crab : Enemy
     // Oilgae minion; has melee claw attack
-    {
+    {   
         protected override void Start()
         {
             speed = 1.5f;

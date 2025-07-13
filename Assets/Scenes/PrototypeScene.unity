@@ -1448,7 +1448,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 04ea8af1b3e69e749bcbce5ac0e4f8f7, type: 3}
   m_Resource: {fileID: 8300000, guid: 04ea8af1b3e69e749bcbce5ac0e4f8f7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1634,6 +1634,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1288959332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -55.302}
+--- !u!1 &1081663366 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6977198539060148505, guid: 55531a7dcf85a6d40a4769c894b2209d, type: 3}
+  m_PrefabInstance: {fileID: 1788409138}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1126701398
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1714,6 +1719,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1389342609700705725, guid: a8f59791c4f569948a6d90b6c4ea541e, type: 3}
+      propertyPath: pausePanel
+      value: 
+      objectReference: {fileID: 1081663366}
     - target: {fileID: 3648948310819900310, guid: a8f59791c4f569948a6d90b6c4ea541e, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
