@@ -803,7 +803,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &355413854 stripped
@@ -901,7 +901,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &432019559
@@ -1826,7 +1826,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &634179118
@@ -2066,7 +2066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &721366682
 Transform:
   m_ObjectHideFlags: 0
@@ -2339,7 +2339,7 @@ GameObject:
   - component: {fileID: 1033833407}
   - component: {fileID: 1033833406}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2362,12 +2362,12 @@ MonoBehaviour:
   levelData: {fileID: 11400000, guid: 6fe36e706c2e20f4c988a226fa47ea28, type: 2}
   placementMode: 0
   selectedTower: {fileID: 0}
-  cellPrefab: {fileID: 3308631160926509626, guid: 71b44758e10d04a9b86307b7515a734c, type: 3}
-  rows: 5
-  columns: 9
-  cellSize: 1
-  xOffset: 0
-  yOffset: 0
+  cellPrefab: {fileID: 3308631160926509626, guid: 0972921be3075ab4ea7182bd056f1e7d, type: 3}
+  rows: 7
+  columns: 7
+  cellSize: 1.25
+  xOffset: 3.25
+  yOffset: 3
 --- !u!4 &1033833407
 Transform:
   m_ObjectHideFlags: 0
