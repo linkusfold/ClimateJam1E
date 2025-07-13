@@ -48,10 +48,37 @@ namespace Game_Manager
         {
             if (placementMode == PlacementMode.None) return;
         
-            PlaceTower(selectedTower);
+            PlaceTower();
+        }
+        
+        void OnDrawGizmos()
+        {
+            Gizmos.color = Color.green;
+
+            for (int x = 0; x < columns; x++)
+            {
+                for (int y = 0; y < rows; y++)
+                {
+                    Vector3 cellCenter = GridToWorld(new Vector2Int(x, y)) + new Vector3(cellSize / 2f, cellSize / 2f, 0f);
+                    Gizmos.DrawWireCube(cellCenter, new Vector3(cellSize, cellSize, 0f));
+                }
+            }
         }
 
-        public void PlaceTower(Tower tower)
+
+        public void SelectTower(Tower tower)
+        {
+            selectedTower = tower;
+            placementMode = PlacementMode.Placement;
+        }
+
+        public void RemoveTower(Tower tower)
+        {
+            
+        }
+        
+
+        public void PlaceTower()
         {
             if (Input.GetMouseButtonDown(0))
             {
@@ -60,11 +87,16 @@ namespace Game_Manager
 
                 Vector2Int gridPos = WorldToGrid(worldPos);
                 GridCell cell = GetCell(gridPos);
+                Vector3 snapPos = GridToWorld(gridPos) + new Vector3(cellSize / 2f, cellSize / 2f, 0f);
+
+
+                Debug.Log($"Mouse World Pos: {worldPos}, Grid: {gridPos}, Snapped: {snapPos}");
 
                 if (cell != null && !cell.isOccupied)
                 {
-                    Instantiate(tower, GridToWorld(gridPos), Quaternion.identity);
+                    Instantiate(selectedTower, snapPos, Quaternion.identity);
                     cell.Occupy();
+                    placementMode = PlacementMode.None;
                 }
             }
         }
@@ -76,19 +108,20 @@ namespace Game_Manager
         public int columns = 9;
         public float cellSize = 1f;
     
-        public float xOffset = 0f;
-        public float yOffset = 0f;
+        public Vector2 gridOrigin = Vector2.zero;
 
         private GridCell[,] grid;
         void GenerateGrid()
         {
+            if (cellPrefab == null) return;
+            
             grid = new GridCell[columns, rows];
 
             for (int x = 0; x < columns; x++)
             {
                 for (int y = 0; y < rows; y++)
                 {
-                    Vector3 spawnPosition = new Vector3((x * cellSize)-xOffset, (y * cellSize)-yOffset, 0f);
+                    Vector3 spawnPosition = new Vector3((x * cellSize), (y * cellSize), 0f) + (Vector3)gridOrigin;
                     GameObject cell = Instantiate(cellPrefab, spawnPosition, Quaternion.identity, transform);
                     GridCell gridCell = cell.GetComponent<GridCell>();
                     gridCell.gridPosition = new Vector2Int(x, y);
@@ -99,14 +132,20 @@ namespace Game_Manager
 
         public Vector2Int WorldToGrid(Vector3 worldPos)
         {
-            int x = Mathf.FloorToInt(worldPos.x / cellSize);
-            int y = Mathf.FloorToInt(worldPos.y / cellSize);
+            Vector3 localPos = worldPos - (Vector3)gridOrigin;
+
+            float gridX = localPos.x / cellSize;
+            float gridY = localPos.y / cellSize;
+
+            int x = Mathf.Clamp(Mathf.FloorToInt(gridX), 0, columns - 1);
+            int y = Mathf.Clamp(Mathf.FloorToInt(gridY), 0, rows - 1);
+
             return new Vector2Int(x, y);
         }
 
         public Vector3 GridToWorld(Vector2Int gridPos)
         {
-            return new Vector3(gridPos.x * cellSize, gridPos.y * cellSize, 0f);
+            return new Vector3(gridPos.x * cellSize, gridPos.y * cellSize, 0f) + (Vector3)gridOrigin;
         }
 
         public GridCell GetCell(Vector2Int pos)

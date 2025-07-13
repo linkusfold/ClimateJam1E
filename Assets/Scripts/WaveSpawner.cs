@@ -1,11 +1,14 @@
 using System;
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using DefaultNamespace;
 
 public class WaveSpawner : MonoBehaviour
 {
     public static WaveSpawner instance;
+    
+    public List<Path> paths = new List<Path>();
 
     public bool initialized = false;
     [NonSerialized] public LevelData levelData;

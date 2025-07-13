@@ -1,4 +1,5 @@
 using System;
+using DefaultNamespace;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -24,14 +25,23 @@ public class Tower : MonoBehaviour, IPointerClickHandler
     public GameObject projectilePrefab;          // Prefab to instantiate when the tower fires
     public float attackRange = 5f;               // Maximum range within which enemies can be targeted
     public float fireCooldown = 1.5f;            // Time delay (in seconds) between consecutive shots
-    private float cooldownTimer = 0f;            // Tracks cooldown progress internally
-    private Button btn;
-    private TMP_Text levelText;
+    protected float cooldownTimer = 0f;            // Tracks cooldown progress internally
+    protected Button btn;
+    protected TMP_Text levelText;
+    
+    public float health = 100f;
+    [NonSerialized] public float maxHealth;
+    protected TowerHealth healthBar;
+    
+    public enum DisasterType { Oilgae, Volcano, Hurricane, TheShip }
 
     private void Awake()
     {
         levelText = transform.GetComponentInChildren<TMP_Text>();
         levelText.text = level.ToString();
+        
+        maxHealth = health;
+        healthBar = transform.GetComponentInChildren<TowerHealth>();
     }
 
     void Update()

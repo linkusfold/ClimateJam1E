@@ -429,6 +429,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1509640003434293285, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
       propertyPath: level
       value: 0
@@ -572,13 +580,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1513963349}
-        m_TargetAssemblyTypeName: Tower, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1033833406}
+        m_TargetAssemblyTypeName: Game_Manager.GameManager, Assembly-CSharp
+        m_MethodName: SelectTower
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 153115284}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1513963349}
+          m_ObjectArgumentAssemblyTypeName: Tower, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -803,7 +811,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &355413854 stripped
@@ -901,7 +909,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &432019559
@@ -1116,13 +1124,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1303055055}
-        m_TargetAssemblyTypeName: Tower, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1033833406}
+        m_TargetAssemblyTypeName: Game_Manager.GameManager, Assembly-CSharp
+        m_MethodName: SelectTower
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 468847994}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1303055055}
+          m_ObjectArgumentAssemblyTypeName: Tower, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1249,13 +1257,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1747462971}
-        m_TargetAssemblyTypeName: Tower, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1033833406}
+        m_TargetAssemblyTypeName: Game_Manager.GameManager, Assembly-CSharp
+        m_MethodName: SelectTower
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 509215770}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1303055055}
+          m_ObjectArgumentAssemblyTypeName: Tower, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1511,6 +1519,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1509640003434293285, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
       propertyPath: level
       value: 0
@@ -1826,7 +1842,7 @@ SpriteRenderer:
   m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1001 &634179118
@@ -2317,17 +2333,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86f452dfb80b86642b3d485b30a75bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &930755646 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1509640003434293285, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
-  m_PrefabInstance: {fileID: 8263089879394342687}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: accda30ca68c2b54e8d61d5982ea3bb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1033833405
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,12 +2367,11 @@ MonoBehaviour:
   levelData: {fileID: 11400000, guid: 6fe36e706c2e20f4c988a226fa47ea28, type: 2}
   placementMode: 0
   selectedTower: {fileID: 0}
-  cellPrefab: {fileID: 3308631160926509626, guid: 0972921be3075ab4ea7182bd056f1e7d, type: 3}
+  cellPrefab: {fileID: 3308631160926509626, guid: 71b44758e10d04a9b86307b7515a734c, type: 3}
   rows: 7
   columns: 7
-  cellSize: 1.25
-  xOffset: 3.25
-  yOffset: 3
+  cellSize: 1
+  gridOrigin: {x: -4, y: -3}
 --- !u!4 &1033833407
 Transform:
   m_ObjectHideFlags: 0
@@ -2377,7 +2381,7 @@ Transform:
   m_GameObject: {fileID: 1033833405}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.87, y: -4.96, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2478,6 +2482,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1509640003434293285, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
       propertyPath: level
       value: 0
@@ -2603,6 +2615,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1509640003434293285, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
       propertyPath: level
       value: 0
@@ -3405,13 +3425,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 930755646}
-        m_TargetAssemblyTypeName: Tower, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1033833406}
+        m_TargetAssemblyTypeName: Game_Manager.GameManager, Assembly-CSharp
+        m_MethodName: SelectTower
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 1658639745}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1747462971}
+          m_ObjectArgumentAssemblyTypeName: Tower, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3817,13 +3837,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1827153600}
-        m_TargetAssemblyTypeName: Tower, Assembly-CSharp
-        m_MethodName: OnClick
+      - m_Target: {fileID: 1033833406}
+        m_TargetAssemblyTypeName: Game_Manager.GameManager, Assembly-CSharp
+        m_MethodName: SelectTower
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 2007855730}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_ObjectArgument: {fileID: 1827153600}
+          m_ObjectArgumentAssemblyTypeName: Tower, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4314,6 +4334,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 740204622954155233, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1509640003434293285, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
       propertyPath: level
       value: 0
