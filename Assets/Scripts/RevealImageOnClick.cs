@@ -4,8 +4,8 @@ using UnityEngine.UI;
 /*
  * -----------------------------------------------
  * RevealImageOnClick.cs
- * Author: [Lauren Thoman]
- * Date: [July 14, 2025]
+ * Author: Lauren Thoman
+ * Date: July 14, 2025
  *
  * Attach this to the same GameObject as your Button.
  * On click, it will toggle the visibility of another image.
