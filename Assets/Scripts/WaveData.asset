@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: WaveData
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 3221856143918135539, guid: a8cc96687146390498142a7da6094112, type: 3}
-  - {fileID: 3221856143918135539, guid: a8cc96687146390498142a7da6094112, type: 3}
-  path: {fileID: 7960849999485376242, guid: 0ef56a87e87964441a5717095360b07f, type: 3}
+  - {fileID: 3221856143918135539, guid: 1dd026ade863145f08c09eb48a3d30da, type: 3}
+  - {fileID: 3221856143918135539, guid: 1dd026ade863145f08c09eb48a3d30da, type: 3}
   timeToNextEnemy: 1
   timeToNextWave: 5
   enemiesLeft: 2
