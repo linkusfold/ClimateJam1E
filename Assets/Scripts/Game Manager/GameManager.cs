@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Game_Manager
@@ -11,16 +12,8 @@ namespace Game_Manager
         private WaveSpawner waveSpawner;
         public PauseMenu pauseMenu;
         public LevelData levelData;
-
-        public enum PlacementMode
-        {
-            None = 0,
-            Placement = 1,
-            Destruction = 2
-        }
-        public PlacementMode placementMode = PlacementMode.None;
-        public Tower selectedTower;
     
+        #region Unity Event Functions
         void Awake()
         {
             if (instance == null)
@@ -38,17 +31,24 @@ namespace Game_Manager
         void Start()
         {
             waveSpawner = WaveSpawner.instance;
-        
-        
+            
             waveSpawner.Initialize(levelData);
             GenerateGrid();
+            
         }
 
         public void Update()
         {
-            if (placementMode == PlacementMode.None) return;
-        
-            PlaceTower();
+            switch (placementMode)
+            {
+                case PlacementMode.None:
+                    return;
+                case PlacementMode.Placement:
+                    PlaceTower();
+                    break;
+                case PlacementMode.Destruction:
+                    break;
+            }
         }
         
         void OnDrawGizmos()
@@ -64,7 +64,14 @@ namespace Game_Manager
                 }
             }
         }
+        #endregion
+        
+        #region Tower Placement Functions
 
+        private enum PlacementMode {None, Placement, Destruction}
+        private PlacementMode placementMode = PlacementMode.None;
+        private Tower selectedTower;
+        [NonSerialized] public TowerButton btn;
 
         public void SelectTower(Tower tower)
         {
@@ -74,7 +81,16 @@ namespace Game_Manager
 
         public void RemoveTower(Tower tower)
         {
-            
+            Vector2Int gridPos = WorldToGrid(tower.transform.position);
+            GridCell cell = GetCell(gridPos);
+    
+            if (cell != null)
+            {
+                cell.Vacate();
+            }
+    
+            Destroy(tower.gameObject);
+
         }
         
 
@@ -94,12 +110,13 @@ namespace Game_Manager
 
                 if (cell != null && !cell.isOccupied)
                 {
-                    Instantiate(selectedTower, snapPos, Quaternion.identity);
+                    btn.tower = Instantiate(selectedTower, snapPos, Quaternion.identity);
                     cell.Occupy();
                     placementMode = PlacementMode.None;
                 }
             }
         }
+        #endregion
     
         #region Grid Logic
         [Header("Grid")]

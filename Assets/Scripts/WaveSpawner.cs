@@ -3,6 +3,7 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
+using Random = System.Random;
 
 public class WaveSpawner : MonoBehaviour
 {
@@ -94,7 +95,7 @@ public class WaveSpawner : MonoBehaviour
             if (enemyPrefab is Enemy pathingEnemyPrefab)
             {
                 Enemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
-                pathingEnemy.path = Path.instance;
+                pathingEnemy.path = paths[UnityEngine.Random.Range(0, paths.Count)];
                 pathingEnemy.levelData = levelData;
                 pathingEnemy.currentNodeId = 1;
             }
@@ -110,7 +111,5 @@ public class WaveSpawner : MonoBehaviour
 
         levelData.waveSpawned = true;
         Debug.Log("Wave " + levelData.currentWaveIndex + " spawned.");
-
-
     }
 }

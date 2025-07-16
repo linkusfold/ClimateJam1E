@@ -18,10 +18,12 @@ using UnityEngine.UI;
  * -----------------------------------------------
  */
 
-public class Tower : MonoBehaviour, IPointerClickHandler
+public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageableBuilding
 {
     public int level = 1;                         // Current level of the tower
     public bool isUnlocked = false;              // Indicates if the tower is active and allowed to shoot
+    public bool isDestroyed = false;             // Indicates if the tower has been destroyed
+    public bool IsDestroyed { set => isDestroyed = value; get => isDestroyed; }
     public GameObject projectilePrefab;          // Prefab to instantiate when the tower fires
     public float attackRange = 5f;               // Maximum range within which enemies can be targeted
     public float fireCooldown = 1.5f;            // Time delay (in seconds) between consecutive shots
@@ -47,11 +49,19 @@ public class Tower : MonoBehaviour, IPointerClickHandler
     void Update()
     {
         // Skip update if the tower hasn't been unlocked yet
-        if (!isUnlocked) return;
+        if (isDestroyed) return;
+
+        if (health <= 0)
+        {
+            Destroy();
+            return;
+        }
+        
+        if(!isUnlocked) return;
 
         // Decrease the cooldown timer over time
         cooldownTimer -= Time.deltaTime;
-        if(btn) btn.image.fillAmount = (fireCooldown-cooldownTimer) / fireCooldown;
+        //if(btn) btn.image.fillAmount = (fireCooldown-cooldownTimer) / fireCooldown;
 
         // If ready to fire again
         if (cooldownTimer <= 0f)
@@ -108,9 +118,32 @@ public class Tower : MonoBehaviour, IPointerClickHandler
         Debug.Log($"Tower upgraded to level {level}");
     }
 
+    private void Destroy()
+    {
+        isDestroyed = true;
+        Debug.Log("Tower destroyed");
+    }
+
+    public void UpdateHealthBar()
+    {
+        if(healthBar) healthBar.UpdateHealthBar(health, maxHealth);;
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log($"Tower upgraded to level {level}");
         RadialMenuManager.Instance.ShowMenu(this);
+    }
+
+    public void Heal(int amount)
+    {
+        health += amount;
+        UpdateHealthBar();
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health = Mathf.Max(0, health - damage);
+        UpdateHealthBar();
     }
 }

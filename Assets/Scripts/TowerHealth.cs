@@ -1,3 +1,4 @@
+using Unity.Mathematics.Geometry;
 using UnityEngine;
 
 public class TowerHealth : MonoBehaviour
@@ -14,10 +15,9 @@ public class TowerHealth : MonoBehaviour
 
     public void UpdateHealthBar(float currentHealth, float maxHealth)
     {
-        if (healthBarForeground != null)
-        {
-            float ratio = currentHealth / maxHealth;
-            healthBarForeground.localScale = new Vector3(ratio * originalScale.x, originalScale.y, originalScale.z);
-        }
+        if (healthBarForeground == null) return;
+        
+        float ratio = Mathf.Max(0, Mathf.Min(maxHealth, currentHealth)) / maxHealth;
+        healthBarForeground.localScale = new Vector3(ratio * originalScale.x, originalScale.y, originalScale.z);
     }
 }
