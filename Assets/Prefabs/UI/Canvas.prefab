@@ -695,11 +695,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7858188504979584929}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f6d58aa25d3d4b6686d9767426d7f98, type: 3}
+  m_Script: {fileID: 11500000, guid: 3144ef953fc26b84fa0ecb7ab304eec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSoruce: {fileID: 8461774817103057063}
-  clickSound: {fileID: 8300000, guid: 735f20fbe98a6bd41b94d76c02100432, type: 3}
+  clickSound: {fileID: 8300000, guid: 25748f4d41b4f6e40991b23d0dc780c4, type: 3}
 --- !u!1001 &7812434475912756389
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -708,14 +708,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6730771162317952028}
     m_Modifications:
-    - target: {fileID: 693955126691947111, guid: 872220b1fe320e04f89fb5b7d13ae6fb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 693955126691947111, guid: 872220b1fe320e04f89fb5b7d13ae6fb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 693955126691947111, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.36
@@ -810,6 +802,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9024184809466086716, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 693955126691947111, guid: 872220b1fe320e04f89fb5b7d13ae6fb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 693955126691947111, guid: 872220b1fe320e04f89fb5b7d13ae6fb, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

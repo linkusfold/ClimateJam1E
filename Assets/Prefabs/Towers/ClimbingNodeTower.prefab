@@ -219,7 +219,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 783497425602614774}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e7df07d4e4c340d0af3904e20a47113, type: 3}
+  m_Script: {fileID: 11500000, guid: bc6ca8d16e9efdc489c9dc6ba1247b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarForeground: {fileID: 3627114996625330079}
@@ -299,7 +299,7 @@ SpriteRenderer:
   m_SortingLayerID: 14378153
   m_SortingLayer: 1
   m_SortingOrder: 1
-  m_Sprite: {fileID: -7059141999742628649, guid: 3d73a8173a7af42c39bc0035d645792e, type: 3}
+  m_Sprite: {fileID: -7059141999742628649, guid: 0e9850f7c9562754dae892d52cbe7b0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -386,7 +386,7 @@ SpriteRenderer:
   m_SortingLayerID: 14378153
   m_SortingLayer: 1
   m_SortingOrder: 2
-  m_Sprite: {fileID: -7059141999742628649, guid: 3d73a8173a7af42c39bc0035d645792e, type: 3}
+  m_Sprite: {fileID: -7059141999742628649, guid: 0e9850f7c9562754dae892d52cbe7b0b, type: 3}
   m_Color: {r: 0.04401779, g: 1, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0

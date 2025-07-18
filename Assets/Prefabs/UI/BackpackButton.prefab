@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1390891127125699219}
   - component: {fileID: 3579510885886367558}
   - component: {fileID: 8750566804617426599}
-  - component: {fileID: 6338157100669702107}
+  - component: {fileID: 1007542870099086531}
   m_Layer: 5
   m_Name: BackpackButton
   m_TagString: Untagged
@@ -231,7 +231,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6338157100669702107
+--- !u!114 &1007542870099086531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -240,8 +240,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1678717020500759346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f6d58aa25d3d4b6686d9767426d7f98, type: 3}
+  m_Script: {fileID: 11500000, guid: 3144ef953fc26b84fa0ecb7ab304eec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSoruce: {fileID: 8750566804617426599}
-  clickSound: {fileID: 8300000, guid: 735f20fbe98a6bd41b94d76c02100432, type: 3}
+  clickSound: {fileID: 8300000, guid: c6c685e1651543244a1a976a74778ada, type: 3}

@@ -438,11 +438,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 8097174848711948188}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 131eed11180e2c2419c967dee236c96c, type: 3}
+  m_Script: {fileID: 11500000, guid: 3144ef953fc26b84fa0ecb7ab304eec9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   audioSoruce: {fileID: 1828566974949256264}
-  clickSound: {fileID: 8300000, guid: 4ab488461ab04fe4aa322900b6f1a647, type: 3}
+  clickSound: {fileID: 8300000, guid: 25748f4d41b4f6e40991b23d0dc780c4, type: 3}
 --- !u!82 &1828566974949256264
 AudioSource:
   m_ObjectHideFlags: 0
