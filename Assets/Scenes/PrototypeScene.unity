@@ -356,11 +356,6 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &144929616 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5067551922890570932, guid: 7c389f213e09cb848935cdc8aa667d51, type: 3}
-  m_PrefabInstance: {fileID: 1556147616}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &144929617 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1467623032425343731, guid: 7c389f213e09cb848935cdc8aa667d51, type: 3}
@@ -500,8 +495,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 8176221935932064478, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
-  cooldown: 10
 --- !u!1001 &182828838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -608,17 +601,12 @@ Transform:
   m_GameObject: {fileID: 250542587}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.16, y: 0.43, z: 0}
+  m_LocalPosition: {x: -1.16, y: 0.23, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &262522347 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7823972125377499307, guid: 8b68bcfac319ea841863b5ed95dd4e87, type: 3}
-  m_PrefabInstance: {fileID: 432019559}
-  m_PrefabAsset: {fileID: 0}
 --- !u!224 &262522348 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8934994435348184253, guid: 8b68bcfac319ea841863b5ed95dd4e87, type: 3}
@@ -627,11 +615,6 @@ RectTransform:
 --- !u!1 &274323902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7858188504979584929, guid: b9aa4038e3f3448ac9e2035e89e0b452, type: 3}
-  m_PrefabInstance: {fileID: 1491028639}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &274323905 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8461774817103057063, guid: b9aa4038e3f3448ac9e2035e89e0b452, type: 3}
   m_PrefabInstance: {fileID: 1491028639}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &274323909
@@ -644,19 +627,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f6d58aa25d3d4b6686d9767426d7f98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSoruce: {fileID: 274323905}
-  clickSound: {fileID: 8300000, guid: 735f20fbe98a6bd41b94d76c02100432, type: 3}
---- !u!114 &355413854 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 291095089684622794, guid: 7c389f213e09cb848935cdc8aa667d51, type: 3}
-  m_PrefabInstance: {fileID: 1556147616}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &432019559
@@ -880,17 +850,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9215692532638066240, guid: 71f107263bff1394d93fe685fc17c7a7, type: 3}
   m_PrefabInstance: {fileID: 2141829254}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &468213685 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3579510885886367558, guid: 71f107263bff1394d93fe685fc17c7a7, type: 3}
-  m_PrefabInstance: {fileID: 2141829254}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2038058295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &468847992
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,8 +984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 4368180910514317233, guid: 69b3a08b1713745b48103a51910ffc19, type: 3}
-  cooldown: 10
 --- !u!114 &495920766 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1389342609700705725, guid: 39e91ce4628ca46828a3acbabf5e4805, type: 3}
@@ -1210,8 +1167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 720533772911164937, guid: 5a86324d3fb254bfcb9dbad482ebe07b, type: 3}
-  cooldown: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,13 +1364,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b492cf9e424114651a859f462f19678c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryPanel: {fileID: 262522347}
-  inventoryButton: {fileID: 468213685}
-  itemGrid: {fileID: 695447621}
-  slotPrefab: {fileID: 1827409529909335997, guid: 2f95a9cd2c97546cba32b8c8995b22ff, type: 3}
-  tooltipPanel: {fileID: 144929616}
-  tooltipText: {fileID: 355413854}
-  tooltipOffset: {x: 10, y: -10, z: 0}
+  backpackPanel: {fileID: 0}
+  openBackpackButton: {fileID: 0}
+  closeBackpackButton: {fileID: 0}
+  items: []
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1500,11 +1452,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &695447621 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 7480280228625212700, guid: 8b68bcfac319ea841863b5ed95dd4e87, type: 3}
-  m_PrefabInstance: {fileID: 432019559}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &706241953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1611,7 +1558,7 @@ Transform:
   m_GameObject: {fileID: 914320871}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.24, z: 0}
+  m_LocalPosition: {x: 0, y: -1.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3142,8 +3089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 2531785851351949269, guid: c7ff016046b404a8282be1ee888bd1a0, type: 3}
-  cooldown: 10
 --- !u!1001 &1808876928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3460,8 +3405,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 9004108269211621888, guid: 9381842ac926f4ff0906c555a03cefc8, type: 3}
-  cooldown: 10
 --- !u!1 &2037845645
 GameObject:
   m_ObjectHideFlags: 0
@@ -3543,7 +3486,7 @@ Transform:
   m_GameObject: {fileID: 2037845645}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.42, z: 0}
+  m_LocalPosition: {x: 0.08, y: 2.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3552,11 +3495,6 @@ Transform:
 --- !u!1 &2038058295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1678717020500759346, guid: 71f107263bff1394d93fe685fc17c7a7, type: 3}
-  m_PrefabInstance: {fileID: 2141829254}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2038058297 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 8750566804617426599, guid: 71f107263bff1394d93fe685fc17c7a7, type: 3}
   m_PrefabInstance: {fileID: 2141829254}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &2038058300
@@ -3571,8 +3509,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f6d58aa25d3d4b6686d9767426d7f98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSoruce: {fileID: 2038058297}
-  clickSound: {fileID: 8300000, guid: 735f20fbe98a6bd41b94d76c02100432, type: 3}
 --- !u!1 &2130581026
 GameObject:
   m_ObjectHideFlags: 0
