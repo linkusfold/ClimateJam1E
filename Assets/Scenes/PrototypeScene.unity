@@ -492,9 +492,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 153115282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
+  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 0}
+  cooldown: 10
 --- !u!1001 &182828838
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -981,9 +983,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 468847992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
+  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 0}
+  cooldown: 10
 --- !u!114 &495920766 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1389342609700705725, guid: 39e91ce4628ca46828a3acbabf5e4805, type: 3}
@@ -1164,9 +1168,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 509215768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
+  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 0}
+  cooldown: 10
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3086,9 +3092,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1658639743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
+  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 0}
+  cooldown: 10
 --- !u!1001 &1808876928
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3402,9 +3410,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007855728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ffe6011bc3294cfca0fed1215e88305, type: 3}
+  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 0}
+  cooldown: 10
 --- !u!1 &2037845645
 GameObject:
   m_ObjectHideFlags: 0
