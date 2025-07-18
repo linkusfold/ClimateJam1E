@@ -15,6 +15,7 @@ namespace DefaultNamespace
 
         protected override void PerformAttack(IDamageableBuilding building)
         {
+            building.TakeDamage((int)damage);
             Debug.Log("Jellyfish attacks with tentacle!");
             // Custom logic here for the jellyfish ranged attack
         }
