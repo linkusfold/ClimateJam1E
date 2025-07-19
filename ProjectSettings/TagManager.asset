@@ -13,7 +13,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Tower
   - 
   - 
   - 
@@ -45,6 +45,12 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: InGameUI
+    uniqueID: 14378153
+    locked: 0
+  - name: Enemies
+    uniqueID: 783614783
     locked: 0
   m_RenderingLayers:
   - Default

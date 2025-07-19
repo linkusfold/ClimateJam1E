@@ -85,4 +85,13 @@ crashlytics-build.properties
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
 /[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
-*.meta
+
+*.wav.meta
+*.png.meta
+*.cs.meta
+
+.DS_Store
+.DS_Store
+Assets/.DS_Store
+Assets/.DS_Store
+.DS_Store
