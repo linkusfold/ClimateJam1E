@@ -23,6 +23,7 @@ namespace Game_Manager
             else if (instance != this)
             {
                 Destroy(this);
+                return;
             }
         
             DontDestroyOnLoad(this);

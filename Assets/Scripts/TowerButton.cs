@@ -10,6 +10,7 @@ public class TowerButton : MonoBehaviour
     public GameObject towerPrefab;
     [NonSerialized] public Tower tower;
     [NonSerialized] public bool onCooldown = false;
+    [NonSerialized] public bool focused;
     private float cooldownTimer = 0f;
     public float cooldown = 10f;
 
@@ -23,7 +24,7 @@ public class TowerButton : MonoBehaviour
     {
         if(!onCooldown) return;
         
-        cooldownTimer -= Time.deltaTime;
+        cooldownTimer -= Time.deltaTime + (Convert.ToInt32(focused) * Time.deltaTime);
         if(btn) btn.image.fillAmount = (cooldown-cooldownTimer) / cooldown;
 
         // If ready to fire again
