@@ -17,8 +17,10 @@ namespace DefaultNamespace
 
         protected virtual void Update()
         {
+            //Debug.Log($"Boss debug {waveSpawner.levelData.currentWaveIndex} and {waveSpawner.levelData.waves.Length}");
             // When the boss runs out of attack waves it dies
-            if (waveSpawner.levelData.currentWaveIndex >= waveSpawner.levelData.waves.Length)
+            if (waveSpawner.levelData.currentWaveIndex >= waveSpawner.levelData.waves.Length
+                && waveSpawner.EnemiesAlive <= 0)
             {
                 Die();
             }

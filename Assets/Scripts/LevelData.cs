@@ -24,11 +24,12 @@ public class LevelData : ScriptableObject
 
             //UnityEditor.EditorApplication.isPlaying = false;
 
-            Application.Quit();
-            return;
+        /////// THIS IS COMMENTED FOR DEBUG PURPOSES, UNCOMMENT FOR THE GAME TO RUN NORMALLY
+            //Application.Quit();
+            //return;
         }
         
-        if (currentWaveIndex >= waves.Length && WaveSpawner.instance.EnemiesAlive == 0)
+        if (currentWaveIndex >= waves.Length && WaveSpawner.instance.EnemiesAlive <= 0)
         {
             Debug.Log("All waves completed.");
             WaveSpawner.instance.winScreen.SetActive(true);
@@ -38,6 +39,7 @@ public class LevelData : ScriptableObject
         // Start countdown to next wave
         if (readyToCountDown)
         {
+            Debug.Log($"Countdown { WaveSpawner.instance.levelCountdown}");
             WaveSpawner.instance.levelCountdown -= Time.deltaTime;
             if (WaveSpawner.instance.levelCountdown <= 0f)
             {
@@ -48,10 +50,10 @@ public class LevelData : ScriptableObject
         }
 
         // If wave is spawned and all enemies are dead, advance to next wave index
-        if (waveSpawned)
+        if (waveSpawned) //&& waves[currentWaveIndex].enemiesLeft <= 0)
         {
-            Debug.Log("Wave completed, advancing index.");
             currentWaveIndex++;
+            Debug.Log($"Wave completed, advancing index to {currentWaveIndex}.");
             waveSpawned = false;
 
             if (currentWaveIndex < waves.Length)
@@ -68,7 +70,7 @@ public class LevelData : ScriptableObject
         if (currentWaveIndex < waves.Length)
         {
             waves[currentWaveIndex].enemiesLeft--;
-            Debug.Log("Enemy removed. Remaining: " + waves[currentWaveIndex].enemiesLeft);
+            //Debug.Log("Enemy removed. Remaining: " + waves[currentWaveIndex].enemiesLeft);
         }
     }
 }

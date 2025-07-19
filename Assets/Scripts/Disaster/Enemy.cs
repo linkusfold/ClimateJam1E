@@ -66,7 +66,7 @@ namespace DefaultNamespace
         private void ReachedNode()
         {
             pathing = false;
-            Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
+            //Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
 
             if (path.pathNodes.Count <= currentNodeId + 1)
             {
@@ -121,7 +121,7 @@ namespace DefaultNamespace
             float effectiveDamage = Mathf.Max(amount - defense, 0);
             health -= effectiveDamage;
 
-            Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
+            //Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
 
             if (health <= 0)
             {

@@ -42,6 +42,7 @@ public class WaveSpawner : MonoBehaviour
             wave.ResetEnemiesLeft();
         }
         initialized = true;
+        Debug.Log("Initialized! yay");
     }
 
     private bool waveSpawning = false;
@@ -54,6 +55,7 @@ public class WaveSpawner : MonoBehaviour
 
         if (levelData.spawnNextWave && !waveSpawning)
         {
+            Debug.Log("Chirs debug spawning next wave");
             waveSpawning = true;
             StartCoroutine(SpawnWave());
         }
@@ -64,18 +66,11 @@ public class WaveSpawner : MonoBehaviour
             waveSpawning = false;
         }
     }
-    
+
     public void Restart()
     {
-        levelData.currentWaveIndex = 0;
-        EnemiesSafe = 0;
-
-        levelCountdown = levelData.countdown;
-
-        for (int i = 0; i < levelData.waves.Length; i++)
-        {
-            levelData.waves[i].enemiesLeft = levelData.waves[i].enemies.Length;
-        }
+        waveSpawning = false;
+        Initialize(levelData);
     }
 
     private IEnumerator SpawnWave()

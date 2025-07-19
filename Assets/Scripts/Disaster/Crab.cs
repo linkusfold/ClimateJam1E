@@ -5,7 +5,7 @@ using UnityEngine;
     {   
         protected override void Start()
         {
-            speed = 1.5f;
+            speed = 1f;
             health = 110;
             damage = 10;
             atkSpeed = 1;
@@ -15,7 +15,7 @@ using UnityEngine;
         protected override void PerformAttack(IDamageableBuilding building)
         {
             building.TakeDamage((int)damage);
-            Debug.Log($"Crab clawed the {building} for {damage} points of damage!");
+            //Debug.Log($"Crab clawed the {building} for {damage} points of damage!");
             // Custom logic here for the crab melee attack
         }
 

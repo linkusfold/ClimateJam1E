@@ -7,7 +7,7 @@ namespace DefaultNamespace
     {
         protected override void Start()
         {
-            speed = 1.2f;
+            speed = 0.8f;
             health = 80;
             damage = 10;
             base.Start();
@@ -16,7 +16,7 @@ namespace DefaultNamespace
         protected override void PerformAttack(IDamageableBuilding building)
         {
             building.TakeDamage((int)damage);
-            Debug.Log("Jellyfish attacks with tentacle!");
+            //Debug.Log("Jellyfish attacks with tentacle!");
             // Custom logic here for the jellyfish ranged attack
         }
 

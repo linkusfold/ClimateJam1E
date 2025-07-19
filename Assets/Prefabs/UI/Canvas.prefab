@@ -31,7 +31,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1249484490430527897}
+  - {fileID: 8305299998649602258}
   - {fileID: 7281108304289495039}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -467,7 +467,6 @@ GameObject:
   - component: {fileID: 6601362808115866383}
   - component: {fileID: 1441641915144569484}
   - component: {fileID: 8461774817103057063}
-  - component: {fileID: 6031670259526248872}
   m_Layer: 5
   m_Name: ResumeButton
   m_TagString: Untagged
@@ -577,7 +576,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6031670259526248872}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ButtonClickSound, Assembly-CSharp
         m_MethodName: PlayClickSound
         m_Mode: 1
@@ -686,21 +685,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6031670259526248872
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7858188504979584929}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f6d58aa25d3d4b6686d9767426d7f98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSoruce: {fileID: 8461774817103057063}
-  clickSound: {fileID: 8300000, guid: 735f20fbe98a6bd41b94d76c02100432, type: 3}
---- !u!1001 &7812434475912756389
+--- !u!1001 &1044274490650662382
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -708,29 +693,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6730771162317952028}
     m_Modifications:
-    - target: {fileID: 693955126691947111, guid: 872220b1fe320e04f89fb5b7d13ae6fb, type: 3}
+    - target: {fileID: 693955126691947111, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 693955126691947111, guid: 872220b1fe320e04f89fb5b7d13ae6fb, type: 3}
+    - target: {fileID: 693955126691947111, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 693955126691947111, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 693955126691947111, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5840837989408445461, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_Name
-      value: BossHealthBar (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5840837989408445461, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      value: BossHealthBar
       objectReference: {fileID: 0}
     - target: {fileID: 9024184809466086716, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_Pivot.x
@@ -798,7 +771,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9024184809466086716, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 129
+      value: 92
       objectReference: {fileID: 0}
     - target: {fileID: 9024184809466086716, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -817,8 +790,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
---- !u!224 &1249484490430527897 stripped
+--- !u!224 &8305299998649602258 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9024184809466086716, guid: 24fd389c275d24c7f9b08660dae9e3f0, type: 3}
-  m_PrefabInstance: {fileID: 7812434475912756389}
+  m_PrefabInstance: {fileID: 1044274490650662382}
   m_PrefabAsset: {fileID: 0}
