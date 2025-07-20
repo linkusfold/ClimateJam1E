@@ -7,7 +7,7 @@ using UnityEngine;
         {
             speed = 0.5f;
             health = 110;
-            damage = 7;
+            damage = 5;
             atkSpeed = 1;
             base.Start();
         }

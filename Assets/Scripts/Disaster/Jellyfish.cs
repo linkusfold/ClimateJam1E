@@ -9,7 +9,7 @@ namespace DefaultNamespace
         {
             speed = 0.3f;
             health = 80;
-            damage = 6;
+            damage = 4;
             base.Start();
         }
 
