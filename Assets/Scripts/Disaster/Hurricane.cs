@@ -66,6 +66,7 @@ namespace DefaultNamespace
 
             float startX = isOnLeftSide ? leftX : rightX;
             float endX = isOnLeftSide ? rightX : leftX;
+            
             Vector3 startPos = new Vector3(startX, transform.position.y, transform.position.z);
             Vector3 endPos = new Vector3(endX, transform.position.y, transform.position.z);
 

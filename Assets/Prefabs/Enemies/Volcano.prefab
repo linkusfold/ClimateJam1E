@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6112041925237027288}
   - component: {fileID: 8191992322902281275}
-  - component: {fileID: 1191293015885063853}
+  - component: {fileID: 2400652498873149107}
   m_Layer: 0
   m_Name: Volcano
   m_TagString: Enemy
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1191293015885063853
+--- !u!114 &2400652498873149107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,14 +97,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 4545828962518702426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5830a13b316f7f04b972470f7786a9be, type: 3}
+  m_Script: {fileID: 11500000, guid: 23e239c2826865a4aa65dc3170163f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waveSpawner: {fileID: 0}
-  healthBar: {fileID: 0}
-  _health: 500
   leftX: -7
   rightX: 7
   switchDuration: 2
-  waveHeight: 2
-  waveFrequency: 2
+  offscreenY: -10

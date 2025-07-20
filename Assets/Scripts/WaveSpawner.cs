@@ -42,7 +42,6 @@ public class WaveSpawner : MonoBehaviour
             wave.ResetEnemiesLeft();
         }
         initialized = true;
-        Debug.Log("Initialized! yay");
     }
 
     private bool waveSpawning = false;
