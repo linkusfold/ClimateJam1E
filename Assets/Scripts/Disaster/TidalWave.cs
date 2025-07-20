@@ -1,18 +1,16 @@
 using DefaultNamespace;
 using UnityEngine;
 using System.Collections;
-    public class Rock : Enemy
-    // Falling Rock attack
+    public class TidalWave : Enemy
+    // Tidal Wave attack
     {   
         protected override void Start()
         {
-            speed = 0.8f;
-            health = 150;
-            damage = 40;
+            speed = 0.3f;
+            health = 300;
+            damage = 50;
             atkSpeed = 50; //only attacks once
             base.Start();
-
-            Immobilize(3f);
         }
 
         protected override void PerformAttack(IDamageableBuilding building)

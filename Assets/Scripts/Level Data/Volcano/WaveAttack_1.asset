@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd27e05b7a047874c90e9fa06f21ae39, type: 3}
+  m_Name: WaveAttack_1
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: -1646589322284983765, guid: 317b59fb2c9cfe449a71f0888c4f92ea, type: 3}
+  timeToNextEnemy: 2
+  timeToNextWave: 25
+  enemiesLeft: 1

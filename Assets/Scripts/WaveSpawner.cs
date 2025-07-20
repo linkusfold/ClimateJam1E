@@ -11,6 +11,7 @@ public class WaveSpawner : MonoBehaviour
     
     public List<Path> paths = new List<Path>();
     public List<Path> flipped_paths = new List<Path>();
+    public List<Path> wave_paths = new List<Path>();
 
     public bool initialized = false;
     [NonSerialized] public LevelData levelData;
@@ -93,7 +94,22 @@ public class WaveSpawner : MonoBehaviour
         {
             Enemy enemyPrefab = wave.enemies[i];
 
-            if (enemyPrefab is Enemy pathingEnemyPrefab)
+            if (enemyPrefab is TidalWave wavePrefab) //special case for wave attacks
+            {
+                Debug.Log("Spawning Wave attack");
+                TidalWave waveEnemy = Instantiate(wavePrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
+
+                waveEnemy.path = wave_paths[flipedPathing ? 1 : 0];
+                
+                // flip wave
+                Vector3 scale = waveEnemy.transform.localScale;
+                scale.x = flipedPathing ? -1 : 1;
+                waveEnemy.transform.localScale = scale;
+
+                waveEnemy.levelData = levelData;
+                waveEnemy.currentNodeId = 1;
+            }
+            else if (enemyPrefab is Enemy pathingEnemyPrefab)
             {
                 Enemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
 

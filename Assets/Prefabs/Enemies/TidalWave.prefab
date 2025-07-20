@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6112041925237027288}
   - component: {fileID: 8191992322902281275}
-  - component: {fileID: 2400652498873149107}
+  - component: {fileID: -1646589322284983765}
   m_Layer: 0
-  m_Name: Volcano
+  m_Name: TidalWave
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 4545828962518702426}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.01, y: -3.94, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -77,18 +77,18 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -5606718777101302656, guid: 65a5e3ea00336d24696afe22a3df4ad1, type: 3}
+  m_Sprite: {fileID: -55218093883684948, guid: 087b2bef5f8a47a4c8a718edef5f8686, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_DrawMode: 1
+  m_Size: {x: 7.2000003, y: 5.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2400652498873149107
+--- !u!114 &-1646589322284983765
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,11 +97,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4545828962518702426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23e239c2826865a4aa65dc3170163f96, type: 3}
+  m_Script: {fileID: 11500000, guid: f7e8e88b3a371654cbc3ede51ee63732, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waveSpawner: {fileID: 0}
-  leftX: -7
-  rightX: 7
-  switchDuration: 2
-  offscreenY: -10
+  path: {fileID: 0}
+  currentNodeId: 1
+  pathing: 1
+  levelData: {fileID: 0}
