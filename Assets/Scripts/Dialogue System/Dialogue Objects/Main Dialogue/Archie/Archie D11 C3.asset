@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Archie D11 C3
+  m_EditorClassIdentifier: 
+  passages:
+  - text: <i> Archie is hastily packing a bag with climbing equipment and camping
+      gear. </i>
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019m just so sick of him pretending that no one is responsible for
+      what\u2019s happening to the world!! The ocean is dying, but noooo, it\u2019s
+      just \u2018the ebb and flow of mother nature\u2019, and not that S.M.O.G. killing
+      the sealife and endangering our community!! He\u2019s too stuck in his ways
+      to ever let go of them! "
+    responses:
+    - text: Are you going to be ok, Archie?
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019m going to spend the night outside of Coral Cove. I\u2019ll be
+      back tomorrow, I just can\u2019t spend another damn day in the same town as
+      him right now.  "
+    responses:
+    - text: 'Stay safe out there. '
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'I will. Good luck. '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}

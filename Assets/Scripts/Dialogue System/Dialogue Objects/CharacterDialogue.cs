@@ -50,6 +50,11 @@ public class CharacterDialogue : ScriptableObject
         return passages[passageIndex].responses[responseIndex];
     }
 
+    public bool responseEndsConversation(int passageIndex, int responseIndex)
+    {
+        return GetResponse(passageIndex, responseIndex).endsConversation;
+    }
+
 }
 [Serializable]
 
@@ -69,4 +74,5 @@ public class Response
     public String text;
     public int nextPassageIndex;
     public CharacterDialogue nextConversation;
+    public bool endsConversation;
 }

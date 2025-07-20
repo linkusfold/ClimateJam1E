@@ -1,0 +1,201 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Archie D4 C2
+  m_EditorClassIdentifier: 
+  passages:
+  - text: " Oh hey! You\u2019re that tourist from before who\u2019s been outside
+      during all this crazy stuff, yeah?"
+    responses:
+    - text: 'Yeah, that was me. '
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Duude, you were totally awesome stopping those freaky creatures! I never
+      expected anyone from the big city to jump in like that and get their hands
+      dirty.  '
+    responses:
+    - text: "I told you before, I\u2019m here to help. "
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Ahh it was nothing. I had a little bit of help from everyone here. '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "You know, I think I might\u2019ve misjudged you. You seem pretty down
+      to Earth. Willing to fight for what you believe in. "
+    responses:
+    - text: "If \u2018fight for what you believe in\u2019 means helping people in
+        need, then yeah. "
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: " I guess\u2026 I don\u2019t really know what I believe in, to be honest."
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Hmm\u2026 Can I show you something? "
+    responses:
+    - text: Sure
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " It\u2019s good to have another promising activist in town. You don\u2019t
+      know how hard it is to get anything done around here when nobody really cares
+      like you do.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: <i> Archie walks over and unfurls a giant torn banner that seems to be
+      made out of plastic trash. </i>
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "This is a banner that I made myself. I collected trash from the ocean
+      and around the town, glued it together, and painted it, then tied it to the
+      top of the cliff so everyone could see. It used to say \u2018CEOs are the real
+      garbage."
+    responses:
+    - text: 'What happened to it? '
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well\u2026 unfortunately the wind snapped it in two. And blew half into
+      the ocean. But hey, most of it was taken out of the ocean anyway, so worth
+      it, right? "
+    responses:
+    - text: "Sounds like you should\u2019ve been more careful with your banner placement. "
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: Yeah. At least you tried.
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Yeah\u2026 anyway, check this out! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: <i> Archie shows a small kiddie pool with a lobster in it. </i>
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "This is Chad. I found \u2018em caught in a plastic bag at the shore, so
+      I got \u2018em out of there and cleaned \u2018em up! Now they just chill out
+      here, perfectly safe. Betcha never met anyone with a lobster buddy, eyy tourist? "
+    responses:
+    - text: "Shouldn\u2019t you take Chad back to their home? "
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "Yeah, who knows what would\u2019ve happened to them if you hadn\u2019t
+        come along. "
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "...I guess. But Chad\u2019s my best friend out here. I\u2019ll make sure
+      to release the next critter I save. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Thanks. I\u2019m hoping to go down to the shore more often and try to
+      save more hurt animals. Every little bit counts! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Anyway, here\u2019s what I did most recently. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 14
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: <i> Archie holds up a polaroid photograph showing the houses of Coral Cove,
+      covered in blue paint.  </i>
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 15
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Pretty cool, right? I got so sick of everyone\u2019s complicity towards
+      S.M.O.G. and their effect on the oceans, that I thought I\u2019d give \u2018em
+      a reminder of what color the ocean is really supposed to be. Let me tell you,
+      they were not happy. Heh. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 16
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: ...
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'What do you think? Do you think that was a little too far? '
+    responses:
+    - text: "I don\u2019t know, Archie\u2026 making people mad isn\u2019t always
+        a good way to solve problems. "
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "Well, you wanted to send a clear message, didn\u2019t you?"
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Yeah\u2026 I guess I just thought that no one would pay attention if I
+      did something that could be easily ignored. And no one got hurt, which is good,
+      but\u2026 I dunno\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 19
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " Just more motivation to make the next thing I do even better! I gotta
+      think up some new ideas, so let\u2019s talk later! "
+    responses:
+    - text: (End conversation)
+      nextPassageIndex: 20
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

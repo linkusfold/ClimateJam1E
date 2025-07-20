@@ -145,7 +145,10 @@ public class CharacterDialogueHandler : MonoBehaviour
 
 
     #region Dialogue Loading
-
+    private void CloseConversation()
+    {
+        
+    }
     private void LoadNewConversation(CharacterDialogue conversation)
     {
         //Debug.Log("Loading passage!");

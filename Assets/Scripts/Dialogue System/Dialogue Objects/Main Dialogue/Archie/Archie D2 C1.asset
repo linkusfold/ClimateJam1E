@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Archie D2 C1
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'Whoa! Who do we have here? '
+    responses:
+    - text: (Continue).
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: 'An unfamiliar face. What are you doing snooping around my place, newcomer? '
+    responses:
+    - text: "Me? I wasn\u2019t snooping, I was just- "
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: 'Oh, sure. Popping into places unannounced is just how you roll then? '
+    responses:
+    - text: "Look, I\u2019m just here because I need something. "
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+    - text: 'I think we got off on the wrong foot. I was sent here by Aid in Action. '
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: " Oh, I should\u2019ve known. You have that look all over you. Here to
+      take what you need and then ditch us at the first moment? "
+    responses:
+    - text: 'Why would I do that? I was sent by Aid in Action specifically to help. '
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: "Government agencies never did nothin\u2019 good for no one. As far as
+      I\u2019m concerned, you\u2019re just a glorified tourist, so why don\u2019t
+      you just get to the point so you can get out of here. "
+    responses:
+    - text: "I\u2019m just trying to fix the old lighthouse. Finn said you might
+        have something that could help. "
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: 'Finn said so, huh? And how is shark boy doing? He still got that dopey
+      smile on his face? '
+    responses:
+    - text: "He\u2019s fine. A little over-energized. "
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+    - text: He seems good. A lot more help than you are, at least.
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: "Whatever. Yeah, I\u2019ve got some paint lying around. It couldn\u2019t
+      make the lighthouse look any worse than it already does, so go wild.  "
+    responses:
+    - text: He seems good. A lot more help than you are, at least.
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: ...
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
+  - text: 'You still here? Byeee. '
+    responses:
+    - text: (End conversation)
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
+    sprite: {fileID: 0}
