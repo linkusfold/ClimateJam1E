@@ -1,5 +1,6 @@
 using DefaultNamespace;
 using UnityEngine;
+using System.Collections;
     public class Rock : Enemy
     // Falling Rock attack
     {   
@@ -10,13 +11,23 @@ using UnityEngine;
             damage = 40;
             atkSpeed = 50; //only attacks once
             base.Start();
+
+            StartCoroutine(DelayedFall());
+        }
+
+        private IEnumerator DelayedFall()
+        {
+            pathing = false;
+            yield return new WaitForSeconds(3f);
+
+            pathing = true;
         }
 
         protected override void PerformAttack(IDamageableBuilding building)
-        {
-            building.TakeDamage((int)damage);
-            //Debug.Log($"Rock hits the {building} for {damage} points of damage!");
-            Die();
-        }
+    {
+        building.TakeDamage((int)damage);
+        //Debug.Log($"Rock hits the {building} for {damage} points of damage!");
+        Die();
+    }
 
     }
