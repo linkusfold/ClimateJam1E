@@ -16,10 +16,10 @@ MonoBehaviour:
   maxEnemiesSafe: 4
   waves:
   - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
-  - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
+  - {fileID: 11400000, guid: d60317d29854d134bb33479a0abcc32e, type: 2}
   - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
   - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
   - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
-  - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
+  - {fileID: 11400000, guid: d60317d29854d134bb33479a0abcc32e, type: 2}
   boss: {fileID: 0}
-  currentWaveIndex: 4
+  currentWaveIndex: 2

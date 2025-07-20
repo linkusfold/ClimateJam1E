@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd27e05b7a047874c90e9fa06f21ae39, type: 3}
-  m_Name: WaveAttack_1
+  m_Name: AshAttack_1
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: -4305092975578304192, guid: f8f3f11e8797c1a43baea1f5fca2a303, type: 3}
-  timeToNextEnemy: 2
-  timeToNextWave: 25
-  enemiesLeft: 1
+  - {fileID: 0}
+  - {fileID: 0}
+  timeToNextEnemy: 4
+  timeToNextWave: 10
+  enemiesLeft: -2
