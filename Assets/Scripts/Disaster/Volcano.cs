@@ -84,6 +84,7 @@ namespace DefaultNamespace
 
             isOnLeftSide = !isOnLeftSide;
             isSwitchingSides = false;
+            waveSpawner.FlipPathing();
         }
 
         protected void SwitchSides()

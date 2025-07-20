@@ -10,6 +10,7 @@ public class WaveSpawner : MonoBehaviour
     public static WaveSpawner instance;
     
     public List<Path> paths = new List<Path>();
+    public List<Path> flipped_paths = new List<Path>();
 
     public bool initialized = false;
     [NonSerialized] public LevelData levelData;
@@ -22,6 +23,8 @@ public class WaveSpawner : MonoBehaviour
 
     public int EnemiesSafe = 0;
     public int EnemiesAlive = 0;
+
+    private bool flipedPathing = false;
 
     private void Awake()
     {
@@ -71,6 +74,11 @@ public class WaveSpawner : MonoBehaviour
         Initialize(levelData);
     }
 
+    public void FlipPathing()
+    {
+        flipedPathing = !flipedPathing;
+    }
+
     private IEnumerator SpawnWave()
     {
         levelData.spawnNextWave = false;
@@ -88,7 +96,11 @@ public class WaveSpawner : MonoBehaviour
             if (enemyPrefab is Enemy pathingEnemyPrefab)
             {
                 Enemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
-                pathingEnemy.path = paths[UnityEngine.Random.Range(0, paths.Count)];
+
+                // Choose path list based on if the paths are flipped
+                List<Path> pathList = flipedPathing ? flipped_paths : paths;
+
+                pathingEnemy.path = pathList[UnityEngine.Random.Range(0, pathList.Count)];
                 pathingEnemy.levelData = levelData;
                 pathingEnemy.currentNodeId = 1;
             }

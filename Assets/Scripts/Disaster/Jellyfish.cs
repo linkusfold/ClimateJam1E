@@ -7,9 +7,9 @@ namespace DefaultNamespace
     {
         protected override void Start()
         {
-            speed = 0.8f;
+            speed = 0.6f;
             health = 80;
-            damage = 10;
+            damage = 6;
             base.Start();
         }
 

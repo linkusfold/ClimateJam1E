@@ -38,7 +38,7 @@ namespace DefaultNamespace
                 ReachedNode();
                 return;
             }
-            
+
             Vector3 targetPos = path.pathNodes[currentNodeId];
 
             // Check for tower in the way
