@@ -55,7 +55,6 @@ public class WaveSpawner : MonoBehaviour
 
         if (levelData.spawnNextWave && !waveSpawning)
         {
-            Debug.Log("Chirs debug spawning next wave");
             waveSpawning = true;
             StartCoroutine(SpawnWave());
         }

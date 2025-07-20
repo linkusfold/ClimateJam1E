@@ -36,7 +36,6 @@ namespace DefaultNamespace
             healthBar.MaxHealth = Health;
 
             base.Start();
-            SwitchSides();
         }
 
         protected override void Update()
@@ -49,8 +48,13 @@ namespace DefaultNamespace
                 Debug.Log("Disaster " + gameObject.name + " has looped its wave attacks!");
 
                 waveSpawner.Restart();
+            }
 
-                TakeDamage(250); //This is just for debugging it won't actually take damage here
+            if (((waveSpawner.levelData.currentWaveIndex % 2 == 1 && isOnLeftSide)
+                || (waveSpawner.levelData.currentWaveIndex % 2 == 0 && !isOnLeftSide))
+                && !isSwitchingSides)
+            {
+                TakeDamage(100); //This is just for debugging it won't actually take damage here
                 SwitchSides();
             }
         }

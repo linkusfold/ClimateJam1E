@@ -39,7 +39,6 @@ public class LevelData : ScriptableObject
         // Start countdown to next wave
         if (readyToCountDown)
         {
-            Debug.Log($"Countdown { WaveSpawner.instance.levelCountdown}");
             WaveSpawner.instance.levelCountdown -= Time.deltaTime;
             if (WaveSpawner.instance.levelCountdown <= 0f)
             {
