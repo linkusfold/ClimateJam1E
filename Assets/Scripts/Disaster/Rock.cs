@@ -6,9 +6,9 @@ using System.Collections;
     {   
         protected override void Start()
         {
-            speed = 0.8f;
+            speed = 0.6f;
             health = 150;
-            damage = 40;
+            damage = 60;
             atkSpeed = 50; //only attacks once
             base.Start();
 

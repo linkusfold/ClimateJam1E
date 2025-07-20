@@ -7,7 +7,7 @@ namespace DefaultNamespace
     {
         protected override void Start()
         {
-            speed = 0.3f;
+            speed = 0.2f;
             health = 150;
             damage = 10;
             base.Start();

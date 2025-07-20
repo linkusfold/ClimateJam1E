@@ -5,7 +5,7 @@ using UnityEngine;
     {   
         protected override void Start()
         {
-            speed = 0.8f;
+            speed = 0.5f;
             health = 110;
             damage = 7;
             atkSpeed = 1;
