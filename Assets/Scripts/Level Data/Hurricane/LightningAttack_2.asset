@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd27e05b7a047874c90e9fa06f21ae39, type: 3}
+  m_Name: LightningAttack_2
+  m_EditorClassIdentifier: 
+  enemies:
+  - {fileID: 7247153675598595950, guid: 9ef8126fefbc580448fb5c3a656c90f9, type: 3}
+  - {fileID: 7247153675598595950, guid: 9ef8126fefbc580448fb5c3a656c90f9, type: 3}
+  - {fileID: 7247153675598595950, guid: 9ef8126fefbc580448fb5c3a656c90f9, type: 3}
+  - {fileID: 7247153675598595950, guid: 9ef8126fefbc580448fb5c3a656c90f9, type: 3}
+  timeToNextEnemy: 3
+  timeToNextWave: 5
+  enemiesLeft: 4

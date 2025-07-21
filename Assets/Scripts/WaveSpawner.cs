@@ -115,6 +115,10 @@ public class WaveSpawner : MonoBehaviour
 
                 // Choose path list based on if the paths are flipped
                 List<Path> pathList = flipedPathing ? flipped_paths : paths;
+                // flip sprite
+                Vector3 scale = pathingEnemy.transform.localScale;
+                scale.x = flipedPathing ? -1 : 1;
+                pathingEnemy.transform.localScale = scale;
 
                 pathingEnemy.path = pathList[UnityEngine.Random.Range(0, pathList.Count)];
                 pathingEnemy.levelData = levelData;

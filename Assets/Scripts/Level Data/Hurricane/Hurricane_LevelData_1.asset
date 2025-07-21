@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20248da444c778f4bb7cc7cf3ee8fbf0, type: 3}
+  m_Name: Hurricane_LevelData_1
+  m_EditorClassIdentifier: 
+  countdown: 5
+  maxEnemiesSafe: 4
+  waves:
+  - {fileID: 11400000, guid: 23a7702c013bb4341b990d29f9694fb7, type: 2}
+  - {fileID: 11400000, guid: 23a7702c013bb4341b990d29f9694fb7, type: 2}
+  - {fileID: 11400000, guid: 9b017f8c1362bfb4b851d3c8f7c447f3, type: 2}
+  boss: {fileID: 0}
+  currentWaveIndex: 2

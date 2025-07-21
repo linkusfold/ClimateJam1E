@@ -3,11 +3,11 @@ using System.Collections;
 
 namespace DefaultNamespace
 {
-    public class Hurricane : Boss
+    public class Hurricane : Boss, IDamageableEnemy
     {
         [SerializeField] private HealthBar healthBar;
 
-        [SerializeField] private float _health = 200f;
+        [SerializeField] private float _health = 400f;
 
         public float Health
         {
@@ -54,7 +54,6 @@ namespace DefaultNamespace
                 || (waveSpawner.levelData.currentWaveIndex % 2 == 0 && !isOnLeftSide))
                 && !isSwitchingSides)
             {
-                TakeDamage(25); //This is just for debugging it won't actually take damage here
                 SwitchSides();
             }
         }
@@ -66,7 +65,7 @@ namespace DefaultNamespace
 
             float startX = isOnLeftSide ? leftX : rightX;
             float endX = isOnLeftSide ? rightX : leftX;
-            
+
             Vector3 startPos = new Vector3(startX, transform.position.y, transform.position.z);
             Vector3 endPos = new Vector3(endX, transform.position.y, transform.position.z);
 
@@ -96,6 +95,7 @@ namespace DefaultNamespace
 
             isOnLeftSide = !isOnLeftSide;
             isSwitchingSides = false;
+            waveSpawner.FlipPathing();
         }
 
         protected void SwitchSides()
