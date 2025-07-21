@@ -12,4 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
   m_Name: Finn D11 C3
   m_EditorClassIdentifier: 
-  passages: []
+  passages:
+  - text: "Things are kinda hectic right now, but I\u2019m sure it\u2019ll be over
+      soon. It\u2019s nice to see everyone working together. We gotta stick together
+      during tough times y\u2019know? "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Wish I knew that a while ago. Maybe then, we wouldn\u2019t have\u2026 "
+    responses:
+    - text: 'Finn? '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Nah, it\u2019s nothing. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Feel free to hang around here a while unless you\u2019ve got other things
+      to do!"
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}

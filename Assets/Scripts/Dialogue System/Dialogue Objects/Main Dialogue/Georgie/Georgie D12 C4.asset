@@ -10,56 +10,53 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
-  m_Name: Finn D16 C5
+  m_Name: Georgie D12 C4
   m_EditorClassIdentifier: 
   passages:
-  - text: "Hey, how\u2019re you holding up? "
+  - text: "Hey! It's good to see you, especially since that disaster is finally over.
+      I really hope that these incidents come to an end soon. Say, something\u2019s
+      been on my mind as of late. "
     responses:
-    - text: "So-so, I\u2019m pretty exhausted "
-      nextPassageIndex: 1
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    - text: 'I can take another hurricane, that was nothing! '
+    - text: (Continue)
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: Yeah, that checks out.
+  - text: 'What is your dream to do in life? '
     responses:
-    - text: (Continue)
+    - text: 'I want to make a difference. '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'I want to be happy. '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'I want to be rich. '
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "I\u2019ve been thinking a lot about the last time we talked and I think
-      I\u2019m gonna reach out to Archie. Honestly, I don\u2019t even know what to
-      say to him. Everything is probably gonna end up being even worse than before,
-      but I might as well give it a shot, right?  "
+  - text: "That is awesome! I love hearing everyone's dreams in life\u2026. I always
+      dreamt of becoming a librarian. I have so many books that I would love to share
+      with others. "
     responses:
     - text: (Continue)
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: 'I gotta think more positively.  '
+  - text: 'The thought helps me keep calm, but at the same time it feels wrong. '
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "I have nothing to lose so it doesn\u2019t really matter how it goes! Ahahaha\u2026  "
-    responses:
-    - text: (Continue)
-      nextPassageIndex: 5
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: 0}
-  - text: 'I think all that energy spent fighting that hurricane is really getting
-      to me. I better get to bed soon.  '
+  - text: 'My reality is in Coral Cove, and I should focus on my job as mayor. '
     responses:
     - text: (End Conversation)
-      nextPassageIndex: 5
+      nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 1
     sprite: {fileID: 0}

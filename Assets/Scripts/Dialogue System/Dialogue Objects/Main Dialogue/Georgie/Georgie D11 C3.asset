@@ -10,53 +10,49 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
-  m_Name: Finn D16 C5
+  m_Name: Georgie D11 C3
   m_EditorClassIdentifier: 
   passages:
-  - text: "Hey, how\u2019re you holding up? "
+  - text: 'Oh, hey, Cole! '
     responses:
-    - text: "So-so, I\u2019m pretty exhausted "
-      nextPassageIndex: 1
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    - text: 'I can take another hurricane, that was nothing! '
+    - text: (Continue)
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: Yeah, that checks out.
+  - text: "Sorry, I\u2019m a little, um\u2026 rattled right now. "
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "I\u2019ve been thinking a lot about the last time we talked and I think
-      I\u2019m gonna reach out to Archie. Honestly, I don\u2019t even know what to
-      say to him. Everything is probably gonna end up being even worse than before,
-      but I might as well give it a shot, right?  "
+  - text: "That volcano disaster scared me lots. And who knows if it'll come back!
+      I have to keep calm. I\u2019m very sorry. "
     responses:
-    - text: (Continue)
+    - text: "Take a breath, George. You\u2019re okay. "
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: 'I gotta think more positively.  '
+  - text: 'Thank you, I really appreciate it. '
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "I have nothing to lose so it doesn\u2019t really matter how it goes! Ahahaha\u2026  "
+  - text: "I know everything will be okay, especially since you\u2019re here to help!
+      I just get scared\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: 'I think all that energy spent fighting that hurricane is really getting
-      to me. I better get to bed soon.  '
+  - text: 'I want to make my father proud, you know? He passed away because of a
+      volcano disaster that struck while he was traveling to the main town, trying
+      to get supplies for our community.  '
     responses:
     - text: (End Conversation)
       nextPassageIndex: 5

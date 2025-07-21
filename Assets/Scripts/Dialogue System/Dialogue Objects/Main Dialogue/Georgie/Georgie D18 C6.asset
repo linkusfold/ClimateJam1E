@@ -10,77 +10,70 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
-  m_Name: Finn D12 C4
+  m_Name: Georgie D18 C6
   m_EditorClassIdentifier: 
   passages:
-  - text: "Cole! I\u2019m glad you came by. I have a lot on my mind and kinda wanted
-      to talk to someone about it. "
+  - text: 'That storm was really something. Thank you again for defending our community
+      against it. '
     responses:
     - text: (Continue)
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "It\u2019s just that, when we were kids, Archie and I used to be really
-      good friends.  "
+  - text: 'I honestly wish I could do something as awesome as you. '
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "We would stay out later than we should\u2019ve, and get scolded together.
-      Haha, those were fun times. You should\u2019ve seen the look on his face, he
-      was such a softie.  "
+  - text: 'I never planned on being mayor, you know? '
     responses:
     - text: (Continue)
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: 'But as we grew up, things started getting more complicated. Especially
-      for Archie. '
+  - text: "My father always wanted me to go off to college and leave this town. As
+      you can see, there aren\u2019t many opportunities here. "
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "When he was going through a lot, it felt like he just pushed me to the
-      side. I tried to be there for him, but it seemed like I was only making things
-      worse. Eventually, we stopped hanging out and\u2026 well, that was that.  "
+  - text: 'But after high school, I chose to stay by his side because I wanted to
+      support him through these tough times. Part of me wishes that I could go back
+      in time and get a better education, then go off and do my true aspirations. '
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: 'I wish things went a bit differently.  '
+  - text: "Then I remember what I\u2019m doing here for the community, and I become
+      grateful for the path I chose. Like you must be! "
     responses:
-    - text: (Continue)
+    - text: Yeah! Just keep your head up mayor! We are a community and we are all
+        here for eachother always.
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "\u2026 "
+  - text: "Ever since your arrival, I\u2019ve been able to feel\u2026 at peace again.
+      I truly appreciate your being here. "
     responses:
     - text: (Continue)
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "Uh, thanks for\u2026 for listening. It really helped me sort my thoughts,
-      just having someone here."
-    responses:
-    - text: (Continue)
-      nextPassageIndex: 8
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: 0}
-  - text: "Let\u2019s talk later, okay? "
+  - text: 'I wish you the best of luck with the rest of these disasters, and I have
+      full confidence that we will be able to successfully fight them off.  '
     responses:
     - text: (End Conversation)
-      nextPassageIndex: 8
+      nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 1
     sprite: {fileID: 0}
