@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: AshAttack_1
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: -6359707019138876586, guid: 80751e821f2a95e4ea20e54faad36eba, type: 3}
+  - {fileID: -6359707019138876586, guid: 80751e821f2a95e4ea20e54faad36eba, type: 3}
   timeToNextEnemy: 4
   timeToNextWave: 10
-  enemiesLeft: -2
+  enemiesLeft: 0
