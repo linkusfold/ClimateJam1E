@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Finn D2 C1
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Rise and shine, there\u2019s lots of work to do! After yesterday\u2019s
+      fog, you should really fix up the lighthouse just in case.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019ll help you get some supplies around town. We\u2019ll stop at Leah\u2019s,
+      Dio\u2019s, and Archie\u2019s for spare parts. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Take your time, I\u2019ll wait outside."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019ve got some extra things that\u2019ll probably help. Let me grab
+      them real quick and then we can fix up your place."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Sorry about the mess, been pretty busy lately with all these disasters
+      around town. I try to help where I can. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
