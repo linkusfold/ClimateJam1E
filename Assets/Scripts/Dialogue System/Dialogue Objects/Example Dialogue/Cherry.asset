@@ -14,10 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   passages:
   - text: Hello My name is cherry! I have a lot to talk about!
-    nextPassageIndex: 0
     responses:
     - text: Take me to bob!
       nextPassageIndex: 0
       nextConversation: {fileID: 11400000, guid: 654bb5065dcd91b4dba7b544756396e8, type: 2}
-    sprite: {fileID: 0}
-    nextConversation: {fileID: 11400000, guid: 654bb5065dcd91b4dba7b544756396e8, type: 2}
+    sprite: {fileID: -2413806693520163455, guid: 393bd1aabcd34a848a4ab1066d60b812, type: 3}

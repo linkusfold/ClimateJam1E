@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Archie D16 C5
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Hey, what\u2019s up? "
+    responses:
+    - text: Are you doing alright in here? The storm is getting pretty rough.
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Yeah, doing my best to keep the wind out. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Hey, I also looked into what\u2019s been happening a bit more. Did you
+      know that pretty much all of these crazy disasters can be traced back to S.M.O.G.? "
+    responses:
+    - text: 'Really? '
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Yep. They were the ones that caused that Oilgae spill out from the shore,
+      and also the ones that caused that Volcano creature to go crazy a week ago. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Then all the volcanic gas released by that creature went into the atmosphere
+      and formed this crazy storm. I took a look with my binoculars, and it looks
+      like there\u2019s even ships off the coast being blown off course by it."
+    responses:
+    - text: "I guess it\u2019s a good thing we\u2019re trying to keep Coral Cove
+        safe then. "
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Sure is. We make a pretty good team, you and me. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019ve been thinking a lot lately, and\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019ve decided I\u2019m going to release Chad back into the ocean. "
+    responses:
+    - text: 'Are you sure? You said they were your best friend. '
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'What made you change your mind about keeping them around? '
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well, look at them. They\u2019re clearly not where they\u2019re supposed
+      to be. I may have helped Chad out when I took \u2018em out of that bag, but
+      I didn\u2019t save them. I took them from their home. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: I think the main reason I kept Chad around was just so I had someone to
+      talk to. You know, after I stopped talking to Finn.
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "He must\u2019ve told you, right? We used to be best buds, you know. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I need to take a bit more responsibility when I do things like help a
+      sea creature, or hang a banner. I\u2019ve been doing all this stuff for a while
+      now, but is this the kind of difference I want to make? Is this what my parents
+      would\u2019ve wanted me to do? The example I should be setting for Zoe? "
+    responses:
+    - text: "I didn\u2019t know your parents. Archie, but I\u2019m sure they\u2019d
+        be glad that you\u2019re trying to do the right thing. "
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "I don\u2019t know\u2026 maybe you\u2019re the only one that can answer
+        that question. "
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'I guess so. *sigh* '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 14
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "It\u2019s just that with everything going on in the world, everything
+      happening to our little town, it\u2019s so hard to figure out what I should
+      be doing. When I paint things around Coral Cove, am I helping anyone, or am
+      I just being loud? "
+    responses:
+    - text: "Well, you\u2019re trying to change something you care about, right? "
+      nextPassageIndex: 15
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "But there\u2019s so many things to care about! The town, the people who
+      live here, our ocean, oceans in other parts of the world, other people, corporate
+      corruption. I could stay here and make sure Coral Cove is safe, but there\u2019s
+      also so many more people I could try to help around the world. There\u2019s
+      so much, it feels overwhelming sometimes. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 16
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I mean\u2026 well, what do you care about? "
+    responses:
+    - text: 'I want to live freely, and help build a future where others can do the
+        same. '
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'I care about people, and finding a place where I belong. '
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'I care about the future. I want to be able to experience as much as
+        I can in life. '
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*nods* I see. Then tell me, what do you think I should do? Should I try
+      to help my town, or try to help the world? '
+    responses:
+    - text: 'If you feel like you could help more people elsewhere, then no one would
+        blame you for doing that. '
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'You seem like you care a lot about your community. Would you really
+        want to leave them? '
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Thank you. I feel like I\u2019m finally on the right track, thanks to
+      your help. I want to do something to take my first step on it. I need to do
+      some more research, but I\u2019d love to talk to you again soon. Bye for now. "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

@@ -1,0 +1,315 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Finn D1 Intro
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 
+    responses:
+    - text: 'But, uh... How do I get up there? '
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Hey, dude, you look a little lost. Need some help? '
+    responses:
+    - text: 'Oh, hi! Do you know how I can reach that lighthouse up there? '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Ohhh, so you\u2019re the one moving into the old lighthouse! I can take
+      you there, it\u2019s not far, but you might get a bit lost in this fog. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "The name\u2019s Finn, by the way. Nice to meet you. "
+    responses:
+    - text: "That would be great, thanks! I\u2019m Cole. "
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'That was quite a trip, huh? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Now that you\u2019re all settled, how about I take you on a tour? It\u2019d
+      help you get to know the place. "
+    responses:
+    - text: Yeah, that sounds great
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '(Finn and Cole head into town) '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "See that statue? It\u2019s completely made out of coral. Pretty sick,
+      right? "
+    responses:
+    - text: "Oh, wow. It\u2019s beautiful\u2026 "
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Been here since the founding of Coral Cove. Still growing strong, as you
+      can see. This is the information board. Anyone in the community can put up
+      fliers or announcements here. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Let\u2019s take a look\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " \u201CA dark hull on the rise, we soon shall be expelled\u2026\u201D "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "\u201CThe end is close, destruction\u2013\u201D "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "\u201C...looms near\u2026\u201D "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "\u2026"
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 14
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Ahem. Moving on. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 15
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Um\u2026 right now? \u2026Okay. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 16
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '(Knock, knock) '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Coming! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Oh, hello! I don\u2019t recognize you. Do you happen to be visiting here?
+      Is anyone giving you a tour? "
+    responses:
+    - text: "Hi, yes\u2026 Well, actually, I was sent by Aid in Action. Finn was
+        just giving me a tour right now."
+      nextPassageIndex: 19
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Hey, there, mayor! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 20
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Nice to see you, Finn! Well, I won\u2019t hold you both, but yes! My name
+      is George and I am the mayor of Coral Cove.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 21
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Although we are a small community, we have big aspirations and minds.
+      I hope during your time here, you really get to know and understand our town.
+      I am excited to see your courage and hardships throughout these next few weeks!  '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 22
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'It was a pleasure meeting you.  '
+    responses:
+    - text: 'It was lovely meeting you too. '
+      nextPassageIndex: 23
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "All done? Let\u2019s continue."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 24
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "See that house all the way to the right? That\u2019s where Leah lives.
+      She\u2019s cool, but definitely has some\u2026 ideas.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 25
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "That house on the water belongs to Diogini and his granddaughter, Zoe.
+      When the sea level houses started getting dangerous, he refused to move. He\u2019s
+      definitely the stubborn type. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 26
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Right below the lighthouse is where Archie, his eldest grandson, lives.
+      Archie is definitely a character\u2026 pretty rough, but will always fight
+      for what he believes in.   "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 27
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "And finally, that one over there is my house! Feel free to stop by anytime,
+      we\u2019re pals now! "
+    responses:
+    - text: Thank you so much for everything.
+      nextPassageIndex: 28
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Nah, it was fun. Here, I\u2019ll walk you back to the lighthouse and you
+      can finish unpacking. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 29
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '(Inside the lighthouse) '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 30
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well, I\u2019ll leave you to it. See you around! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 31
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '(Finn leaves, but returns a few seconds later) '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 32
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Dude, you might wanna check this out\u2013 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 33
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: Looks like the fog from earlier got way worse.
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 34
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "We gotta do something\u2026 Let\u2019s go, I have an idea! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 35
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Grab the light and aim it towards the fog! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 36
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Found some mirrors, this will help reflect more light around. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 37
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Whew, that was a close one. I can\u2019t believe you had to deal with
+      a disaster on your first day here.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 38
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Must\u2019ve been bad luck or something, but we make a pretty good team,
+      eh?  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 39
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Looks like the fog is gone for good, now, so you can rest easy. I\u2019ll
+      catch you tomorrow, yeah? "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 40
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

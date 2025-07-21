@@ -1,0 +1,102 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Diogini & Zoe D21 C7 Branch 2
+  m_EditorClassIdentifier: 
+  passages:
+  - text: " Look, look! Frien\u2019 is back!"
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '<i> Zoe runs all around, as the house is in a bit of a mess. Bags and
+      clothes are all over the place. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'So they are. Hello, friend. Glad to see you all in one piece after the
+      events of yesterday. '
+    responses:
+    - text: "What\u2019s going on in here? Why all the stuff around? "
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well, I went and had a long talk with Archie. We talked about our three
+      future\u2019s, that is, Archie, Zosa, and I. We agreed that it might be better
+      for Zoe to stay with Archie for a while. "
+    responses:
+    - text: 'Are you sure? '
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Quite. Zoe has lived under my roof for several years now. It\u2019s time
+      she learned what it\u2019s like to live under someone else\u2019s. "
+    responses:
+    - text: 'Will she be able to handle it ok? '
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Hey! I big girl! I handle it! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I believe in her. Besides, if she decides she doesn\u2019t like it, she
+      will always have a place back here. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Can\u2019 wait to live with Arcee! We can play all day long! "
+    responses:
+    - text: 'And what will you do, Diogini? '
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " I\u2026 I will remain here and think some more. Perhaps use Leah\u2019s
+      information machine more often. I hope that one day, I may be able to catch
+      up to the times, and that I can live in peace with those around me. Until then,
+      I am satisfied. And you, friend. You are always more than welcome to come back
+      and chat.  "
+    responses:
+    - text: "I\u2019m sure I will. Goodbye, Diogini. Goodbye, Zoe. "
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Farewell, friend. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Bye, frien\u2019! "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

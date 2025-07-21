@@ -1,0 +1,337 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Diogini & Zoe D12 C4
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Hiya, stran\u2019er! Guess what! Guess what! "
+    responses:
+    - text: 'What is it, Zoe? '
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Granpa Dio said he take me up to the top of cliff! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: Ahh, Zoe. I said I would think about taking you up to the clifftop, if
+      you took my safety lesson seriously.
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Come, stranger. This will be a good lesson for you too. '
+    responses:
+    - text: "This isn\u2019t going to be just boring kid safety, is it? "
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'What kind of lesson? '
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I want to share with you both some things that are useful when you\u2019re
+      out in the wilderness around Coral Cove. I\u2019ve been living here longer
+      than anyone else, so I think even you will learn a thing or two, Stranger. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Now that the most recent storm has passed, it\u2019s safe to go out. But
+      you never know when the next one might surprise you. It doesn\u2019t have to
+      be a storm either. When you\u2019re up on the cliffside, just some errant strong
+      winds are enough to cause a dreadful accident. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'That why Granpa Dio say stay inside when it really windy? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "That\u2019s right Zoe, but sometimes the wind can be deceptive. To figure
+      out if it\u2019s dangerous to be out, you\u2019ll need to find a Palewood tree. "
+    responses:
+    - text: I think I saw those on my way into Coral Cove. The whitish trees with
+        the gray-looking leaves?
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Exactly right! Palewood grows all over Coral Cove, and it is an extremely
+      brittle wood. Once you find a tree, look for a branch or twig that\u2019s about
+      as big as your forearm. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'What is four-arm? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "It is this part of your arm, dear. Once you\u2019ve found it, go back
+      to the area of the cliff you\u2019re walking on, and hold your stick out away
+      from you, and towards the ocean. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: ' Now, wait for a couple of minutes to test the strength of the wind. If
+      the wind is strong enough to snap the hollow Palewood, or pull it out of your
+      hands, then it is too strong, and you should hurry home. Do you understand,
+      Zoe? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Mhm. It your stick break, run away to home! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "*chuckles* Don\u2019t run too fast. You wouldn\u2019t want to leave your
+      Grandpa Dio behind. I\u2019d never be able to find my way home without you,
+      Zoe. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 14
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Don\u2019 worry Granpa Dio, I make sure you don\u2019 get lost. "
+    responses:
+    - text: "That\u2019s\u2026 actually a pretty neat trick. I never knew you could
+        do that with a stick. "
+      nextPassageIndex: 15
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Yes, nature comes with many dangers, but also many useful tools, if you
+      know how to use them. Come, I have more to show you. '
+    responses:
+    - text: "That\u2019s\u2026 actually a pretty neat trick. I never knew you could
+        do that with a stick. "
+      nextPassageIndex: 16
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '<i> Over the next hour, Diogini explains several other safety or nature
+      tricks and tips, including how to properly tie a rope, how to forage, and how
+      to make a grass whistle, which Zoe particularly enjoys. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*blows whistle* Hehehe! Grass make music?! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well, that\u2019s certainly one way to use it. If you practice enough,
+      you can also use it to let other hikers and explorers know where you are. Of
+      course, you should usually bring your own whistle, but this is a fine replacement
+      if yours gets lost or broken. "
+    responses:
+    - text: 'You sure know a lot of survival tricks, Diogini. '
+      nextPassageIndex: 19
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well, these tools are good and all, but the best \u201Csurvival trick\u201D
+      of all is to just be aware of your surroundings. Not paying attention is how
+      accidents happen. You don\u2019t want to end up like\u2026 well, you don\u2019t
+      want to get hurt. Always be careful, and\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 20
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: ...
+    responses:
+    - text: 'Are you ok? '
+      nextPassageIndex: 21
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Did something happen? '
+      nextPassageIndex: 29
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Yes, I\u2019m\u2026 I\u2019m fine. Not a lot of people listen to me, or
+      my advice on staying safe. People have gotten hurt before because they didn\u2019t
+      listen. That\u2019s why it\u2019s so important to teach these lessons to Zoe,
+      and you as well, stranger. "
+    responses:
+    - text: "It\u2019s ok, you don\u2019t have to talk about it in front of Zoe. "
+      nextPassageIndex: 22
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Who was hurt before? '
+      nextPassageIndex: 29
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Thank you. My granddaughter is <i>everything </i>to me. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 23
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I don\u2019t want her to ever get hurt like\u2026 well, like others have
+      before her. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 24
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "*sigh* Zoe, honey. I\u2019m sorry, but we can\u2019t go up to the top
+      of the cliff tomorrow. It\u2019s just too dangerous."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 25
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Awww! But Granpa Dio, you promised! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 26
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "No buts, young lady. Grandpa Dio always puts safety first, and someday,
+      you\u2019ll thank me. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 27
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "And you, stranger. It\u2019s time for you to do. I hope you\u2019ve learned
+      something today. Here, I want you to take this book. It contains everything
+      I talked about today, for if you need reminding."
+    responses:
+    - text: 'Thank you, Diogini. '
+      nextPassageIndex: 28
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'And thank you, once again. Good night, stranger. '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 29
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: "*sigh* My child, Zosa and Archie\u2019s mother, used to live here. One
+      day, their partner and them went out to hike outside of Coral Cove for a couple
+      of days. But they took a path that was right near a S.M.O.G construction site.
+      The ground was unstable from all the drilling, and without meaning to, Zoe\u2019s
+      parents triggered a landslide\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 30
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: "I\u2019ve looked after Zoe and Archie since then. The hardest part of
+      it all was explaining to them that their parents\u2026 that the reason they
+      were gone was a simple mistake they made to walk the wrong trail. "
+    responses:
+    - text: 'Wait, it sounds like the construction site was what caused the landslide. '
+      nextPassageIndex: 31
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    - text: "I\u2019m sorry. That sounds like a horrible freak accident. "
+      nextPassageIndex: 22
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: " I mean, the cliff face being loosened was the fault of the S.M.O.G. construction
+      site\u2026 but these things happen! They were just building some sort of resort.
+      They didn\u2019t maliciously take my child away from me. "
+    responses:
+    - text: "But they\u2019re the ones responsible. Why do you keep denying their
+        involvement? "
+      nextPassageIndex: 32
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: "What\u2019s done is done, stranger! I\u2019m not going to open old wounds
+      for no good reason. They\u2019re in the past, I need to focus on the present,
+      on protecting Zoe. Please just let it go. "
+    responses:
+    - text: "...I\u2019m sorry, Diogini. "
+      nextPassageIndex: 33
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: 'Thank you. My granddaughter is everything to me. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 34
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: "I want her to be able to live a good life\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 35
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: "All right, Zoe, we\u2019ll go up to the top of the cliff tomorrow. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 36
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
+  - text: 'Really? Yayyyy! Thank you, Granpa Dio! '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 37
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

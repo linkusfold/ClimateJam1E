@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.TextCore.Text;
 
 [CreateAssetMenu(fileName = "CharacterDialogue", menuName = "Scriptable Objects/CharacterDialogue")]
+[Serializable]
 public class CharacterDialogue : ScriptableObject
 {
     [SerializeField]
@@ -18,12 +19,6 @@ public class CharacterDialogue : ScriptableObject
     public int GetResponseCount(int passageIndex)
     {
         return passages[passageIndex].responses.Length;
-    }
-
-    public int GetNextPassageIndex(int passageIndex)
-    {
-        // get next passage from default passage
-        return passages[passageIndex].nextPassageIndex;
     }
 
     public Passage GetPassage(int passageIndex)
@@ -56,6 +51,11 @@ public class CharacterDialogue : ScriptableObject
         return passages[passageIndex].responses[responseIndex];
     }
 
+    public bool responseEndsConversation(int passageIndex, int responseIndex)
+    {
+        return GetResponse(passageIndex, responseIndex).endsConversation;
+    }
+
 }
 [Serializable]
 
@@ -63,15 +63,10 @@ public class Passage
 {
     [SerializeField]
     public String text;
-
-    [Tooltip("Only used if no responses are set.")]
-    [SerializeField]
-    public int nextPassageIndex;
     [SerializeField]
     public Response[] responses;
     [SerializeField]
     public Sprite sprite;
-    public CharacterDialogue nextConversation;
 }
 
 [Serializable]
@@ -80,4 +75,5 @@ public class Response
     public String text;
     public int nextPassageIndex;
     public CharacterDialogue nextConversation;
+    public bool endsConversation;
 }
