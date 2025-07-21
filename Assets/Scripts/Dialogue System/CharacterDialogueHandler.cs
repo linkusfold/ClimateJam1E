@@ -9,7 +9,6 @@ using UnityEngine.UI;
 [RequireComponent(typeof(AudioSource))]
 public class CharacterDialogueHandler : MonoBehaviour
 {
-    public static bool hasTalkedTo = false;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Dialogue Obj, indexes, and textbox
     [SerializeField]
@@ -161,7 +160,6 @@ public class CharacterDialogueHandler : MonoBehaviour
         // TODO: upgrade tower one level
         // TODO: heal house damage
         // TODO: update info board
-        hasTalkedTo = true;
         closeConversation();
     }
 
