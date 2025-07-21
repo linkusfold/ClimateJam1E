@@ -13,4 +13,5 @@ public interface IHealable
 {
     // Applies healing to the object
     void Heal(int amount);
+    void UpdateHealthBar();
 }
