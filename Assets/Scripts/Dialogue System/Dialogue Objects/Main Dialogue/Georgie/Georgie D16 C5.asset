@@ -10,74 +10,63 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
-  m_Name: Finn D12 C4
+  m_Name: Georgie D16 C5
   m_EditorClassIdentifier: 
   passages:
-  - text: "Cole! I\u2019m glad you came by. I have a lot on my mind and kinda wanted
-      to talk to someone about it. "
+  - text: 'Hey! Good to see you doing great work again! I hope the Filter Tower is
+      helping you fight off those disasters. '
     responses:
-    - text: (Continue)
+    - text: "It\u2019s been a great help, thank you. How have you been doing? "
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "It\u2019s just that, when we were kids, Archie and I used to be really
-      good friends.  "
+  - text: 'Me? '
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "We would stay out later than we should\u2019ve, and get scolded together.
-      Haha, those were fun times. You should\u2019ve seen the look on his face, he
-      was such a softie.  "
+  - text: "I have been\u2026 pretty stressed lately. "
     responses:
     - text: (Continue)
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: 'But as we grew up, things started getting more complicated. Especially
-      for Archie. '
+  - text: "If my father were here, I could at least ask him for advice on how to
+      be a good mayor\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "When he was going through a lot, it felt like he just pushed me to the
-      side. I tried to be there for him, but it seemed like I was only making things
-      worse. Eventually, we stopped hanging out and\u2026 well, that was that.  "
+  - text: 'Heh. My father was a great mayor. '
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: 'I wish things went a bit differently.  '
+  - text: "I wish you could\u2019ve met him, he would've loved you! "
     responses:
     - text: (Continue)
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "\u2026 "
+  - text: "\u2026His one motivation in life was to make my mother proud. She passed
+      away after my birth, and ever since that day, he was the best person he could
+      ever become. "
     responses:
     - text: (Continue)
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
-  - text: "Uh, thanks for\u2026 for listening. It really helped me sort my thoughts,
-      just having someone here."
-    responses:
-    - text: (Continue)
-      nextPassageIndex: 8
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: 0}
-  - text: "Let\u2019s talk later, okay? "
+  - text: "He knew that\u2019s what my mother would have wanted.  "
     responses:
     - text: (End Conversation)
       nextPassageIndex: 8

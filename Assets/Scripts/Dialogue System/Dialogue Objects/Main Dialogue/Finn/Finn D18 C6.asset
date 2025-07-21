@@ -12,4 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
   m_Name: Finn D18 C6
   m_EditorClassIdentifier: 
-  passages: []
+  passages:
+  - text: "Nice of you to stop by, but I can\u2019t stay for long! I\u2019ve got
+      plans with Archie. We\u2019re gonna try to clean up as much garbage as possible
+      and whoever collects the least has to buy dinner.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'I lost the last time we did something like this so I gotta win this time
+      around! '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

@@ -12,4 +12,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
   m_Name: Finn D2 C1 part 2
   m_EditorClassIdentifier: 
-  passages: []
+  passages:
+  - text: "I\u2019ve got some extra things that\u2019ll probably help. Let me grab
+      them real quick and then we can fix up your place. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Sorry about the mess, been pretty busy lately with all these disasters
+      around town. I try to help where I can. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "\u2026Got it! Let\u2019s head back. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
