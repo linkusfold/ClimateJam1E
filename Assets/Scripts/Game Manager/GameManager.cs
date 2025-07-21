@@ -3,78 +3,294 @@ using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
-public class GameManager : MonoBehaviour
+namespace Game_Manager
 {
-    public static GameManager instance;
-
-    public int playerHealth;
-    [Header("Script References")]
-    public CharacterHouse currentDialogue;
-    public WaveSpawner waveSpawner;
-    public PauseMenu pauseMenu;
-
-    public LevelData levelData;
-    void Awake()
+    public class GameManager : MonoBehaviour
     {
+        public static GameManager instance;
+
+        public int playerHealth;
+        [Header("Script References")]
+        public CharacterHouse currentDialogue;
+        private WaveSpawner waveSpawner;
+        public PauseMenu pauseMenu;
+        public LevelData levelData;
+    
+        #region Unity Event Functions
+
+        private bool isGameScene;
+        void Awake()
+        {
+            if (instance != null && instance != this)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                instance = this;
+            }
         
-        if (instance == null)
-        {
-            instance = this;
+            DontDestroyOnLoad(this);
+
+            if (SceneManager.GetActiveScene().name == "GameScene")
+            {
+                isGameScene = true;
+                return;
+            }
+            isGameScene = false;
         }
-        else if (instance != this)
+
+        void Start()
         {
-            Destroy(this);
+            if(!isGameScene) return;
+            
+            waveSpawner = WaveSpawner.instance;
+            
+            waveSpawner.Initialize(levelData);
+            GenerateGrid();
         }
 
+        public void Update()
+        {
+            if(!isGameScene) return;
+            
+            switch (placementMode)
+            {
+                case PlacementMode.None:
+                    return;
+                case PlacementMode.Placement:
+                    PlaceTower();
+                    break;
+                case PlacementMode.Destruction:
+                    break;
+            }
+        }
+        
+        void OnDrawGizmos()
+        {
+            if (SceneManager.GetActiveScene().name != "GameScene") return;
+            Gizmos.color = Color.green;
+
+            for (int x = 0; x < columns; x++)
+            {
+                for (int y = 0; y < rows; y++)
+                {
+                    Vector3 cellCenter = GridToWorld(new Vector2Int(x, y)) + new Vector3(cellSize / 2f, cellSize / 2f, 0f);
+                    Gizmos.DrawWireCube(cellCenter, new Vector3(cellSize, cellSize, 0f));
+                }
+            }
+        }
+        #endregion
+        
+        #region Tower Placement Functions
+
+        private enum PlacementMode {None, Placement, Destruction}
+        private PlacementMode placementMode = PlacementMode.None;
+        private Tower selectedTower;
+        [NonSerialized] public TowerButton btn;
+
+        public void SelectTower(Tower tower)
+        {
+            if(!isGameScene) return;
+            
+            selectedTower = tower;
+            placementMode = PlacementMode.Placement;
+        }
+
+        public void RemoveTower(Tower tower)
+        {
+            if(!isGameScene) return;
+            
+            Vector2Int gridPos = WorldToGrid(tower.transform.position);
+            GridCell cell = GetCell(gridPos);
+    
+            if (cell != null)
+            {
+                cell.Vacate();
+            }
+    
+            Destroy(tower.gameObject);
+
+        }
+        
+
+        public void PlaceTower()
+        {
+            if(!isGameScene) return;
+            
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                worldPos.z = 0;
+
+                Vector2Int gridPos = WorldToGrid(worldPos);
+                GridCell cell = GetCell(gridPos);
+                Vector3 snapPos = GridToWorld(gridPos) + new Vector3(cellSize / 2f, cellSize / 2f, 0f);
 
 
-        DontDestroyOnLoad(this);
-    }
+                Debug.Log($"Mouse World Pos: {worldPos}, Grid: {gridPos}, Snapped: {snapPos}");
 
-    void Start()
-    {
-        /*
-        waveSpawner.StartWaveSpawning();
-        */
-    }
+                if (cell != null && !cell.isOccupied)
+                {
+                    btn.tower = Instantiate(selectedTower, snapPos, Quaternion.identity);
+                    cell.Occupy();
+                    placementMode = PlacementMode.None;
+                }
+            }
+        }
+        #endregion
+    
+        #region Grid Logic
+        [Header("Grid")]
+        public GameObject cellPrefab;
+        public int rows = 5;
+        public int columns = 9;
+        public float cellSize = 1f;
+    
+        public Vector2 gridOrigin = Vector2.zero;
 
-    // Testing function
-    public void doThing()
-    {
-        Debug.Log("Doing something!");
-    }
+        private GridCell[,] grid;
+        void GenerateGrid()
+        {
+            if (cellPrefab == null) return;
+            if(!isGameScene) return;
+            
+            grid = new GridCell[columns, rows];
 
+            for (int x = 0; x < columns; x++)
+            {
+                for (int y = 0; y < rows; y++)
+                {
+                    Vector3 spawnPosition = new Vector3((x * cellSize), (y * cellSize), 0f) + (Vector3)gridOrigin;
+                    GameObject cell = Instantiate(cellPrefab, spawnPosition, Quaternion.identity, transform);
+                    GridCell gridCell = cell.GetComponent<GridCell>();
+                    gridCell.gridPosition = new Vector2Int(x, y);
+                    grid[x, y] = gridCell;
+                }
+            }
+        }
 
+        public Vector2Int WorldToGrid(Vector3 worldPos)
+        {
+            Vector3 localPos = worldPos - (Vector3)gridOrigin;
 
-    // Game Loop Control
-    public void PauseAllEnemies()
-    {
-        /*
+            float gridX = localPos.x / cellSize;
+            float gridY = localPos.y / cellSize;
+
+            int x = Mathf.Clamp(Mathf.FloorToInt(gridX), 0, columns - 1);
+            int y = Mathf.Clamp(Mathf.FloorToInt(gridY), 0, rows - 1);
+
+            return new Vector2Int(x, y);
+        }
+
+        public Vector3 GridToWorld(Vector2Int gridPos)
+        {
+            return new Vector3(gridPos.x * cellSize, gridPos.y * cellSize, 0f) + (Vector3)gridOrigin;
+        }
+
+        public GridCell GetCell(Vector2Int pos)
+        {
+            if (pos.x < 0 || pos.y < 0 || pos.x >= columns || pos.y >= rows) return null;
+            return grid[pos.x, pos.y];
+        }
+        #endregion
+        
+        #region End Round Logic
+        
+        [Header("End Round Variables")]
+        private List<House> houses = new List<House>();
+        public GameObject winScreen;
+        public GameObject loseScreen;
+        
+        private bool CheckHousesAlive()
+        {
+            House aliveHouse = houses.Find(r => r.IsDestroyed);
+            if (aliveHouse != null) return true;
+            return false;
+        }
+
+        public void Win()
+        {
+            if (!winScreen)
+            {
+                Debug.LogError("GameManager: Win(): No winScreen specified.");
+                return;
+            }
+            winScreen.SetActive(true);
+            destroyedHouses = StoreDestroyedHouses();
+        }
+
+        private void Lose()
+        {
+            if (!loseScreen)
+            {
+                Debug.LogError("GameManager: Lose(): No loseScreen specified.");
+                return;
+            }
+            loseScreen.SetActive(true);
+        }
+
+        public void NextButton()
+        {
+            
+        }
+
+        public void RetryButton()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
+        #endregion
+        
+        #region Passing Data To Dialogue Scene
+        
+        public List<House> destroyedHouses;
+        private List<House> StoreDestroyedHouses()
+        {
+            if(!isGameScene) return null;
+            return houses.GroupBy(r => r.isDestroyed).Select(r => r.First()).ToList();
+        }
+        
+        #endregion
+
+        // Testing function
+        public void doThing()
+        {
+            Debug.Log("Doing something!");
+        }
+    
+        // Game Loop Control
+        public void PauseAllEnemies()
+        {
+            /*
         foreach (Enemy enemy in waveSpawner.enemies)
         {
             enemy.StopPathing();
         }
         */
 
-    }
-    public void ResumeAllEnemies()
-    {
-        /*
+        }
+        public void ResumeAllEnemies()
+        {
+            /*
         foreach (Enemy enemy in waveSpawner.enemies)
         {
             enemy.StartPathing();
         }
         */
-    }
-    public void DestroyAllEnemies()
-    {
-        /*
+        }
+        public void DestroyAllEnemies()
+        {
+            /*
         foreach (Enemy enemy in waveSpawner.enemies)
         {
             Destroy(enemy.gameObject);
         }
         */
-    }
+        }
 
+    
+    }
 }
