@@ -251,7 +251,13 @@ namespace Game_Manager
             if(!isGameScene) return null;
             return houses.GroupBy(r => r.isDestroyed).Select(r => r.First()).ToList();
         }
-        
+
+        #endregion
+
+        #region Passing Dialogue Data To Next Level
+
+
+
         #endregion
 
         // Testing function
