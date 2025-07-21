@@ -917,6 +917,7 @@ MonoBehaviour:
   columns: 9
   cellSize: 1
   gridOrigin: {x: 0, y: 0}
+  houses: []
   winScreen: {fileID: 0}
   loseScreen: {fileID: 0}
   destroyedHouses: []
@@ -1536,20 +1537,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1148185828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a06739edf046f934c9f74b08b38377d2, type: 3}
+  m_Script: {fileID: 11500000, guid: c979cd36128a7f8468acd0057799e665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDialogue: {fileID: 11400000, guid: 715e9175fa02fb2408fdbde2b02dc97d, type: 2}
+  currentDialogue: {fileID: 0}
   textSpeed: 0.1
-  textBox: {fileID: 2116707286}
+  textBox: {fileID: 0}
   ptichVariation: 0
-  textSound: {fileID: 8300000, guid: b96558205ee16ba418422edd4c0348b9, type: 3}
-  textAudioSource: {fileID: 0}
-  progress: {fileID: 0}
-  Response: {fileID: 0}
-  responseButtonPrefab: {fileID: 745178416232656121, guid: 81bbd69eea97ac64bb3ae8a599dab17a, type: 3}
-  characterArtPrefab: {fileID: 0}
-  canvas: {fileID: 0}
+  textSound: {fileID: 0}
+  responseActionReference: {fileID: 0}
+  responseButtonPrefab: {fileID: 0}
+  characterHouse: 0
 --- !u!82 &1148185833
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1560,7 +1558,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b96558205ee16ba418422edd4c0348b9, type: 3}
+  m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: b96558205ee16ba418422edd4c0348b9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1

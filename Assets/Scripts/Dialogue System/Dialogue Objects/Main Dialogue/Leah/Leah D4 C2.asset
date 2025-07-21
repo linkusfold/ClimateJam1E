@@ -12,4 +12,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
   m_Name: Leah D4 C2
   m_EditorClassIdentifier: 
-  passages: []
+  passages:
+  - text: "You\u2019ve come back\u2026  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "After all these years of being cast out, I really can\u2019t believe someone
+      in this village is willing to listen. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well, I don\u2019t actually believe you are here to listen to me, per
+      se\u2026 people can\u2019t be that kind\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "But it\u2019s nice to have someone to talk to. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Everyone in this village refuses to understand me\u2026 the other day
+      the mayor called me \u201Cdelusional\u201D for trying to warn him about the
+      Great Storm coming this month, that will destroy the entire country! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019m just trying to help\u2026 why can\u2019t he see that\u2026"
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "The only people who really understand are my fellow believers\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "We know the truth, no matter what the rest of the world says\u2026 "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

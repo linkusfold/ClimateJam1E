@@ -10,13 +10,14 @@ using UnityEngine.Serialization;
 
 namespace Game_Manager
 {
+    [Serializable]
     public enum Homes
     {
-            archie,
-            leah,
-            georgie,
-            finn,
-            diogini
+        archie,
+        leah,
+        georgie,
+        finn,
+        diogini
 
     }
     public class GameManager : MonoBehaviour

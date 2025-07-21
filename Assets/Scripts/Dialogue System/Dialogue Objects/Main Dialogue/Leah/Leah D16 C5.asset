@@ -12,4 +12,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
   m_Name: Leah D16 C5
   m_EditorClassIdentifier: 
-  passages: []
+  passages:
+  - text: "The walk we took the other day felt nice\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "While we were out, I couldn\u2019t stop thinking about the believers. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "The leaders are all telling us that the Great Storm is still coming and
+      that a hurricane is already forming above the ocean\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "But they keep on delaying the date and sometimes I wonder if they actually
+      know what they are talking about\u2026  "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

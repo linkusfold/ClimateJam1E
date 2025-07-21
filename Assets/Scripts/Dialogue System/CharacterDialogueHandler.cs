@@ -6,6 +6,7 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using System.Linq;
 
 [RequireComponent(typeof(AudioSource))]
 public class CharacterDialogueHandler : MonoBehaviour
@@ -36,6 +37,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     int maxResponseCount = 5;
     GameObject buttonOBJ;
     Coroutine loopRoot;
+    [SerializeField]
+    public Homes characterHouse;
     void Awake()
     {
         textAudioSource = GetComponent<AudioSource>();
@@ -163,9 +166,11 @@ public class CharacterDialogueHandler : MonoBehaviour
 
 
         // TODO: update info board
-        GameManager.instance.houses.ElementAt(0).isUnlocked = true;
+        GameManager.instance.houses.ElementAt((int) Homes.archie);
         closeConversation();
     }
+
+    
 
     private void closeConversation()
     {

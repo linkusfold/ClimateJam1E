@@ -53,7 +53,7 @@ MonoBehaviour:
       nextConversation: {fileID: 0}
       endsConversation: 0
     - text: 'A dark shape on the sea? What is it?  '
-      nextPassageIndex: 0
+      nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 0}
@@ -84,8 +84,15 @@ MonoBehaviour:
   - text: "I don\u2019t know for sure, but we must prepare. Everyday I work on strengthening
       the walls for this house, but I doubt if they can do anything to stop it. "
     responses:
+    - text: (Continue)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "You are the first person in this village to take me seriously\u2026"
+    responses:
     - text: (End Conversation)
-      nextPassageIndex: 8
+      nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 1
     sprite: {fileID: 0}

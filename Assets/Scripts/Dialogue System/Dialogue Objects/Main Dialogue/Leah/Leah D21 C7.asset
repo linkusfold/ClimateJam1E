@@ -12,4 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
   m_Name: Leah D21 C7
   m_EditorClassIdentifier: 
-  passages: []
+  passages:
+  - text: "I have decided to take a break from the internet, I have realized maybe
+      I do let it take over my life a little\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Thank you for spending some time with me these past few weeks. '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
