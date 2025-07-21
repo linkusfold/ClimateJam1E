@@ -6,6 +6,7 @@ namespace DefaultNamespace
     public class House : MonoBehaviour, IHealable, IDamageableBuilding
     {
         public bool isDestroyed = false;             // Indicates if the tower has been destroyed
+        public bool isUnlocked = false;
         public bool IsDestroyed { set => isDestroyed = value; get => isDestroyed; }
         
         public float health = 100f;

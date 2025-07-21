@@ -262,7 +262,7 @@ namespace Game_Manager
         {
             foreach (House house in houses)
             {
-                if (CharacterDialogueHandler.hasTalkedTo == true)
+                if ()
                 {
                     Tower.isUnlocked = true;
                 }
