@@ -17,6 +17,6 @@ MonoBehaviour:
   waves:
   - {fileID: 11400000, guid: 5f4116dd0dea9774eacfdc4fe8aea8a7, type: 2}
   - {fileID: 11400000, guid: 5f4116dd0dea9774eacfdc4fe8aea8a7, type: 2}
-  - {fileID: 11400000, guid: 5f4116dd0dea9774eacfdc4fe8aea8a7, type: 2}
+  - {fileID: 11400000, guid: c66041a63e0f7894c86e17215f70f25a, type: 2}
   boss: {fileID: 0}
-  currentWaveIndex: 2
+  currentWaveIndex: 0
