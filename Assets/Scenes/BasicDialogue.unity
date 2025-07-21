@@ -753,7 +753,7 @@ MonoBehaviour:
   textSpeed: 0.1
   textBox: {fileID: 178276952}
   ptichVariation: 0.2
-  textSound: {fileID: 8300000, guid: d3e61d245e9067548b792950ff7aab76, type: 3}
+  textSound: {fileID: 8300000, guid: a0b477fbc9d0f374b8a46b58df1430e2, type: 3}
   textAudioSource: {fileID: 1093533145}
   progress: {fileID: -8463138833102596509, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   Response: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

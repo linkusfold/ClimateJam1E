@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace DefaultNamespace
 {
@@ -9,18 +8,12 @@ namespace DefaultNamespace
         protected float health = 100;
         protected float defense = 10;
         protected float damage = 10;
-        protected float atkSpeed = 1;
 
         public Path path;
         public int currentNodeId = 1;
         public bool pathing = true;
 
         public LevelData levelData;
-
-        public Enemy()
-        {
-            
-        }
 
         protected virtual void Start()
         {
@@ -43,17 +36,6 @@ namespace DefaultNamespace
                 ReachedNode();
                 return;
             }
-            
-            Vector3 targetPos = path.pathNodes[currentNodeId];
-
-            // Check for tower in the way
-            Collider2D hit = Physics2D.OverlapCircle(targetPos, 0.1f, LayerMask.GetMask("Tower"));
-
-            if (hit != null && hit.gameObject.TryGetComponent(out IDamageableBuilding bldg) && !bldg.IsDestroyed)
-            {
-                Attack(bldg);
-                return;
-            }
 
             transform.position = Vector3.MoveTowards(
                 transform.position,
@@ -62,13 +44,13 @@ namespace DefaultNamespace
             );
         }
 
-        private void GoToPathNode(int nodeId)
+        protected void GoToPathNode(int nodeId)
         {
             currentNodeId = nodeId;
             pathing = true;
         }
 
-        private void ReachedNode()
+        protected void ReachedNode()
         {
             pathing = false;
             Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
@@ -83,42 +65,18 @@ namespace DefaultNamespace
             GoToPathNode(currentNodeId);
         }
 
-        private void OnReachedEnd()
+        protected void OnReachedEnd()
         {
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
-            WaveSpawner.instance.EnemiesAlive--;
+            WaveSpawner.instance.EnemiesSafe++;
             levelData.OnEnemyRemoved();
             Destroy(gameObject);
         }
 
-        private void TeleportToPathNode(int nodeId)
+        public void TeleportToPathNode(int nodeId)
         {
             transform.position = path.pathNodes[nodeId];
         }
-        
-        private float nextAttackTime = 0f;
-
-        
-        protected bool CanAttack()
-        {
-            return Time.time >= nextAttackTime;
-        }
-
-        protected void UpdateAttackCooldown()
-        {
-            nextAttackTime = Time.time + (1f / atkSpeed);
-        }
-
-        protected void Attack(IDamageableBuilding bldg)
-        {
-            if (!CanAttack()) return;
-            PerformAttack(bldg);
-            UpdateAttackCooldown();
-        }
-
-        protected abstract void PerformAttack(IDamageableBuilding building);
-
-
 
         public void TakeDamage(float amount)
         {
@@ -132,30 +90,18 @@ namespace DefaultNamespace
                 Die();
             }
         }
-
-        public void Immobilize(float duration)
-        {
-            StartCoroutine(ImmobilizeCoroutine(duration));
-        }
-
-        private IEnumerator ImmobilizeCoroutine(float duration)
-        {
-            pathing = false;
-            yield return new WaitForSeconds(duration);
-            pathing = true;
-        }
-
-        public void ExtinguishFire()
-        {
-            
-        }
+        
+        public void Immobilize(float duration) {}
+        
+        public void ExtinguishFire() {}
 
         protected void Die()
         {
             Debug.Log($"{gameObject.name} died.");
-            WaveSpawner.instance.EnemiesAlive--;
             levelData.OnEnemyRemoved(); 
             Destroy(gameObject);
         }
+
+        protected abstract void Attack();
     }
 }

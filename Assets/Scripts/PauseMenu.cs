@@ -1,28 +1,28 @@
-/*
- * PauseMenu.cs
- * Author: Lauren Thoman
- * Date: June 22, 2025 (Updated July 11, 2025)
- *
- * Handles pausing and resuming the game using the Escape key and Resume button.
- * Also provides access to Settings, Info, and Quit from the pause menu.
- */
-
 using UnityEngine;
 using UnityEngine.UI;
 
+/*
+ * PauseMenu.cs
+ * Author: Lauren Thoman
+ * Date: June 22, 2025
+ *
+ * Handles pausing and resuming the game using the Escape key and Resume button.
+ */
+
 public class PauseMenu : MonoBehaviour
 {
-    [Header("Panels")]
+    // Reference to pause panel UI
     public GameObject pausePanel;
-    public GameObject settingsPanel;
-    public GameObject infoPanel;    // <-- New Info panel reference
 
+    // Tracks whether the game is currently paused
     private bool isPaused = false;
 
     void Update()
     {
+        // Check if Escape key is pressed
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            // Toggle pause state
             if (isPaused)
                 ResumeGame();
             else
@@ -32,54 +32,15 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        pausePanel.SetActive(true);
-        Time.timeScale = 0f;
+        pausePanel.SetActive(true);       // Shows pause panel
+        Time.timeScale = 0f;              // Stops time
         isPaused = true;
     }
 
     public void ResumeGame()
     {
-        pausePanel.SetActive(false);
-        settingsPanel.SetActive(false);
-        infoPanel.SetActive(false);  // <-- Make sure Info closes too
-        Time.timeScale = 1f;
+        pausePanel.SetActive(false);      // Hides pause panel
+        Time.timeScale = 1f;              // Resumes time
         isPaused = false;
-    }
-
-    // Called by Pause Menu Settings button
-    public void OpenSettings()
-    {
-        settingsPanel.SetActive(true);
-        pausePanel.SetActive(false);
-    }
-
-    // Called by Settings panel Back button
-    public void CloseSettings()
-    {
-        settingsPanel.SetActive(false);
-        pausePanel.SetActive(true);
-    }
-
-    // Called by Pause Menu Info button
-    public void OpenInfo()
-    {
-        infoPanel.SetActive(true);
-        pausePanel.SetActive(false);
-    }
-
-    // Called by Info panel Close button
-    public void CloseInfo()
-    {
-        infoPanel.SetActive(false);
-        pausePanel.SetActive(true);
-    }
-
-    // Called by Pause Menu Quit button
-    public void QuitGame()
-    {
-        Application.Quit();
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#endif
     }
 }

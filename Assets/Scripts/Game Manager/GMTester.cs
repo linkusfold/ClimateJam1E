@@ -1,4 +1,3 @@
-using Game_Manager;
 using UnityEngine;
 
 public class GMTester : MonoBehaviour

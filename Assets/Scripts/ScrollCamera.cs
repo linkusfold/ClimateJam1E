@@ -14,9 +14,6 @@ using UnityEngine;
 
 public class ScrollCamera : MonoBehaviour
 {
-    
-    public bool isLocked = false;
-    
     // How fast the camera moves
     public float scrollSpeed = 5f;
 
@@ -25,8 +22,6 @@ public class ScrollCamera : MonoBehaviour
 
     void Update()
     {
-        if (isLocked) return;
-        
         // Gets the current camera position
         Vector3 pos = transform.position;
 

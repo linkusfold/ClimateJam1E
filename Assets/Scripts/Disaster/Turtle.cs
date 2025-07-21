@@ -13,7 +13,7 @@ namespace DefaultNamespace
             base.Start();
         }
 
-        protected override void PerformAttack(IDamageableBuilding building)
+        protected override void Attack()
         {
             Debug.Log("Turtle bites!");
             // Custom logic here for the turtle melee attack

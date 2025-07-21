@@ -1,22 +1,23 @@
-using DefaultNamespace;
 using UnityEngine;
+
+namespace DefaultNamespace
+{
     public class Crab : Enemy
     // Oilgae minion; has melee claw attack
-    {   
+    {
         protected override void Start()
         {
             speed = 1.5f;
             health = 110;
             damage = 10;
-            atkSpeed = 1;
             base.Start();
         }
 
-        protected override void PerformAttack(IDamageableBuilding building)
+        protected override void Attack()
         {
-            building.TakeDamage((int)damage);
-            Debug.Log($"Crab clawed the {building} for {damage} points of damage!");
+            Debug.Log("Crab claws!");
             // Custom logic here for the crab melee attack
         }
 
     }
+}

@@ -1,118 +1,154 @@
 using UnityEngine;
 using UnityEngine.UI;
-using System;
+using TMPro;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 
 /*
  * -----------------------------------------------
  * InventoryUIController.cs
  * Author: Lauren Thoman
- * Date: June 29, 2025 (Updated July 14, 2025)
+ * Date: June 29, 2025 (Updated July 2, 2025)
  *
  * Manages the inventory UI panel behavior, including
- * showing/hiding via dedicated open and close buttons,
- * displaying items in a grid, showing hover tooltips,
- * updating a detail text box, and adding placeholder items.
- * Ready for NPC-driven item additions. Max 8 items allowed.
+ * toggling via keyboard ('B') or UI button, pausing the game,
+ * displaying items in a grid, and showing hover tooltips.
+ * Ready for NPC-driven item additions.
  * -----------------------------------------------
  */
-public class InventoryRevealController : MonoBehaviour
+public class InventoryUIController : MonoBehaviour
 {
-    [Header("Backpack Panel & Buttons")]
-    [Tooltip("The UI panel (e.g. Canvas Group or GameObject) that contains your backpack icons")]
-    public GameObject backpackPanel;
-    [Tooltip("Button that opens the backpack panel")]
-    public Button openBackpackButton;
-    [Tooltip("Button that closes the backpack panel")]
-    public Button closeBackpackButton;
+    [Header("UI References")]
+    public GameObject inventoryPanel;      // The panel to show/hide
+    public Button inventoryButton;         // Always-visible toggle button
+    public Transform itemGrid;             // Grid container (with GridLayoutGroup)
+    public GameObject slotPrefab;          // Prefab for each item slot
 
-    [Serializable]
-    public struct ItemSlot
-    {
-        public string key;       // the identifier you use in your dialogue script
-        public GameObject icon;  // the GameObject (or Image) to show/hide
-    }
+    [Header("Tooltip")]
+    public GameObject tooltipPanel;        // Tooltip background panel
+    public TextMeshProUGUI tooltipText;    // Tooltip text field
 
-    [Header("Assign each item key + its icon GameObject here")]
-    public List<ItemSlot> items = new List<ItemSlot>();
+    [Header("Tooltip Offset")]
+    public Vector3 tooltipOffset = new Vector3(10f, -10f, 0f); // Customizable in Inspector
 
-    // fast lookup at runtime
-    private Dictionary<string, GameObject> _lookup;
-
-    void Awake()
-    {
-        // build lookup and hide all icons
-        _lookup = new Dictionary<string, GameObject>(items.Count);
-        foreach (var slot in items)
-        {
-            if (slot.icon != null && !_lookup.ContainsKey(slot.key))
-            {
-                _lookup[slot.key] = slot.icon;
-                slot.icon.SetActive(false);
-            }
-        }
-
-        // ensure backpack starts hidden
-        if (backpackPanel != null)
-            backpackPanel.SetActive(false);
-    }
+    // In-memory list of items (title + description)
+    private List<InventoryItem> items = new List<InventoryItem>();
 
     void Start()
     {
-        // wire up your open/close buttons
-        if (openBackpackButton != null)
-            openBackpackButton.onClick.AddListener(ShowBackpack);
+        if (inventoryPanel != null)
+            inventoryPanel.SetActive(false);
 
-        if (closeBackpackButton != null)
-            closeBackpackButton.onClick.AddListener(HideBackpack);
-    }
-
-    /// <summary>
-    /// Reveal (enable) the backpack UI.
-    /// </summary>
-    private void ShowBackpack()
-    {
-        if (backpackPanel == null) return;
-        backpackPanel.SetActive(true);
-        // optionally pause game: Time.timeScale = 0f;
-    }
-
-    /// <summary>
-    /// Hide (disable) the backpack UI.
-    /// </summary>
-    private void HideBackpack()
-    {
-        if (backpackPanel == null) return;
-        backpackPanel.SetActive(false);
-        // optionally resume game: Time.timeScale = 1f;
-    }
-
-    /// <summary>
-    /// Call this from your dialogue/NPC code to reveal an item.
-    /// e.g. InventoryRevealController controller = FindObjectOfType<InventoryRevealController>();
-    ///      controller.RevealItem("SilverSword");
-    /// </summary>
-    public void RevealItem(string key)
-    {
-        if (_lookup.TryGetValue(key, out var icon))
+        if (inventoryButton != null)
         {
-            icon.SetActive(true);
-            Debug.Log($"[Inventory] Revealed item: {key}");
+            inventoryButton.onClick.RemoveAllListeners();
+            inventoryButton.onClick.AddListener(ToggleInventory);
         }
+
+        items.Add(new InventoryItem("Gift from Mom", "A thoughtful gift from your mom."));
+        RefreshUI();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.B))
+            ToggleInventory();
+
+        // TEMP: Press T to add test item
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            AddItem("Shiny Shell", "A smooth, glimmering shell found near the tide pool.");
+        }
+    }
+
+    public void ToggleInventory()
+    {
+        if (inventoryPanel == null) return;
+
+        bool open = !inventoryPanel.activeSelf;
+        inventoryPanel.SetActive(open);
+        Time.timeScale = open ? 0f : 1f;
+
+        if (open)
+            RefreshUI();
         else
+            HideTooltip();
+    }
+
+    public void AddItem(string title, string description)
+    {
+        items.Add(new InventoryItem(title, description));
+        if (inventoryPanel.activeSelf)
+            RefreshUI();
+    }
+
+    private void RefreshUI()
+    {
+        foreach (Transform child in itemGrid)
+            Destroy(child.gameObject);
+
+        foreach (var it in items)
         {
-            Debug.LogWarning($"[Inventory] No item with key '{key}' found.");
+            GameObject slot = Instantiate(slotPrefab, itemGrid);
+
+            var label = slot.GetComponentInChildren<TextMeshProUGUI>();
+            if (label) label.text = it.title;
+
+            var trigger = slot.GetComponent<EventTrigger>();
+            if (trigger == null)
+                trigger = slot.AddComponent<EventTrigger>();
+            trigger.triggers.Clear();
+
+            var entryEnter = new EventTrigger.Entry
+            {
+                eventID = EventTriggerType.PointerEnter
+            };
+            entryEnter.callback.AddListener(evt => ShowTooltip(it));
+            trigger.triggers.Add(entryEnter);
+
+            var entryExit = new EventTrigger.Entry
+            {
+                eventID = EventTriggerType.PointerExit
+            };
+            entryExit.callback.AddListener(evt => HideTooltip());
+            trigger.triggers.Add(entryExit);
         }
+    }
+
+    private void ShowTooltip(InventoryItem item)
+    {
+        if (tooltipPanel == null || tooltipText == null) return;
+        tooltipPanel.SetActive(true);
+        tooltipText.text = item.description;
+
+        // Wait one frame before positioning so we don’t flicker
+        StartCoroutine(DelayedTooltipPosition());
+    }
+
+    private System.Collections.IEnumerator DelayedTooltipPosition()
+    {
+        yield return null; // Wait 1 frame
+        tooltipPanel.transform.position = Input.mousePosition + tooltipOffset;
+    }
+
+    private void HideTooltip()
+    {
+        if (tooltipPanel == null) return;
+        tooltipPanel.SetActive(false);
     }
 }
 
+/// <summary>
+/// Represents a single inventory item (title + description).
+/// </summary>
+public class InventoryItem
+{
+    public string title;
+    public string description;
 
-//  Triggering from dialogue
-//  Wherever NPC says you earned and item add:
-
-//  InventoryRevealController controller = FindObjectOfType<InventoryRevealController>();
-//  controller.RevealItem("SilverSword");
-
-//  cache a reference
-//  InventoryRevealController.Instance.RevealItem("SilverSword");
-
+    public InventoryItem(string title, string description)
+    {
+        this.title = title;
+        this.description = description;
+    }
+}
