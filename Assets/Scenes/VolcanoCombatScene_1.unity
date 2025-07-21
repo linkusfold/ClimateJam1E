@@ -549,11 +549,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 153115282}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
+  m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 0}
   cooldown: 10
+--- !u!1 &212491793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 913828300399864001, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
+  m_PrefabInstance: {fileID: 1338062619}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &212491798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212491793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e033825c68ff77947969dbec04d427ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDestroyed: 0
+  health: 100
 --- !u!1001 &237018743
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1047,7 +1066,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 468847992}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
+  m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 0}
@@ -1229,7 +1248,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 509215768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
+  m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 0}
@@ -2594,10 +2613,14 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1.11
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7437016863630066764, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 913828300399864001, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 212491798}
   m_SourcePrefab: {fileID: 100100000, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
 --- !u!1 &1439082780
 GameObject:
@@ -3339,7 +3362,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7437016863630066764, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3567,10 +3591,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1658639743}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
+  m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 2531785851351949269, guid: c7ff016046b404a8282be1ee888bd1a0, type: 3}
   cooldown: 10
 --- !u!114 &1672255930 stripped
 MonoBehaviour:
@@ -4052,7 +4076,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2007855728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3be380d30eb218745a19bdedce61a031, type: 3}
+  m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   towerPrefab: {fileID: 0}

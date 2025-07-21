@@ -7,7 +7,7 @@ namespace DefaultNamespace
     {
         [SerializeField] private HealthBar healthBar;
 
-        [SerializeField] private float _health = 500f;
+        [SerializeField] private float _health = 200f;
 
         public float Health
         {
@@ -54,7 +54,7 @@ namespace DefaultNamespace
                 || (waveSpawner.levelData.currentWaveIndex % 2 == 0 && !isOnLeftSide))
                 && !isSwitchingSides)
             {
-                TakeDamage(100); //This is just for debugging it won't actually take damage here
+                TakeDamage(25); //This is just for debugging it won't actually take damage here
                 SwitchSides();
             }
         }

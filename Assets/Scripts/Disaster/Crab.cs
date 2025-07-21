@@ -6,7 +6,7 @@ using UnityEngine;
         protected override void Start()
         {
             speed = 0.5f;
-            health = 110;
+            health = 50;
             damage = 5;
             atkSpeed = 1;
             base.Start();

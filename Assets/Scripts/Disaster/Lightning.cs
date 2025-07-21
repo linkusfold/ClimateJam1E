@@ -7,7 +7,7 @@ using System.Collections;
         protected override void Start()
         {
             speed = 0.5f;
-            health = 100;
+            health = 50;
             damage = 70;
             atkSpeed = 50; //only attacks once
             base.Start();

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2076144409845298851}
   - component: {fileID: 4315774809045110671}
   - component: {fileID: 8531101760171650157}
-  - component: {fileID: -7437016863630066764}
+  - component: {fileID: 3994561717966732637}
   m_Layer: 6
   m_Name: House
   m_TagString: Untagged
@@ -136,7 +136,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &-7437016863630066764
+--- !u!114 &3994561717966732637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 913828300399864001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 186364a4b0e217749915a63f08cb2e4b, type: 3}
+  m_Script: {fileID: 11500000, guid: e033825c68ff77947969dbec04d427ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isDestroyed: 0
@@ -246,7 +246,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2965584261614436241}
-  - component: {fileID: 4688149135495791005}
+  - component: {fileID: 2987919951340895488}
   m_Layer: 6
   m_Name: TowerHealth
   m_TagString: Untagged
@@ -262,7 +262,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4677464966174098804}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: 0.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -275,7 +275,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0.01, y: 0.55}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4688149135495791005
+--- !u!114 &2987919951340895488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -284,7 +284,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4677464966174098804}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ea4e56cc336c2140b751df09294a439, type: 3}
+  m_Script: {fileID: 11500000, guid: bc6ca8d16e9efdc489c9dc6ba1247b34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healthBarForeground: {fileID: 3575189981541432815}

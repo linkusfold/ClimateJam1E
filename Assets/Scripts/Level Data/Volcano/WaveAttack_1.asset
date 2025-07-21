@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: WaveAttack_1
   m_EditorClassIdentifier: 
   enemies:
-  - {fileID: -4305092975578304192, guid: f8f3f11e8797c1a43baea1f5fca2a303, type: 3}
+  - {fileID: 549037656823082475, guid: f8f3f11e8797c1a43baea1f5fca2a303, type: 3}
   timeToNextEnemy: 2
   timeToNextWave: 25
-  enemiesLeft: -2
+  enemiesLeft: 1
