@@ -60,7 +60,6 @@ namespace DefaultNamespace
         }
         protected void OnReachedEnd()
         {
-            waveSpawner.EnemiesSafe++;
             waveSpawner.levelData.waves[waveSpawner.levelData.currentWaveIndex].enemiesLeft--;
             //Once we reach the end of the path we deal damage to the town/house
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");

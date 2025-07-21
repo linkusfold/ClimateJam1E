@@ -18,9 +18,6 @@ public class WaveSpawner : MonoBehaviour
 
     [SerializeField] public Transform spawnPoint;
 
-    public GameObject winScreen;
-
-    public int EnemiesSafe = 0;
     public int EnemiesAlive = 0;
 
     private void Awake()
@@ -68,7 +65,6 @@ public class WaveSpawner : MonoBehaviour
     public void Restart()
     {
         levelData.currentWaveIndex = 0;
-        EnemiesSafe = 0;
 
         levelCountdown = levelData.countdown;
 

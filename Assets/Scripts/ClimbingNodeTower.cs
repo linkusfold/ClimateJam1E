@@ -16,7 +16,7 @@ public class ClimbingNodeTower : Tower
 {
     public float healRadius = 3f;    // Radius within which this tower can heal
     public int healAmount = 1;       // How much health to restore per heal tick
-    
+
     void Update()
     {
         // Skip update if the tower hasn't been unlocked yet
@@ -24,7 +24,7 @@ public class ClimbingNodeTower : Tower
 
         if (health <= 0)
         {
-            Destroy();
+            DestroyTower();
             return;
         }
         
@@ -37,14 +37,14 @@ public class ClimbingNodeTower : Tower
         // If ready to fire again
         if (cooldownTimer <= 0f)
         {
-            Shoot(new Enemy());              // Fire at the enemy
+            Shoot();              // Fire at the enemy
             cooldownTimer = fireCooldown;        // Reset cooldown timer
         }
     }
 
-
-    protected override void Shoot(Transform enemy)
+    private void Shoot()
     {
+        Debug.Log($"{gameObject.name}: Shoot() called.");
         // Skip healing if the tower is not yet unlocked
         if (!isUnlocked) return;
 
@@ -59,6 +59,8 @@ public class ClimbingNodeTower : Tower
             {
                 // Apply healing
                 healable.Heal(healAmount);
+                Debug.Log($"{gameObject.name}: Healed for {healAmount}.");
+                healable.UpdateHealthBar();
             }
         }
     }

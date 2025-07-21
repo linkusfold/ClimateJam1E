@@ -2,12 +2,12 @@ using System;
 using DefaultNamespace;
 using UnityEngine;
 using System.Collections;
+using Game_Manager;
 
 [CreateAssetMenu(fileName = "NewLevelData", menuName = "ScriptableObjects/LevelData", order = 2)]
 public class LevelData : ScriptableObject
 {
     public float countdown = 5f;
-    public int maxEnemiesSafe = 4;
     public WaveData[] waves;
     public Boss boss;
 
@@ -19,19 +19,10 @@ public class LevelData : ScriptableObject
 
     public void UpdateLevel()
     {
-        if (WaveSpawner.instance.EnemiesSafe >= maxEnemiesSafe)
-        {
-
-            //UnityEditor.EditorApplication.isPlaying = false;
-
-            Application.Quit();
-            return;
-        }
-        
         if (currentWaveIndex >= waves.Length && WaveSpawner.instance.EnemiesAlive == 0)
         {
             Debug.Log("All waves completed.");
-            WaveSpawner.instance.winScreen.SetActive(true);
+            GameManager.instance.Win();
             return;
         }
 

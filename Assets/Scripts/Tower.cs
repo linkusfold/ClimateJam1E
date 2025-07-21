@@ -59,7 +59,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
 
         if (health <= 0)
         {
-            Destroy();
+            DestroyTower();
             return;
         }
         
@@ -132,7 +132,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
         Debug.Log($"Tower upgraded to level {level}");
     }
 
-    private void Destroy()
+    protected void DestroyTower()
     {
         isDestroyed = true;
         Debug.Log("Tower destroyed");
