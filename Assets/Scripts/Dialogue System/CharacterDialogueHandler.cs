@@ -145,9 +145,21 @@ public class CharacterDialogueHandler : MonoBehaviour
 
 
     #region Dialogue Loading
-    private void CloseConversation()
+    private void EndConversation()
     {
-        
+        // Only called when dialogue of a conversation is fully completed
+
+        // TODO: unlock tower if locked.
+        // TODO: upgrade tower one level
+        // TODO: heal house damage
+        // TODO: update info board
+
+        closeConversation();
+    }
+
+    private void closeConversation()
+    {
+        //Should pause conversation and close out the ui. 
     }
     private void LoadNewConversation(CharacterDialogue conversation)
     {

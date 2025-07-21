@@ -1,0 +1,266 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Diogini & Zoe D16 C5
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'You should really know better than to be outside right now. Come in quick,
+      before you get blown off this cliff! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Quick! Quick! B\u2019fore the monster gets you! "
+    responses:
+    - text: 'What monster, Zoe? '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I saw big monster! All windy and going \u2018WHOOOOSH\u2019! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: Hmph. For the last time, Zoe, you did not see a monster outside.
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: No, Granpa Dio! I really saw one! Out the window! It was big and mean and
+      smashing things!
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "THERE IS NO MONSTER!! THERE IS NOTHING SMASHING UP CORAL COVE!! THIS IS
+      ONLY A STORM, AND I\u2019M SICK OF PEOPLE TELLING ME OTHERWISE!! HAS YOUR BROTHER
+      BEEN FILLING YOUR HEAD WITH NONSENSE?!! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '<i> Zoe starts crying. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Waaaaaahhh! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Oh- Ah- I\u2019m sorry, Zoe. I didn\u2019t mean to lose my temper- "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Granpa Dio s-scary! Waaaaahh!! '
+    responses:
+    - text: 'Look, Zoe! I made a grass whistle. Want to play with it? '
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "Your Grandpa didn\u2019t mean to scare you, Zoe. He\u2019s just scared
+        of the monster. "
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*sniffle* ...y-yeah.'
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019m so sorry, Zoe. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "...When Granpa Dio really l-loud, he scary\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I didn\u2019t mean to yell at you like that, Zoe. It\u2019s just that\u2026
+      just\u2026 "
+    responses:
+    - text: 'Your Grandpa just wanted to protect you, Zoe. '
+      nextPassageIndex: 14
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Yes, exactly! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 15
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "You know I love you more than anything, Zoe. Even if I yell, I\u2019ll
+      never let monsters come get you."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 16
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*sniff* Never ever? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Never ever, and that\u2019s a promise. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 30
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*sniffle* Granpa D-Dio afraid of monster too? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 19
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*looks at you, then sighs* '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 20
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Yes, I am also afraid of monsters. If only there was a strong young girl
+      to help me not be so scared. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 21
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "*sniff* Don\u2019 worry, Granpa Dio\u2026 I make sure monster don\u2019
+      come back. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 22
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well if there was a monster, I\u2019m sure it\u2019s gone now. We just
+      need to stay safe inside. "
+    responses:
+    - text: "Your Grandpa\u2019s right, Zoe. You need to stay inside so the monster
+        doesn\u2019t get you if it comes back. "
+      nextPassageIndex: 23
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Monster comin\u2019 back?! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 24
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Stranger, please- '
+    responses:
+    - text: 'Yes, it could come back. But me and my friends are fighting it, and
+        keeping Coral Cove safe. We need your help, so keep your eyes peeled for
+        a monster made of wind, and protect your Grandpa when you see it, understand? '
+      nextPassageIndex: 25
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'But she- '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 26
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "*nods* I unde\u2019stand. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 27
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "But\u2026 but\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 28
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Granpa Dio, I can help the town. I help you and all my friends not get
+      blown away. '
+    responses:
+    - text: (Cotinue)
+      nextPassageIndex: 29
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "...I see. You\u2019re very brave, Zoe. Just like your mother. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 30
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Now let\u2019s get you off to bed. We can read your favorite book again,
+      as a special apology treat. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 31
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Yayyyy! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 32
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Thank you, friend. A\u2026 a lot has happened recently. I have much to
+      think about. I hope we speak again soon."
+    responses:
+    - text: Take care, Dio.  (End Conversation)
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

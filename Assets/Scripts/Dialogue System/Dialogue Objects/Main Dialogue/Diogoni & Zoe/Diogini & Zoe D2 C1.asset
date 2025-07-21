@@ -1,0 +1,127 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Diogini & Zoe D2 C1
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'Archie? Is that you? I thought you would be gone for much longer thi- '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " ...You\u2019re not my grandson. Who are you? "
+    responses:
+    - text: "I\u2019m a member of (aid company). I was sent here to help."
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: " I\u2019m new in town. I wanted to introduce myself.\t "
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "And so you just came barging into my house then? That\u2019s very rude,
+      stranger. Isn\u2019t that right, Zoe? "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "It rude. We no like rude stran\u2019ers, right granpa Dio? "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "That\u2019s right, Zoe. We keep our eye on strangers. "
+    responses:
+    - text: "Diogini, right? You seem like you\u2019ve been here a while. "
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "You are correct on both accounts, stranger. I\u2019ve been living here
+      for quite a while, long enough to have grandchildren at the very least. This
+      one is my granddaughter, Zosa. Let\u2019s show this stranger how to be polite,
+      Zoe. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Hi, rude stran\u2019er! Nice to meet you! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*chuckles*  '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "My grandson Archie is usually more difficult for me to find. If he\u2019s
+      not here, he\u2019s usually hanging about that dark cave of his. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Which is most of the time, since he\u2019s barely around here. Your brother
+      could certainly learn a thing or two from you, Zoe. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*giggles* '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Now then, if you\u2019re done sightseeing around my home, I am not accustomed
+      to strangers visiting for prolonged periods of time. "
+    responses:
+    - text: " I\u2019m actually trying to fix up the old lighthouse. Finn said you
+        might be able to help? "
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "*grumbles* Finn should know better than to go around offering other\u2019s
+      help for them. But fine, if it will get you to leave\u2026 I should have some
+      old tools here somewhere. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Byee, stran\u2019er! "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

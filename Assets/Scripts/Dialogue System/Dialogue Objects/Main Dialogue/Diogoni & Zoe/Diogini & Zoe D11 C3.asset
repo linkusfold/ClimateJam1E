@@ -1,0 +1,335 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Diogini & Zoe D11 C3
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Ah, hello there, stranger! Come in quick, there\u2019s a storm outside.
+      You\u2019ve managed to come by during one of the rare moments that Archie has
+      decided to visit home. "
+    responses:
+    - text: "Oh\u2026 hi, Archie. "
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Hey\u2026 Yep\u2026 Just wanted to come by and see how everyone was doing\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Arcee\u2019s back, Arcee\u2019s back! Will you be back long time, Arcee? "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " Ah\u2026 probably not. Sorry, Zoe. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Awwww. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'But we can play some more before I leave? How does that sound? '
+    responses:
+    - text: "Glad to see you\u2019re all doing well."
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Yes, we\u2019ve been sheltering from these storms safely in here. It is
+      strange how frequent they\u2019ve been getting, but that\u2019s mother nature
+      for you. She works in mysterious ways. I can only guess as to why all these
+      storms are happening.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Right. \u2018Storms\u2019. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'But anyway. How do you feel the rest of the town is handling this puzzling
+      weather? '
+    responses:
+    - text: "They\u2019re faring all right. "
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "They\u2019re struggling. It\u2019s hard to prepare for disasters like
+        these. "
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Well, my opinion has always been that nobody takes safety seriously enough
+      in this town. People shouldn\u2019t be going out during times like this. They\u2019re
+      ignoring nature\u2019s blatantly clear warning signs. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Yeah! Like big winds and loud clouds! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Exactly. Very good Zoe. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Like our Mayor, for instance. He could be telling people to just stay
+      in their homes until this all blows over, but instead he\u2019s doing some
+      kind of filtering project thing that I don\u2019t even understand. "
+    responses:
+    - text: "Well, the Mayor\u2019s trying his best. "
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Yeah, he probably should be doing more for the town.  '
+      nextPassageIndex: 13
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Then there\u2019s Leah. She seems nice, but she talks a lot about this
+      \u2018Great Storm\u2019 of hers, which seems to be based off of hearsay, and
+      not anything real. At least she lets me and Zoe use that information machine
+      of hers sometimes. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 14
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "But that boy, Finn\u2026 he seems like he just does whatever he wants
+      and assumes things will come out all right for him. No real foresight whatsoever. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 15
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Hey, don\u2019t say that about Finn."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 16
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "What do you care, Archie? You don\u2019t talk to Finn anymore. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: ...
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Well, hopefully no one in town gets hurt, and mother nature allows the
+      storms to let up. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 19
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "You know, these storms aren\u2019t even natural in the first place. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 20
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*sigh* '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 21
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Here we go again. How many times are you going to scare Zoe by insisting
+      that there\u2019s someone out to get us? "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 22
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019m not making things up grandfather! S.M.O.G. leaked Oilgae into
+      the water, and that caused some ancient volcano creature to go nuts and start
+      causing all this damage! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 23
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "No! There is no Oilgae or angry volcano creature, and if there is it certainly
+      wasn\u2019t caused by (bad company)! We live side by side with nature as it
+      changes, and we can\u2019t just blame all our problems on someone else!  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 24
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Granpa Dio, is there a big vo\u2019cano monster coming to eat us?"
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 25
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Now look what you\u2019ve done, Archie! You\u2019ve upset your sister
+      with your tall tales! "
+    responses:
+    - text: 'You should hear Archie out Diogini. '
+      nextPassageIndex: 26
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Archie, maybe you should save this for later? '
+      nextPassageIndex: 26
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Tall tales!? I- '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 27
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "You go out in weather like this, putting yourself in danger for no good
+      reason! I don\u2019t understand it! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 28
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I\u2019m helping people, Grandfather! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 29
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "People don\u2019t need your help! If they\u2019re too foolish to be careful,
+      then they have only themselves to blame if they get hurt! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 30
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Is that what mom was to you!? Just another idiot that got what she deserved!? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 31
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: ' ...'
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 32
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: ' ...'
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 33
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " I\u2019m sorry, Zoe. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 34
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '<i> Archie leaves. '
+    responses:
+    - text: '*Stay with Diogini* '
+      nextPassageIndex: 35
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Go after Archie* '
+      nextPassageIndex: 35
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: " ...That\u2019s not\u2026 that\u2019s not what happened. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 36
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Now Arcee gone\u2026again\u2026 *sniffle*"
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 37
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "...Ahh, let\u2019s get you to bed, Zoe."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 38
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Could you come back tomorrow? I\u2019d like to show you something. "
+    responses:
+    - text: 'Of course. '
+      nextPassageIndex: 39
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: Good night, stranger. And good luck.
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 39
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

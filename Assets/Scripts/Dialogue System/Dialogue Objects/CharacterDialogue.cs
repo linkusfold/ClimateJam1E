@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.TextCore.Text;
 
 [CreateAssetMenu(fileName = "CharacterDialogue", menuName = "Scriptable Objects/CharacterDialogue")]
+[Serializable]
 public class CharacterDialogue : ScriptableObject
 {
     [SerializeField]

@@ -1,0 +1,299 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Diogini & Zoe D4 C2
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Oh, it\u2019s you. Sure took your time, eh? Finally ready to return those
+      tools, stranger? "
+    responses:
+    - text: '*gives the toolbox back to Diogini* '
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: " Guess I\u2019ll be heading out. "
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Actually, I have the perfect way for you to repay me for lending you those
+      tools. I need someone to help me watch Zoe while I clean up around here. '
+    responses:
+    - text: "\u201CUmm\u2026 I\u2019m not that great with kids.\u201D "
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "\u201CActually, I still have things I need to do.\u201D "
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Oh no, you\u2019re not getting out of repaying me! You kids these days
+      think you can just take anything you like, without ever thinking about giving
+      something back in return. Now you\u2019re going to help me watch my granddaughter.
+      And don\u2019t go acting rude around her, you\u2019ll set a bad example. "
+    responses:
+    - text: "Ok ok, I\u2019ll help."
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Good. Now keep her entertained while I tidy up. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Yayyyy, stran\u2019er come back to play! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "All right, Zoe. Why don\u2019t you stay where I can see you, and play
+      one of your  favorite games. I\u2019ll be done before you know it. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*Diogini starts cleaning up the leftover residue from the Oilgae around
+      the house* '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "We play color game! If you see a color, you gotta say it, ok? I start.
+      Black\u2026 brown\u2026 yellow\u2026 "
+    responses:
+    - text: 'Cleaning up the oil from those creatures, Dio? '
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'What other colors do you see, Zoe? '
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Diogini. And this? I don\u2019t think this is from any sort of animal,
+      stranger. It\u2019s probably just another one of Archie\u2019s stunts. I don\u2019t
+      know where he comes up with things like this. "
+    responses:
+    - text: "...I\u2019m pretty sure it wasn\u2019t Archie. There were definitely
+        oil creatures attacking the cliff yesterday. "
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Oil creatures? Are you listening to yourself? There was nothing attacking
+      Coral Cove yesterday, just some strong winds that shook the house around a
+      bit. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'But Granpa Dio! I saw one! Funny aminal was outside the window today. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 11
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'I told you Zoe, that was probably just a tired bird that was frightened
+      by the storm. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 12
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: If the bird tired, why Granpa Dio no let it in?
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 20
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Red\u2026 white\u2026 and\u2026 and\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 14
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: '*points to the residue* '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 15
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Granpa Dio, what is that? What color? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 16
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Oh this? I suppose someone wasn\u2019t being very careful and spilled
+      some paint everywhere. Go back to your game, dear. "
+    responses:
+    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
+        around yesterday when Coral Cove was attacked. "
+      nextPassageIndex: 17
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'That sounds like a load of nonsense! Why would anyone attack Coral Cove? '
+    responses:
+    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
+        around yesterday when Coral Cove was attacked. "
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Is that why there was loud noises last night? '
+    responses:
+    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
+        around yesterday when Coral Cove was attacked. "
+      nextPassageIndex: 18
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'No, no, that was just some stormy winds. There is nothing trying to attack
+      the cliff, just some townsfolk that are prone to accidents.  '
+    responses:
+    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
+        around yesterday when Coral Cove was attacked. "
+      nextPassageIndex: 19
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Next time loud noise come, can I check outside? '
+    responses:
+    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
+        around yesterday when Coral Cove was attacked. "
+      nextPassageIndex: 20
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Zoe, what do I always say when it\u2019s stormy outside? "
+    responses:
+    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
+        around yesterday when Coral Cove was attacked. "
+      nextPassageIndex: 21
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Be safe in house and don\u2019t come out\u2026 "
+    responses:
+    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
+        around yesterday when Coral Cove was attacked. "
+      nextPassageIndex: 22
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "That\u2019s right. If you aren\u2019t careful, and go out in a storm,
+      accidents can happen. Wouldn\u2019t you agree, Stranger?"
+    responses:
+    - text: 'I think that you can brave the harsh weather safely by being careful. '
+      nextPassageIndex: 23
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "It\u2019s good to stay inside, but you should still check outside so
+        you know when it\u2019s safe to go out again. "
+      nextPassageIndex: 23
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "I suppose. But my Zosa is far too young to know when it\u2019s safe to
+      leave. "
+    responses:
+    - text: "You\u2019d be surprised at how much kids can understand. "
+      nextPassageIndex: 24
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "If you say so. You\u2019re her grandfather after all. "
+      nextPassageIndex: 24
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Hey! Am not too little! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 25
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Now, Zoe, you know grandpa Dio loves you very much, and doesn\u2019t want
+      anything bad to happen to you."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 26
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'But I want to go out and see storm! '
+    responses:
+    - text: 'Zoe, you should listen to your grandpa. '
+      nextPassageIndex: 27
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Maybe your grandpa will let you go out sometime if you ask nicely, Zoe. '
+      nextPassageIndex: 27
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "Ok\u2026 fine."
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 28
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "That\u2019s a good girl Zoe. And look. Grandpa\u2019s all done tidying
+      up. Now I can read you your favorite book. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 29
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: Yayyy! Get the book! Get the book!
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 30
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: 'Thank you for helping me watch Zoe, stranger. You should come by again
+      sometime. '
+    responses:
+    - text: "I\u2019m sure I will, Dio. "
+      nextPassageIndex: 31
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 0}
+  - text: "That\u2019s Diogini to you! "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 31
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}
