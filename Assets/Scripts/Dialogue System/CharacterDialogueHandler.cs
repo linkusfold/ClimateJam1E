@@ -38,7 +38,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     GameObject buttonOBJ;
     Coroutine loopRoot;
     [SerializeField]
-    public Homes characterHouse;
+    public Homes characterHouseType;
+    public CharacterHouse house;
     void Awake()
     {
         textAudioSource = GetComponent<AudioSource>();
@@ -46,7 +47,7 @@ public class CharacterDialogueHandler : MonoBehaviour
         textAudioSource.clip = textSound;
         responseButtonInstances = new GameObject[maxResponseCount];
         SetupArtHolder();
-
+        house = GetComponent<CharacterHouse>();
     }
     void Update()
     {
@@ -166,15 +167,16 @@ public class CharacterDialogueHandler : MonoBehaviour
 
 
         // TODO: update info board
-        GameManager.instance.houses.ElementAt((int) Homes.archie);
+       // GameManager.instance.houses.ElementAt((int) Homes.archie);
         closeConversation();
     }
 
-    
+
 
     private void closeConversation()
     {
         //Should pause conversation and close out the ui. 
+        house.EndConversation();
     }
     private void LoadNewConversation(CharacterDialogue conversation)
     {
@@ -237,9 +239,9 @@ public class CharacterDialogueHandler : MonoBehaviour
     private void LoadArt()
     {
 
-        if (currentDialogue == null)
+        if (currentDialogue.getPassageArt(currentPassageIndex) == null)
         {
-            Debug.Log("Null dio!");
+            Debug.Log("Null art!");
             return;
         }
     

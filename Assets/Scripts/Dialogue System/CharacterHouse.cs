@@ -4,11 +4,12 @@ using Game_Manager;
 [RequireComponent(typeof(CharacterDialogueHandler))]
 public class CharacterHouse : MonoBehaviour
 {
-    
+
     CharacterDialogueHandler characterDialogueHandler;
     public CharacterDialogue dialogue;
     public CharacterDialogue convoOverDialogue;
     public CharacterDialogue houseDestroyedDialogue;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -28,19 +29,24 @@ public class CharacterHouse : MonoBehaviour
     {
         // Close previous dialogue
         Debug.LogWarning("Clicked!");
-        CharacterHouse currentDialogue = this;
-        if (currentDialogue != null)
+        if (GameManager.instance.inConversation)
+        {
+            return;
+        }
+
+        CharacterHouse currentDialogueHouse = this;
+        if (currentDialogueHouse != null)
         {
             Debug.Log("Found the current dialogue house");
-            currentDialogue.StopDialogueHandler();
-            currentDialogue.characterDialogueHandler.SkipTextLoading();
+            currentDialogueHouse.StopDialogueHandler();
+            currentDialogueHouse.characterDialogueHandler.SkipTextLoading();
         }
 
         StartDialogueHandler();
     }
     public void StartDialogueHandler()
     {
-        
+        GameManager.instance.inConversation = true;
         characterDialogueHandler.enabled = true;
         characterDialogueHandler.currentDialogue = dialogue;
         characterDialogueHandler.StartDialogue();
@@ -49,6 +55,17 @@ public class CharacterHouse : MonoBehaviour
     {
         Debug.Log("Stopping!");
         characterDialogueHandler.SkipTextLoading();
+        characterDialogueHandler.StopDialogue();
         characterDialogueHandler.enabled = false;
+        
     }
+
+    public void EndConversation()
+    {
+        GameManager.instance.inConversation = false;
+        dialogue = convoOverDialogue;
+        StopDialogueHandler();
+    }
+    
+    
 }

@@ -24,7 +24,7 @@ namespace Game_Manager
     {
         
         public static GameManager instance;
-
+        public bool inConversation;
         public int playerHealth;
         [Header("Script References")]
         private WaveSpawner waveSpawner;
