@@ -4,33 +4,41 @@ using System.Linq;
 using DefaultNamespace;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+namespace Game_Manager
 {
-    public static GameManager instance;
-
-    public int playerHealth;
-    [Header("Script References")]
-    public CharacterHouse currentDialogue;
-    public WaveSpawner waveSpawner;
-    public PauseMenu pauseMenu;
-
-    public LevelData levelData;
-    void Awake()
+    public class GameManager : MonoBehaviour
     {
+        public static GameManager instance;
+
+        public int playerHealth;
+        [Header("Script References")]
+        private WaveSpawner waveSpawner;
+        public PauseMenu pauseMenu;
+        public LevelData levelData;
+    
+        #region Unity Event Functions
+
+        private bool isGameScene;
+        void Awake()
+        {
+            if (instance != null && instance != this)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                instance = this;
+            }
         
-        if (instance == null)
-        {
-            instance = this;
+            DontDestroyOnLoad(this);
+
+            if (SceneManager.GetActiveScene().name == "GameScene")
+            {
+                isGameScene = true;
+                return;
+            }
+            isGameScene = false;
         }
-        else if (instance != this)
-        {
-            Destroy(this);
-        }
-
-
-
-        DontDestroyOnLoad(this);
-    }
 
     void Start()
     {
