@@ -45,11 +45,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12b169784d7ba754681fa429e3bace96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  countdown: 5
-  levelData: {fileID: 0}
+  paths:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  initialized: 0
   spawnPoint: {fileID: 7872730840142380383}
-  currentWaveIndex: 0
-  EnemiesSafe: 0
+  EnemiesAlive: 0
 --- !u!1 &2792201192186048079
 GameObject:
   m_ObjectHideFlags: 0

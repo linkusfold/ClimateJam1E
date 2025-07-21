@@ -17,6 +17,11 @@ namespace DefaultNamespace
 
         public LevelData levelData;
 
+        public Enemy()
+        {
+            
+        }
+
         protected virtual void Start()
         {
             if (path == null)
@@ -81,7 +86,6 @@ namespace DefaultNamespace
         private void OnReachedEnd()
         {
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
-            WaveSpawner.instance.EnemiesSafe++;
             WaveSpawner.instance.EnemiesAlive--;
             levelData.OnEnemyRemoved();
             Destroy(gameObject);

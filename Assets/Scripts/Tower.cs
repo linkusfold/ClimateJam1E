@@ -35,6 +35,10 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
     [NonSerialized] public float maxHealth;
     protected TowerHealth healthBar;
     
+    [Header("Audio")]
+    public AudioClip shootSound;
+    private AudioSource _audioSource;
+    
     public enum DisasterType { Oilgae, Volcano, Hurricane, TheShip }
 
     private void Awake()
@@ -44,6 +48,8 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
         
         maxHealth = health;
         healthBar = transform.GetComponentInChildren<TowerHealth>();
+        
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -53,7 +59,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
 
         if (health <= 0)
         {
-            Destroy();
+            DestroyTower();
             return;
         }
         
@@ -99,8 +105,16 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
     // Meant to be overridden by specialized tower subclasses
     protected virtual void Shoot(Transform enemy)
     {
+        MakeShootSound();
         GameObject proj = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
         proj.GetComponent<Projectile>().SetTarget(enemy);  // Assign the enemy as the projectile’s target
+    }
+    
+    protected void MakeShootSound()
+    {
+        if (!shootSound) return;
+        _audioSource.resource = shootSound;
+        _audioSource.Play();
     }
 
     public virtual void OnClick(Button btn)
@@ -118,7 +132,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
         Debug.Log($"Tower upgraded to level {level}");
     }
 
-    private void Destroy()
+    protected void DestroyTower()
     {
         isDestroyed = true;
         Debug.Log("Tower destroyed");
