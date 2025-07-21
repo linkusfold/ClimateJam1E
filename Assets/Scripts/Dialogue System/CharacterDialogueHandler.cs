@@ -1,5 +1,7 @@
 using System;
 using System.Collections;
+using System.Linq;
+using Game_Manager;
 using TMPro;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -162,6 +164,7 @@ public class CharacterDialogueHandler : MonoBehaviour
 
 
         // TODO: update info board
+        GameManager.instance.houses.ElementAt(0).isUnlocked = true;
         closeConversation();
     }
 

@@ -272,7 +272,7 @@ namespace Game_Manager
         {
             foreach (House house in houses)
             {
-                if ()
+                if (house.isUnlocked == true)
                 {
                     Tower.isUnlocked = true;
                 }
