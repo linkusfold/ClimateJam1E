@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2719233668346218265}
   - component: {fileID: 3725252420477894910}
+  - component: {fileID: 103630058076485227}
   m_Layer: 5
   m_Name: FocusButton
   m_TagString: Untagged
@@ -24,7 +25,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1455507509128916002}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -67,6 +68,19 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &103630058076485227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455507509128916002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08fa2813ae3aad4d883cd412ce5c7bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btns: []
 --- !u!1 &1515288120092236018
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,6 +93,7 @@ GameObject:
   - component: {fileID: 8269743550054969683}
   - component: {fileID: 4145871149240879452}
   - component: {fileID: 9052930980770958861}
+  - component: {fileID: 7610145714175627108}
   m_Layer: 5
   m_Name: PlayerTowerButton
   m_TagString: Untagged
@@ -133,7 +148,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2366705919679138027, guid: 1ea70b884984c2a46b8ab90e418fb42e, type: 3}
+  m_Sprite: {fileID: -2366705919679138027, guid: 55acbd9e006bd4544b5af984ad4427ac, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -162,7 +177,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -187,6 +202,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7610145714175627108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1515288120092236018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e638fc9b5550714686b06b712fb0fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusedSprite: {fileID: -7458708749237775755, guid: b7563ed7a2476e243b5085804eed5c00, type: 3}
+  towerButton: {fileID: 0}
 --- !u!1 &2555990707028588113
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +228,7 @@ GameObject:
   - component: {fileID: 249334939265416975}
   - component: {fileID: 8965278850365717298}
   - component: {fileID: 7566224221904175295}
+  - component: {fileID: 2108597190172639078}
   m_Layer: 5
   m_Name: FriendTowerButton
   m_TagString: Untagged
@@ -253,7 +283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2366705919679138027, guid: 1ea70b884984c2a46b8ab90e418fb42e, type: 3}
+  m_Sprite: {fileID: -2366705919679138027, guid: 55acbd9e006bd4544b5af984ad4427ac, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -282,7 +312,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -307,6 +337,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &2108597190172639078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2555990707028588113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e638fc9b5550714686b06b712fb0fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusedSprite: {fileID: -7458708749237775755, guid: b7563ed7a2476e243b5085804eed5c00, type: 3}
+  towerButton: {fileID: 0}
 --- !u!1 &4989329357446781071
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,6 +363,7 @@ GameObject:
   - component: {fileID: 1888560032464777214}
   - component: {fileID: 2636296775916522283}
   - component: {fileID: 403662775999838645}
+  - component: {fileID: 7944833078650946778}
   m_Layer: 5
   m_Name: MayorTowerButton
   m_TagString: Untagged
@@ -373,7 +418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2366705919679138027, guid: 1ea70b884984c2a46b8ab90e418fb42e, type: 3}
+  m_Sprite: {fileID: -2366705919679138027, guid: 55acbd9e006bd4544b5af984ad4427ac, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -402,7 +447,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -427,6 +472,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7944833078650946778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4989329357446781071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e638fc9b5550714686b06b712fb0fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusedSprite: {fileID: -7458708749237775755, guid: b7563ed7a2476e243b5085804eed5c00, type: 3}
+  towerButton: {fileID: 0}
 --- !u!1 &5961444612950928512
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +498,7 @@ GameObject:
   - component: {fileID: 2296772869648979606}
   - component: {fileID: 7816006181517439980}
   - component: {fileID: 7679364760595149938}
+  - component: {fileID: 6905456897466721986}
   m_Layer: 5
   m_Name: ActivistTowerButton
   m_TagString: Untagged
@@ -493,7 +553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2366705919679138027, guid: 1ea70b884984c2a46b8ab90e418fb42e, type: 3}
+  m_Sprite: {fileID: -2366705919679138027, guid: 55acbd9e006bd4544b5af984ad4427ac, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -522,7 +582,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -547,6 +607,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6905456897466721986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5961444612950928512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e638fc9b5550714686b06b712fb0fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusedSprite: {fileID: -7458708749237775755, guid: b7563ed7a2476e243b5085804eed5c00, type: 3}
+  towerButton: {fileID: 0}
 --- !u!1 &6956275058469282342
 GameObject:
   m_ObjectHideFlags: 0
@@ -559,6 +633,7 @@ GameObject:
   - component: {fileID: 7131721969092759731}
   - component: {fileID: 307239139043921232}
   - component: {fileID: 6532532586435194408}
+  - component: {fileID: 6920492751516334455}
   m_Layer: 5
   m_Name: ConspiracyTowerButton
   m_TagString: Untagged
@@ -613,7 +688,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2366705919679138027, guid: 1ea70b884984c2a46b8ab90e418fb42e, type: 3}
+  m_Sprite: {fileID: -2366705919679138027, guid: 55acbd9e006bd4544b5af984ad4427ac, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -642,7 +717,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -667,3 +742,17 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6920492751516334455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6956275058469282342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e638fc9b5550714686b06b712fb0fb5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  focusedSprite: {fileID: -7458708749237775755, guid: b7563ed7a2476e243b5085804eed5c00, type: 3}
+  towerButton: {fileID: 0}
