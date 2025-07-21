@@ -21,7 +21,6 @@ using UnityEngine.UI;
 public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageableBuilding
 {
     public int level = 1;                         // Current level of the tower
-    public static bool isUnlocked = false;              // Indicates if the tower is active and allowed to shoot
     public bool isUnlocked = false;              // Indicates if the tower is active and allowed to shoot
     public bool isDestroyed = false;             // Indicates if the tower has been destroyed
     public bool IsDestroyed { set => isDestroyed = value; get => isDestroyed; }
