@@ -10,13 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd27e05b7a047874c90e9fa06f21ae39, type: 3}
-  m_Name: RockAttack_1
+  m_Name: RockAttack_2
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 4140486976692896932, guid: 771eee23cfb165a41ac6629c601b502a, type: 3}
   - {fileID: 4140486976692896932, guid: 771eee23cfb165a41ac6629c601b502a, type: 3}
   - {fileID: 4140486976692896932, guid: 771eee23cfb165a41ac6629c601b502a, type: 3}
   - {fileID: 4140486976692896932, guid: 771eee23cfb165a41ac6629c601b502a, type: 3}
-  timeToNextEnemy: 3
-  timeToNextWave: 20
-  enemiesLeft: 5
+  - {fileID: 4140486976692896932, guid: 771eee23cfb165a41ac6629c601b502a, type: 3}
+  - {fileID: 4140486976692896932, guid: 771eee23cfb165a41ac6629c601b502a, type: 3}
+  timeToNextEnemy: 2
+  timeToNextWave: 8
+  enemiesLeft: 3

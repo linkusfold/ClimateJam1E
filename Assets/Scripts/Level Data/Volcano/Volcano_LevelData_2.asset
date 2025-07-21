@@ -10,16 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20248da444c778f4bb7cc7cf3ee8fbf0, type: 3}
-  m_Name: Volcano_LevelData_1
+  m_Name: Volcano_LevelData_2
   m_EditorClassIdentifier: 
   countdown: 5
   maxEnemiesSafe: 4
   waves:
   - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
-  - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
-  - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
   - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
-  - {fileID: 11400000, guid: f206ee4307f67644abda6522422db4a1, type: 2}
+  - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
+  - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
+  - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
+  - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
+  - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
   - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
   - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
   - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}

@@ -15,5 +15,5 @@ MonoBehaviour:
   enemies:
   - {fileID: 549037656823082475, guid: f8f3f11e8797c1a43baea1f5fca2a303, type: 3}
   timeToNextEnemy: 2
-  timeToNextWave: 25
-  enemiesLeft: 1
+  timeToNextWave: 30
+  enemiesLeft: -5
