@@ -956,7 +956,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &934590714
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1012,20 +1012,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 934590713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a06739edf046f934c9f74b08b38377d2, type: 3}
+  m_Script: {fileID: 11500000, guid: c979cd36128a7f8468acd0057799e665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDialogue: {fileID: 11400000, guid: 654bb5065dcd91b4dba7b544756396e8, type: 2}
+  currentDialogue: {fileID: 0}
   textSpeed: 0.1
-  textBox: {fileID: 2116707286}
+  textBox: {fileID: 0}
   ptichVariation: 0
-  textSound: {fileID: 8300000, guid: b96558205ee16ba418422edd4c0348b9, type: 3}
-  textAudioSource: {fileID: 0}
-  progress: {fileID: 0}
-  Response: {fileID: 0}
-  responseButtonPrefab: {fileID: 745178416232656121, guid: 81bbd69eea97ac64bb3ae8a599dab17a, type: 3}
-  characterArtPrefab: {fileID: 0}
-  canvas: {fileID: 0}
+  textSound: {fileID: 0}
+  responseActionReference: {fileID: 0}
+  responseButtonPrefab: {fileID: 0}
+  characterHouse: 0
 --- !u!82 &934590716
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1135,6 +1132,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
+  convoOverDialogue: {fileID: 0}
+  houseDestroyedDialogue: {fileID: 0}
 --- !u!212 &934590718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1528,6 +1528,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 11400000, guid: a92b7b5755068e7419544c22a3b8792a, type: 2}
+  convoOverDialogue: {fileID: 0}
+  houseDestroyedDialogue: {fileID: 0}
 --- !u!114 &1148185832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1542,11 +1545,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentDialogue: {fileID: 0}
   textSpeed: 0.1
-  textBox: {fileID: 0}
+  textBox: {fileID: 2116707286}
   ptichVariation: 0
   textSound: {fileID: 0}
-  responseActionReference: {fileID: 0}
-  responseButtonPrefab: {fileID: 0}
+  responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  responseButtonPrefab: {fileID: 745178416232656121, guid: effc1bbd0f3e44c5fbee1c22031388b5, type: 3}
   characterHouse: 0
 --- !u!82 &1148185833
 AudioSource:
@@ -1866,7 +1869,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1525387360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1876,20 +1879,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1525387359}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a06739edf046f934c9f74b08b38377d2, type: 3}
+  m_Script: {fileID: 11500000, guid: c979cd36128a7f8468acd0057799e665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentDialogue: {fileID: 11400000, guid: 654bb5065dcd91b4dba7b544756396e8, type: 2}
+  currentDialogue: {fileID: 0}
   textSpeed: 0.1
-  textBox: {fileID: 2116707286}
+  textBox: {fileID: 0}
   ptichVariation: 0
-  textSound: {fileID: 8300000, guid: b96558205ee16ba418422edd4c0348b9, type: 3}
-  textAudioSource: {fileID: 0}
-  progress: {fileID: 0}
-  Response: {fileID: 0}
-  responseButtonPrefab: {fileID: 745178416232656121, guid: 81bbd69eea97ac64bb3ae8a599dab17a, type: 3}
-  characterArtPrefab: {fileID: 0}
-  canvas: {fileID: 0}
+  textSound: {fileID: 0}
+  responseActionReference: {fileID: 0}
+  responseButtonPrefab: {fileID: 0}
+  characterHouse: 0
 --- !u!82 &1525387361
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1999,6 +1999,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogue: {fileID: 0}
+  convoOverDialogue: {fileID: 0}
+  houseDestroyedDialogue: {fileID: 0}
 --- !u!212 &1525387363
 SpriteRenderer:
   m_ObjectHideFlags: 0

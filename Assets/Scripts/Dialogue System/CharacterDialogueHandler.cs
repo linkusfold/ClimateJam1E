@@ -14,7 +14,7 @@ public class CharacterDialogueHandler : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Dialogue Obj, indexes, and textbox
     [SerializeField]
-    CharacterDialogue currentDialogue;
+    public CharacterDialogue currentDialogue;
     int currentPassageIndex;
     [Header("Text Settings")]
     [SerializeField]
@@ -180,7 +180,6 @@ public class CharacterDialogueHandler : MonoBehaviour
     {
         //Debug.Log("Loading passage!");
         //Debug.Log("first new passage: " + conversation.GetPassage(0).text);
-
         SkipTextLoading();
 
         currentDialogue = conversation;
@@ -197,7 +196,7 @@ public class CharacterDialogueHandler : MonoBehaviour
         DestroyResponses();
         CreateResponses();
 
-
+        Debug.Log("Starting routine!");
         loopRoot = StartCoroutine(LoadText());
     }
 
@@ -218,14 +217,32 @@ public class CharacterDialogueHandler : MonoBehaviour
     
     public void SkipTextLoading()
     {
-        // Debug.Log("Skipping text loading!");
-        StopCoroutine(loopRoot);
-        textBox.text = currentDialogue.getCurrentText(currentPassageIndex);
-        return;
+         Debug.Log("Skipping text loading!");
+
+        if (currentDialogue == null)
+        {
+            Debug.Log("Null dialogue");
+            return;
+        }
+        if (!textBox.text.Equals(currentDialogue.getCurrentText(currentPassageIndex)))
+            {
+                Debug.Log("Skipping!");
+                StopCoroutine(loopRoot);
+                textBox.text = currentDialogue.getCurrentText(currentPassageIndex);
+                return;
+
+            }
     }
 
     private void LoadArt()
     {
+
+        if (currentDialogue == null)
+        {
+            Debug.Log("Null dio!");
+            return;
+        }
+    
         Sprite characterSprite = currentDialogue.getPassageArt(currentPassageIndex);
         characterArtHolder.sprite = characterSprite;
         RectTransform imageRectTransform = characterArtHolder.rectTransform;
@@ -301,6 +318,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     
     private void SetupArtHolder()
     {
+
+
         characterArtHolder = textBox.GetComponentInChildren<Image>();
 
         GameObject art = characterArtHolder.gameObject;
