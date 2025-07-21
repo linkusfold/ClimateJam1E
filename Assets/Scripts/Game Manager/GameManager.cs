@@ -10,8 +10,18 @@ using UnityEngine.Serialization;
 
 namespace Game_Manager
 {
+    
     public class GameManager : MonoBehaviour
     {
+        public enum Homes
+        {
+            archie,
+            leah,
+            georgie,
+            finn,
+            diogini
+
+        }
         public static GameManager instance;
 
         public int playerHealth;
@@ -276,7 +286,7 @@ namespace Game_Manager
         {
             Debug.Log("Doing something!");
         }
-    
+
         // Game Loop Control
         public void PauseAllEnemies()
         {
@@ -307,6 +317,6 @@ namespace Game_Manager
         */
         }
 
-    
+
     }
 }

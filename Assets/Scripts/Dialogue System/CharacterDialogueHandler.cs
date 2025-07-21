@@ -111,11 +111,18 @@ public class CharacterDialogueHandler : MonoBehaviour
             return;
         }
 
-        if (responseIndex <= currentDialogue.GetResponseCount(passageIndex))
+
+        if (currentDialogue.responseEndsConversation(passageIndex, responseIndex))
         {
-            // Debug.LogWarning("No response at index, exiting method.");
-            
+            EndConversation();
+            return;
         }
+
+        if (responseIndex <= currentDialogue.GetResponseCount(passageIndex))
+            {
+                // Debug.LogWarning("No response at index, exiting method.");
+
+            }
 
         Response response = currentDialogue.GetResponse(passageIndex, responseIndex);
 
