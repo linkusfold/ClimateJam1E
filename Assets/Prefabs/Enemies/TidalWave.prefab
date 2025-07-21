@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6112041925237027288}
   - component: {fileID: 8191992322902281275}
   - component: {fileID: 4916126677597794599}
-  - component: {fileID: -4305092975578304192}
+  - component: {fileID: 549037656823082475}
   m_Layer: 0
   m_Name: TidalWave
   m_TagString: Enemy
@@ -78,12 +78,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -55218093883684948, guid: 087b2bef5f8a47a4c8a718edef5f8686, type: 3}
+  m_Sprite: {fileID: -55218093883684948, guid: ea835be9bb4b33c42aba82d2a3dd4364, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.484932, y: 27.26}
+  m_Size: {x: 3.94, y: 4.01}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -125,7 +125,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 2
---- !u!114 &-4305092975578304192
+--- !u!114 &549037656823082475
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4545828962518702426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7e8e88b3a371654cbc3ede51ee63732, type: 3}
+  m_Script: {fileID: 11500000, guid: c2c9ccc149ebfdc49aa70b72f30ec2a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   path: {fileID: 0}
