@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
-  m_Name: Diogini & Zoe D21 C7 Branch 2
+  m_Name: Diogini & Zoe D21 C7 Branch 1
   m_EditorClassIdentifier: 
   passages:
   - text: " Look, look! Frien\u2019 is back!"
