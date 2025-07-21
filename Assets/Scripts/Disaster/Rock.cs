@@ -9,7 +9,7 @@ using System.Collections;
             speed = 0.6f;
             health = 80;
             damage = 40;
-            atkSpeed = 50; //only attacks once
+            atkSpeed = 40; //only attacks once
             currentNodeId = 6; //start on the actual cliff
             base.Start();
 

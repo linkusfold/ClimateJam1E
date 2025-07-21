@@ -15,6 +15,6 @@ MonoBehaviour:
   enemies:
   - {fileID: 7826782712957299012, guid: 229af25c5adca468b9524447d09c6d93, type: 3}
   - {fileID: 7826782712957299012, guid: 229af25c5adca468b9524447d09c6d93, type: 3}
-  timeToNextEnemy: 2
-  timeToNextWave: 6
+  timeToNextEnemy: 3
+  timeToNextWave: 15
   enemiesLeft: 2

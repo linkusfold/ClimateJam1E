@@ -78,7 +78,7 @@ namespace DefaultNamespace
             GoToPathNode(currentNodeId);
         }
 
-        private void OnReachedEnd()
+        protected virtual void OnReachedEnd()
         {
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
             WaveSpawner.instance.EnemiesSafe++;

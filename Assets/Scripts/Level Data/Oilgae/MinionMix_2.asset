@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd27e05b7a047874c90e9fa06f21ae39, type: 3}
-  m_Name: JellyMinions_1
+  m_Name: MinionMix_2
   m_EditorClassIdentifier: 
   enemies:
+  - {fileID: 3221856143918135539, guid: 1dd026ade863145f08c09eb48a3d30da, type: 3}
   - {fileID: -3832305157232369721, guid: f2e1869850ad9454aaa1743d40ebdad4, type: 3}
+  - {fileID: 7826782712957299012, guid: 229af25c5adca468b9524447d09c6d93, type: 3}
   - {fileID: -3832305157232369721, guid: f2e1869850ad9454aaa1743d40ebdad4, type: 3}
-  timeToNextEnemy: 4
-  timeToNextWave: 15
-  enemiesLeft: 1
+  - {fileID: 7826782712957299012, guid: 229af25c5adca468b9524447d09c6d93, type: 3}
+  - {fileID: 3221856143918135539, guid: 1dd026ade863145f08c09eb48a3d30da, type: 3}
+  - {fileID: 7826782712957299012, guid: 229af25c5adca468b9524447d09c6d93, type: 3}
+  timeToNextEnemy: 5
+  timeToNextWave: 20
+  enemiesLeft: 4
