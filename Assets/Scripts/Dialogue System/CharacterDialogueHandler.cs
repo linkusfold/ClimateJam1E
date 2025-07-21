@@ -139,7 +139,7 @@ public class CharacterDialogueHandler : MonoBehaviour
             LoadNewConversation(response.nextConversation);
             return;
         }
-        // Debug.Log("Not loading new convo!");
+        // Debug.Log("Not losading new convo!");
 
         LoadPassage(response.nextPassageIndex);
 
@@ -159,6 +159,8 @@ public class CharacterDialogueHandler : MonoBehaviour
         // TODO: unlock tower if locked.
         // TODO: upgrade tower one level
         // TODO: heal house damage
+
+
         // TODO: update info board
         closeConversation();
     }
@@ -175,7 +177,7 @@ public class CharacterDialogueHandler : MonoBehaviour
         SkipTextLoading();
 
         currentDialogue = conversation;
-
+        
         LoadPassage(0);
     }
 

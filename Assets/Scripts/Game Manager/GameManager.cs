@@ -212,7 +212,7 @@ namespace Game_Manager
         #region End Round Logic
 
         [Header("End Round Variables")]
-        private List<House> houses = new List<House>();
+        public List<House> houses = new List<House>();
         public GameObject winScreen;
         public GameObject loseScreen;
 
