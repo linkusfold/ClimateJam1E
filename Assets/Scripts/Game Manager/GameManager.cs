@@ -10,18 +10,18 @@ using UnityEngine.Serialization;
 
 namespace Game_Manager
 {
-    
-    public class GameManager : MonoBehaviour
+    public enum Homes
     {
-        public enum Homes
-        {
             archie,
             leah,
             georgie,
             finn,
             diogini
 
-        }
+    }
+    public class GameManager : MonoBehaviour
+    {
+        
         public static GameManager instance;
 
         public int playerHealth;
@@ -212,15 +212,16 @@ namespace Game_Manager
         #region End Round Logic
 
         [Header("End Round Variables")]
-        public List<House> houses = new List<House>();
-        public GameObject winScreen;
+        public List<House> houses = new List<House>();        public GameObject winScreen;
         public GameObject loseScreen;
 
         private bool CheckHousesAlive()
         {
+            
             House aliveHouse = houses.Find(r => r.IsDestroyed);
             if (aliveHouse != null) return true;
             return false;
+            
         }
 
         public void Win()
@@ -246,7 +247,7 @@ namespace Game_Manager
 
         public void NextButton()
         {
-
+            destroyedHouses.ElementAt(0);
         }
 
         public void RetryButton()
@@ -270,12 +271,9 @@ namespace Game_Manager
 
         public void UpdateHouses()
         {
-            foreach (House house in houses)
+            for (int houseIndex = 0; houseIndex < Enum.GetNames(typeof(Homes)).Count(); houseIndex++)
             {
-                if (house.isUnlocked == true)
-                {
-                    Tower.isUnlocked = true;
-                }
+                // update towers if valid
             }
         }
 

@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Linq;
 using Game_Manager;
 using TMPro;
 using UnityEditor.Rendering;
@@ -48,7 +47,7 @@ public class CharacterDialogueHandler : MonoBehaviour
     }
     void Update()
     {
-
+        
         // Handle Responses
         int responseIndex = getResponseNumberIndex();
 
