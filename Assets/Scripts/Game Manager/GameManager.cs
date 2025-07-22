@@ -25,6 +25,7 @@ namespace Game_Manager
     public enum StoryChoices
     {
         givePocketKnife,
+        archiePath,
     }
     public class GameManager : MonoBehaviour
     {
