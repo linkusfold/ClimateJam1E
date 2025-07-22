@@ -20,7 +20,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: "Hey, you\u2019re right on time! I just finished planning out my next move.
       I think this one is going to be really good!  "
     responses:
@@ -28,4 +28,4 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}

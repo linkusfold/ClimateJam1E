@@ -19,14 +19,14 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'Yeah, doing my best to keep the wind out. '
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
   - text: "Hey, I also looked into what\u2019s been happening a bit more. Did you
       know that pretty much all of these crazy disasters can be traced back to S.M.O.G.? "
     responses:
@@ -34,7 +34,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
   - text: 'Yep. They were the ones that caused that Oilgae spill out from the shore,
       and also the ones that caused that Volcano creature to go crazy a week ago. '
     responses:
@@ -42,7 +42,7 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "Then all the volcanic gas released by that creature went into the atmosphere
       and formed this crazy storm. I took a look with my binoculars, and it looks
       like there\u2019s even ships off the coast being blown off course by it."
@@ -52,21 +52,21 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: 'Sure is. We make a pretty good team, you and me. '
     responses:
     - text: (Continue)
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "I\u2019ve been thinking a lot lately, and\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "I\u2019ve decided I\u2019m going to release Chad back into the ocean. "
     responses:
     - text: 'Are you sure? You said they were your best friend. '
@@ -77,7 +77,7 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Well, look at them. They\u2019re clearly not where they\u2019re supposed
       to be. I may have helped Chad out when I took \u2018em out of that bag, but
       I didn\u2019t save them. I took them from their home. "
@@ -86,7 +86,7 @@ MonoBehaviour:
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: I think the main reason I kept Chad around was just so I had someone to
       talk to. You know, after I stopped talking to Finn.
     responses:
@@ -94,14 +94,14 @@ MonoBehaviour:
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "He must\u2019ve told you, right? We used to be best buds, you know. "
     responses:
     - text: (Continue)
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
   - text: "I need to take a bit more responsibility when I do things like help a
       sea creature, or hang a banner. I\u2019ve been doing all this stuff for a while
       now, but is this the kind of difference I want to make? Is this what my parents
@@ -117,14 +117,14 @@ MonoBehaviour:
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'I guess so. *sigh* '
     responses:
     - text: (Continue)
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "It\u2019s just that with everything going on in the world, everything
       happening to our little town, it\u2019s so hard to figure out what I should
       be doing. When I paint things around Coral Cove, am I helping anyone, or am
@@ -134,7 +134,7 @@ MonoBehaviour:
       nextPassageIndex: 15
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "But there\u2019s so many things to care about! The town, the people who
       live here, our ocean, oceans in other parts of the world, other people, corporate
       corruption. I could stay here and make sure Coral Cove is safe, but there\u2019s
@@ -145,7 +145,7 @@ MonoBehaviour:
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "I mean\u2026 well, what do you care about? "
     responses:
     - text: 'I want to live freely, and help build a future where others can do the
@@ -162,7 +162,7 @@ MonoBehaviour:
       nextPassageIndex: 17
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: '*nods* I see. Then tell me, what do you think I should do? Should I try
       to help my town, or try to help the world? '
     responses:
@@ -176,7 +176,7 @@ MonoBehaviour:
       nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2445486020124154706, guid: 8edc0984821d24f48b774ca7eec38f52, type: 3}
   - text: "Thank you. I feel like I\u2019m finally on the right track, thanks to
       your help. I want to do something to take my first step on it. I need to do
       some more research, but I\u2019d love to talk to you again soon. Bye for now. "
@@ -185,4 +185,4 @@ MonoBehaviour:
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
