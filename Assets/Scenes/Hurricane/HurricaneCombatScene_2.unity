@@ -1887,6 +1887,10 @@ PrefabInstance:
       value: WaveSpawner
       objectReference: {fileID: 0}
     - target: {fileID: 5359676285737187804, guid: 53da9a5dfabdb4846a3789683a495e8b, type: 3}
+      propertyPath: levelData
+      value: 
+      objectReference: {fileID: 11400000, guid: a391665f85c8eaf4288f36736286681a, type: 2}
+    - target: {fileID: 5359676285737187804, guid: 53da9a5dfabdb4846a3789683a495e8b, type: 3}
       propertyPath: winScreen
       value: 
       objectReference: {fileID: 0}
@@ -2325,7 +2329,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 4b145ed08f67c5f448b85d39b6cbb5f9, type: 3}
   m_Resource: {fileID: 8300000, guid: 4b145ed08f67c5f448b85d39b6cbb5f9, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
