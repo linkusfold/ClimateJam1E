@@ -21,11 +21,25 @@ MonoBehaviour:
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
-  - text: "Hey, you\u2019re right on time! I just finished planning out my next move.
-      I think this one is going to be really good!  "
+  - text: "I was thinking about how I\u2019ve been doing all of this stuff by myself,
+      and I think it\u2019s time I made a honest effort to work with others. I\u2019ve
+      been working on creating these sorts of artsy cards that I can send to everyone
+      in town. They explain my experience, and the steps I feel are necessary to
+      protect Coral Cove, but everyone is also supposed to write their own thoughts
+      and ideas and feedback and send them back to me. "
     responses:
-    - text: 'What is it? '
-      nextPassageIndex: 1
+    - text: So that way, everyone is included in the solution.
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
+  - text: "Exactly! I was hoping I could even organize a sort of town hall, where
+      we can have an open conversation about these issues. But we\u2019ll have to
+      see how the cards go first. Here, why don\u2019t you take one? I\u2019ve got
+      a lot more to make anyways. "
+    responses:
+    - text: 'Thanks, Archie. And good luck with the cards! '
+      nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
