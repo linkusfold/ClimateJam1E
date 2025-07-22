@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Hurricane_LevelData_1
   m_EditorClassIdentifier: 
   countdown: 5
-  maxEnemiesSafe: 4
   waves:
   - {fileID: 11400000, guid: 23a7702c013bb4341b990d29f9694fb7, type: 2}
   - {fileID: 11400000, guid: 23a7702c013bb4341b990d29f9694fb7, type: 2}
+  - {fileID: 11400000, guid: 9b017f8c1362bfb4b851d3c8f7c447f3, type: 2}
   - {fileID: 11400000, guid: 9b017f8c1362bfb4b851d3c8f7c447f3, type: 2}
   boss: {fileID: 0}
   currentWaveIndex: 2

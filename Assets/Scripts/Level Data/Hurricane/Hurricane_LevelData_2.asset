@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: Hurricane_LevelData_2
   m_EditorClassIdentifier: 
   countdown: 5
-  maxEnemiesSafe: 4
   waves:
   - {fileID: 11400000, guid: 9b017f8c1362bfb4b851d3c8f7c447f3, type: 2}
   - {fileID: 11400000, guid: 9b017f8c1362bfb4b851d3c8f7c447f3, type: 2}

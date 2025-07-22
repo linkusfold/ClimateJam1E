@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Game_Manager;
 
 namespace DefaultNamespace
 {
@@ -7,7 +8,7 @@ namespace DefaultNamespace
     {
         [SerializeField] private HealthBar healthBar;
 
-        [SerializeField] private float _health = 500f;
+        [SerializeField] private float _health = 1500f;
 
         public float Health
         {
@@ -119,6 +120,7 @@ namespace DefaultNamespace
 
             if (Health <= 0)
             {
+                GameManager.instance.Win();
                 Die();
             }
         }
