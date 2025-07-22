@@ -252,7 +252,8 @@ namespace Game_Manager
 
         public void Win()
         {
-            Debug.Log("GameManager: Win() called.");
+
+            Debug.LogWarning("GameManager: Win() called.");
             if (isGameOver) return;
             if (winScreen.activeInHierarchy) return;
             if (!winScreen)

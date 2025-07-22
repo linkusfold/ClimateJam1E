@@ -33,7 +33,7 @@ MonoBehaviour:
       nextConversation: {fileID: 0}
       endsConversation: 0
     - text: "\u201CActually, I still have things I need to do.\u201D "
-      nextPassageIndex: 1
+      nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
@@ -85,7 +85,7 @@ MonoBehaviour:
       nextConversation: {fileID: 0}
       endsConversation: 0
     - text: 'What other colors do you see, Zoe? '
-      nextPassageIndex: 0
+      nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
@@ -126,7 +126,7 @@ MonoBehaviour:
   - text: If the bird tired, why Granpa Dio no let it in?
     responses:
     - text: (Continue)
-      nextPassageIndex: 20
+      nextPassageIndex: 21
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
@@ -162,49 +162,43 @@ MonoBehaviour:
     sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'That sounds like a load of nonsense! Why would anyone attack Coral Cove? '
     responses:
-    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
-        around yesterday when Coral Cove was attacked. "
+    - text: (Continue)
       nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Is that why there was loud noises last night? '
     responses:
-    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
-        around yesterday when Coral Cove was attacked. "
-      nextPassageIndex: 18
+    - text: (Continue)
+      nextPassageIndex: 19
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'No, no, that was just some stormy winds. There is nothing trying to attack
       the cliff, just some townsfolk that are prone to accidents.  '
     responses:
-    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
-        around yesterday when Coral Cove was attacked. "
-      nextPassageIndex: 19
+    - text: (Continue)
+      nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Next time loud noise come, can I check outside? '
     responses:
-    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
-        around yesterday when Coral Cove was attacked. "
-      nextPassageIndex: 20
+    - text: (Continue)
+      nextPassageIndex: 21
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Zoe, what do I always say when it\u2019s stormy outside? "
     responses:
-    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
-        around yesterday when Coral Cove was attacked. "
+    - text: (Continue)
       nextPassageIndex: 21
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Be safe in house and don\u2019t come out\u2026 "
     responses:
-    - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
-        around yesterday when Coral Cove was attacked. "
+    - text: (Continue)
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
       endsConversation: 0
