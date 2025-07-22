@@ -27,5 +27,5 @@ MonoBehaviour:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
-      endsConversation: 0
+      endsConversation: 1
     sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
