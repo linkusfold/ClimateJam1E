@@ -148,7 +148,7 @@ MonoBehaviour:
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: '<i> Over the next hour, Diogini explains several other safety or nature
       tricks and tips, including how to properly tie a rope, how to forage, and how
       to make a grass whistle, which Zoe particularly enjoys. '
@@ -209,14 +209,14 @@ MonoBehaviour:
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
+    sprite: {fileID: 0}
   - text: 'Thank you. My granddaughter is <i>everything </i>to me. '
     responses:
     - text: (Continue)
       nextPassageIndex: 23
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "I don\u2019t want her to ever get hurt like\u2026 well, like others have
       before her. "
     responses:
@@ -282,7 +282,7 @@ MonoBehaviour:
     - text: 'Wait, it sounds like the construction site was what caused the landslide. '
       nextPassageIndex: 31
       nextConversation: {fileID: 0}
-      endsConversation: 0
+      endsConversation: 1
     - text: "I\u2019m sorry. That sounds like a horrible freak accident. "
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
@@ -319,8 +319,8 @@ MonoBehaviour:
     - text: (Continue)
       nextPassageIndex: 35
       nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "All right, Zoe, we\u2019ll go up to the top of the cliff tomorrow. "
     responses:
     - text: (Continue)
