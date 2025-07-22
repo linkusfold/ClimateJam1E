@@ -19,14 +19,14 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
   - text: "Sorry, I\u2019m a little, um\u2026 rattled right now. "
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
   - text: "That volcano disaster scared me lots. And who knows if it'll come back!
       I have to keep calm. I\u2019m very sorry. "
     responses:
@@ -34,14 +34,14 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
   - text: 'Thank you, I really appreciate it. '
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
   - text: "I know everything will be okay, especially since you\u2019re here to help!
       I just get scared\u2026 "
     responses:
@@ -49,7 +49,7 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
   - text: 'I want to make my father proud, you know? He passed away because of a
       volcano disaster that struck while he was traveling to the main town, trying
       to get supplies for our community.  '
@@ -58,4 +58,4 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}

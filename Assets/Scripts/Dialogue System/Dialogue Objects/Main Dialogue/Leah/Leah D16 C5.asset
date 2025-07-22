@@ -19,14 +19,14 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -7956674989423488312, guid: ccb037f65faf256489a6ac2733aefa90, type: 3}
   - text: "While we were out, I couldn\u2019t stop thinking about the believers. "
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
   - text: "The leaders are all telling us that the Great Storm is still coming and
       that a hurricane is already forming above the ocean\u2026 "
     responses:
@@ -34,7 +34,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
   - text: "But they keep on delaying the date and sometimes I wonder if they actually
       know what they are talking about\u2026  "
     responses:
@@ -42,4 +42,4 @@ MonoBehaviour:
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
