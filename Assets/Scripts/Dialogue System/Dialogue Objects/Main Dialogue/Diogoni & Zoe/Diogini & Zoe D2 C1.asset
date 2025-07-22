@@ -22,7 +22,7 @@ MonoBehaviour:
     sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: " ...You\u2019re not my grandson. Who are you? "
     responses:
-    - text: "I\u2019m a member of (aid company). I was sent here to help."
+    - text: "I\u2019m a member of Aid In Action. I was sent here to help."
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0

@@ -1,7 +1,8 @@
 using Unity.VisualScripting;
 using UnityEngine;
-using Game_Manager;
 using UnityEngine.Events;
+using Game_Manager;
+
 [RequireComponent(typeof(CharacterDialogueHandler))]
 public class CharacterHouse : MonoBehaviour
 {
