@@ -38,7 +38,6 @@ namespace Game_Manager
         [Header("Script References")]
         private WaveSpawner waveSpawner;
         public PauseMenu pauseMenu;
-        public LevelData levelData;
 
         #region Unity Event Functions
 
@@ -76,21 +75,20 @@ namespace Game_Manager
         private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode mode)
         {
             Debug.Log("GameManager: Start() called.");
-            isGameScene = false || SceneManager.GetActiveScene().name != "MainMenuScene" ||
-                                   SceneManager.GetActiveScene().name != "Town";
+            if(WaveSpawner.instance) isGameScene = true;
 
-            if (!isGameScene) return;
-
+            if(!isGameScene) return;
+            
             waveSpawner = WaveSpawner.instance;
-
+            
             isGameOver = false;
-
-            waveSpawner.Initialize(levelData);
+            
+            waveSpawner.Initialize();
             GenerateGrid();
         }
+        
 
-
-        public void Update()
+        void Update() 
         {
             if (!isGameScene) return;
 
@@ -283,7 +281,8 @@ namespace Game_Manager
         public static void NextButton()
         {
             Debug.Log("GameManager: NextButton() called.");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if(SceneManager.GetActiveScene().buildIndex >= SceneManager.sceneCountInBuildSettings - 1) SceneManager.LoadScene(0);
+            else SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
 
         public static void QuitButton()
@@ -375,4 +374,3 @@ namespace Game_Manager
 
     }
 }
-

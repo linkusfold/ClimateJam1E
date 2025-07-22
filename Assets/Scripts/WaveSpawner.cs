@@ -14,7 +14,7 @@ public class WaveSpawner : MonoBehaviour
     public List<Path> wave_paths = new List<Path>();
 
     public bool initialized = false;
-    [NonSerialized] public LevelData levelData;
+    public LevelData levelData;
     [NonSerialized] public float levelCountdown;
     private WaveData[] waveDatas;
 
@@ -29,9 +29,8 @@ public class WaveSpawner : MonoBehaviour
         instance = this;
     }
 
-    public void Initialize(LevelData levelData)
+    public void Initialize()
     {
-        this.levelData = levelData;
         levelCountdown = levelData.countdown;
         levelData.currentWaveIndex = 0;
         levelData.readyToCountDown = true;
@@ -69,7 +68,7 @@ public class WaveSpawner : MonoBehaviour
     public void Restart()
     {
         waveSpawning = false;
-        Initialize(levelData);
+        Initialize();
     }
 
     public void FlipPathing()

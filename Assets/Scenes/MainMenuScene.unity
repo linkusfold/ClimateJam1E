@@ -368,7 +368,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1002264988884215304, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
       propertyPath: gameplaySceneName
-      value: GameScene
+      value: Community Portion 1
       objectReference: {fileID: 0}
     - target: {fileID: 1317711221928425872, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
       propertyPath: m_AnchorMax.y
