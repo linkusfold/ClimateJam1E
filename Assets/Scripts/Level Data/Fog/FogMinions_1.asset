@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemies:
   - {fileID: 7643644950008797375, guid: 95044061aa042ff4aa020ea5871c5e7a, type: 3}
-  timeToNextEnemy: 4
-  timeToNextWave: 20
+  timeToNextEnemy: 1
+  timeToNextWave: 5
   enemiesLeft: 2
