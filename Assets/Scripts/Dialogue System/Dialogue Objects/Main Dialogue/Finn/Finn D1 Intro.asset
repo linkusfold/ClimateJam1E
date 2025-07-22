@@ -26,7 +26,7 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "Ohhh, so you\u2019re the one moving into the old lighthouse! I can take
       you there, it\u2019s not far, but you might get a bit lost in this fog. "
     responses:
@@ -34,14 +34,14 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "The name\u2019s Finn, by the way. Nice to meet you. "
     responses:
     - text: "That would be great, thanks! I\u2019m Cole. "
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: 'That was quite a trip, huh? '
     responses:
     - text: (Continue)
@@ -56,7 +56,7 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: '(Finn and Cole head into town) '
     responses:
     - text: (Continue)
@@ -71,7 +71,7 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: 'Been here since the founding of Coral Cove. Still growing strong, as you
       can see. This is the information board. Anyone in the community can put up
       fliers or announcements here. '
@@ -80,56 +80,56 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "Let\u2019s take a look\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: " \u201CA dark hull on the rise, we soon shall be expelled\u2026\u201D "
     responses:
     - text: (Continue)
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "\u201CThe end is close, destruction\u2013\u201D "
     responses:
     - text: (Continue)
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "\u201C...looms near\u2026\u201D "
     responses:
     - text: (Continue)
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "\u2026"
     responses:
     - text: (Continue)
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: 'Ahem. Moving on. '
     responses:
     - text: (Continue)
       nextPassageIndex: 15
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "Um\u2026 right now? \u2026Okay. "
     responses:
     - text: (Continue)
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: '(Knock, knock) '
     responses:
     - text: (Continue)
@@ -152,14 +152,14 @@ MonoBehaviour:
       nextPassageIndex: 19
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
   - text: 'Hey, there, mayor! '
     responses:
     - text: (Continue)
       nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "Nice to see you, Finn! Well, I won\u2019t hold you both, but yes! My name
       is George and I am the mayor of Coral Cove.  "
     responses:
@@ -167,7 +167,7 @@ MonoBehaviour:
       nextPassageIndex: 21
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
   - text: 'Although we are a small community, we have big aspirations and minds.
       I hope during your time here, you really get to know and understand our town.
       I am excited to see your courage and hardships throughout these next few weeks!  '
@@ -176,21 +176,21 @@ MonoBehaviour:
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
   - text: 'It was a pleasure meeting you.  '
     responses:
     - text: 'It was lovely meeting you too. '
       nextPassageIndex: 23
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
   - text: "All done? Let\u2019s continue."
     responses:
     - text: (Continue)
       nextPassageIndex: 24
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "See that house all the way to the right? That\u2019s where Leah lives.
       She\u2019s cool, but definitely has some\u2026 ideas.  "
     responses:
@@ -198,7 +198,7 @@ MonoBehaviour:
       nextPassageIndex: 25
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "That house on the water belongs to Diogini and his granddaughter, Zoe.
       When the sea level houses started getting dangerous, he refused to move. He\u2019s
       definitely the stubborn type. "
@@ -207,7 +207,7 @@ MonoBehaviour:
       nextPassageIndex: 26
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "Right below the lighthouse is where Archie, his eldest grandson, lives.
       Archie is definitely a character\u2026 pretty rough, but will always fight
       for what he believes in.   "
@@ -216,7 +216,7 @@ MonoBehaviour:
       nextPassageIndex: 27
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "And finally, that one over there is my house! Feel free to stop by anytime,
       we\u2019re pals now! "
     responses:
@@ -224,7 +224,7 @@ MonoBehaviour:
       nextPassageIndex: 28
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "Nah, it was fun. Here, I\u2019ll walk you back to the lighthouse and you
       can finish unpacking. "
     responses:
@@ -232,7 +232,7 @@ MonoBehaviour:
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: '(Inside the lighthouse) '
     responses:
     - text: (Continue)
@@ -246,7 +246,7 @@ MonoBehaviour:
       nextPassageIndex: 31
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: '(Finn leaves, but returns a few seconds later) '
     responses:
     - text: (Continue)
@@ -260,35 +260,35 @@ MonoBehaviour:
       nextPassageIndex: 33
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: Looks like the fog from earlier got way worse.
     responses:
     - text: (Continue)
       nextPassageIndex: 34
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "We gotta do something\u2026 Let\u2019s go, I have an idea! "
     responses:
     - text: (Continue)
       nextPassageIndex: 35
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: 'Grab the light and aim it towards the fog! '
     responses:
     - text: (Continue)
       nextPassageIndex: 36
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: 'Found some mirrors, this will help reflect more light around. '
     responses:
     - text: (Continue)
       nextPassageIndex: 37
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "Whew, that was a close one. I can\u2019t believe you had to deal with
       a disaster on your first day here.  "
     responses:
@@ -296,7 +296,7 @@ MonoBehaviour:
       nextPassageIndex: 38
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "Must\u2019ve been bad luck or something, but we make a pretty good team,
       eh?  "
     responses:
@@ -304,7 +304,7 @@ MonoBehaviour:
       nextPassageIndex: 39
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "Looks like the fog is gone for good, now, so you can rest easy. I\u2019ll
       catch you tomorrow, yeah? "
     responses:
@@ -312,4 +312,4 @@ MonoBehaviour:
       nextPassageIndex: 40
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}

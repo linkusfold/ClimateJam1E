@@ -19,7 +19,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: '<i> Zoe runs all around, as the house is in a bit of a mess. Bags and
       clothes are all over the place. '
     responses:
@@ -35,21 +35,21 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 1933843793514163118, guid: 4f5168b29c59c5545b184b36a40610ba, type: 3}
   - text: 'Oh, well you see- '
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Arcee\u2019s coming back! Back to live at home! "
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: 'Now, Zoe, remember that this might just be for a little while. The boy
       needs his space after all. '
     responses:
@@ -57,14 +57,14 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Ok\u2026 but Arcee still coming back! "
     responses:
     - text: 'Did you talk to him? '
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "Indeed I did. We had a long conversation about our differences, and how
       we both have space to grow, Although the growing will mostly be on my part.
       I apologize for how I\u2019ve treated him for the past couple of years, and
@@ -75,7 +75,7 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Yeah! Hope Arcee doe\u2019n take any of my toys. He can play with them,
       only if he asks! "
     responses:
@@ -83,7 +83,7 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "Hah! Well, nature knows it will be a long process. But as long as Archie
       is patient with me, and I with him, I\u2019m sure we\u2019ll be able to work
       things out in the end. "
@@ -92,7 +92,7 @@ MonoBehaviour:
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Of course, you\u2019re always welcome back here, friend, whenever you
       decide you want to visit. I\u2019m sure Zoe will enjoy the company. "
     responses:
@@ -100,7 +100,7 @@ MonoBehaviour:
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "You better come back! I wanna hear more story \u2018bout you fighting
       monsters! "
     responses:
@@ -108,18 +108,18 @@ MonoBehaviour:
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: 'Farewell, friend. '
     responses:
     - text: (Continue)
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 1933843793514163118, guid: 4f5168b29c59c5545b184b36a40610ba, type: 3}
   - text: "Bye, frien\u2019! "
     responses:
     - text: (End Conversation)
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
