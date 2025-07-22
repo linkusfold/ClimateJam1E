@@ -366,6 +366,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1021076826}
     m_Modifications:
+    - target: {fileID: 1002264988884215304, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
+      propertyPath: gameplaySceneName
+      value: GameScene
+      objectReference: {fileID: 0}
     - target: {fileID: 1317711221928425872, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -396,6 +400,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1635841614995304310, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3464360160218524938, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
+      propertyPath: m_Interactable
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3627219792867517797, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
@@ -517,6 +525,10 @@ PrefabInstance:
     - target: {fileID: 7391508261279991311, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
       propertyPath: m_Name
       value: MainMenuPanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465162716302497010, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
+      propertyPath: m_Interactable
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

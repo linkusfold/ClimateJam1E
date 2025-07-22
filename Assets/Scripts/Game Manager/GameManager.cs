@@ -33,20 +33,18 @@ namespace Game_Manager
             }
         
             DontDestroyOnLoad(this);
-
-            if (SceneManager.GetActiveScene().name == "GameScene")
-            {
-                isGameScene = true;
-                return;
-            }
-            isGameScene = false;
         }
 
         void Start()
         {
+            Debug.Log("GameManager: Start() called.");
+            isGameScene = false || SceneManager.GetActiveScene().name == "GameScene";
+
             if(!isGameScene) return;
             
             waveSpawner = WaveSpawner.instance;
+            
+            isGameOver = false;
             
             waveSpawner.Initialize(levelData);
             GenerateGrid();
@@ -200,45 +198,63 @@ namespace Game_Manager
         #region End Round Logic
         
         [Header("End Round Variables")]
-        private List<House> houses = new List<House>();
         public GameObject winScreen;
+        public AudioClip winSound;
         public GameObject loseScreen;
+        public AudioClip loseSound;
+        private bool isGameOver = false;
+        [NonSerialized]public List<House> houses = new List<House>();
         
-        private bool CheckHousesAlive()
+        public bool CheckHousesAlive()
         {
-            House aliveHouse = houses.Find(r => r.IsDestroyed);
-            if (aliveHouse != null) return true;
-            return false;
+            House aliveHouse = houses.Find(r => !r.IsDestroyed);
+            Debug.Log($"Houses: {houses.Count}, Alive: {aliveHouse}");
+            return aliveHouse != null;
         }
 
         public void Win()
         {
+            Debug.Log("GameManager: Win() called.");
+            if(isGameOver) return;
+            if(winScreen.activeInHierarchy) return;
             if (!winScreen)
             {
                 Debug.LogError("GameManager: Win(): No winScreen specified.");
                 return;
             }
-            winScreen.SetActive(true);
-            destroyedHouses = StoreDestroyedHouses();
+            if(winSound) AudioSource.PlayClipAtPoint(winSound, transform.position);
+            Instantiate(winScreen, FindFirstObjectByType<Canvas>().gameObject.transform);
         }
 
-        private void Lose()
+        public void Lose()
         {
+            Debug.Log("GameManager: Lose() called.");
+            if(isGameOver) return;
+            if(loseScreen.activeInHierarchy) return;
             if (!loseScreen)
             {
                 Debug.LogError("GameManager: Lose(): No loseScreen specified.");
                 return;
             }
-            loseScreen.SetActive(true);
+            if(loseSound) AudioSource.PlayClipAtPoint(loseSound, transform.position);
+            Instantiate(loseScreen, FindFirstObjectByType<Canvas>().gameObject.transform);
         }
 
-        public void NextButton()
+        public static void NextButton()
         {
-            
+            Debug.Log("GameManager: NextButton() called.");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
-        public void RetryButton()
+        public static void QuitButton()
         {
+            Debug.Log("GameManager: QuitButton() called.");
+            Application.Quit();
+        }
+
+        public static void RetryButton()
+        {
+            Debug.Log("GameManager: RetryButton() called.");
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         #endregion

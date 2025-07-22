@@ -243,6 +243,7 @@ MonoBehaviour:
   attackRange: 5
   fireCooldown: 1.5
   health: 100
+  shootSound: {fileID: 8300000, guid: 9d4d1adf8c8c2b24cba9b6b224324755, type: 3}
 --- !u!1 &6617496688411245352
 GameObject:
   m_ObjectHideFlags: 0

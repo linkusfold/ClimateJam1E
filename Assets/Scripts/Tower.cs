@@ -37,7 +37,6 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
     
     [Header("Audio")]
     public AudioClip shootSound;
-    private AudioSource _audioSource;
     
     public enum DisasterType { Oilgae, Volcano, Hurricane, TheShip }
 
@@ -48,8 +47,6 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
         
         maxHealth = health;
         healthBar = transform.GetComponentInChildren<TowerHealth>();
-        
-        _audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -113,8 +110,7 @@ public class Tower : MonoBehaviour, IPointerClickHandler, IHealable, IDamageable
     protected void MakeShootSound()
     {
         if (!shootSound) return;
-        _audioSource.resource = shootSound;
-        _audioSource.Play();
+        AudioSource.PlayClipAtPoint(shootSound, transform.position);
     }
 
     public virtual void OnClick(Button btn)

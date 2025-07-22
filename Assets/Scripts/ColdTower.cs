@@ -17,6 +17,7 @@ public class ColdTower : Tower
     // Override the base Shoot method to fire a ColdProjectile
     protected override void Shoot(Transform enemy)
     {
+        MakeShootSound();
         // Instantiate the projectile at the tower's position
         GameObject water = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
 
