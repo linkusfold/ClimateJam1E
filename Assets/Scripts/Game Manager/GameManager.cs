@@ -56,6 +56,7 @@ namespace Game_Manager
 
             DontDestroyOnLoad(this);
 
+        }
         
         //OnEnable comes first
         private void OnEnable()
@@ -76,18 +77,18 @@ namespace Game_Manager
         {
             Debug.Log("GameManager: Start() called.");
             isGameScene = false || SceneManager.GetActiveScene().name != "MainMenuScene" ||
-                                   SceneManager.GetActiveScene().name !=  "Town";
+                                   SceneManager.GetActiveScene().name != "Town";
 
-            if(!isGameScene) return;
-            
+            if (!isGameScene) return;
+
             waveSpawner = WaveSpawner.instance;
-            
+
             isGameOver = false;
-            
+
             waveSpawner.Initialize(levelData);
             GenerateGrid();
         }
-        
+
 
         public void Update()
         {
@@ -233,17 +234,17 @@ namespace Game_Manager
             return grid[pos.x, pos.y];
         }
         #endregion
-        
+
         #region End Round Logic
-        
+
         [Header("End Round Variables")]
         public GameObject winScreen;
         public AudioClip winSound;
         public GameObject loseScreen;
         public AudioClip loseSound;
         private bool isGameOver = false;
-        [NonSerialized]public List<House> houses = new List<House>();
-        
+        [NonSerialized] public List<House> houses = new List<House>();
+
         public bool CheckHousesAlive()
         {
             House aliveHouse = houses.Find(r => !r.IsDestroyed);
@@ -254,28 +255,28 @@ namespace Game_Manager
         public void Win()
         {
             Debug.Log("GameManager: Win() called.");
-            if(isGameOver) return;
-            if(winScreen.activeInHierarchy) return;
+            if (isGameOver) return;
+            if (winScreen.activeInHierarchy) return;
             if (!winScreen)
             {
                 Debug.LogError("GameManager: Win(): No winScreen specified.");
                 return;
             }
-            if(winSound) AudioSource.PlayClipAtPoint(winSound, transform.position);
+            if (winSound) AudioSource.PlayClipAtPoint(winSound, transform.position);
             Instantiate(winScreen, FindFirstObjectByType<Canvas>().gameObject.transform);
         }
 
         public void Lose()
         {
             Debug.Log("GameManager: Lose() called.");
-            if(isGameOver) return;
-            if(loseScreen.activeInHierarchy) return;
+            if (isGameOver) return;
+            if (loseScreen.activeInHierarchy) return;
             if (!loseScreen)
             {
                 Debug.LogError("GameManager: Lose(): No loseScreen specified.");
                 return;
             }
-            if(loseSound) AudioSource.PlayClipAtPoint(loseSound, transform.position);
+            if (loseSound) AudioSource.PlayClipAtPoint(loseSound, transform.position);
             Instantiate(loseScreen, FindFirstObjectByType<Canvas>().gameObject.transform);
         }
 
@@ -374,3 +375,4 @@ namespace Game_Manager
 
     }
 }
+
