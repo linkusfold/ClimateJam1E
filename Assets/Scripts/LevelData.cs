@@ -39,10 +39,10 @@ public class LevelData : ScriptableObject
         }
 
         // If wave is spawned and all enemies are dead, advance to next wave index
-        if (waveSpawned)
+        if (waveSpawned) //&& waves[currentWaveIndex].enemiesLeft <= 0)
         {
-            Debug.Log("Wave completed, advancing index.");
             currentWaveIndex++;
+            Debug.Log($"Wave completed, advancing index to {currentWaveIndex}.");
             waveSpawned = false;
 
             if (currentWaveIndex < waves.Length)
@@ -59,7 +59,7 @@ public class LevelData : ScriptableObject
         if (currentWaveIndex < waves.Length)
         {
             waves[currentWaveIndex].enemiesLeft--;
-            Debug.Log("Enemy removed. Remaining: " + waves[currentWaveIndex].enemiesLeft);
+            //Debug.Log("Enemy removed. Remaining: " + waves[currentWaveIndex].enemiesLeft);
         }
     }
 }

@@ -15,7 +15,7 @@ using UnityEngine;
 public class ColdProjectile : MonoBehaviour
 {
     public float speed = 8f;         // Speed at which the projectile travels
-    public int damage = 1;           // Damage dealt on impact
+    public float damage = 1f;           // Damage dealt on impact
 
     private Transform target;        // The enemy this projectile is pursuing
 
@@ -44,14 +44,21 @@ public class ColdProjectile : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Enemy e = other.GetComponent<Enemy>();
-            if (e != null)
+            // Try to get any damageable component
+            var damageable = other.GetComponent<IDamageableEnemy>();
+            if (damageable != null)
             {
-                e.TakeDamage(damage);      // Apply damage
-                e.ExtinguishFire();        // Remove fire status if applicable
+                damageable.TakeDamage(damage); // Apply damage
             }
 
-            Destroy(gameObject);           // Destroy the projectile on impact
+            // Try to extinguish fire only if it's a normal enemy
+            Enemy enemy = other.GetComponent<Enemy>();
+            if (enemy != null)
+            {
+                enemy.ExtinguishFire(); // Remove fire status if applicable
+            }
+
+            Destroy(gameObject); // Destroy the projectile after hit
         }
     }
 }

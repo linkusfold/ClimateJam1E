@@ -7,15 +7,16 @@ namespace DefaultNamespace
     {
         protected override void Start()
         {
-            speed = 0.5f;
-            health = 150;
-            damage = 10;
+            speed = 0.2f;
+            health = 100;
+            damage = 6;
             base.Start();
         }
 
         protected override void PerformAttack(IDamageableBuilding building)
         {
-            Debug.Log("Turtle bites!");
+            building.TakeDamage((int)damage);
+            //Debug.Log("Turtle bites!");
             // Custom logic here for the turtle melee attack
         }
 

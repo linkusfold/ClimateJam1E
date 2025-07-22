@@ -49,11 +49,15 @@ public class Projectile : MonoBehaviour
         // Only react if the object hit is tagged "Enemy"
         if (other.CompareTag("Enemy"))
         {
-            // Apply damage to the enemy
-            other.GetComponent<Enemy>().TakeDamage(damage);
+            IDamageableEnemy damageable = other.GetComponent<IDamageableEnemy>();
+            if (damageable != null)
+            {
+                // Apply damage to the enemy or hurricane boss
+                damageable.TakeDamage(damage);
 
-            // Destroy the projectile after impact
-            Destroy(gameObject);
+                // Destroy the projectile after impact
+                Destroy(gameObject);
+            }
         }
     }
 }

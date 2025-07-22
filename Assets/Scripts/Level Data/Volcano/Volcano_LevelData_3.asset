@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20248da444c778f4bb7cc7cf3ee8fbf0, type: 3}
+  m_Name: Volcano_LevelData_3
+  m_EditorClassIdentifier: 
+  countdown: 5
+  maxEnemiesSafe: 4
+  waves:
+  - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
+  - {fileID: 11400000, guid: d60317d29854d134bb33479a0abcc32e, type: 2}
+  - {fileID: 11400000, guid: d60317d29854d134bb33479a0abcc32e, type: 2}
+  - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
+  - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
+  - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
+  - {fileID: 11400000, guid: bb416f481324a6d4e84b0daaa1672eab, type: 2}
+  - {fileID: 11400000, guid: dec83975bf5d3474290a55b4f4e16e7e, type: 2}
+  - {fileID: 11400000, guid: bb416f481324a6d4e84b0daaa1672eab, type: 2}
+  - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
+  - {fileID: 11400000, guid: e7aa69514778d2e41bc4629f8274a4bf, type: 2}
+  boss: {fileID: 0}
+  currentWaveIndex: 12

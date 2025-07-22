@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace DefaultNamespace
 {
-    public abstract class Enemy : MonoBehaviour
+    public abstract class Enemy : MonoBehaviour, IDamageableEnemy
     {
         protected float speed = 1;
         protected float health = 100;
@@ -43,7 +43,7 @@ namespace DefaultNamespace
                 ReachedNode();
                 return;
             }
-            
+
             Vector3 targetPos = path.pathNodes[currentNodeId];
 
             // Check for tower in the way
@@ -71,7 +71,7 @@ namespace DefaultNamespace
         private void ReachedNode()
         {
             pathing = false;
-            Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
+            //Debug.Log("Enemy " + gameObject.name + " reached Node " + currentNodeId + "!");
 
             if (path.pathNodes.Count <= currentNodeId + 1)
             {
@@ -83,7 +83,7 @@ namespace DefaultNamespace
             GoToPathNode(currentNodeId);
         }
 
-        private void OnReachedEnd()
+        protected virtual void OnReachedEnd()
         {
             Debug.Log($"{gameObject.name} reached the end and dealt {damage} damage!");
             WaveSpawner.instance.EnemiesAlive--;
@@ -125,7 +125,7 @@ namespace DefaultNamespace
             float effectiveDamage = Mathf.Max(amount - defense, 0);
             health -= effectiveDamage;
 
-            Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
+            //Debug.Log("Enemy " + gameObject.name + " health reduced to " + health + "!");
 
             if (health <= 0)
             {

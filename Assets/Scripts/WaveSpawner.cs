@@ -10,6 +10,8 @@ public class WaveSpawner : MonoBehaviour
     public static WaveSpawner instance;
     
     public List<Path> paths = new List<Path>();
+    public List<Path> flipped_paths = new List<Path>();
+    public List<Path> wave_paths = new List<Path>();
 
     public bool initialized = false;
     [NonSerialized] public LevelData levelData;
@@ -19,6 +21,8 @@ public class WaveSpawner : MonoBehaviour
     [SerializeField] public Transform spawnPoint;
 
     public int EnemiesAlive = 0;
+
+    private bool flipedPathing = false;
 
     private void Awake()
     {
@@ -61,17 +65,16 @@ public class WaveSpawner : MonoBehaviour
             waveSpawning = false;
         }
     }
-    
+
     public void Restart()
     {
-        levelData.currentWaveIndex = 0;
+        waveSpawning = false;
+        Initialize(levelData);
+    }
 
-        levelCountdown = levelData.countdown;
-
-        for (int i = 0; i < levelData.waves.Length; i++)
-        {
-            levelData.waves[i].enemiesLeft = levelData.waves[i].enemies.Length;
-        }
+    public void FlipPathing()
+    {
+        flipedPathing = !flipedPathing;
     }
 
     private IEnumerator SpawnWave()
@@ -88,10 +91,33 @@ public class WaveSpawner : MonoBehaviour
         {
             Enemy enemyPrefab = wave.enemies[i];
 
-            if (enemyPrefab is Enemy pathingEnemyPrefab)
+            if (enemyPrefab is TidalWave wavePrefab) //special case for wave attacks
+            {
+                Debug.Log("Spawning Wave attack");
+                TidalWave waveEnemy = Instantiate(wavePrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
+
+                waveEnemy.path = wave_paths[flipedPathing ? 1 : 0];
+                
+                // flip wave
+                Vector3 scale = waveEnemy.transform.localScale;
+                scale.x = flipedPathing ? -1 : 1;
+                waveEnemy.transform.localScale = scale;
+
+                waveEnemy.levelData = levelData;
+                waveEnemy.currentNodeId = 1;
+            }
+            else if (enemyPrefab is Enemy pathingEnemyPrefab)
             {
                 Enemy pathingEnemy = Instantiate(pathingEnemyPrefab, spawnPoint.position, Quaternion.identity, spawnPoint);
-                pathingEnemy.path = paths[UnityEngine.Random.Range(0, paths.Count)];
+
+                // Choose path list based on if the paths are flipped
+                List<Path> pathList = flipedPathing ? flipped_paths : paths;
+                // flip sprite
+                Vector3 scale = pathingEnemy.transform.localScale;
+                scale.x = flipedPathing ? -1 : 1;
+                pathingEnemy.transform.localScale = scale;
+
+                pathingEnemy.path = pathList[UnityEngine.Random.Range(0, pathList.Count)];
                 pathingEnemy.levelData = levelData;
                 pathingEnemy.currentNodeId = 1;
             }

@@ -3,11 +3,11 @@ using System.Collections;
 
 namespace DefaultNamespace
 {
-    public class Hurricane : Boss
+    public class Hurricane : Boss, IDamageableEnemy
     {
         [SerializeField] private HealthBar healthBar;
 
-        [SerializeField] private float _health = 500f;
+        [SerializeField] private float _health = 400f;
 
         public float Health
         {
@@ -36,7 +36,6 @@ namespace DefaultNamespace
             healthBar.MaxHealth = Health;
 
             base.Start();
-            SwitchSides();
         }
 
         protected override void Update()
@@ -49,8 +48,12 @@ namespace DefaultNamespace
                 Debug.Log("Disaster " + gameObject.name + " has looped its wave attacks!");
 
                 waveSpawner.Restart();
+            }
 
-                TakeDamage(250); //This is just for debugging it won't actually take damage here
+            if (((waveSpawner.levelData.currentWaveIndex % 2 == 1 && isOnLeftSide)
+                || (waveSpawner.levelData.currentWaveIndex % 2 == 0 && !isOnLeftSide))
+                && !isSwitchingSides)
+            {
                 SwitchSides();
             }
         }
@@ -62,6 +65,7 @@ namespace DefaultNamespace
 
             float startX = isOnLeftSide ? leftX : rightX;
             float endX = isOnLeftSide ? rightX : leftX;
+
             Vector3 startPos = new Vector3(startX, transform.position.y, transform.position.z);
             Vector3 endPos = new Vector3(endX, transform.position.y, transform.position.z);
 
@@ -91,6 +95,7 @@ namespace DefaultNamespace
 
             isOnLeftSide = !isOnLeftSide;
             isSwitchingSides = false;
+            waveSpawner.FlipPathing();
         }
 
         protected void SwitchSides()
