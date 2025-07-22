@@ -20,7 +20,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "I\u2019ll help you get some supplies around town. We\u2019ll stop at Leah\u2019s,
       Dio\u2019s, and Archie\u2019s for spare parts. "
     responses:
@@ -28,11 +28,11 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}
   - text: "Take your time, I\u2019ll wait outside."
     responses:
     - text: (Continue)
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}

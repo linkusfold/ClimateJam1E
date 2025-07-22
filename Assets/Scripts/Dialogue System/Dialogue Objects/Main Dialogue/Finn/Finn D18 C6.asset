@@ -21,7 +21,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: 'I lost the last time we did something like this so I gotta win this time
       around! '
     responses:
@@ -29,4 +29,4 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}

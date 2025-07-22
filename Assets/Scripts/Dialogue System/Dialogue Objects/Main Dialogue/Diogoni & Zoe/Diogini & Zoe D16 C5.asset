@@ -20,28 +20,28 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Quick! Quick! B\u2019fore the monster gets you! "
     responses:
     - text: 'What monster, Zoe? '
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "I saw big monster! All windy and going \u2018WHOOOOSH\u2019! "
     responses:
     - text: (Continue)
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: Hmph. For the last time, Zoe, you did not see a monster outside.
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: No, Granpa Dio! I really saw one! Out the window! It was big and mean and
       smashing things!
     responses:
@@ -49,7 +49,7 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "THERE IS NO MONSTER!! THERE IS NOTHING SMASHING UP CORAL COVE!! THIS IS
       ONLY A STORM, AND I\u2019M SICK OF PEOPLE TELLING ME OTHERWISE!! HAS YOUR BROTHER
       BEEN FILLING YOUR HEAD WITH NONSENSE?!! "
@@ -58,7 +58,7 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: '<i> Zoe starts crying. '
     responses:
     - text: (Continue)
@@ -72,14 +72,14 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Oh- Ah- I\u2019m sorry, Zoe. I didn\u2019t mean to lose my temper- "
     responses:
     - text: (Continue)
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Granpa Dio s-scary! Waaaaahh!! '
     responses:
     - text: 'Look, Zoe! I made a grass whistle. Want to play with it? '
@@ -91,28 +91,28 @@ MonoBehaviour:
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: '*sniffle* ...y-yeah.'
     responses:
     - text: (Continue)
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "I\u2019m so sorry, Zoe. "
     responses:
     - text: (Continue)
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "...When Granpa Dio really l-loud, he scary\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "I didn\u2019t mean to yell at you like that, Zoe. It\u2019s just that\u2026
       just\u2026 "
     responses:
@@ -120,14 +120,14 @@ MonoBehaviour:
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Yes, exactly! '
     responses:
     - text: (Continue)
       nextPassageIndex: 15
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "You know I love you more than anything, Zoe. Even if I yell, I\u2019ll
       never let monsters come get you."
     responses:
@@ -135,35 +135,35 @@ MonoBehaviour:
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: '*sniff* Never ever? '
     responses:
     - text: (Continue)
       nextPassageIndex: 17
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Never ever, and that\u2019s a promise. "
     responses:
     - text: (Continue)
       nextPassageIndex: 30
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: '*sniffle* Granpa D-Dio afraid of monster too? '
     responses:
     - text: (Continue)
       nextPassageIndex: 19
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: '*looks at you, then sighs* '
     responses:
     - text: (Continue)
       nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'Yes, I am also afraid of monsters. If only there was a strong young girl
       to help me not be so scared. '
     responses:
@@ -171,7 +171,7 @@ MonoBehaviour:
       nextPassageIndex: 21
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "*sniff* Don\u2019 worry, Granpa Dio\u2026 I make sure monster don\u2019
       come back. "
     responses:
@@ -179,7 +179,7 @@ MonoBehaviour:
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Well if there was a monster, I\u2019m sure it\u2019s gone now. We just
       need to stay safe inside. "
     responses:
@@ -188,14 +188,14 @@ MonoBehaviour:
       nextPassageIndex: 23
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Monster comin\u2019 back?! "
     responses:
     - text: (Continue)
       nextPassageIndex: 24
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: 'Stranger, please- '
     responses:
     - text: 'Yes, it could come back. But me and my friends are fighting it, and
@@ -204,28 +204,28 @@ MonoBehaviour:
       nextPassageIndex: 25
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'But she- '
     responses:
     - text: (Continue)
       nextPassageIndex: 26
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "*nods* I unde\u2019stand. "
     responses:
     - text: (Continue)
       nextPassageIndex: 27
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "But\u2026 but\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 28
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Granpa Dio, I can help the town. I help you and all my friends not get
       blown away. '
     responses:
@@ -233,14 +233,14 @@ MonoBehaviour:
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "...I see. You\u2019re very brave, Zoe. Just like your mother. "
     responses:
     - text: (Continue)
       nextPassageIndex: 30
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Now let\u2019s get you off to bed. We can read your favorite book again,
       as a special apology treat. "
     responses:
@@ -248,14 +248,14 @@ MonoBehaviour:
       nextPassageIndex: 31
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: 'Yayyyy! '
     responses:
     - text: (Continue)
       nextPassageIndex: 32
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "Thank you, friend. A\u2026 a lot has happened recently. I have much to
       think about. I hope we speak again soon."
     responses:
@@ -263,4 +263,4 @@ MonoBehaviour:
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}

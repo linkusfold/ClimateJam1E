@@ -20,7 +20,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: 'Sorry about the mess, been pretty busy lately with all these disasters
       around town. I try to help where I can. '
     responses:
@@ -28,11 +28,11 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "\u2026Got it! Let\u2019s head back. "
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}

@@ -19,7 +19,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: 'Hmm, this can go here and that there. Little bit of this and boom, the
       lighthouse is good as new! '
     responses:
@@ -27,7 +27,7 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "Am I good or what? Well, today\u2019s been busy so I\u2019m gonna head
       out. Catch you later! "
     responses:
@@ -35,4 +35,4 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}

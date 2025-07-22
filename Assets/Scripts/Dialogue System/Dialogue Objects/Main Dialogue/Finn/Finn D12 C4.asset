@@ -20,7 +20,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: "It\u2019s just that, when we were kids, Archie and I used to be really
       good friends.  "
     responses:
@@ -28,7 +28,7 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "We would stay out later than we should\u2019ve, and get scolded together.
       Haha, those were fun times. You should\u2019ve seen the look on his face, he
       was such a softie.  "
@@ -37,7 +37,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: 'But as we grew up, things started getting more complicated. Especially
       for Archie. '
     responses:
@@ -45,7 +45,7 @@ MonoBehaviour:
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: "When he was going through a lot, it felt like he just pushed me to the
       side. I tried to be there for him, but it seemed like I was only making things
       worse. Eventually, we stopped hanging out and\u2026 well, that was that.  "
@@ -54,21 +54,21 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4469381534625319708, guid: 21ab746b20a38d6449c45069b16dad76, type: 3}
   - text: 'I wish things went a bit differently.  '
     responses:
     - text: (Continue)
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: "\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: "Uh, thanks for\u2026 for listening. It really helped me sort my thoughts,
       just having someone here."
     responses:
@@ -76,11 +76,11 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "Let\u2019s talk later, okay? "
     responses:
     - text: (End Conversation)
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}

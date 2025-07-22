@@ -33,14 +33,14 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Granpa Dio is doing br\u2026 bro\u2026 brooding."
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "*chuckles* \u201CI suppose you could call it that. I\u2019ve just been
       doing a lot of thinking. "
     responses:
@@ -48,7 +48,7 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "About the recent events. About the town, and everything you\u2019ve done
       for it. "
     responses:
@@ -56,7 +56,7 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "\u2026About how you helped me with Zoe the other day. There certainly
       is a lot to think about. "
     responses:
@@ -64,7 +64,7 @@ MonoBehaviour:
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "I\u2019m not entirely sure. I know that things are changing around here.
       Archie is changing. Even Zoe is changing. The only thing that seems to not
       be changing is\u2026 me. "
@@ -73,7 +73,7 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "*shakes his head* I\u2019m afraid when you get to be my age, changing
       becomes harder and harder. I live the way I do, and it works for me. But for
       Zoe, I\u2019m not so sure. "
@@ -82,7 +82,7 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Ever since I\u2019ve been taking care of Zoe, I\u2019ve been only telling
       her what I think. Everything she knows about the world has come from me. But
       she\u2019s beginning to explore at the edges of what I know and accept. And
@@ -94,7 +94,7 @@ MonoBehaviour:
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "But I haven\u2019t been teaching her. I\u2019ve just been making sure
       she thinks like I do, that she can never know anything else. I always tell
       her \u2018never go anywhere without Grandpa Dio\u2019. "
@@ -103,14 +103,14 @@ MonoBehaviour:
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Yep. That what Granpa Dio always say. '
     responses:
     - text: (Continue)
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "But no more. She\u2019s ready to start deciding for herself. And as she
       gets older, she\u2019ll get to choose what kind of a person she wants to be. "
     responses:
@@ -118,7 +118,7 @@ MonoBehaviour:
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'In the long run? I have no idea. But the next thing I plan to do is go
       talk to Archie. I need to see where we stand with each other. '
     responses:
@@ -126,7 +126,7 @@ MonoBehaviour:
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: 'Thank you, friend. Thank you for helping our town. Thank you for helping
       me see what was happening around me. '
     responses:
@@ -134,14 +134,14 @@ MonoBehaviour:
       nextPassageIndex: 15
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "And t\u2019anks for playing with me!"
     responses:
     - text: (Continue)
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "Yes, and thank you for looking after Zoe. I want you to have this pocket
       knife. It once belonged to my child, but I hope that now you\u2019ll use it
       well and take care of it. And take care of yourself too, friend. "
@@ -150,4 +150,4 @@ MonoBehaviour:
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}

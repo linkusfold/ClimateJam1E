@@ -19,14 +19,14 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: 'Granpa Dio said he take me up to the top of cliff! '
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: Ahh, Zoe. I said I would think about taking you up to the clifftop, if
       you took my safety lesson seriously.
     responses:
@@ -34,7 +34,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Come, stranger. This will be a good lesson for you too. '
     responses:
     - text: "This isn\u2019t going to be just boring kid safety, is it? "
@@ -45,7 +45,7 @@ MonoBehaviour:
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "I want to share with you both some things that are useful when you\u2019re
       out in the wilderness around Coral Cove. I\u2019ve been living here longer
       than anyone else, so I think even you will learn a thing or two, Stranger. "
@@ -54,7 +54,7 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Now that the most recent storm has passed, it\u2019s safe to go out. But
       you never know when the next one might surprise you. It doesn\u2019t have to
       be a storm either. When you\u2019re up on the cliffside, just some errant strong
@@ -64,14 +64,14 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'That why Granpa Dio say stay inside when it really windy? '
     responses:
     - text: (Continue)
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "That\u2019s right Zoe, but sometimes the wind can be deceptive. To figure
       out if it\u2019s dangerous to be out, you\u2019ll need to find a Palewood tree. "
     responses:
@@ -80,7 +80,7 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Exactly right! Palewood grows all over Coral Cove, and it is an extremely
       brittle wood. Once you find a tree, look for a branch or twig that\u2019s about
       as big as your forearm. "
@@ -89,14 +89,14 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: 'What is four-arm? '
     responses:
     - text: (Continue)
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "It is this part of your arm, dear. Once you\u2019ve found it, go back
       to the area of the cliff you\u2019re walking on, and hold your stick out away
       from you, and towards the ocean. "
@@ -105,7 +105,7 @@ MonoBehaviour:
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: ' Now, wait for a couple of minutes to test the strength of the wind. If
       the wind is strong enough to snap the hollow Palewood, or pull it out of your
       hands, then it is too strong, and you should hurry home. Do you understand,
@@ -115,14 +115,14 @@ MonoBehaviour:
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: 'Mhm. It your stick break, run away to home! '
     responses:
     - text: (Continue)
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "*chuckles* Don\u2019t run too fast. You wouldn\u2019t want to leave your
       Grandpa Dio behind. I\u2019d never be able to find my way home without you,
       Zoe. "
@@ -131,7 +131,7 @@ MonoBehaviour:
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Don\u2019 worry Granpa Dio, I make sure you don\u2019 get lost. "
     responses:
     - text: "That\u2019s\u2026 actually a pretty neat trick. I never knew you could
@@ -139,7 +139,7 @@ MonoBehaviour:
       nextPassageIndex: 15
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: 'Yes, nature comes with many dangers, but also many useful tools, if you
       know how to use them. Come, I have more to show you. '
     responses:
@@ -148,7 +148,7 @@ MonoBehaviour:
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: '<i> Over the next hour, Diogini explains several other safety or nature
       tricks and tips, including how to properly tie a rope, how to forage, and how
       to make a grass whistle, which Zoe particularly enjoys. '
@@ -164,7 +164,7 @@ MonoBehaviour:
       nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "Well, that\u2019s certainly one way to use it. If you practice enough,
       you can also use it to let other hikers and explorers know where you are. Of
       course, you should usually bring your own whistle, but this is a fine replacement
@@ -174,7 +174,7 @@ MonoBehaviour:
       nextPassageIndex: 19
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Well, these tools are good and all, but the best \u201Csurvival trick\u201D
       of all is to just be aware of your surroundings. Not paying attention is how
       accidents happen. You don\u2019t want to end up like\u2026 well, you don\u2019t
@@ -184,7 +184,7 @@ MonoBehaviour:
       nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: ...
     responses:
     - text: 'Are you ok? '
@@ -195,7 +195,7 @@ MonoBehaviour:
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Yes, I\u2019m\u2026 I\u2019m fine. Not a lot of people listen to me, or
       my advice on staying safe. People have gotten hurt before because they didn\u2019t
       listen. That\u2019s why it\u2019s so important to teach these lessons to Zoe,
@@ -209,14 +209,14 @@ MonoBehaviour:
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Thank you. My granddaughter is <i>everything </i>to me. '
     responses:
     - text: (Continue)
       nextPassageIndex: 23
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "I don\u2019t want her to ever get hurt like\u2026 well, like others have
       before her. "
     responses:
@@ -224,7 +224,7 @@ MonoBehaviour:
       nextPassageIndex: 24
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "*sigh* Zoe, honey. I\u2019m sorry, but we can\u2019t go up to the top
       of the cliff tomorrow. It\u2019s just too dangerous."
     responses:
@@ -232,14 +232,14 @@ MonoBehaviour:
       nextPassageIndex: 25
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Awww! But Granpa Dio, you promised! '
     responses:
     - text: (Continue)
       nextPassageIndex: 26
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "No buts, young lady. Grandpa Dio always puts safety first, and someday,
       you\u2019ll thank me. "
     responses:
@@ -247,7 +247,7 @@ MonoBehaviour:
       nextPassageIndex: 27
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "And you, stranger. It\u2019s time for you to do. I hope you\u2019ve learned
       something today. Here, I want you to take this book. It contains everything
       I talked about today, for if you need reminding."
@@ -255,15 +255,20 @@ MonoBehaviour:
     - text: 'Thank you, Diogini. '
       nextPassageIndex: 28
       nextConversation: {fileID: 0}
+<<<<<<< HEAD
+      endsConversation: 0
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
+=======
       endsConversation: 1
     sprite: {fileID: 0}
+>>>>>>> c7b23258bdf1f2223948cf6cb22dca1ea401cffe
   - text: 'And thank you, once again. Good night, stranger. '
     responses:
     - text: (End Conversation)
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "*sigh* My child, Zosa and Archie\u2019s mother, used to live here. One
       day, their partner and them went out to hike outside of Coral Cove for a couple
       of days. But they took a path that was right near a S.M.O.G construction site.
@@ -273,8 +278,13 @@ MonoBehaviour:
     - text: (Continue)
       nextPassageIndex: 30
       nextConversation: {fileID: 0}
+<<<<<<< HEAD
+      endsConversation: 1
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
+=======
       endsConversation: 0
     sprite: {fileID: 0}
+>>>>>>> c7b23258bdf1f2223948cf6cb22dca1ea401cffe
   - text: "I\u2019ve looked after Zoe and Archie since then. The hardest part of
       it all was explaining to them that their parents\u2026 that the reason they
       were gone was a simple mistake they made to walk the wrong trail. "
@@ -287,7 +297,7 @@ MonoBehaviour:
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: " I mean, the cliff face being loosened was the fault of the S.M.O.G. construction
       site\u2026 but these things happen! They were just building some sort of resort.
       They didn\u2019t maliciously take my child away from me. "
@@ -296,8 +306,13 @@ MonoBehaviour:
         involvement? "
       nextPassageIndex: 32
       nextConversation: {fileID: 0}
+<<<<<<< HEAD
+      endsConversation: 1
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
+=======
       endsConversation: 0
     sprite: {fileID: 0}
+>>>>>>> c7b23258bdf1f2223948cf6cb22dca1ea401cffe
   - text: "What\u2019s done is done, stranger! I\u2019m not going to open old wounds
       for no good reason. They\u2019re in the past, I need to focus on the present,
       on protecting Zoe. Please just let it go. "
@@ -305,15 +320,25 @@ MonoBehaviour:
     - text: "...I\u2019m sorry, Diogini. "
       nextPassageIndex: 33
       nextConversation: {fileID: 0}
+<<<<<<< HEAD
+      endsConversation: 1
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
+=======
       endsConversation: 0
     sprite: {fileID: 0}
+>>>>>>> c7b23258bdf1f2223948cf6cb22dca1ea401cffe
   - text: 'Thank you. My granddaughter is everything to me. '
     responses:
     - text: (Continue)
       nextPassageIndex: 34
       nextConversation: {fileID: 0}
+<<<<<<< HEAD
+      endsConversation: 1
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
+=======
       endsConversation: 0
     sprite: {fileID: 0}
+>>>>>>> c7b23258bdf1f2223948cf6cb22dca1ea401cffe
   - text: "I want her to be able to live a good life\u2026 "
     responses:
     - text: (Continue)
@@ -326,12 +351,17 @@ MonoBehaviour:
     - text: (Continue)
       nextPassageIndex: 36
       nextConversation: {fileID: 0}
+<<<<<<< HEAD
+      endsConversation: 1
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
+=======
       endsConversation: 0
     sprite: {fileID: 0}
+>>>>>>> c7b23258bdf1f2223948cf6cb22dca1ea401cffe
   - text: 'Really? Yayyyy! Thank you, Granpa Dio! '
     responses:
     - text: (End Conversation)
       nextPassageIndex: 37
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}

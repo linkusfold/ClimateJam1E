@@ -23,14 +23,14 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: Yeah, that checks out.
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: "I\u2019ve been thinking a lot about the last time we talked and I think
       I\u2019m gonna reach out to Archie. Honestly, I don\u2019t even know what to
       say to him. Everything is probably gonna end up being even worse than before,
@@ -40,21 +40,21 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: 'I gotta think more positively.  '
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
   - text: "I have nothing to lose so it doesn\u2019t really matter how it goes! Ahahaha\u2026  "
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
   - text: 'I think all that energy spent fighting that hurricane is really getting
       to me. I better get to bed soon.  '
     responses:
@@ -62,4 +62,4 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
