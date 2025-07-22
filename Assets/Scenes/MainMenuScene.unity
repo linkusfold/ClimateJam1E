@@ -504,7 +504,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6893911652732044610, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
       propertyPath: m_Volume
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7011674874585818196, guid: 06bb62fe27931b845b01d0acd3d4a3a2, type: 3}
       propertyPath: m_AnchorMax.y

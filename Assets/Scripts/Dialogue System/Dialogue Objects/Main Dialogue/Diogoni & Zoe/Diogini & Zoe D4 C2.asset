@@ -192,14 +192,14 @@ MonoBehaviour:
   - text: "Zoe, what do I always say when it\u2019s stormy outside? "
     responses:
     - text: (Continue)
-      nextPassageIndex: 21
+      nextPassageIndex: 22
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Be safe in house and don\u2019t come out\u2026 "
     responses:
     - text: (Continue)
-      nextPassageIndex: 22
+      nextPassageIndex: 23
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
@@ -207,12 +207,12 @@ MonoBehaviour:
       accidents can happen. Wouldn\u2019t you agree, Stranger?"
     responses:
     - text: 'I think that you can brave the harsh weather safely by being careful. '
-      nextPassageIndex: 23
+      nextPassageIndex: 24
       nextConversation: {fileID: 0}
       endsConversation: 0
     - text: "It\u2019s good to stay inside, but you should still check outside so
         you know when it\u2019s safe to go out again. "
-      nextPassageIndex: 23
+      nextPassageIndex: 24
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
@@ -220,18 +220,18 @@ MonoBehaviour:
       leave. "
     responses:
     - text: "You\u2019d be surprised at how much kids can understand. "
-      nextPassageIndex: 24
+      nextPassageIndex: 25
       nextConversation: {fileID: 0}
       endsConversation: 0
     - text: "If you say so. You\u2019re her grandfather after all. "
-      nextPassageIndex: 24
+      nextPassageIndex: 25
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'Hey! Am not too little! '
     responses:
     - text: (Continue)
-      nextPassageIndex: 25
+      nextPassageIndex: 26
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
@@ -239,25 +239,25 @@ MonoBehaviour:
       anything bad to happen to you."
     responses:
     - text: (Continue)
-      nextPassageIndex: 26
+      nextPassageIndex: 27
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'But I want to go out and see storm! '
     responses:
     - text: 'Zoe, you should listen to your grandpa. '
-      nextPassageIndex: 27
+      nextPassageIndex: 28
       nextConversation: {fileID: 0}
       endsConversation: 0
     - text: 'Maybe your grandpa will let you go out sometime if you ask nicely, Zoe. '
-      nextPassageIndex: 27
+      nextPassageIndex: 28
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Ok\u2026 fine."
     responses:
     - text: (Continue)
-      nextPassageIndex: 28
+      nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
@@ -265,14 +265,14 @@ MonoBehaviour:
       up. Now I can read you your favorite book. "
     responses:
     - text: (Continue)
-      nextPassageIndex: 29
+      nextPassageIndex: 30
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: Yayyy! Get the book! Get the book!
     responses:
     - text: (Continue)
-      nextPassageIndex: 30
+      nextPassageIndex: 31
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
@@ -280,7 +280,7 @@ MonoBehaviour:
       sometime. '
     responses:
     - text: "I\u2019m sure I will, Dio. "
-      nextPassageIndex: 31
+      nextPassageIndex: 32
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
