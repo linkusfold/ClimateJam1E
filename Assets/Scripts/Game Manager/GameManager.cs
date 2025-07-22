@@ -17,7 +17,8 @@ namespace Game_Manager
         leah,
         georgie,
         finn,
-        diogini
+        diogini,
+        playerHome
 
     }
 
