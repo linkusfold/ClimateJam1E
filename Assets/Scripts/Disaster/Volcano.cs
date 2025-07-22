@@ -23,6 +23,11 @@ namespace DefaultNamespace
         {
             base.Update();
 
+            if (waveSpawner.levelData == null)
+            {
+                return;
+            }
+
             if (((waveSpawner.levelData.currentWaveIndex % 4 >= 2 && !isOnLeftSide)
                 || (waveSpawner.levelData.currentWaveIndex % 4 < 2 && isOnLeftSide))
                 && !isSwitchingSides)

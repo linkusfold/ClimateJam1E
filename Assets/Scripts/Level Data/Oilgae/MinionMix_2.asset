@@ -20,6 +20,6 @@ MonoBehaviour:
   - {fileID: 7826782712957299012, guid: 229af25c5adca468b9524447d09c6d93, type: 3}
   - {fileID: 3221856143918135539, guid: 1dd026ade863145f08c09eb48a3d30da, type: 3}
   - {fileID: 7826782712957299012, guid: 229af25c5adca468b9524447d09c6d93, type: 3}
-  timeToNextEnemy: 5
-  timeToNextWave: 20
-  enemiesLeft: 4
+  timeToNextEnemy: 3
+  timeToNextWave: 15
+  enemiesLeft: 5

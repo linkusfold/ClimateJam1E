@@ -38,7 +38,8 @@ namespace Game_Manager
         void Start()
         {
             Debug.Log("GameManager: Start() called.");
-            isGameScene = false || SceneManager.GetActiveScene().name == "GameScene";
+            isGameScene = false || SceneManager.GetActiveScene().name != "MainMenuScene" ||
+                                   SceneManager.GetActiveScene().name !=  "Town";
 
             if(!isGameScene) return;
             

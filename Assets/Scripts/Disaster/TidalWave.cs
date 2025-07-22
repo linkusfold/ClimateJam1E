@@ -8,8 +8,8 @@ public class TidalWave : Enemy
     protected override void Start()
     {
         speed = 0.3f;
-        health = 100;
-        damage = 60;
+        health = 260;
+        damage = 70;
         atkSpeed = 50; //only attacks once
         base.Start();
     }

@@ -5,9 +5,9 @@ using UnityEngine;
     {   
         protected override void Start()
         {
-            speed = 0.5f;
-            health = 50;
-            damage = 2;
+            speed = 0.6f;
+            health = 100;
+            damage = 4;
             atkSpeed = 1;
             base.Start();
         }

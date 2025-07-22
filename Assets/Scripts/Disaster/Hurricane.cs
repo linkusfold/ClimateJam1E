@@ -7,7 +7,7 @@ namespace DefaultNamespace
     {
         [SerializeField] private HealthBar healthBar;
 
-        [SerializeField] private float _health = 400f;
+        [SerializeField] private float _health = 500f;
 
         public float Health
         {
@@ -48,6 +48,11 @@ namespace DefaultNamespace
                 Debug.Log("Disaster " + gameObject.name + " has looped its wave attacks!");
 
                 waveSpawner.Restart();
+            }
+
+            if (waveSpawner.levelData == null)
+            {
+                return;
             }
 
             if (((waveSpawner.levelData.currentWaveIndex % 2 == 1 && isOnLeftSide)

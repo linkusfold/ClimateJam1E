@@ -7,7 +7,7 @@ using System.Collections;
         protected override void Start()
         {
             speed = 0.6f;
-            health = 80;
+            health = 100;
             damage = 40;
             atkSpeed = 40; //only attacks once
             currentNodeId = 6; //start on the actual cliff

@@ -17,10 +17,14 @@ namespace DefaultNamespace
 
         protected virtual void Update()
         {
+            if (waveSpawner.levelData == null)
+            {
+                return;
+            }
             //Debug.Log($"Boss debug {waveSpawner.levelData.currentWaveIndex} and {waveSpawner.levelData.waves.Length}");
             // When the boss runs out of attack waves it dies
-            if (WaveSpawner.instance.levelData.currentWaveIndex >= WaveSpawner.instance.levelData.waves.Length)
-                //&& waveSpawner.EnemiesAlive <= 0)
+            if (waveSpawner.levelData.currentWaveIndex >= waveSpawner.levelData.waves.Length
+                && waveSpawner.EnemiesAlive <= 0)
             {
                 Die();
             }
