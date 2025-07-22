@@ -26,6 +26,10 @@ public class CharacterDialogueHandler : MonoBehaviour
     [SerializeField]
     AudioClip textSound;
     private AudioSource textAudioSource;
+    [Header("Music Settings")]
+    [SerializeField]
+    public AudioClip backgroundMusic;
+    private AudioSource musicAudioSource;
     [Header("Input Settings")]
     public InputActionReference responseActionReference;
     private InputAction responseInput;
@@ -44,7 +48,7 @@ public class CharacterDialogueHandler : MonoBehaviour
     // NEW: drag your disabled “HouseInteriorPanel” here
     [Header("Interior Panel (UI)")]
     [SerializeField]
-    private GameObject interiorPanel; 
+    private GameObject interiorPanel;
 
     void Awake()
     {
@@ -58,8 +62,24 @@ public class CharacterDialogueHandler : MonoBehaviour
         storyListener = GetComponent<IStoryListener>();
 
         // NEW: ensure it starts hidden
-        if (interiorPanel != null)            
+        if (interiorPanel != null)
             interiorPanel.SetActive(false);
+
+        // Background Character Music
+
+        if (backgroundMusic != null)
+        {
+            musicAudioSource = gameObject.AddComponent<AudioSource>();
+            musicAudioSource.clip = backgroundMusic;
+            musicAudioSource.loop = true;
+            musicAudioSource.volume = 0.1f;
+            musicAudioSource.playOnAwake = false;
+            musicAudioSource.Stop();
+        }
+        else
+        {
+            Debug.LogWarning("Background music clip not assigned.");
+        }
     }
     void Update()
     {
@@ -85,6 +105,8 @@ public class CharacterDialogueHandler : MonoBehaviour
         // NEW: show the interior art/UI
         if (interiorPanel != null)            
             interiorPanel.SetActive(true);
+        if (backgroundMusic != null)
+            musicAudioSource.Play();
 
         Debug.Log("Starting Dialogue! " + gameObject.name);
         LoadPassage(0);
@@ -193,6 +215,10 @@ public class CharacterDialogueHandler : MonoBehaviour
        // NEW: hide it again when dialogue ends
         if (interiorPanel != null)            
             interiorPanel.SetActive(false);
+        if (musicAudioSource != null && musicAudioSource.isPlaying)
+        {
+            musicAudioSource.Stop();
+        }
 
         closeConversation();
     }
