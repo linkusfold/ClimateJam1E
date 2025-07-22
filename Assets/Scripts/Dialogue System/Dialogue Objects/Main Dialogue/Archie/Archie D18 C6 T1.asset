@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Archie D18 C6 T1
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Hey, you\u2019re right on time! I just finished planning out my next move.
+      I think this one is going to be really good!  "
+    responses:
+    - text: 'What is it? '
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
+  - text: "So I was borrowing Leah\u2019s computer, and I found out there\u2019s
+      going to be a protest tomorrow at a S.M.O.G. location. And guess where it is? "
+    responses:
+    - text: Where?
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
+  - text: 'At the very same resort my parents hiked near. Turns out I was right!
+      They totally did not have permission to build there, and the construction has
+      expedited the erosion of the cliff wall. So me and some other activists are
+      going to meet up before the protest and make a sign to honor my parents. '
+    responses:
+    - text: "That\u2019s great news, Archie! "
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
+  - text: 'Right!? I think my parents would be psyched if they knew what I was getting
+      up to, heh. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
+  - text: "Anyways, I gotta pack quickly if I wanna be able to make it in time, so
+      I\u2019ll catch you when I get back. Later! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}

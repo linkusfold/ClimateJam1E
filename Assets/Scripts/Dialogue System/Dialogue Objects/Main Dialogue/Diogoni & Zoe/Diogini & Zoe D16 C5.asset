@@ -88,7 +88,7 @@ MonoBehaviour:
       endsConversation: 0
     - text: "Your Grandpa didn\u2019t mean to scare you, Zoe. He\u2019s just scared
         of the monster. "
-      nextPassageIndex: 10
+      nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
