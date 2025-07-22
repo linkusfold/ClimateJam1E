@@ -116,10 +116,10 @@ TextureImporter:
       name: focus_focused_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1152
-        height: 648
+        x: 1564
+        y: 1197
+        width: 409
+        height: 233
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

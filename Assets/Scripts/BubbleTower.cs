@@ -17,6 +17,7 @@ public class BubbleTower : Tower
     // Overrides the base Tower's Shoot behavior to use a BubbleProjectile
     protected override void Shoot(Transform enemy)
     {
+        MakeShootSound();
         // Instantiate the bubble projectile at the tower's position
         GameObject bubble = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
 

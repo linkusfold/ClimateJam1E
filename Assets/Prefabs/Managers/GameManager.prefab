@@ -52,3 +52,8 @@ MonoBehaviour:
   columns: 7
   cellSize: 1
   gridOrigin: {x: -4, y: -3}
+  winScreen: {fileID: 0}
+  winSound: {fileID: 8300000, guid: 815886266d7962049bf305211cef48cd, type: 3}
+  loseScreen: {fileID: 0}
+  loseSound: {fileID: 0}
+  destroyedHouses: []
