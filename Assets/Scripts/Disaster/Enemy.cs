@@ -16,10 +16,12 @@ namespace DefaultNamespace
         public bool pathing = true;
 
         public LevelData levelData;
+        
+        public AudioClip attackSound;
 
         public Enemy()
         {
-            
+
         }
 
         protected virtual void Start()
@@ -114,6 +116,8 @@ namespace DefaultNamespace
             if (!CanAttack()) return;
             PerformAttack(bldg);
             UpdateAttackCooldown();
+
+            if(attackSound) AudioSource.PlayClipAtPoint(attackSound, transform.position);
         }
 
         protected abstract void PerformAttack(IDamageableBuilding building);
