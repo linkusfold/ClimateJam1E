@@ -838,6 +838,7 @@ GameObject:
   - component: {fileID: 884840370}
   - component: {fileID: 884840369}
   - component: {fileID: 884840368}
+  - component: {fileID: 884840374}
   m_Layer: 0
   m_Name: Archie House
   m_TagString: Untagged
@@ -857,7 +858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 43d29d9ae554ad14aa20d5b4936a00c7, type: 2}
+  dialogue: {fileID: 11400000, guid: ac39f33187a977c4d8e097853d92e0d7, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 0
@@ -1100,6 +1101,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &884840374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884840367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c37e90de6d63d114d89d6be8f979a754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wantedResponseTexts:
+  - 'If you feel like you could help more people elsewhere, then no one would blame
+    you for doing that. '
 --- !u!1 &914320871
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,11 +1221,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2076144409845298851, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.376
+      value: -0.361
       objectReference: {fileID: 0}
     - target: {fileID: 2076144409845298851, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.567
+      value: 4.57
       objectReference: {fileID: 0}
     - target: {fileID: 2076144409845298851, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1515,7 +1531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: e2c6e11a75852a44f8854b0c27c3f0ca, type: 2}
+  dialogue: {fileID: 11400000, guid: a3b34b175dfef8641b196cb9c5083fbc, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 3
@@ -1782,8 +1798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 92fbab06a62101e4ab4ec95f58785fb9, type: 2}
-  convoOverDialogue: {fileID: 11400000, guid: 92fbab06a62101e4ab4ec95f58785fb9, type: 2}
+  dialogue: {fileID: 11400000, guid: fa8c716c242cc0f4490c827abd88b0cb, type: 2}
+  convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 2
   m_event:
@@ -2176,9 +2192,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 3c86b822424106b428a1b62132a6f8ee, type: 2}
-  convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
-  houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
+  dialogue: {fileID: 11400000, guid: 92fbab06a62101e4ab4ec95f58785fb9, type: 2}
+  convoOverDialogue: {fileID: 11400000, guid: 92fbab06a62101e4ab4ec95f58785fb9, type: 2}
+  houseDestroyedDialogue: {fileID: 11400000, guid: 92fbab06a62101e4ab4ec95f58785fb9, type: 2}
   characterHouseType: 5
   m_event:
     m_PersistentCalls:
@@ -2443,7 +2459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 1b7092e2006d2464a92fd3596b26515a, type: 2}
+  dialogue: {fileID: 11400000, guid: 1aa727a2d2d674d4a9e53718bbd3e530, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 1
@@ -2788,6 +2804,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 913828300399864001, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4300662089828766409}
+    - targetCorrespondingSourceObject: {fileID: 913828300399864001, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4300662089828766412}
   m_SourcePrefab: {fileID: 100100000, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
 --- !u!1 &4300662089828766408 stripped
 GameObject:
@@ -2806,7 +2825,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 825aa485afd2b0341afc38bab995c493, type: 2}
+  dialogue: {fileID: 11400000, guid: 5324c4b868dcf864791e1c5c44c65e8f, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 4
@@ -2933,6 +2952,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4300662089828766412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4300662089828766408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970426ea1cdab744ea559009f2a975f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wantedResponses:
+  - "Your Grandpa didn\u2019t mean to scare you, Zoe. He\u2019s just scared of the
+    monster. "
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
