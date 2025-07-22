@@ -17,19 +17,22 @@ namespace Game_Manager
         leah,
         georgie,
         finn,
-        diogini
+        diogini,
+        playerHome
 
     }
 
     public enum StoryChoices
     {
         givePocketKnife,
+        archiePath,
     }
     public class GameManager : MonoBehaviour
     {
         public int CommunityPortion = 0;
         public int[] storyEvents = new int[Enum.GetNames(typeof(StoryChoices)).Count()];
         public static GameManager instance;
+        // public House[] houses = new House[5];
         public bool inConversation;
         public int playerHealth;
         [Header("Script References")]

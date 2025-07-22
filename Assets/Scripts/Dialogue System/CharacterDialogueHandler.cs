@@ -41,6 +41,12 @@ public class CharacterDialogueHandler : MonoBehaviour
     [SerializeField]
     public Homes characterHouseType;
     public CharacterHouse house;
+    public int fitWidth = 200;
+    // NEW: drag your disabled “HouseInteriorPanel” here
+    [Header("Interior Panel (UI)")]
+    [SerializeField]
+    private GameObject interiorPanel; 
+
     void Awake()
     {
         textAudioSource = GetComponent<AudioSource>();
@@ -51,6 +57,10 @@ public class CharacterDialogueHandler : MonoBehaviour
         house = GetComponent<CharacterHouse>();
         characterHouseType = house.characterHouseType;
         storyListener = GetComponent<IStoryListener>();
+
+        // NEW: ensure it starts hidden
+        if (interiorPanel != null)            
+            interiorPanel.SetActive(false);
     }
     void Update()
     {
@@ -72,6 +82,11 @@ public class CharacterDialogueHandler : MonoBehaviour
     public void StartDialogue()
     {
         textBox.gameObject.SetActive(true);
+
+        // NEW: show the interior art/UI
+        if (interiorPanel != null)            
+            interiorPanel.SetActive(true);
+
         Debug.Log("Starting Dialogue! " + gameObject.name);
         LoadPassage(0);
 
@@ -175,6 +190,11 @@ public class CharacterDialogueHandler : MonoBehaviour
 
         // TODO: update info board
        // GameManager.instance.houses.ElementAt((int) Homes.archie);
+       
+       // NEW: hide it again when dialogue ends
+        if (interiorPanel != null)            
+            interiorPanel.SetActive(false);
+
         closeConversation();
     }
 
@@ -255,7 +275,9 @@ public class CharacterDialogueHandler : MonoBehaviour
         Sprite characterSprite = currentDialogue.getPassageArt(currentPassageIndex);
         characterArtHolder.sprite = characterSprite;
         RectTransform imageRectTransform = characterArtHolder.rectTransform;
-        characterArtHolder.rectTransform.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height);
+        
+        float sizeFactor = characterSprite.rect.width / fitWidth;
+        characterArtHolder.rectTransform.sizeDelta = new Vector2(characterSprite.rect.width / sizeFactor, characterSprite.rect.height/sizeFactor);
         AnchorTopLeft(textBox.rectTransform, characterArtHolder.rectTransform);
     }
 

@@ -1417,6 +1417,7 @@ GameObject:
   - component: {fileID: 1148185830}
   - component: {fileID: 1148185829}
   - component: {fileID: 1148185835}
+  - component: {fileID: 1148185836}
   m_Layer: 0
   m_Name: Cherry House
   m_TagString: Untagged
@@ -1537,7 +1538,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 1ad8ccdbbd1df474ca029ad394e94112, type: 2}
+  dialogue: {fileID: 11400000, guid: 0e42f1e1811e3a448b2e774a98390451, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 0
@@ -1684,7 +1685,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148185828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 970426ea1cdab744ea559009f2a975f5, type: 3}
   m_Name: 
@@ -1693,6 +1694,20 @@ MonoBehaviour:
   - "Your Grandpa didn\u2019t mean to scare you, Zoe. He\u2019s just scared of the
     monster. "
   - 'Wait, it sounds like the construction site was what caused the landslide. '
+--- !u!114 &1148185836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148185828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e2a724ac8c8a4d4a8a8702fceafa956, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Branch1: {fileID: 11400000, guid: e7820752e12ec264f92df669f1e83dd6, type: 2}
+  Branch2: {fileID: 11400000, guid: 2dd29b9b8cb279e42ba13250ebf4813b, type: 2}
 --- !u!1 &1245054660
 GameObject:
   m_ObjectHideFlags: 0
