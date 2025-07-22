@@ -21,42 +21,42 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Hey\u2026 Yep\u2026 Just wanted to come by and see how everyone was doing\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Arcee\u2019s back, Arcee\u2019s back! Will you be back long time, Arcee? "
     responses:
     - text: (Continue)
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: " Ah\u2026 probably not. Sorry, Zoe. "
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'Awwww. '
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'But we can play some more before I leave? How does that sound? '
     responses:
     - text: "Glad to see you\u2019re all doing well."
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "Yes, we\u2019ve been sheltering from these storms safely in here. It is
       strange how frequent they\u2019ve been getting, but that\u2019s mother nature
       for you. She works in mysterious ways. I can only guess as to why all these
@@ -66,14 +66,14 @@ MonoBehaviour:
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Right. \u2018Storms\u2019. "
     responses:
     - text: (Continue)
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'But anyway. How do you feel the rest of the town is handling this puzzling
       weather? '
     responses:
@@ -86,7 +86,7 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Well, my opinion has always been that nobody takes safety seriously enough
       in this town. People shouldn\u2019t be going out during times like this. They\u2019re
       ignoring nature\u2019s blatantly clear warning signs. "
@@ -95,21 +95,21 @@ MonoBehaviour:
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'Yeah! Like big winds and loud clouds! '
     responses:
     - text: (Continue)
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: 'Exactly. Very good Zoe. '
     responses:
     - text: (Continue)
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Like our Mayor, for instance. He could be telling people to just stay
       in their homes until this all blows over, but instead he\u2019s doing some
       kind of filtering project thing that I don\u2019t even understand. "
@@ -122,7 +122,7 @@ MonoBehaviour:
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Then there\u2019s Leah. She seems nice, but she talks a lot about this
       \u2018Great Storm\u2019 of hers, which seems to be based off of hearsay, and
       not anything real. At least she lets me and Zoe use that information machine
@@ -132,7 +132,7 @@ MonoBehaviour:
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "But that boy, Finn\u2026 he seems like he just does whatever he wants
       and assumes things will come out all right for him. No real foresight whatsoever. "
     responses:
@@ -140,28 +140,28 @@ MonoBehaviour:
       nextPassageIndex: 15
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Hey, don\u2019t say that about Finn."
     responses:
     - text: (Continue)
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "What do you care, Archie? You don\u2019t talk to Finn anymore. "
     responses:
     - text: (Continue)
       nextPassageIndex: 17
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: ...
     responses:
     - text: (Continue)
       nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'Well, hopefully no one in town gets hurt, and mother nature allows the
       storms to let up. '
     responses:
@@ -169,21 +169,21 @@ MonoBehaviour:
       nextPassageIndex: 19
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "You know, these storms aren\u2019t even natural in the first place. "
     responses:
     - text: (Continue)
       nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: '*sigh* '
     responses:
     - text: (Continue)
       nextPassageIndex: 21
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Here we go again. How many times are you going to scare Zoe by insisting
       that there\u2019s someone out to get us? "
     responses:
@@ -191,7 +191,7 @@ MonoBehaviour:
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "I\u2019m not making things up grandfather! S.M.O.G. leaked Oilgae into
       the water, and that caused some ancient volcano creature to go nuts and start
       causing all this damage! "
@@ -200,7 +200,7 @@ MonoBehaviour:
       nextPassageIndex: 23
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "No! There is no Oilgae or angry volcano creature, and if there is it certainly
       wasn\u2019t caused by (bad company)! We live side by side with nature as it
       changes, and we can\u2019t just blame all our problems on someone else!  "
@@ -209,14 +209,14 @@ MonoBehaviour:
       nextPassageIndex: 24
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Granpa Dio, is there a big vo\u2019cano monster coming to eat us?"
     responses:
     - text: (Continue)
       nextPassageIndex: 25
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Now look what you\u2019ve done, Archie! You\u2019ve upset your sister
       with your tall tales! "
     responses:
@@ -228,14 +228,14 @@ MonoBehaviour:
       nextPassageIndex: 26
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Tall tales!? I- '
     responses:
     - text: (Continue)
       nextPassageIndex: 27
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "You go out in weather like this, putting yourself in danger for no good
       reason! I don\u2019t understand it! "
     responses:
@@ -243,14 +243,14 @@ MonoBehaviour:
       nextPassageIndex: 28
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "I\u2019m helping people, Grandfather! "
     responses:
     - text: (Continue)
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "People don\u2019t need your help! If they\u2019re too foolish to be careful,
       then they have only themselves to blame if they get hurt! "
     responses:
@@ -258,35 +258,35 @@ MonoBehaviour:
       nextPassageIndex: 30
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Is that what mom was to you!? Just another idiot that got what she deserved!? '
     responses:
     - text: (Continue)
       nextPassageIndex: 31
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: ' ...'
     responses:
     - text: (Continue)
       nextPassageIndex: 32
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: ' ...'
     responses:
     - text: (Continue)
       nextPassageIndex: 33
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: " I\u2019m sorry, Zoe. "
     responses:
     - text: (Continue)
       nextPassageIndex: 34
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: '<i> Archie leaves. '
     responses:
     - text: '*Stay with Diogini* '
@@ -304,32 +304,32 @@ MonoBehaviour:
       nextPassageIndex: 36
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Now Arcee gone\u2026again\u2026 *sniffle*"
     responses:
     - text: (Continue)
       nextPassageIndex: 37
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "...Ahh, let\u2019s get you to bed, Zoe."
     responses:
     - text: (Continue)
       nextPassageIndex: 38
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Could you come back tomorrow? I\u2019d like to show you something. "
     responses:
     - text: 'Of course. '
       nextPassageIndex: 39
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: Good night, stranger. And good luck.
     responses:
     - text: (End Conversation)
       nextPassageIndex: 39
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}

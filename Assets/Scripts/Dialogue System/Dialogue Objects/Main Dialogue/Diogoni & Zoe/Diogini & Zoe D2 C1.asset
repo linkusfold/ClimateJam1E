@@ -19,7 +19,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: " ...You\u2019re not my grandson. Who are you? "
     responses:
     - text: "I\u2019m a member of (aid company). I was sent here to help."
@@ -30,7 +30,7 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "And so you just came barging into my house then? That\u2019s very rude,
       stranger. Isn\u2019t that right, Zoe? "
     responses:
@@ -38,21 +38,21 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "It rude. We no like rude stran\u2019ers, right granpa Dio? "
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "That\u2019s right, Zoe. We keep our eye on strangers. "
     responses:
     - text: "Diogini, right? You seem like you\u2019ve been here a while. "
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "You are correct on both accounts, stranger. I\u2019ve been living here
       for quite a while, long enough to have grandchildren at the very least. This
       one is my granddaughter, Zosa. Let\u2019s show this stranger how to be polite,
@@ -62,21 +62,21 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Hi, rude stran\u2019er! Nice to meet you! "
     responses:
     - text: (Continue)
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: '*chuckles*  '
     responses:
     - text: (Continue)
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 1933843793514163118, guid: 4f5168b29c59c5545b184b36a40610ba, type: 3}
   - text: "My grandson Archie is usually more difficult for me to find. If he\u2019s
       not here, he\u2019s usually hanging about that dark cave of his. "
     responses:
@@ -84,7 +84,7 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Which is most of the time, since he\u2019s barely around here. Your brother
       could certainly learn a thing or two from you, Zoe. "
     responses:
@@ -92,14 +92,14 @@ MonoBehaviour:
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: '*giggles* '
     responses:
     - text: (Continue)
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 1933843793514163118, guid: 4f5168b29c59c5545b184b36a40610ba, type: 3}
   - text: "Now then, if you\u2019re done sightseeing around my home, I am not accustomed
       to strangers visiting for prolonged periods of time. "
     responses:
@@ -108,7 +108,7 @@ MonoBehaviour:
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "*grumbles* Finn should know better than to go around offering other\u2019s
       help for them. But fine, if it will get you to leave\u2026 I should have some
       old tools here somewhere. "
@@ -117,11 +117,11 @@ MonoBehaviour:
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Byee, stran\u2019er! "
     responses:
     - text: (End Conversation)
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
