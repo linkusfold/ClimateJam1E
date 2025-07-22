@@ -35,10 +35,26 @@ namespace Game_Manager
             DontDestroyOnLoad(this);
         }
 
-        void Start()
+        
+        //OnEnable comes first
+        private void OnEnable()
+        {
+            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            Debug.Log("OnEnable");
+        }
+
+        //OnDisable last.
+        private void OnDisable()
+        {
+            SceneManager.sceneLoaded -= SceneManager_sceneLoaded;
+            Debug.Log("OnDisable");
+        }
+
+        //SceneLoad comes second.
+        private void SceneManager_sceneLoaded(Scene scene, LoadSceneMode mode)
         {
             Debug.Log("GameManager: Start() called.");
-            isGameScene = false || SceneManager.GetActiveScene().name == "GameScene";
+            isGameScene = false || scene.name == "GameScene";
 
             if(!isGameScene) return;
             
@@ -49,6 +65,7 @@ namespace Game_Manager
             waveSpawner.Initialize(levelData);
             GenerateGrid();
         }
+        
 
         public void Update()
         {
