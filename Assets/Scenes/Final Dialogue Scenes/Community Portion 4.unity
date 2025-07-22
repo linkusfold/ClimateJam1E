@@ -857,8 +857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 92fbab06a62101e4ab4ec95f58785fb9, type: 2}
-  convoOverDialogue: {fileID: 11400000, guid: 92fbab06a62101e4ab4ec95f58785fb9, type: 2}
+  dialogue: {fileID: 11400000, guid: 1254630f718672e4fa9c65dbac577dc5, type: 2}
+  convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 0
   m_event:
@@ -1515,7 +1515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: d00c9de0c7b1f7344a387d6458cee054, type: 2}
+  dialogue: {fileID: 11400000, guid: c6488c8fd9e3d23459ddd550653c115d, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 3
@@ -1782,7 +1782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: eed1769a11e4af248b0800a10ea4d524, type: 2}
+  dialogue: {fileID: 11400000, guid: 5e32c1a934ce39449ba364380ed642b4, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 2
@@ -2443,7 +2443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 90041f70de31711408c304886716bc2f, type: 2}
+  dialogue: {fileID: 11400000, guid: 86d7a31e2044237488651ca8c37c70a5, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 1
@@ -2788,6 +2788,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 913828300399864001, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4300662089828766409}
+    - targetCorrespondingSourceObject: {fileID: 913828300399864001, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4300662089828766412}
   m_SourcePrefab: {fileID: 100100000, guid: 49123ed34e9e642ffa19bffe99aa6a3f, type: 3}
 --- !u!1 &4300662089828766408 stripped
 GameObject:
@@ -2806,7 +2809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: 1ad8ccdbbd1df474ca029ad394e94112, type: 2}
+  dialogue: {fileID: 11400000, guid: 0e42f1e1811e3a448b2e774a98390451, type: 2}
   convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
   houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
   characterHouseType: 4
@@ -2933,6 +2936,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &4300662089828766412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4300662089828766408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970426ea1cdab744ea559009f2a975f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wantedResponses:
+  - 'Wait, it sounds like the construction site was what caused the landslide. '
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
