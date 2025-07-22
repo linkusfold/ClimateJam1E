@@ -255,7 +255,7 @@ MonoBehaviour:
     - text: 'Thank you, Diogini. '
       nextPassageIndex: 28
       nextConversation: {fileID: 0}
-      endsConversation: 0
+      endsConversation: 1
     sprite: {fileID: 0}
   - text: 'And thank you, once again. Good night, stranger. '
     responses:
@@ -273,7 +273,7 @@ MonoBehaviour:
     - text: (Continue)
       nextPassageIndex: 30
       nextConversation: {fileID: 0}
-      endsConversation: 1
+      endsConversation: 0
     sprite: {fileID: 0}
   - text: "I\u2019ve looked after Zoe and Archie since then. The hardest part of
       it all was explaining to them that their parents\u2026 that the reason they
@@ -282,7 +282,7 @@ MonoBehaviour:
     - text: 'Wait, it sounds like the construction site was what caused the landslide. '
       nextPassageIndex: 31
       nextConversation: {fileID: 0}
-      endsConversation: 1
+      endsConversation: 0
     - text: "I\u2019m sorry. That sounds like a horrible freak accident. "
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
@@ -296,7 +296,7 @@ MonoBehaviour:
         involvement? "
       nextPassageIndex: 32
       nextConversation: {fileID: 0}
-      endsConversation: 1
+      endsConversation: 0
     sprite: {fileID: 0}
   - text: "What\u2019s done is done, stranger! I\u2019m not going to open old wounds
       for no good reason. They\u2019re in the past, I need to focus on the present,
@@ -305,28 +305,28 @@ MonoBehaviour:
     - text: "...I\u2019m sorry, Diogini. "
       nextPassageIndex: 33
       nextConversation: {fileID: 0}
-      endsConversation: 1
+      endsConversation: 0
     sprite: {fileID: 0}
   - text: 'Thank you. My granddaughter is everything to me. '
     responses:
     - text: (Continue)
       nextPassageIndex: 34
       nextConversation: {fileID: 0}
-      endsConversation: 1
+      endsConversation: 0
     sprite: {fileID: 0}
   - text: "I want her to be able to live a good life\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 35
       nextConversation: {fileID: 0}
-      endsConversation: 1
+      endsConversation: 0
     sprite: {fileID: 0}
   - text: "All right, Zoe, we\u2019ll go up to the top of the cliff tomorrow. "
     responses:
     - text: (Continue)
       nextPassageIndex: 36
       nextConversation: {fileID: 0}
-      endsConversation: 1
+      endsConversation: 0
     sprite: {fileID: 0}
   - text: 'Really? Yayyyy! Thank you, Granpa Dio! '
     responses:

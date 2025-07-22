@@ -41,6 +41,7 @@ public class CharacterDialogueHandler : MonoBehaviour
     [SerializeField]
     public Homes characterHouseType;
     public CharacterHouse house;
+    public int fitWidth = 200;
     void Awake()
     {
         textAudioSource = GetComponent<AudioSource>();
@@ -255,7 +256,9 @@ public class CharacterDialogueHandler : MonoBehaviour
         Sprite characterSprite = currentDialogue.getPassageArt(currentPassageIndex);
         characterArtHolder.sprite = characterSprite;
         RectTransform imageRectTransform = characterArtHolder.rectTransform;
-        characterArtHolder.rectTransform.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height);
+        
+        float sizeFactor = characterSprite.rect.width / fitWidth;
+        characterArtHolder.rectTransform.sizeDelta = new Vector2(characterSprite.rect.width / sizeFactor, characterSprite.rect.height/sizeFactor);
         AnchorTopLeft(textBox.rectTransform, characterArtHolder.rectTransform);
     }
 

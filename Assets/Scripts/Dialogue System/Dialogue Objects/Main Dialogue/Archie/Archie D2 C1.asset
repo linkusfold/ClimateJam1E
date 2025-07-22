@@ -88,5 +88,5 @@ MonoBehaviour:
     - text: (End conversation)
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
+      endsConversation: 1
+    sprite: {fileID: 0}

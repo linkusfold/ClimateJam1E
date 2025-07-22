@@ -30,6 +30,7 @@ namespace Game_Manager
         public int CommunityPortion = 0;
         public int[] storyEvents = new int[Enum.GetNames(typeof(StoryChoices)).Count()];
         public static GameManager instance;
+        // public House[] houses = new House[5];
         public bool inConversation;
         public int playerHealth;
         [Header("Script References")]
