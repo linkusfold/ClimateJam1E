@@ -141,3 +141,4 @@ MonoBehaviour:
   currentNodeId: 1
   pathing: 1
   levelData: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 8b6b088372d6ac74cb5b4491353376e3, type: 3}

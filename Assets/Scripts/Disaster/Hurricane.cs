@@ -29,6 +29,8 @@ namespace DefaultNamespace
         private bool isOnLeftSide = true;
         private bool isSwitchingSides = false;
 
+        public AudioClip switchSidesSound;
+
         protected override void Start()
         {
             // Hurricane spawns at the left side.
@@ -108,7 +110,8 @@ namespace DefaultNamespace
         {
             if (!isSwitchingSides)
             {
-                StartCoroutine(SwitchSidesRoutine());    
+                StartCoroutine(SwitchSidesRoutine());  
+                if(switchSidesSound) AudioSource.PlayClipAtPoint(switchSidesSound, transform.position);  
             }
         }
 

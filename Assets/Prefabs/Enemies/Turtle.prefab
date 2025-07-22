@@ -105,7 +105,7 @@ MonoBehaviour:
   currentNodeId: 1
   pathing: 1
   levelData: {fileID: 0}
-  attackSound: {fileID: 0}
+  attackSound: {fileID: 8300000, guid: 814b5933131553c4f97243d0e5fd823b, type: 3}
 --- !u!58 &7835977556681155766
 CircleCollider2D:
   m_ObjectHideFlags: 0
