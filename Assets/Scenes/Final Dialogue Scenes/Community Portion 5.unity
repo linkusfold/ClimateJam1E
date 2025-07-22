@@ -1129,6 +1129,7 @@ MonoBehaviour:
   textBox: {fileID: 243931370}
   ptichVariation: 0
   textSound: {fileID: 8300000, guid: bf85684b0031347448bc31f2fdcdd5cf, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 3b1dff797aab42342b0ea6c52d52627c, type: 3}
   responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   responseButtonPrefab: {fileID: 745178416232656121, guid: ec93117a1cedb864986b3c32df451296, type: 3}
   characterHouseType: 0
@@ -1877,6 +1878,7 @@ MonoBehaviour:
   textBox: {fileID: 243931370}
   ptichVariation: 0
   textSound: {fileID: 8300000, guid: bf85684b0031347448bc31f2fdcdd5cf, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 4799c611f97c51041b4e113a29751646, type: 3}
   responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   responseButtonPrefab: {fileID: 745178416232656121, guid: ec93117a1cedb864986b3c32df451296, type: 3}
   characterHouseType: 3
@@ -2144,6 +2146,7 @@ MonoBehaviour:
   textBox: {fileID: 243931370}
   ptichVariation: 0.1
   textSound: {fileID: 8300000, guid: bf85684b0031347448bc31f2fdcdd5cf, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 00bc6b93f7f28d54c95b21df49f0f3b3, type: 3}
   responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   responseButtonPrefab: {fileID: 745178416232656121, guid: ec93117a1cedb864986b3c32df451296, type: 3}
   characterHouseType: 2
@@ -2616,6 +2619,7 @@ MonoBehaviour:
   textBox: {fileID: 243931370}
   ptichVariation: 0.2
   textSound: {fileID: 8300000, guid: bf85684b0031347448bc31f2fdcdd5cf, type: 3}
+  backgroundMusic: {fileID: 0}
   responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   responseButtonPrefab: {fileID: 745178416232656121, guid: ec93117a1cedb864986b3c32df451296, type: 3}
   characterHouseType: 5
@@ -2958,6 +2962,7 @@ MonoBehaviour:
   textBox: {fileID: 243931370}
   ptichVariation: 0.2
   textSound: {fileID: 8300000, guid: bf85684b0031347448bc31f2fdcdd5cf, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: f145c82cfb4908149b68af67ab723528, type: 3}
   responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   responseButtonPrefab: {fileID: 745178416232656121, guid: ec93117a1cedb864986b3c32df451296, type: 3}
   characterHouseType: 1
@@ -3338,6 +3343,7 @@ MonoBehaviour:
   textBox: {fileID: 243931370}
   ptichVariation: 0.2
   textSound: {fileID: 8300000, guid: bf85684b0031347448bc31f2fdcdd5cf, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 9cab81a74e25e424c8e9f9a6daec737e, type: 3}
   responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   responseButtonPrefab: {fileID: 745178416232656121, guid: ec93117a1cedb864986b3c32df451296, type: 3}
   characterHouseType: 4
