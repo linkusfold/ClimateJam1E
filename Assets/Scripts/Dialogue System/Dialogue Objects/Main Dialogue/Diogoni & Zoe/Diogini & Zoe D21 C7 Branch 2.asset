@@ -36,90 +36,67 @@ MonoBehaviour:
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: 1933843793514163118, guid: 4f5168b29c59c5545b184b36a40610ba, type: 3}
-  - text: 'Oh, well you see- '
+  - text: "Well, I went and had a long talk with Archie. We talked about our three
+      future\u2019s, that is, Archie, Zosa, and I. We agreed that it might be better
+      for Zoe to stay with Archie for a while. "
     responses:
-    - text: (Continue)
+    - text: 'Are you sure? '
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
-  - text: "Arcee\u2019s coming back! Back to live at home! "
+  - text: "Quite. Zoe has lived under my roof for several years now. It\u2019s time
+      she learned what it\u2019s like to live under someone else\u2019s. "
     responses:
-    - text: (Continue)
+    - text: 'Will she be able to handle it ok? '
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
-  - text: 'Now, Zoe, remember that this might just be for a little while. The boy
-      needs his space after all. '
+  - text: 'Hey! I big girl! I handle it! '
     responses:
     - text: (Continue)
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
-  - text: "Ok\u2026 but Arcee still coming back! "
+  - text: "I believe in her. Besides, if she decides she doesn\u2019t like it, she
+      will always have a place back here. "
     responses:
-    - text: 'Did you talk to him? '
+    - text: (Continue)
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
-  - text: "Indeed I did. We had a long conversation about our differences, and how
-      we both have space to grow, Although the growing will mostly be on my part.
-      I apologize for how I\u2019ve treated him for the past couple of years, and
-      he said he wanted to fully move back in here, at least for as long as he\u2019s
-      in Coral Cove. It\u2019s all very exciting. "
+  - text: "Can\u2019 wait to live with Arcee! We can play all day long! "
     responses:
-    - text: (Continue)
+    - text: 'And what will you do, Diogini? '
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
-  - text: "Yeah! Hope Arcee doe\u2019n take any of my toys. He can play with them,
-      only if he asks! "
+  - text: "I\u2026 I will remain here and think some more. Perhaps use Leah\u2019s
+      information machine more often. I hope that one day, I may be able to catch
+      up to the times, and that I can live in peace with those around me. Until then,
+      I am satisfied. And you, friend. You are always more than welcome to come back
+      and chat. "
     responses:
-    - text: "Well, look who wasn\u2019t sure they could change."
+    - text: "I\u2019m sure I will. Goodbye, Diogini. Goodbye, Zoe. "
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
-  - text: "Hah! Well, nature knows it will be a long process. But as long as Archie
-      is patient with me, and I with him, I\u2019m sure we\u2019ll be able to work
-      things out in the end. "
+  - text: 'Farewell, friend.  '
     responses:
     - text: (Continue)
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
     sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
-  - text: "Of course, you\u2019re always welcome back here, friend, whenever you
-      decide you want to visit. I\u2019m sure Zoe will enjoy the company. "
+  - text: "Bye, frien\u2019! "
     responses:
     - text: (Continue)
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
-      endsConversation: 0
+      endsConversation: 1
     sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
-  - text: "You better come back! I wanna hear more story \u2018bout you fighting
-      monsters! "
-    responses:
-    - text: " I\u2019m sure I will. Goodbye, Dio. Goodbye, Zoe. "
-      nextPassageIndex: 12
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
-  - text: 'Farewell, friend. '
-    responses:
-    - text: (Continue)
-      nextPassageIndex: 13
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: 1933843793514163118, guid: 4f5168b29c59c5545b184b36a40610ba, type: 3}
-  - text: "Bye, frien\u2019! "
-    responses:
-    - text: (End Conversation)
-      nextPassageIndex: 14
-      nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
