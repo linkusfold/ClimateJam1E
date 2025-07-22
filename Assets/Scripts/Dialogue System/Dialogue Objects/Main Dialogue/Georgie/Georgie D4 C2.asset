@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Georgie D4 C2
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'Hey, Cole. How are you doing? '
+    responses:
+    - text: "I\u2019m good. A little tired\u2026 "
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: "Better than ever! Can\u2019t let \u2018em hurt you guys. "
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: 'I saw your hard work while fighting off the oilgae from Coral Cove. You
+      are very brave, and I appreciate you doing that. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: "If I may be honest with you\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: 'You see, I am fairly new to this position as mayor due to a recent incident
+      that happened with my father, the past mayor. He ran this town for 30 years
+      and I spent much of my younger days witnessing his efforts. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: 'As for myself, I have only been mayor for a couple of months and yet,
+      it is truly frightening when everyone depends solely on you for answers. I
+      have read every book on how to be a good leader, hoping it might help. None
+      of the books I have read are really in my situation, however. Haha. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: 'Anyways, enough about me. Do you like to read?  '
+    responses:
+    - text: 'As much as I can. '
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Occasionally, when I find the time. '
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'Not much these days. I find myself pursuing other hobbies. '
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: "I see.. Ever since I was a kid, I\u2019ve read everything and anything
+      I could get my hands on. I still love to read, but sometimes it\u2019s hard
+      to find the time. Especially with how stressed I feel lately. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: 'I have a lot of hope for the future of the town, but sometimes it is difficult
+      to keep up that motivation. Thank you for being here and helping us again.  '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}

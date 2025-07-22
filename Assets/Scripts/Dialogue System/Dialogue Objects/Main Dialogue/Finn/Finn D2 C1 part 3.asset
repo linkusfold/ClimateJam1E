@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Finn D2 C1 part 3
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Let me take a look\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
+  - text: 'Hmm, this can go here and that there. Little bit of this and boom, the
+      lighthouse is good as new! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -8227160986305601022, guid: c25b8968ea0890d46a1ea0e2b4c4e520, type: 3}
+  - text: "Am I good or what? Well, today\u2019s been busy so I\u2019m gonna head
+      out. Catch you later! "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: -69530383252080521, guid: a889f4cb3d42fa948bd2d3636619b370, type: 3}

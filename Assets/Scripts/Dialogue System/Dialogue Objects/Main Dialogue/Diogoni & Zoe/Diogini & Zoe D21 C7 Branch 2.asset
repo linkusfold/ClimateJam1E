@@ -19,7 +19,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: '<i> Zoe runs all around, as the house is in a bit of a mess. Bags and
       clothes are all over the place. '
     responses:
@@ -35,7 +35,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 1933843793514163118, guid: 4f5168b29c59c5545b184b36a40610ba, type: 3}
   - text: "Well, I went and had a long talk with Archie. We talked about our three
       future\u2019s, that is, Archie, Zosa, and I. We agreed that it might be better
       for Zoe to stay with Archie for a while. "
@@ -44,7 +44,7 @@ MonoBehaviour:
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Quite. Zoe has lived under my roof for several years now. It\u2019s time
       she learned what it\u2019s like to live under someone else\u2019s. "
     responses:
@@ -52,14 +52,14 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: 'Hey! I big girl! I handle it! '
     responses:
     - text: (Continue)
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "I believe in her. Besides, if she decides she doesn\u2019t like it, she
       will always have a place back here. "
     responses:
@@ -67,36 +67,36 @@ MonoBehaviour:
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "Can\u2019 wait to live with Arcee! We can play all day long! "
     responses:
     - text: 'And what will you do, Diogini? '
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
-  - text: " I\u2026 I will remain here and think some more. Perhaps use Leah\u2019s
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
+  - text: "I\u2026 I will remain here and think some more. Perhaps use Leah\u2019s
       information machine more often. I hope that one day, I may be able to catch
       up to the times, and that I can live in peace with those around me. Until then,
       I am satisfied. And you, friend. You are always more than welcome to come back
-      and chat.  "
+      and chat. "
     responses:
     - text: "I\u2019m sure I will. Goodbye, Diogini. Goodbye, Zoe. "
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
-  - text: 'Farewell, friend. '
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
+  - text: 'Farewell, friend.  '
     responses:
     - text: (Continue)
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Bye, frien\u2019! "
     responses:
-    - text: (End Conversation)
-      nextPassageIndex: 10
+    - text: (Continue)
+      nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}

@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Georgie D18 C6
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'That storm was really something. Thank you again for defending our community
+      against it. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: 'I honestly wish I could do something as awesome as you. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: 'I never planned on being mayor, you know? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: "My father always wanted me to go off to college and leave this town. As
+      you can see, there aren\u2019t many opportunities here. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: 'But after high school, I chose to stay by his side because I wanted to
+      support him through these tough times. Part of me wishes that I could go back
+      in time and get a better education, then go off and do my true aspirations. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: "Then I remember what I\u2019m doing here for the community, and I become
+      grateful for the path I chose. Like you must be! "
+    responses:
+    - text: Yeah! Just keep your head up mayor! We are a community and we are all
+        here for eachother always.
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: "Ever since your arrival, I\u2019ve been able to feel\u2026 at peace again.
+      I truly appreciate your being here. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: 'I wish you the best of luck with the rest of these disasters, and I have
+      full confidence that we will be able to successfully fight them off.  '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}

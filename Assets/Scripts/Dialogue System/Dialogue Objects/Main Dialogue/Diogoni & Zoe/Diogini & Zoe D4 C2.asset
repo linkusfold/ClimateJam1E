@@ -24,7 +24,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'Actually, I have the perfect way for you to repay me for lending you those
       tools. I need someone to help me watch Zoe while I clean up around here. '
     responses:
@@ -36,7 +36,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Oh no, you\u2019re not getting out of repaying me! You kids these days
       think you can just take anything you like, without ever thinking about giving
       something back in return. Now you\u2019re going to help me watch my granddaughter.
@@ -46,21 +46,21 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Good. Now keep her entertained while I tidy up. '
     responses:
     - text: (Continue)
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "Yayyyy, stran\u2019er come back to play! "
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: "All right, Zoe. Why don\u2019t you stay where I can see you, and play
       one of your  favorite games. I\u2019ll be done before you know it. "
     responses:
@@ -68,7 +68,7 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: '*Diogini starts cleaning up the leftover residue from the Oilgae around
       the house* '
     responses:
@@ -88,7 +88,7 @@ MonoBehaviour:
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "Diogini. And this? I don\u2019t think this is from any sort of animal,
       stranger. It\u2019s probably just another one of Archie\u2019s stunts. I don\u2019t
       know where he comes up with things like this. "
@@ -98,7 +98,7 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Oil creatures? Are you listening to yourself? There was nothing attacking
       Coral Cove yesterday, just some strong winds that shook the house around a
       bit. '
@@ -107,14 +107,14 @@ MonoBehaviour:
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'But Granpa Dio! I saw one! Funny aminal was outside the window today. '
     responses:
     - text: (Continue)
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: 'I told you Zoe, that was probably just a tired bird that was frightened
       by the storm. '
     responses:
@@ -122,21 +122,21 @@ MonoBehaviour:
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: If the bird tired, why Granpa Dio no let it in?
     responses:
     - text: (Continue)
       nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Red\u2026 white\u2026 and\u2026 and\u2026 "
     responses:
     - text: (Continue)
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: '*points to the residue* '
     responses:
     - text: (Continue)
@@ -150,7 +150,7 @@ MonoBehaviour:
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Oh this? I suppose someone wasn\u2019t being very careful and spilled
       some paint everywhere. Go back to your game, dear. "
     responses:
@@ -159,7 +159,7 @@ MonoBehaviour:
       nextPassageIndex: 17
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'That sounds like a load of nonsense! Why would anyone attack Coral Cove? '
     responses:
     - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
@@ -167,7 +167,7 @@ MonoBehaviour:
       nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Is that why there was loud noises last night? '
     responses:
     - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
@@ -175,7 +175,7 @@ MonoBehaviour:
       nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'No, no, that was just some stormy winds. There is nothing trying to attack
       the cliff, just some townsfolk that are prone to accidents.  '
     responses:
@@ -184,7 +184,7 @@ MonoBehaviour:
       nextPassageIndex: 19
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'Next time loud noise come, can I check outside? '
     responses:
     - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
@@ -192,7 +192,7 @@ MonoBehaviour:
       nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Zoe, what do I always say when it\u2019s stormy outside? "
     responses:
     - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
@@ -200,7 +200,7 @@ MonoBehaviour:
       nextPassageIndex: 21
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "Be safe in house and don\u2019t come out\u2026 "
     responses:
     - text: "That\u2019s not paint, it\u2019s actually some kind of oil. It was sprayed
@@ -208,7 +208,7 @@ MonoBehaviour:
       nextPassageIndex: 22
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "That\u2019s right. If you aren\u2019t careful, and go out in a storm,
       accidents can happen. Wouldn\u2019t you agree, Stranger?"
     responses:
@@ -221,7 +221,7 @@ MonoBehaviour:
       nextPassageIndex: 23
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: "I suppose. But my Zosa is far too young to know when it\u2019s safe to
       leave. "
     responses:
@@ -233,14 +233,14 @@ MonoBehaviour:
       nextPassageIndex: 24
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: 'Hey! Am not too little! '
     responses:
     - text: (Continue)
       nextPassageIndex: 25
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Now, Zoe, you know grandpa Dio loves you very much, and doesn\u2019t want
       anything bad to happen to you."
     responses:
@@ -248,7 +248,7 @@ MonoBehaviour:
       nextPassageIndex: 26
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}
   - text: 'But I want to go out and see storm! '
     responses:
     - text: 'Zoe, you should listen to your grandpa. '
@@ -259,14 +259,14 @@ MonoBehaviour:
       nextPassageIndex: 27
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 7746449903570177592, guid: 7a82caf3aa8f3d743971b3930807f3fc, type: 3}
   - text: "Ok\u2026 fine."
     responses:
     - text: (Continue)
       nextPassageIndex: 28
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 4842293266679682784, guid: 0d8f2a5f4a2d644469f46d9b64ed1d30, type: 3}
   - text: "That\u2019s a good girl Zoe. And look. Grandpa\u2019s all done tidying
       up. Now I can read you your favorite book. "
     responses:
@@ -274,14 +274,14 @@ MonoBehaviour:
       nextPassageIndex: 29
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: Yayyy! Get the book! Get the book!
     responses:
     - text: (Continue)
       nextPassageIndex: 30
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -2618746006975404643, guid: d85d9b982a196d94092e13362b107c3f, type: 3}
   - text: 'Thank you for helping me watch Zoe, stranger. You should come by again
       sometime. '
     responses:
@@ -289,11 +289,11 @@ MonoBehaviour:
       nextPassageIndex: 31
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1725813036489986134, guid: de62f9e905b8c804ca30373ada8d41f8, type: 3}
   - text: "That\u2019s Diogini to you! "
     responses:
     - text: (End Conversation)
       nextPassageIndex: 31
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -2842848799449075584, guid: dd3a3bd88a5295349acfdb13a05e0620, type: 3}

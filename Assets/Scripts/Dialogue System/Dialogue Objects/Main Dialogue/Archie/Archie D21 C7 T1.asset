@@ -20,7 +20,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "Hah! That\u2019s for sure. It\u2019s amazing what a confidence boost does
       for your rock climbing ability. "
     responses:
@@ -28,7 +28,7 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: 'Oh, it went great! To be honest, it was the first time I got to meet like-minded
       people who care about the environment exactly like I do! '
     responses:
@@ -36,7 +36,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: "We even got to talking afterwards, and one group told me about another
       protest they\u2019re doing next month at a different location. I\u2019m thinking\u2026
       I\u2019m probably going to that one too. "
@@ -46,21 +46,21 @@ MonoBehaviour:
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "Well\u2026 that\u2019s the thing. "
     responses:
     - text: (Continue)
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "I\u2026 Phew. "
     responses:
     - text: (Continue)
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: " I\u2019ve decided I\u2019m going to move to the city. "
     responses:
     - text: "Really? That\u2019s exciting news, Archie! "
@@ -71,7 +71,7 @@ MonoBehaviour:
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Don\u2019t worry, I won\u2019t be moving right away. I still have to mend
       a few bridges here, and make sure that everyone\u2019s safe before I go. But
       in a few months, I\u2019ll probably  be leaving so I can be closer to where
@@ -81,7 +81,7 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "I hope so. I\u2019m just glad I\u2019ve finally managed to figure out
       a direction for all of this, after all these years. I know that I don\u2019t
       know the best way to make a difference, and I may never know. But it took me
@@ -93,7 +93,7 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: 'So thanks for being one of the people I could rely on. And good luck with
       whatever you decide to fight for, wherever you end up going.  '
     responses:
@@ -101,4 +101,4 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}

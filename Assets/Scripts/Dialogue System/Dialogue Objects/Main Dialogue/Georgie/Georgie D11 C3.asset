@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Georgie D11 C3
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'Oh, hey, Cole! '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: "Sorry, I\u2019m a little, um\u2026 rattled right now. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: "That volcano disaster scared me lots. And who knows if it'll come back!
+      I have to keep calm. I\u2019m very sorry. "
+    responses:
+    - text: "Take a breath, George. You\u2019re okay. "
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: 'Thank you, I really appreciate it. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: "I know everything will be okay, especially since you\u2019re here to help!
+      I just get scared\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: 'I want to make my father proud, you know? He passed away because of a
+      volcano disaster that struck while he was traveling to the main town, trying
+      to get supplies for our community.  '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}

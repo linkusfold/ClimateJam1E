@@ -1,0 +1,62 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Georgie D12 C4
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "Hey! It's good to see you, especially since that disaster is finally over.
+      I really hope that these incidents come to an end soon. Say, something\u2019s
+      been on my mind as of late. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: 'What is your dream to do in life? '
+    responses:
+    - text: 'I want to make a difference. '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'I want to be happy. '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'I want to be rich. '
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: "That is awesome! I love hearing everyone's dreams in life\u2026. I always
+      dreamt of becoming a librarian. I have so many books that I would love to share
+      with others. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: 'The thought helps me keep calm, but at the same time it feels wrong. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: 'My reality is in Coral Cove, and I should focus on my job as mayor. '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}

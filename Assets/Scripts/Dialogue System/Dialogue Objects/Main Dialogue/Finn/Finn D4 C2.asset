@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
-  m_Name: Archie D18 C6
+  m_Name: Finn D4 C2
   m_EditorClassIdentifier: 
   passages:
-  - text: "Hey, you\u2019re right on time! I just finished planning out my next move.
-      I think this one is going to be really good!  "
+  - text: "That was pretty intense. Looks like things have calmed down for a bit,
+      but the oilgae spill still isn\u2019t fully contained. "
     responses:
-    - text: 'What is it? '
+    - text: (Continue)
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
-  - text: "Hey, you\u2019re right on time! I just finished planning out my next move.
-      I think this one is going to be really good!  "
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}
+  - text: "We should rest up for now, though. Looks like we\u2019ve got quite a day
+      ahead of us tomorrow. "
     responses:
-    - text: 'What is it? '
-      nextPassageIndex: 1
+    - text: (Continue)
+      nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6525263498120493360, guid: 5794f6370884d3c41afd68f3d0e82d00, type: 3}

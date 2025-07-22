@@ -2,22 +2,44 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using DefaultNamespace;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;
 
 namespace Game_Manager
 {
+    [Serializable]
+    public enum Homes
+    {
+        archie,
+        leah,
+        georgie,
+        finn,
+        diogini,
+        playerHome
+
+    }
+
+    public enum StoryChoices
+    {
+        givePocketKnife,
+        archiePath,
+    }
     public class GameManager : MonoBehaviour
     {
+        public int CommunityPortion = 0;
+        public int[] storyEvents = new int[Enum.GetNames(typeof(StoryChoices)).Count()];
         public static GameManager instance;
-
+        // public House[] houses = new House[5];
+        public bool inConversation;
         public int playerHealth;
         [Header("Script References")]
         private WaveSpawner waveSpawner;
         public PauseMenu pauseMenu;
         public LevelData levelData;
-    
+
         #region Unity Event Functions
 
         private bool isGameScene;
@@ -31,9 +53,8 @@ namespace Game_Manager
             {
                 instance = this;
             }
-        
+
             DontDestroyOnLoad(this);
-        }
 
         
         //OnEnable comes first
@@ -70,8 +91,8 @@ namespace Game_Manager
 
         public void Update()
         {
-            if(!isGameScene) return;
-            
+            if (!isGameScene) return;
+
             switch (placementMode)
             {
                 case PlacementMode.None:
@@ -83,7 +104,7 @@ namespace Game_Manager
                     break;
             }
         }
-        
+
         void OnDrawGizmos()
         {
             if (SceneManager.GetActiveScene().name != "GameScene") return;
@@ -99,43 +120,43 @@ namespace Game_Manager
             }
         }
         #endregion
-        
+
         #region Tower Placement Functions
 
-        private enum PlacementMode {None, Placement, Destruction}
+        private enum PlacementMode { None, Placement, Destruction }
         private PlacementMode placementMode = PlacementMode.None;
         private Tower selectedTower;
         [NonSerialized] public TowerButton btn;
 
         public void SelectTower(Tower tower)
         {
-            if(!isGameScene) return;
-            
+            if (!isGameScene) return;
+
             selectedTower = tower;
             placementMode = PlacementMode.Placement;
         }
 
         public void RemoveTower(Tower tower)
         {
-            if(!isGameScene) return;
-            
+            if (!isGameScene) return;
+
             Vector2Int gridPos = WorldToGrid(tower.transform.position);
             GridCell cell = GetCell(gridPos);
-    
+
             if (cell != null)
             {
                 cell.Vacate();
             }
-    
+
             Destroy(tower.gameObject);
 
         }
-        
+
 
         public void PlaceTower()
         {
-            if(!isGameScene) return;
-            
+            if (!isGameScene) return;
+
             if (Input.GetMouseButtonDown(0))
             {
                 Vector3 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -157,22 +178,22 @@ namespace Game_Manager
             }
         }
         #endregion
-    
+
         #region Grid Logic
         [Header("Grid")]
         public GameObject cellPrefab;
         public int rows = 5;
         public int columns = 9;
         public float cellSize = 1f;
-    
+
         public Vector2 gridOrigin = Vector2.zero;
 
         private GridCell[,] grid;
         void GenerateGrid()
         {
             if (cellPrefab == null) return;
-            if(!isGameScene) return;
-            
+            if (!isGameScene) return;
+
             grid = new GridCell[columns, rows];
 
             for (int x = 0; x < columns; x++)
@@ -276,16 +297,42 @@ namespace Game_Manager
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
         #endregion
-        
+
         #region Passing Data To Dialogue Scene
-        
+
         public List<House> destroyedHouses;
         private List<House> StoreDestroyedHouses()
         {
-            if(!isGameScene) return null;
+            if (!isGameScene) return null;
             return houses.GroupBy(r => r.isDestroyed).Select(r => r.First()).ToList();
         }
-        
+
+        public bool isHouseDestroyed(Homes home)
+        {
+
+            // testing
+            if (home == Homes.archie)
+            {
+                Debug.Log("Archie!");
+            }
+
+
+            Debug.LogWarning("Implement");
+            // TODO: Implement
+            return false;
+        }
+        #endregion
+
+        #region Passing Dialogue Data To Next Level
+
+        public void UpdateHouses()
+        {
+            for (int houseIndex = 0; houseIndex < Enum.GetNames(typeof(Homes)).Count(); houseIndex++)
+            {
+                // update towers if valid
+            }
+        }
+
         #endregion
 
         // Testing function
@@ -293,7 +340,7 @@ namespace Game_Manager
         {
             Debug.Log("Doing something!");
         }
-    
+
         // Game Loop Control
         public void PauseAllEnemies()
         {
@@ -324,6 +371,6 @@ namespace Game_Manager
         */
         }
 
-    
+
     }
 }

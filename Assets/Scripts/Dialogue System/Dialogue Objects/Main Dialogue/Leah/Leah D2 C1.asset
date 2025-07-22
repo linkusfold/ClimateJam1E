@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Leah D2 C1
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "I haven\u2019t seen you before\u2026 a newcomer huh? Well that\u2019s
+      rather unfortunate timing\u2026 rather unfortunate. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
+  - text: "Well if you stay, I\u2019m sure you will find out\u2026 But if I tell
+      you, you won\u2019t believe me. I tried to warn all the other townspeople but
+      the fools just laughed at me. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "You promise you\u2019ll believe me? I don\u2019t quite believe you\u2026
+      but I\u2019ll tell you what I foresee in the coming future\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "A dark shape on the sea, blotting out the sun\u2026 it\u2019s a sign,
+      I\u2019m sure of it\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "A sign of\u2026  the end. "
+    responses:
+    - text: 'The end? Are you kidding me? Stop spewing this madness. '
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    - text: 'A dark shape on the sea? What is it?  '
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
+  - text: "I knew you wouldn\u2019t believe me\u2026 no one understands. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
+  - text: "But maybe you\u2019ll open your eyes after the\u2026 events coming in
+      the next few days "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "If you ever change your mind, I\u2019ll be in this house. I\u2019m always
+      here preparing\u2026 though I doubt there\u2019s anything I can do to stop
+      it alone. "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
+  - text: "I don\u2019t know for sure, but we must prepare. Everyday I work on strengthening
+      the walls for this house, but I doubt if they can do anything to stop it. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "You are the first person in this village to take me seriously\u2026"
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: -7956674989423488312, guid: ccb037f65faf256489a6ac2733aefa90, type: 3}

@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Georgie D16 C5
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'Hey! Good to see you doing great work again! I hope the Filter Tower is
+      helping you fight off those disasters. '
+    responses:
+    - text: "It\u2019s been a great help, thank you. How have you been doing? "
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: 'Me? '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: "I have been\u2026 pretty stressed lately. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: "If my father were here, I could at least ask him for advice on how to
+      be a good mayor\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: 'Heh. My father was a great mayor. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: "I wish you could\u2019ve met him, he would've loved you! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -5466870580281881972, guid: 2ca23f01faaaea6408228372e3a2869c, type: 3}
+  - text: "\u2026His one motivation in life was to make my mother proud. She passed
+      away after my birth, and ever since that day, he was the best person he could
+      ever become. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: "He knew that\u2019s what my mother would have wanted.  "
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}

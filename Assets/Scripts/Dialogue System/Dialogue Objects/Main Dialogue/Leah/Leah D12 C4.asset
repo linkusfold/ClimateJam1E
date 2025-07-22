@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Leah D12 C4
+  m_EditorClassIdentifier: 
+  passages:
+  - text: "I don\u2019t understand\u2026 the believers all agreed that the Great
+      Storm should have come yesterday\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
+  - text: "Perhaps we read the signs wrong\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "Perhaps it will come tomorrow instead\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "Perhaps it will\u2026 never come? "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
+  - text: "I can\u2019t believe I\u2019m saying this but\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: '(they take a walk around the town) '
+    responses:
+    - text: (End Conversation)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

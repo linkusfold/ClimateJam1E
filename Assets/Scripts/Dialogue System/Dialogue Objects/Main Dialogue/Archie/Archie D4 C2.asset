@@ -20,7 +20,7 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: 'Duude, you were totally awesome stopping those freaky creatures! I never
       expected anyone from the big city to jump in like that and get their hands
       dirty.  '
@@ -33,7 +33,7 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: "You know, I think I might\u2019ve misjudged you. You seem pretty down
       to Earth. Willing to fight for what you believe in. "
     responses:
@@ -46,14 +46,14 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: "Hmm\u2026 Can I show you something? "
     responses:
     - text: Sure
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: " It\u2019s good to have another promising activist in town. You don\u2019t
       know how hard it is to get anything done around here when nobody really cares
       like you do.  "
@@ -62,7 +62,7 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: <i> Archie walks over and unfurls a giant torn banner that seems to be
       made out of plastic trash. </i>
     responses:
@@ -80,7 +80,7 @@ MonoBehaviour:
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: "Well\u2026 unfortunately the wind snapped it in two. And blew half into
       the ocean. But hey, most of it was taken out of the ocean anyway, so worth
       it, right? "
@@ -93,14 +93,14 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Yeah\u2026 anyway, check this out! "
     responses:
     - text: (Continue)
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: <i> Archie shows a small kiddie pool with a lobster in it. </i>
     responses:
     - text: (Continue)
@@ -121,7 +121,7 @@ MonoBehaviour:
       nextPassageIndex: 12
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: "...I guess. But Chad\u2019s my best friend out here. I\u2019ll make sure
       to release the next critter I save. "
     responses:
@@ -129,7 +129,7 @@ MonoBehaviour:
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Thanks. I\u2019m hoping to go down to the shore more often and try to
       save more hurt animals. Every little bit counts! "
     responses:
@@ -137,14 +137,14 @@ MonoBehaviour:
       nextPassageIndex: 13
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "Anyway, here\u2019s what I did most recently. "
     responses:
     - text: (Continue)
       nextPassageIndex: 14
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: <i> Archie holds up a polaroid photograph showing the houses of Coral Cove,
       covered in blue paint.  </i>
     responses:
@@ -162,7 +162,7 @@ MonoBehaviour:
       nextPassageIndex: 16
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: ...
     responses:
     - text: (Continue)
@@ -181,7 +181,7 @@ MonoBehaviour:
       nextPassageIndex: 18
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Yeah\u2026 I guess I just thought that no one would pay attention if I
       did something that could be easily ignored. And no one got hurt, which is good,
       but\u2026 I dunno\u2026 "
@@ -190,7 +190,7 @@ MonoBehaviour:
       nextPassageIndex: 19
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: " Just more motivation to make the next thing I do even better! I gotta
       think up some new ideas, so let\u2019s talk later! "
     responses:
@@ -198,4 +198,4 @@ MonoBehaviour:
       nextPassageIndex: 20
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}

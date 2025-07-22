@@ -1,17 +1,20 @@
 using System;
 using System.Collections;
+using Game_Manager;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using System.Linq;
 
 [RequireComponent(typeof(AudioSource))]
 public class CharacterDialogueHandler : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Dialogue Obj, indexes, and textbox
+    IStoryListener storyListener;
     [SerializeField]
-    CharacterDialogue currentDialogue;
+    public CharacterDialogue currentDialogue;
     int currentPassageIndex;
     [Header("Text Settings")]
     [SerializeField]
@@ -34,6 +37,15 @@ public class CharacterDialogueHandler : MonoBehaviour
     int maxResponseCount = 5;
     GameObject buttonOBJ;
     Coroutine loopRoot;
+    [SerializeField]
+    public Homes characterHouseType;
+    public CharacterHouse house;
+    public int fitWidth = 200;
+    // NEW: drag your disabled “HouseInteriorPanel” here
+    [Header("Interior Panel (UI)")]
+    [SerializeField]
+    private GameObject interiorPanel; 
+
     void Awake()
     {
         textAudioSource = GetComponent<AudioSource>();
@@ -41,11 +53,17 @@ public class CharacterDialogueHandler : MonoBehaviour
         textAudioSource.clip = textSound;
         responseButtonInstances = new GameObject[maxResponseCount];
         SetupArtHolder();
+        house = GetComponent<CharacterHouse>();
+        characterHouseType = house.characterHouseType;
+        storyListener = GetComponent<IStoryListener>();
 
+        // NEW: ensure it starts hidden
+        if (interiorPanel != null)            
+            interiorPanel.SetActive(false);
     }
     void Update()
     {
-
+        
         // Handle Responses
         int responseIndex = getResponseNumberIndex();
 
@@ -63,6 +81,11 @@ public class CharacterDialogueHandler : MonoBehaviour
     public void StartDialogue()
     {
         textBox.gameObject.SetActive(true);
+
+        // NEW: show the interior art/UI
+        if (interiorPanel != null)            
+            interiorPanel.SetActive(true);
+
         Debug.Log("Starting Dialogue! " + gameObject.name);
         LoadPassage(0);
 
@@ -101,7 +124,11 @@ public class CharacterDialogueHandler : MonoBehaviour
     private void HandleResponse(int passageIndex, int responseIndex)
     {
         // Debug.Log("Handling response!");
-
+        if (storyListener != null)
+        {
+            storyListener.CheckResponse(currentDialogue.GetResponse(passageIndex, responseIndex));
+        }
+        
         if (!textBox.text.Equals(currentDialogue.getCurrentText(currentPassageIndex)))
         {
             // Debug.Log("Skipping text load!");
@@ -109,11 +136,18 @@ public class CharacterDialogueHandler : MonoBehaviour
             return;
         }
 
-        if (responseIndex <= currentDialogue.GetResponseCount(passageIndex))
+
+        if (currentDialogue.responseEndsConversation(passageIndex, responseIndex))
         {
-            // Debug.LogWarning("No response at index, exiting method.");
-            
+            EndConversation();
+            return;
         }
+
+        if (responseIndex <= currentDialogue.GetResponseCount(passageIndex))
+            {
+                // Debug.LogWarning("No response at index, exiting method.");
+
+            }
 
         Response response = currentDialogue.GetResponse(passageIndex, responseIndex);
 
@@ -131,7 +165,7 @@ public class CharacterDialogueHandler : MonoBehaviour
             LoadNewConversation(response.nextConversation);
             return;
         }
-        // Debug.Log("Not loading new convo!");
+        // Debug.Log("Not losading new convo!");
 
         LoadPassage(response.nextPassageIndex);
 
@@ -151,24 +185,33 @@ public class CharacterDialogueHandler : MonoBehaviour
         // TODO: unlock tower if locked.
         // TODO: upgrade tower one level
         // TODO: heal house damage
+
+
         // TODO: update info board
+       // GameManager.instance.houses.ElementAt((int) Homes.archie);
+       
+       // NEW: hide it again when dialogue ends
+        if (interiorPanel != null)            
+            interiorPanel.SetActive(false);
 
         closeConversation();
     }
 
+
+
     private void closeConversation()
     {
         //Should pause conversation and close out the ui. 
+        house.EndConversation();
     }
     private void LoadNewConversation(CharacterDialogue conversation)
     {
         //Debug.Log("Loading passage!");
         //Debug.Log("first new passage: " + conversation.GetPassage(0).text);
-
         SkipTextLoading();
 
         currentDialogue = conversation;
-
+        
         LoadPassage(0);
     }
 
@@ -181,7 +224,7 @@ public class CharacterDialogueHandler : MonoBehaviour
         DestroyResponses();
         CreateResponses();
 
-
+        Debug.Log("Starting routine!");
         loopRoot = StartCoroutine(LoadText());
     }
 
@@ -202,18 +245,38 @@ public class CharacterDialogueHandler : MonoBehaviour
     
     public void SkipTextLoading()
     {
-        // Debug.Log("Skipping text loading!");
-        StopCoroutine(loopRoot);
-        textBox.text = currentDialogue.getCurrentText(currentPassageIndex);
-        return;
+         Debug.Log("Skipping text loading!");
+
+        if (currentDialogue == null)
+        {
+            Debug.Log("Null dialogue");
+            return;
+        }
+        if (!textBox.text.Equals(currentDialogue.getCurrentText(currentPassageIndex)))
+            {
+                Debug.Log("Skipping!");
+                StopCoroutine(loopRoot);
+                textBox.text = currentDialogue.getCurrentText(currentPassageIndex);
+                return;
+
+            }
     }
 
     private void LoadArt()
     {
+
+        if (currentDialogue.getPassageArt(currentPassageIndex) == null)
+        {
+            Debug.Log("Null art!");
+            return;
+        }
+    
         Sprite characterSprite = currentDialogue.getPassageArt(currentPassageIndex);
         characterArtHolder.sprite = characterSprite;
         RectTransform imageRectTransform = characterArtHolder.rectTransform;
-        characterArtHolder.rectTransform.sizeDelta = new Vector2(characterSprite.rect.width, characterSprite.rect.height);
+        
+        float sizeFactor = characterSprite.rect.width / fitWidth;
+        characterArtHolder.rectTransform.sizeDelta = new Vector2(characterSprite.rect.width / sizeFactor, characterSprite.rect.height/sizeFactor);
         AnchorTopLeft(textBox.rectTransform, characterArtHolder.rectTransform);
     }
 
@@ -285,6 +348,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     
     private void SetupArtHolder()
     {
+
+
         characterArtHolder = textBox.GetComponentInChildren<Image>();
 
         GameObject art = characterArtHolder.gameObject;

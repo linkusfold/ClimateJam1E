@@ -31,7 +31,7 @@ MonoBehaviour:
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "I\u2019m going to spend the night outside of Coral Cove. I\u2019ll be
       back tomorrow, I just can\u2019t spend another damn day in the same town as
       him right now.  "
@@ -40,11 +40,11 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'I will. Good luck. '
     responses:
     - text: (End Conversation)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
-      endsConversation: 0
-    sprite: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}

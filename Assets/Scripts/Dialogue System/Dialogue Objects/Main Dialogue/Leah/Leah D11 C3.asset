@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Leah D11 C3
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'You may be wondering how I know so much about the future. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 8269505043775947529, guid: 620e4f682a9fd2e44bdb8524906f3dc1, type: 3}
+  - text: "It is all here\u2026 in this\u2026 the only computer in this village. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "When I was still young, and naive, I bought it to play games in my free
+      time\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: "Little did I know that it would hold the greatest secrets of our world\u2026
+      in the depths of the internet! "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}
+  - text: " I was able to access carefully hidden forums and learn all the secrets
+      our government doesn\u2019t want us to uncover. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -2130279150349958188, guid: e61673af019f6ea418b3ef4c6bd08b37, type: 3}

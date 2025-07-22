@@ -30,7 +30,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Yeah, I\u2019ll say. You\u2019re a proper climate warrior, stopping these
       disasters and all. Wish Coral Cove had more people like you. "
     responses:
@@ -38,7 +38,7 @@ MonoBehaviour:
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "Yeah, well. I\u2019m tough. Been used to dealing with Dio for a while.
       Yesterday was just\u2026 *sigh* "
     responses:
@@ -46,7 +46,7 @@ MonoBehaviour:
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -1425341700849487453, guid: c1bebc4d9161b3f4b88fb1970febd867, type: 3}
   - text: "I don\u2019t know why he can\u2019t let go but can\u2019t move on at the
       same time. When he talks like that, I know he\u2019s thinking about my parents
       and what happened to them. "
@@ -59,7 +59,7 @@ MonoBehaviour:
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'My parents loved the outdoors, just like me and Grandfather. They would
       go hiking all over Coral Cove, and outside it too. A couple years ago they
       went on a multi-day hiking trip, and left me and Zoe with our Grandfather. '
@@ -68,7 +68,7 @@ MonoBehaviour:
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "S.M.O.G. was building a clifftop resort, right above the hiking trail.
       I don\u2019t think they were actually supposed to be building there, but I
       guess they worked out a deal with the local government. "
@@ -77,7 +77,7 @@ MonoBehaviour:
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: 'I spent less time with Finn, and more time researching. I found out about
       all this stuff they were doing to the environment, and I felt like I just had
       to do something about it. '
@@ -86,7 +86,7 @@ MonoBehaviour:
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Yep. That\u2019s why I go out, and try to spread the message. Why I try
       to help people.  "
     responses:
@@ -94,14 +94,14 @@ MonoBehaviour:
       nextPassageIndex: 9
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "I just\u2026 I don\u2019t know if it\u2019s working."
     responses:
     - text: (Continue)
       nextPassageIndex: 10
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: "Well, thanks for listening to me, pal. It\u2019s been forever since I
       told anyone about what happened. I feel a bit lighter now."
     responses:
@@ -109,11 +109,11 @@ MonoBehaviour:
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "Yeah\u2026 you too. "
     responses:
     - text: (End Conversation)
       nextPassageIndex: 11
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}

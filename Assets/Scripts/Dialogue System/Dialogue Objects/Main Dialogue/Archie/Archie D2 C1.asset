@@ -18,29 +18,34 @@ MonoBehaviour:
     - text: (Continue).
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'An unfamiliar face. What are you doing snooping around my place, newcomer? '
     responses:
     - text: "Me? I wasn\u2019t snooping, I was just- "
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: 'Oh, sure. Popping into places unannounced is just how you roll then? '
     responses:
     - text: "Look, I\u2019m just here because I need something. "
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
+      endsConversation: 0
     - text: 'I think we got off on the wrong foot. I was sent here by Aid in Action. '
       nextPassageIndex: 3
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: " Oh, I should\u2019ve known. You have that look all over you. Here to
       take what you need and then ditch us at the first moment? "
     responses:
     - text: 'Why would I do that? I was sent by Aid in Action specifically to help. '
       nextPassageIndex: 4
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: "Government agencies never did nothin\u2019 good for no one. As far as
       I\u2019m concerned, you\u2019re just a glorified tourist, so why don\u2019t
       you just get to the point so you can get out of here. "
@@ -49,33 +54,39 @@ MonoBehaviour:
         have something that could help. "
       nextPassageIndex: 5
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 6827919086913985821, guid: 02c027d20fbc083459e375ae6f5709bc, type: 3}
   - text: 'Finn said so, huh? And how is shark boy doing? He still got that dopey
       smile on his face? '
     responses:
     - text: "He\u2019s fine. A little over-energized. "
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
+      endsConversation: 0
     - text: He seems good. A lot more help than you are, at least.
       nextPassageIndex: 6
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 2004731623220836009, guid: e215a46e4fa5b754c972a3bd9f05fba0, type: 3}
   - text: "Whatever. Yeah, I\u2019ve got some paint lying around. It couldn\u2019t
       make the lighthouse look any worse than it already does, so go wild.  "
     responses:
     - text: He seems good. A lot more help than you are, at least.
       nextPassageIndex: 7
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 2445486020124154706, guid: 8edc0984821d24f48b774ca7eec38f52, type: 3}
   - text: ...
     responses:
     - text: (Continue)
       nextPassageIndex: 8
       nextConversation: {fileID: 0}
-    sprite: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 970929030093100283, guid: 56a4a39e86b18b6439f160c93aa3d359, type: 3}
   - text: 'You still here? Byeee. '
     responses:
     - text: (End conversation)
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
+      endsConversation: 1
     sprite: {fileID: 0}

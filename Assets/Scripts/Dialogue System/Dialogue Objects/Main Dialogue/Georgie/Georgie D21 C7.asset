@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Georgie D21 C7
+  m_EditorClassIdentifier: 
+  passages:
+  - text: 'Hey, I was just thinking of you. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 1
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: 'Thank you for all you have done for us these past few weeks. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 2
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: "I\u2019m sure my father is watching as we speak. He would feel so grateful
+      for all the hard work you have put into defending our community. "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 3
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: 'Although these disasters are stressful, we all feel at ease knowing it
+      is possible to fight off these disasters. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 4
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -4847525547733801721, guid: deed5b3f3d0078b469ccafce1bcb44ba, type: 3}
+  - text: 'As long as we are here for each other, anything is possible. '
+    responses:
+    - text: "I\u2019m glad you feel that way. Is there anything else you need? "
+      nextPassageIndex: 5
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
+  - text: "Right! I also wanted to let you know, seeing how well we\u2019ve all been
+      working together to fight these disasters\u2026 "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 6
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: 'I decided to continue my work as mayor while pursuing a degree online. '
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 7
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: "Additionally, there is a vacant building which we have let sit for many
+      years now\u2026 I\u2019m thinking of opening a public library there. Hopefully,
+      it might someday serve to attract visitors from the main shore as well.  "
+    responses:
+    - text: (Continue)
+      nextPassageIndex: 8
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: "I have many plans in the works and I\u2019m delighted to uncover what
+      the future may hold. "
+    responses:
+    - text: "I\u2019m happy for you, George. I\u2019m sure your father is very proud
+        of what you\u2019ve done."
+      nextPassageIndex: 9
+      nextConversation: {fileID: 0}
+      endsConversation: 0
+    sprite: {fileID: 1779031242777278313, guid: 434dfd5e4484a694eb2e4af5bc966f7c, type: 3}
+  - text: "Thank you\u2026 goodbye, Cole. "
+    responses:
+    - text: Goodbye, George. (End Conversation)
+      nextPassageIndex: 10
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: -6395206118526764903, guid: 12fe0aef06237394c9a3ac38e652b5da, type: 3}
