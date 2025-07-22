@@ -552,7 +552,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 8176221935932064478, guid: 192607521cdcfd842adec4ab09d8b6f0, type: 3}
   cooldown: 10
 --- !u!1 &212491793 stripped
 GameObject:
@@ -1069,7 +1069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 4368180910514317233, guid: 69b3a08b1713745b48103a51910ffc19, type: 3}
   cooldown: 10
 --- !u!114 &495920766 stripped
 MonoBehaviour:
@@ -1251,7 +1251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 720533772911164937, guid: 5a86324d3fb254bfcb9dbad482ebe07b, type: 3}
   cooldown: 10
 --- !u!1 &519420028
 GameObject:
@@ -4079,7 +4079,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7063736b7eb224e92e53e1f664b2d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  towerPrefab: {fileID: 0}
+  towerPrefab: {fileID: 9004108269211621888, guid: 9381842ac926f4ff0906c555a03cefc8, type: 3}
   cooldown: 10
 --- !u!1 &2038058295 stripped
 GameObject:
@@ -4592,6 +4592,14 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 495920766}
+    - target: {fileID: 8658196764901025310, guid: 1e581556e7f464fc393323c6bfc88e42, type: 3}
+      propertyPath: winScreen
+      value: 
+      objectReference: {fileID: 2337782546011435291, guid: 229ffbfe63c39c3418c4a50d4bbdebb2, type: 3}
+    - target: {fileID: 8658196764901025310, guid: 1e581556e7f464fc393323c6bfc88e42, type: 3}
+      propertyPath: loseScreen
+      value: 
+      objectReference: {fileID: 7345034383869402955, guid: ca91993bc37252649abc96a846074c99, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

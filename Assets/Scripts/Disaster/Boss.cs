@@ -19,8 +19,8 @@ namespace DefaultNamespace
         {
             //Debug.Log($"Boss debug {waveSpawner.levelData.currentWaveIndex} and {waveSpawner.levelData.waves.Length}");
             // When the boss runs out of attack waves it dies
-            if (waveSpawner.levelData.currentWaveIndex >= waveSpawner.levelData.waves.Length
-                && waveSpawner.EnemiesAlive <= 0)
+            if (WaveSpawner.instance.levelData.currentWaveIndex >= WaveSpawner.instance.levelData.waves.Length)
+                //&& waveSpawner.EnemiesAlive <= 0)
             {
                 Die();
             }
@@ -30,7 +30,7 @@ namespace DefaultNamespace
         {
             Debug.Log($"The Disaster {gameObject.name} was defeated.");
             Destroy(gameObject); //remove the boss
-            Destroy(waveSpawner);
+            //Destroy(waveSpawner);
         }
     }
 }
