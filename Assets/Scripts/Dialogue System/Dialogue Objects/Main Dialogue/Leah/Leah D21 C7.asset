@@ -20,11 +20,11 @@ MonoBehaviour:
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
       endsConversation: 0
-    sprite: {fileID: 0}
+    sprite: {fileID: -7956674989423488312, guid: ccb037f65faf256489a6ac2733aefa90, type: 3}
   - text: 'Thank you for spending some time with me these past few weeks. '
     responses:
     - text: (End Conversation)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
       endsConversation: 1
-    sprite: {fileID: 0}
+    sprite: {fileID: -9202806147940072168, guid: a1c17333a54669b47a46d5fe8c07bf7f, type: 3}
