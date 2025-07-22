@@ -391,8 +391,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     {
 
 
+        
         characterArtHolder = textBox.GetComponentInChildren<Image>();
-
         GameObject art = characterArtHolder.gameObject;
         RectTransform artRect = art.GetComponent<RectTransform>();
 

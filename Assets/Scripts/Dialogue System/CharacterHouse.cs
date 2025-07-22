@@ -73,6 +73,7 @@ public class CharacterHouse : MonoBehaviour
         GameManager.instance.inConversation = false;
         dialogue = convoOverDialogue;
         StopDialogueHandler();
+        DoneTalking.HandleScene();
     }
     
     
