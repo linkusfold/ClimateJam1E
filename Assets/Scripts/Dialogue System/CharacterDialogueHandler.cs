@@ -49,6 +49,8 @@ public class CharacterDialogueHandler : MonoBehaviour
     [Header("Interior Panel (UI)")]
     [SerializeField]
     private GameObject interiorPanel;
+    [SerializeField]
+    private GameObject textPanel;
 
     void Awake()
     {
@@ -64,6 +66,9 @@ public class CharacterDialogueHandler : MonoBehaviour
         // NEW: ensure it starts hidden
         if (interiorPanel != null)
             interiorPanel.SetActive(false);
+
+        if (textPanel != null)
+            textPanel.SetActive(false);
 
         // Background Character Music
 
@@ -103,6 +108,11 @@ public class CharacterDialogueHandler : MonoBehaviour
         textBox.gameObject.SetActive(true);
 
         // NEW: show the interior art/UI
+        if (textPanel != null)
+            textPanel.SetActive(true);
+        else
+            textBox.gameObject.SetActive(true);
+
         if (interiorPanel != null)            
             interiorPanel.SetActive(true);
         if (backgroundMusic != null)
@@ -117,6 +127,11 @@ public class CharacterDialogueHandler : MonoBehaviour
     {
         Debug.Log("Stopping Dialogue! " + gameObject.name);
         textBox.gameObject.SetActive(false);
+
+        if (textPanel != null)
+            textPanel.SetActive(false);
+        else
+            textBox.gameObject.SetActive(false);
 
     }
     
