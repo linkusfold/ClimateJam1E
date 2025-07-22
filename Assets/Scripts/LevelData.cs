@@ -21,7 +21,7 @@ public class LevelData : ScriptableObject
     {
         if (currentWaveIndex >= waves.Length && WaveSpawner.instance.EnemiesAlive == 0)
         {
-            Debug.Log("All waves completed.");
+            Debug.Log("LevelData: Update(): All waves completed.");
             return;
         }
 
@@ -58,9 +58,9 @@ public class LevelData : ScriptableObject
         if (currentWaveIndex < waves.Length)
         {
             waves[currentWaveIndex].enemiesLeft--;
-            //Debug.Log("Enemy removed. Remaining: " + waves[currentWaveIndex].enemiesLeft);
+            //Debug.Log("Enemy removed. Remaining:  + waves[currentWaveIndex].enemiesLeft);
         }
-        if (currentWaveIndex >= waves.Length && WaveSpawner.instance.EnemiesAlive == 0)
+        if (currentWaveIndex >= waves.Length && WaveSpawner.instance.EnemiesAlive <= 0)
         {
             Debug.Log("All waves completed.");
             GameManager.instance.Win();
