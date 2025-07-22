@@ -18,25 +18,30 @@ MonoBehaviour:
     - text: What's your name?
       nextPassageIndex: 1
       nextConversation: {fileID: 0}
+      endsConversation: 0
     - text: Where are you from?
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
+      endsConversation: 0
     sprite: {fileID: -1467474820645495550, guid: 0e352754a6ab84b44b8c8619f6ea1f5a, type: 3}
   - text: My name is Bob!
     responses:
     - text: Ok!
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
+      endsConversation: 0
     sprite: {fileID: -2413806693520163455, guid: 393bd1aabcd34a848a4ab1066d60b812, type: 3}
   - text: I'm from america!
     responses:
     - text: Ok.
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
+      endsConversation: 1
     sprite: {fileID: 7482667652216324306, guid: 169386b5d99f64749989e589b4f07469, type: 3}
   - text: Bye!
     responses:
     - text: Bye
       nextPassageIndex: 0
       nextConversation: {fileID: 0}
+      endsConversation: 0
     sprite: {fileID: 7482667652216324306, guid: 169386b5d99f64749989e589b4f07469, type: 3}

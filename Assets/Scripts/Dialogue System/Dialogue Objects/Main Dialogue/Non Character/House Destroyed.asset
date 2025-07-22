@@ -12,4 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
   m_Name: House Destroyed
   m_EditorClassIdentifier: 
-  passages: []
+  passages:
+  - text: This house is destroyed
+    responses:
+    - text: (Return)
+      nextPassageIndex: 0
+      nextConversation: {fileID: 0}
+      endsConversation: 1
+    sprite: {fileID: 0}

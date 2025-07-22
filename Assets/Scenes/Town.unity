@@ -909,6 +909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85de83f0d265aec4ca26bd87d102f22a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CommunityPortion: 0
+  storyEvents: 00000000
+  inConversation: 0
   playerHealth: 0
   pauseMenu: {fileID: 0}
   levelData: {fileID: 0}
@@ -1022,7 +1025,8 @@ MonoBehaviour:
   textSound: {fileID: 0}
   responseActionReference: {fileID: 0}
   responseButtonPrefab: {fileID: 0}
-  characterHouse: 0
+  characterHouseType: 0
+  house: {fileID: 0}
 --- !u!82 &934590716
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1135,6 +1139,10 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   convoOverDialogue: {fileID: 0}
   houseDestroyedDialogue: {fileID: 0}
+  characterHouseType: 0
+  m_event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &934590718
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1408,6 +1416,7 @@ GameObject:
   - component: {fileID: 1148185831}
   - component: {fileID: 1148185830}
   - component: {fileID: 1148185829}
+  - component: {fileID: 1148185835}
   m_Layer: 0
   m_Name: Cherry House
   m_TagString: Untagged
@@ -1528,9 +1537,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34d277c890213eb4684dabaa188091f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: {fileID: 11400000, guid: a92b7b5755068e7419544c22a3b8792a, type: 2}
-  convoOverDialogue: {fileID: 0}
-  houseDestroyedDialogue: {fileID: 0}
+  dialogue: {fileID: 11400000, guid: 1ad8ccdbbd1df474ca029ad394e94112, type: 2}
+  convoOverDialogue: {fileID: 11400000, guid: f0f3616810287034da9bb79f35cc1b4a, type: 2}
+  houseDestroyedDialogue: {fileID: 11400000, guid: 389bc3df108b86842a8ffad1d8735ba2, type: 2}
+  characterHouseType: 0
+  m_event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &1148185832
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1550,7 +1563,8 @@ MonoBehaviour:
   textSound: {fileID: 0}
   responseActionReference: {fileID: -4927741273655995719, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   responseButtonPrefab: {fileID: 745178416232656121, guid: effc1bbd0f3e44c5fbee1c22031388b5, type: 3}
-  characterHouse: 0
+  characterHouseType: 0
+  house: {fileID: 0}
 --- !u!82 &1148185833
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1663,6 +1677,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1148185835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148185828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 970426ea1cdab744ea559009f2a975f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wantedResponses:
+  - "Your Grandpa didn\u2019t mean to scare you, Zoe. He\u2019s just scared of the
+    monster. "
+  - 'Wait, it sounds like the construction site was what caused the landslide. '
 --- !u!1 &1245054660
 GameObject:
   m_ObjectHideFlags: 0
@@ -1889,7 +1919,8 @@ MonoBehaviour:
   textSound: {fileID: 0}
   responseActionReference: {fileID: 0}
   responseButtonPrefab: {fileID: 0}
-  characterHouse: 0
+  characterHouseType: 0
+  house: {fileID: 0}
 --- !u!82 &1525387361
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2002,6 +2033,10 @@ MonoBehaviour:
   dialogue: {fileID: 0}
   convoOverDialogue: {fileID: 0}
   houseDestroyedDialogue: {fileID: 0}
+  characterHouseType: 0
+  m_event:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!212 &1525387363
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class CharacterDialogueHandler : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Dialogue Obj, indexes, and textbox
+    IStoryListener storyListener;
     [SerializeField]
     public CharacterDialogue currentDialogue;
     int currentPassageIndex;
@@ -48,6 +49,8 @@ public class CharacterDialogueHandler : MonoBehaviour
         responseButtonInstances = new GameObject[maxResponseCount];
         SetupArtHolder();
         house = GetComponent<CharacterHouse>();
+        characterHouseType = house.characterHouseType;
+        storyListener = GetComponent<IStoryListener>();
     }
     void Update()
     {
@@ -107,7 +110,11 @@ public class CharacterDialogueHandler : MonoBehaviour
     private void HandleResponse(int passageIndex, int responseIndex)
     {
         // Debug.Log("Handling response!");
-
+        if (storyListener != null)
+        {
+            storyListener.CheckResponse(currentDialogue.GetResponse(passageIndex, responseIndex));
+        }
+        
         if (!textBox.text.Equals(currentDialogue.getCurrentText(currentPassageIndex)))
         {
             // Debug.Log("Skipping text load!");

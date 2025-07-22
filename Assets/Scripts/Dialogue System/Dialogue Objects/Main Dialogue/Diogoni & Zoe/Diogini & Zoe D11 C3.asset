@@ -293,9 +293,9 @@ MonoBehaviour:
       nextPassageIndex: 35
       nextConversation: {fileID: 0}
       endsConversation: 0
-    - text: 'Go after Archie* '
+    - text: '*Go after Archie* '
       nextPassageIndex: 35
-      nextConversation: {fileID: 0}
+      nextConversation: {fileID: 11400000, guid: ea34fc9f96197dd4788d8c9e18a5b101, type: 2}
       endsConversation: 0
     sprite: {fileID: 0}
   - text: " ...That\u2019s not\u2026 that\u2019s not what happened. "

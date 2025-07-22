@@ -46,5 +46,5 @@ MonoBehaviour:
     - text: (End Conversation)
       nextPassageIndex: 2
       nextConversation: {fileID: 0}
-      endsConversation: 0
+      endsConversation: 1
     sprite: {fileID: 0}

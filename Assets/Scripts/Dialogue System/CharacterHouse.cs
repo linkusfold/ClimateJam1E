@@ -1,6 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 using Game_Manager;
+using UnityEngine.Events;
 [RequireComponent(typeof(CharacterDialogueHandler))]
 public class CharacterHouse : MonoBehaviour
 {
@@ -9,13 +10,19 @@ public class CharacterHouse : MonoBehaviour
     public CharacterDialogue dialogue;
     public CharacterDialogue convoOverDialogue;
     public CharacterDialogue houseDestroyedDialogue;
-    
+    public Homes characterHouseType;
+    public UnityEvent m_event;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         characterDialogueHandler = GetComponent<CharacterDialogueHandler>();
         // characterDialogueHandler.StopDialogue();
         characterDialogueHandler.enabled = false;
+        if (GameManager.instance.isHouseDestroyed(characterHouseType))
+        {
+            dialogue = houseDestroyedDialogue;
+            convoOverDialogue = houseDestroyedDialogue;
+        }
     }
 
     // Update is called once per frame

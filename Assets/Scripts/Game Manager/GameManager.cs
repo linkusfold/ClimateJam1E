@@ -20,9 +20,15 @@ namespace Game_Manager
         diogini
 
     }
+
+    public enum StoryChoices
+    {
+        givePocketKnife,
+    }
     public class GameManager : MonoBehaviour
     {
-        
+        public int CommunityPortion = 0;
+        public int[] storyEvents = new int[Enum.GetNames(typeof(StoryChoices)).Count()];
         public static GameManager instance;
         public bool inConversation;
         public int playerHealth;
@@ -53,6 +59,7 @@ namespace Game_Manager
                 return;
             }
             isGameScene = false;
+
         }
 
         void Start()
@@ -213,16 +220,16 @@ namespace Game_Manager
         #region End Round Logic
 
         [Header("End Round Variables")]
-        public List<House> houses = new List<House>();        public GameObject winScreen;
+        public List<House> houses = new List<House>(); public GameObject winScreen;
         public GameObject loseScreen;
 
         private bool CheckHousesAlive()
         {
-            
+
             House aliveHouse = houses.Find(r => r.IsDestroyed);
             if (aliveHouse != null) return true;
             return false;
-            
+
         }
 
         public void Win()
@@ -266,6 +273,20 @@ namespace Game_Manager
             return houses.GroupBy(r => r.isDestroyed).Select(r => r.First()).ToList();
         }
 
+        public bool isHouseDestroyed(Homes home)
+        {
+
+            // testing
+            if (home == Homes.archie)
+            {
+                Debug.Log("Archie!");
+            }
+
+
+            Debug.LogWarning("Implement");
+            // TODO: Implement
+            return false;
+        }
         #endregion
 
         #region Passing Dialogue Data To Next Level
