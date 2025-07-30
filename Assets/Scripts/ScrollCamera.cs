@@ -14,19 +14,14 @@ using UnityEngine;
 
 public class ScrollCamera : MonoBehaviour
 {
-    
-    public bool isLocked = false;
-    
     // How fast the camera moves
-    public float scrollSpeed = 5f;
+    public float scrollSpeed = 2f;
 
     // Margin in pixels from the screen edge that triggers scrolling
-    public float edgeMargin = 10f;
+    public float edgeMargin = 5f;
 
     void Update()
     {
-        if (isLocked) return;
-        
         // Gets the current camera position
         Vector3 pos = transform.position;
 

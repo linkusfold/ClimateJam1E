@@ -1,14 +1,13 @@
 using UnityEngine;
 using System.Collections;
-using Game_Manager;
 
 namespace DefaultNamespace
 {
-    public class Hurricane : Boss, IDamageableEnemy
+    public class Hurricane : Boss
     {
         [SerializeField] private HealthBar healthBar;
 
-        [SerializeField] private float _health = 1500f;
+        [SerializeField] private float _health = 500f;
 
         public float Health
         {
@@ -29,16 +28,15 @@ namespace DefaultNamespace
         private bool isOnLeftSide = true;
         private bool isSwitchingSides = false;
 
-        public AudioClip switchSidesSound;
-
         protected override void Start()
         {
-            // Hurricane spawns at the left side.
+            // Hurricane spawns at the left side
             transform.position = new Vector3(leftX, transform.position.y, transform.position.z);
 
             healthBar.MaxHealth = Health;
 
             base.Start();
+            SwitchSides();
         }
 
         protected override void Update()
@@ -51,17 +49,8 @@ namespace DefaultNamespace
                 Debug.Log("Disaster " + gameObject.name + " has looped its wave attacks!");
 
                 waveSpawner.Restart();
-            }
 
-            if (waveSpawner.levelData == null)
-            {
-                return;
-            }
-
-            if (((waveSpawner.levelData.currentWaveIndex % 2 == 1 && isOnLeftSide)
-                || (waveSpawner.levelData.currentWaveIndex % 2 == 0 && !isOnLeftSide))
-                && !isSwitchingSides)
-            {
+                TakeDamage(250); //This is just for debugging it won't actually take damage here
                 SwitchSides();
             }
         }
@@ -73,7 +62,6 @@ namespace DefaultNamespace
 
             float startX = isOnLeftSide ? leftX : rightX;
             float endX = isOnLeftSide ? rightX : leftX;
-
             Vector3 startPos = new Vector3(startX, transform.position.y, transform.position.z);
             Vector3 endPos = new Vector3(endX, transform.position.y, transform.position.z);
 
@@ -103,15 +91,13 @@ namespace DefaultNamespace
 
             isOnLeftSide = !isOnLeftSide;
             isSwitchingSides = false;
-            waveSpawner.FlipPathing();
         }
 
         protected void SwitchSides()
         {
             if (!isSwitchingSides)
             {
-                StartCoroutine(SwitchSidesRoutine());  
-                if(switchSidesSound) AudioSource.PlayClipAtPoint(switchSidesSound, transform.position);  
+                StartCoroutine(SwitchSidesRoutine());    
             }
         }
 
@@ -123,7 +109,6 @@ namespace DefaultNamespace
 
             if (Health <= 0)
             {
-                GameManager.instance.Win();
                 Die();
             }
         }

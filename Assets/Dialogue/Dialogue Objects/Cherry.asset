@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd42f256f47110042822b0f35d9bb4d7, type: 3}
+  m_Name: Cherry
+  m_EditorClassIdentifier: 
+  passages:
+  - text: Hello My name is cherry! I have a lot to talk about!
+    nextPassageIndex: 0
+    responses:
+    - text: Take me to bob!
+      nextPassageIndex: 0
+      nextConversation: {fileID: 11400000, guid: 654bb5065dcd91b4dba7b544756396e8, type: 2}
+    sprite: {fileID: 0}
+    nextConversation: {fileID: 11400000, guid: 654bb5065dcd91b4dba7b544756396e8, type: 2}

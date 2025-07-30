@@ -1,4 +1,3 @@
-using DefaultNamespace;
 using UnityEngine;
 
 /*
@@ -17,50 +16,26 @@ public class ClimbingNodeTower : Tower
     public float healRadius = 3f;    // Radius within which this tower can heal
     public int healAmount = 1;       // How much health to restore per heal tick
 
-    void Update()
+    void FixedUpdate()
     {
-        // Skip update if the tower hasn't been unlocked yet
-        if (isDestroyed) return;
-
-        if (health <= 0)
-        {
-            DestroyTower();
-            return;
-        }
-        
-        if(!isUnlocked) return;
-
-        // Decrease the cooldown timer over time
-        cooldownTimer -= Time.deltaTime;
-        //if(btn) btn.image.fillAmount = (fireCooldown-cooldownTimer) / fireCooldown;
-
-        // If ready to fire again
-        if (cooldownTimer <= 0f)
-        {
-            Shoot();              // Fire at the enemy
-            cooldownTimer = fireCooldown;        // Reset cooldown timer
-        }
-    }
-
-    private void Shoot()
-    {
-        Debug.Log($"{gameObject.name}: Shoot() called.");
         // Skip healing if the tower is not yet unlocked
         if (!isUnlocked) return;
 
         // Get all colliders within the healing radius
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, healRadius, LayerMask.GetMask("Tower"));
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, healRadius);
 
         foreach (var hit in hits)
         {
-            // Check if the object has a healable component
-            IHealable healable = hit.GetComponent<IHealable>();
-            if (healable != null)
+            // Only heal objects tagged as "House" or "Tower"
+            if (hit.CompareTag("House") || hit.CompareTag("Tower"))
             {
-                // Apply healing
-                healable.Heal(healAmount);
-                Debug.Log($"{gameObject.name}: Healed for {healAmount}.");
-                healable.UpdateHealthBar();
+                // Check if the object has a healable component
+                IHealable healable = hit.GetComponent<IHealable>();
+                if (healable != null)
+                {
+                    // Apply healing
+                    healable.Heal(healAmount);
+                }
             }
         }
     }
