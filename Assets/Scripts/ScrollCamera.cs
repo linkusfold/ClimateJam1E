@@ -3,53 +3,40 @@ using UnityEngine;
 /*
  * -----------------------------------------------
  * ScrollCamera.cs
- * Author: Lauren Thoman
- * Date: June 22, 2025
+ * Author: (you)
+ * Date: July 2025
  *
  * Allows the player to scroll the camera vertically
- * either by moving the mouse to the screen's edges
- * or by using their mouse scroll wheel.
+ * only by using their mouse scroll wheel, clamped
+ * to a small extra vertical range.
  * -----------------------------------------------
  */
 
 public class ScrollCamera : MonoBehaviour
 {
-    // How fast the camera moves
-    public float scrollSpeed = 2f;
+    [Header("Scroll Settings")]
+    [Tooltip("How fast one notch of the scroll wheel moves the camera")]
+    public float scrollSpeed = 1f;
 
-    // Margin in pixels from the screen edge that triggers scrolling
-    public float edgeMargin = 5f;
+    [Header("Vertical Bounds (world units)")]
+    [Tooltip("Lowest Y the camera can go")]
+    public float minY = 0f;
+    [Tooltip("Highest Y the camera can go")]
+    public float maxY = 2f;  // tweak this to just a bit above your default
 
     void Update()
     {
-        // Gets the current camera position
-        Vector3 pos = transform.position;
-
-        // Gets the vertical mouse position
-        float mouseY = Input.mousePosition.y;
-
-        // Gets scroll wheel input (positive = up, negative = down)
+        // get scroll wheel delta
         float scrollInput = Input.mouseScrollDelta.y;
+        if (Mathf.Approximately(scrollInput, 0f)) return;
 
-        // ----------- Edge of screen movement -----------
+        // calculate new position
+        Vector3 pos = transform.position;
+        pos.y += scrollInput * scrollSpeed * Time.deltaTime;
 
-        // If mouse is near top edge, scroll up
-        if (mouseY >= Screen.height - edgeMargin)
-        {
-            pos.y += scrollSpeed * Time.deltaTime;
-        }
-        // If mouse is near bottom edge, scroll down
-        else if (mouseY <= edgeMargin)
-        {
-            pos.y -= scrollSpeed * Time.deltaTime;
-        }
+        // clamp to your little extra range
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
 
-        // ----------- Scroll wheel movement -----------
-
-        // Apply scroll wheel input
-        pos.y += scrollInput * scrollSpeed;
-
-        // Updates camera position
         transform.position = pos;
     }
 }
