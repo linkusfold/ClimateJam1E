@@ -1,10 +1,11 @@
 /*
  * PauseMenu.cs
  * Author: Lauren Thoman
- * Date: June 22, 2025 (Updated July 11, 2025)
+ * Date: June 22, 2025 (Updated Aug 1, 2025)
  *
  * Handles pausing and resuming the game using the Escape key and Resume button.
  * Also provides access to Settings, Info, and Quit from the pause menu.
+ * Disables gameplay scripts on pause so nothing behind the UI responds.
  */
 
 using UnityEngine;
@@ -16,6 +17,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject pausePanel;
     public GameObject settingsPanel;
     public GameObject infoPanel;    // <-- New Info panel reference
+
+    [Header("Gameplay Scripts to Disable")]
+    public MonoBehaviour[] gameplayScripts;
 
     private bool isPaused = false;
 
@@ -32,18 +36,30 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
+        // Show pause UI
         pausePanel.SetActive(true);
+        // Stop time
         Time.timeScale = 0f;
         isPaused = true;
+
+        // Disable all gameplay scripts
+        foreach (var script in gameplayScripts)
+            script.enabled = false;
     }
 
     public void ResumeGame()
     {
+        // Hide all panels
         pausePanel.SetActive(false);
         settingsPanel.SetActive(false);
-        infoPanel.SetActive(false);  // <-- Make sure Info closes too
+        infoPanel.SetActive(false);
+        // Resume time
         Time.timeScale = 1f;
         isPaused = false;
+
+        // Re-enable gameplay scripts
+        foreach (var script in gameplayScripts)
+            script.enabled = true;
     }
 
     // Called by Pause Menu Settings button
@@ -78,8 +94,8 @@ public class PauseMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-#if UNITY_EDITOR
+    #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
-#endif
+    #endif
     }
 }
