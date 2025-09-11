@@ -1,10 +1,14 @@
 fileFormatVersion: 2
-guid: 5e34a3be3652648c78e665cb53da91a1
+<<<<<<< HEAD
+guid: e6b73b9419431d2488fdb1d70b75a82f
+=======
+guid: d9e23f7c6c41ef442b81ee0f99d6842e
+>>>>>>> c67a234c53069344ea9037b2f1143c1874d5b743
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1106564609695413698
-    second: Frontcoverimage_0
+      213: -5399710638531159841
+    second: hurricane concept_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,17 +100,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Frontcoverimage_0
+      name: hurricane concept_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1571
-        height: 997
+        width: 3678
+        height: 2048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e3a061ea951b4a0f0800000000000000
-      internalID: -1106564609695413698
+      spriteID: fd8d37c78cf5015b0800000000000000
+      internalID: -5399710638531159841
       vertices: []
       indices: 
       edges: []
@@ -135,7 +152,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Frontcoverimage_0: -1106564609695413698
+      hurricane concept_0: -5399710638531159841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
